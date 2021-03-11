@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="276px" height="182px" viewBox="0 0 276 182" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>db-item</title>
+    <defs>
+        <rect id="path-1" x="526" y="306" width="324" height="312" rx="2.4"></rect>
+        <filter x="-17.6%" y="-10.6%" width="127.2%" height="128.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="-13" dy="11" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.677063474   0 0 0 0 0.712133347   0 0 0 0 0.85241284  0 0 0 0.170884284 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="-1.27897692e-13" width="276" height="181.2"></rect>
+        <path d="M1.89,5.88 L515.97,5.88 C517.013818,5.88 517.86,6.72618182 517.86,7.77 L517.86,157.395804 L517.86,157.395804 L517.86,373.17 C517.86,374.213818 517.013818,375.06 515.97,375.06 L396.51657,375.06 L396.51657,375.06 L1.89,375.06 C0.846181823,375.06 4.34265288e-14,374.213818 0,373.17 L0,7.77 C-1.27830859e-16,6.72618182 0.846181823,5.88 1.89,5.88 Z" id="path-5"></path>
+        <path d="M4.14717873,39.3146426 C5.81883268,55.3854362 19.3364464,67.8461792 35.7643872,67.8461792 C53.3218865,67.8461792 67.5551191,53.6129466 67.5551191,36.0554472 C67.5551191,18.5638471 53.4286829,4.37184287 35.768361,4.26488086 L35.7643872,4.26488086 L34.9909823,4.10874282 C34.2778471,3.80706359 33.7774768,3.10104809 33.7774768,2.27797046 C33.7774768,1.20818479 34.6230727,0.335765546 35.7604134,0.291060062 L35.768361,0.291060062 L39.4211302,0.475677153 C57.4578061,2.30942988 71.5289399,17.5392637 71.5289399,36.0554472 C71.5289399,55.8076547 55.5165946,71.82 35.7643872,71.82 C22.5657254,71.82 11.0368933,64.6702517 4.83966887,54.0324838 C1.76263209,48.7506349 0,42.6088823 0,36.0554472 L0.156138042,35.2820424 C0.447717143,34.59275 1.11730595,34.1023143 1.98293658,34.0685368 L1.99088422,34.0685368 C3.12822485,34.1132423 3.9738208,34.9856616 3.9738208,36.0554472 L4.14717873,39.3146426 Z" id="path-7"></path>
+        <linearGradient x1="10.5112258%" y1="57.7064472%" x2="8.23877777%" y2="59.3892467%" id="linearGradient-9">
+            <stop stop-color="#2FB9EF" offset="0%"></stop>
+            <stop stop-color="#F76B1C" offset="100%"></stop>
+        </linearGradient>
+        <path d="M4.17331825,50.4257281 C6.34079057,71.5721774 23.9834128,87.9937079 45.4265593,87.9937079 C68.3333956,87.9937079 86.9031476,69.2539824 86.9031476,46.1374744 C86.9031476,23.0862418 68.4379096,4.38704368 45.4305095,4.28140694 L45.4265593,4.28140694 L44.6577642,4.12477888 C43.9488794,3.82215287 43.4514915,3.11375553 43.4514915,2.28826087 C43.4514915,1.21495171 44.2920475,0.33996059 45.4226092,0.295114803 L45.4305095,0.295114803 L50.0712604,0.531800899 C72.9805656,2.88238449 90.8532832,22.4035893 90.8532832,46.1374744 C90.8532832,71.4555784 70.5150226,91.98 45.4265593,91.98 C20.3382606,91.98 0,71.4555784 0,46.1374744 L0.155207411,45.3616422 C0.44504861,44.6701867 1.11048187,44.1782118 1.97111766,44.1443283 L1.97901793,44.1443283 C3.10957966,44.1891741 3.95013559,45.0643313 3.95013559,46.1374744 L4.17331825,50.4257281 Z" id="path-10"></path>
+        <linearGradient x1="28.8146968%" y1="55.0330556%" x2="-35.4701776%" y2="107.366534%" id="linearGradient-12">
+            <stop stop-color="#FE8708" offset="0%"></stop>
+            <stop stop-color="#C2E9FB" offset="100%"></stop>
+        </linearGradient>
+        <path d="M4.03957906,28.4361828 C5.18270823,39.5200105 14.3452177,48.0966535 25.47909,48.0966535 C37.3859914,48.0966535 47.0384833,38.2878286 47.0384833,26.1880816 C47.0384833,14.1489146 37.4823546,4.37793149 25.4830099,4.27967561 L25.47909,4.27967561 L24.7161872,4.12316329 C24.0127357,3.8207609 23.51916,3.11288702 23.51916,2.28800234 C23.51916,1.21548629 24.3532735,0.341141725 25.4751701,0.296329077 L25.4830099,0.296329077 L28.084327,0.430103131 C40.9337914,1.75755336 50.9583433,12.7832906 50.9583433,26.1880816 C50.9583433,40.4877977 39.5508974,52.08 25.47909,52.08 C11.4074459,52.08 0,40.4877977 0,26.1880816 L0.154017833,25.4128227 C0.44163756,24.7218781 1.10213397,24.2302667 1.95601014,24.1964083 L1.96384986,24.1964083 C3.08574646,24.2412209 3.91986,25.1157315 3.91986,26.1880816 L4.03957906,28.4361828 Z" id="path-13"></path>
+        <linearGradient x1="133.188339%" y1="31.214782%" x2="8.40994569%" y2="65.4429636%" id="linearGradient-15">
+            <stop stop-color="#EA4C89" offset="0%"></stop>
+            <stop stop-color="#F5576C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Vodafone---INS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard" transform="translate(-549.000000, -381.000000)">
+            <g id="Mask">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="db-item" transform="translate(549.000000, 381.000000)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-3"></use>
+                <g id="Chart" mask="url(#mask-4)">
+                    <g transform="translate(-224.000000, -21.000000)">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <use id="Rectangle" stroke="none" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        <g id="SDG-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" mask="url(#mask-6)" font-family="Helvetica" font-size="7.56" font-weight="normal" letter-spacing="0.00226800045">
+                            <g transform="translate(370.020000, 148.680000)">
+                                <text id="500K-refugee-childre">
+                                    <tspan x="0" y="23.12" fill="#686868">500K</tspan>
+                                    <tspan x="17.6650681" y="23.12" font-family="Helvetica-Light, Helvetica" font-weight="300" fill="#686868"> refugee children by 2025 - </tspan>
+                                    <tspan x="111.155052" y="23.12" fill="#686868">13%</tspan>
+                                </text>
+                                <text id="SDG-4---Quality-educ">
+                                    <tspan x="0" y="8" fill="#686868">SDG 4 - </tspan>
+                                    <tspan x="29.4238862" y="8" font-family="Helvetica-Light, Helvetica" font-weight="300" fill="#686868">Quality education</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="Graph" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" mask="url(#mask-6)">
+                            <g transform="translate(370.020000, 40.320000)">
+                                <g id="circle-" stroke-width="1" fill-rule="evenodd" transform="translate(38.220000, 1.260000)">
+                                    <g id="Outer">
+                                        <g id="Middle" transform="translate(10.080000, 10.080000)">
+                                            <mask id="mask-8" fill="white">
+                                                <use xlink:href="#path-7"></use>
+                                            </mask>
+                                            <use id="Clip-7" fill="#D8D8D8" xlink:href="#path-7"></use>
+                                            <path d="M14.5716095,16.0972522 L34.2452348,8.60997424 L26.9135257,-2.25607533 C29.2744547,-2.42915674 31.7278494,-2.52 34.2452348,-2.52 C52.8970426,-2.52 68.04,2.46715596 68.04,8.60997424 C68.04,14.7527925 52.8970426,19.74 34.2452348,19.74 C25.8300643,19.74 18.1291179,18.7248021 12.2106805,17.0458764 C11.6867077,16.9363286 11.34,16.7437182 11.34,16.5246741 C11.34,16.1834064 12.1812667,15.9063422 13.2174783,15.9063422 C13.7497434,15.9063422 14.2306907,15.9794084 14.5716095,16.0972522 Z" id="Fill-6" fill="url(#linearGradient-9)" mask="url(#mask-8)"></path>
+                                            <circle id="Oval" fill="#2FB9EF" mask="url(#mask-8)" cx="61.32" cy="13.86" r="2.52"></circle>
+                                        </g>
+                                        <mask id="mask-11" fill="white">
+                                            <use xlink:href="#path-10"></use>
+                                        </mask>
+                                        <use id="Clip-11" fill="#D8D8D8" xlink:href="#path-10"></use>
+                                        <path d="M8.61,64.89 L45.4265593,46.1374744 L37.9575113,0.912990084 C40.3879968,0.506554382 42.8830012,0.295114803 45.4265593,0.295114803 C70.4982345,0.295114803 90.8532832,20.8363121 90.8532832,46.1374744 C90.8532832,71.4386366 70.4982345,91.9798339 45.4265593,91.9798339 C27.656216,91.9798339 12.0824645,82.2201827 4.62,67.2 L4.68501265,67.1672792 C4.36554543,66.8143262 4.34514915,65.7857422 4.34514915,65.2718427 C4.34514915,64.1717922 5.23014411,63.2786966 6.32021695,63.2786966 C7.28191038,63.2786966 8.43570027,63.9719901 8.61,64.89 Z" id="Fill-10" fill="url(#linearGradient-12)" mask="url(#mask-11)"></path>
+                                    </g>
+                                    <g id="Inner" transform="translate(20.580000, 19.740000)">
+                                        <mask id="mask-14" fill="white">
+                                            <use xlink:href="#path-13"></use>
+                                        </mask>
+                                        <use id="Clip-3" fill="#D8D8D8" xlink:href="#path-13"></use>
+                                        <path d="M12.7927765,1.25997375 L5.68070443,-9.49966634 C7.91577835,-9.87624797 10.3075334,-10.08 12.7927765,-10.08 C25.2037925,-10.08 35.28,-4.99874676 35.28,1.25997375 C35.28,7.51869426 25.2037925,12.6 12.7927765,12.6 C8.04122733,12.6 3.63177389,11.8551842 0,10.5840047 L12.7927765,10.5840047 L12.7927765,9.45000729 C12.1032756,9.45000729 11.5434921,9.16771545 11.5434921,8.82000875 C11.5434921,8.47230205 12.1032756,8.19001021 12.7927765,8.19001021 L12.7927765,1.25997375 Z" id="Fill-2" fill="url(#linearGradient-15)" mask="url(#mask-14)"></path>
+                                        <circle id="Oval" fill="#EA4C89" mask="url(#mask-14)" cx="33.6" cy="3.78" r="2.52"></circle>
+                                    </g>
+                                </g>
+                                <g id="Boys-helped" stroke-width="1" fill-rule="evenodd" transform="translate(15.960000, 10.500000)" font-size="5.04">
+                                    <text id="boys-helped-into-sch" font-family="Helvetica-Light, Helvetica" font-weight="300" letter-spacing="-0.0528000069" fill="#8D9AA9">
+                                        <tspan x="11.76" y="5">boys helped into school</tspan>
+                                    </text>
+                                    <text id="57K" font-family="Helvetica" font-weight="normal" letter-spacing="0.117600001" fill="#506883">
+                                        <tspan x="0" y="5">57K</tspan>
+                                    </text>
+                                </g>
+                                <g id="Boys-helped" stroke-width="1" fill-rule="evenodd" transform="translate(15.960000, 19.740000)" font-size="5.04">
+                                    <text id="girls-helped-into-sc" font-family="Helvetica-Light, Helvetica" font-weight="300" letter-spacing="-0.0528000069" fill="#8D9AA9">
+                                        <tspan x="11.76" y="5">girls helped into school</tspan>
+                                    </text>
+                                    <text id="29K" font-family="Helvetica" font-weight="normal" letter-spacing="0.117600001" fill="#506883">
+                                        <tspan x="0" y="5">29K</tspan>
+                                    </text>
+                                </g>
+                                <g id="Total-of-school" stroke-width="1" fill-rule="evenodd" font-size="5.04">
+                                    <text id="refugee-children-out" font-family="Helvetica-Light, Helvetica" font-weight="300" letter-spacing="-0.0528000069" fill="#8D9AA9">
+                                        <tspan x="14.28" y="5">refugee children out of school</tspan>
+                                    </text>
+                                    <text id="3.7m" font-family="Helvetica" font-weight="normal" letter-spacing="0.117600001" fill="#506883">
+                                        <tspan x="0" y="5">3.7M</tspan>
+                                    </text>
+                                </g>
+                                <text id="helped" font-family="Helvetica-Light, Helvetica" font-size="4.2" font-weight="300" letter-spacing="0.00168000008">
+                                    <tspan x="74.34" y="56.92" fill="#96A4B7">helped</tspan>
+                                </text>
+                                <text id="2%" font-family="Helvetica" font-size="12.6" font-weight="normal" letter-spacing="0.00378000101">
+                                    <tspan x="74.76" y="50.8" fill="#677991">2%</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="Lines,-x,-y" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(14.700000, 18.900000)">
+                            <g id="y" transform="translate(77.280000, 157.080000)" font-family="Helvetica-Light, Helvetica" font-size="5.04" font-weight="300" letter-spacing="-0.0528000069">
+                                <text id="South-Soudan" fill="#F69855">
+                                    <tspan x="125.58" y="5.42">South Soudan</tspan>
+                                </text>
+                                <text id="DR-Congo" fill="#BED23F">
+                                    <tspan x="195.3" y="5.42">DR Congo</tspan>
+                                </text>
+                            </g>
+                            <g id="Lines" transform="translate(14.280000, 23.520000)" stroke="#8D9AA9" stroke-width="0.5">
+                                <line x1="0.42" y1="129.045" x2="319.284355" y2="129.045" id="Path-8-Copy-5"></line>
+                                <line x1="0.42" y1="77.385" x2="319.284355" y2="77.385" id="Path-8-Copy-10"></line>
+                                <line x1="0.42" y1="52.29" x2="319.284355" y2="52.29" id="Path-8-Copy-11"></line>
+                                <line x1="0.42" y1="25.83" x2="319.284355" y2="25.83" id="Path-8-Copy-13"></line>
+                                <line x1="0.42" y1="0.21" x2="319.284355" y2="0.21" id="Path-8-Copy-15"></line>
+                                <line x1="1.26" y1="103.845" x2="319.284355" y2="103.845" id="Path-8-Copy-8"></line>
+                            </g>
+                        </g>
+                        <g id="x" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(325.340000, 188.580000)" font-family="Helvetica" font-size="5.88" font-weight="normal" line-spacing="7.56">
+                            <text id="Countries" fill="#686868">
+                                <tspan x="1.85743164" y="6">Countrie</tspan>
+                                <tspan x="11.5" y="13.56">s</tspan>
+                            </text>
+                        </g>
+                        <g id="Columns" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(93.660000, 59.220000)">
+                            <g id="12-skills" transform="translate(199.080000, 12.600000)" fill="#BED23F">
+                                <path d="M6.72,0 L9.66,0 C10.3558788,-3.49875464e-16 10.92,0.564121215 10.92,1.26 L10.92,99.54 L10.92,99.54 L5.46,99.54 L5.46,1.26 C5.46,0.564121215 6.02412122,-8.97599794e-15 6.72,0 Z" id="normal"></path>
+                                <path d="M1.26,66.78 L4.2,66.78 C4.89587878,66.78 5.46,67.3441212 5.46,68.04 L5.46,86.2310842 L5.46,86.2310842 L5.46,99.54 L0,99.54 L0,68.04 C-8.52205726e-17,67.3441212 0.564121215,66.78 1.26,66.78 Z" id="trs" fill-opacity="0.5"></path>
+                            </g>
+                            <g id="10-skills" transform="translate(132.720000, 21.840000)" fill="#F69855">
+                                <path d="M6.72,0 L9.66,0 C10.3558788,-9.67939983e-16 10.92,0.564121215 10.92,1.26 L10.92,90.3 L10.92,90.3 L5.46,90.3 L5.46,1.26 C5.46,0.564121215 6.02412122,-8.97599794e-15 6.72,0 Z" id="normal"></path>
+                                <path d="M1.26,68.04 L4.2,68.04 C4.89587878,68.04 5.46,68.6041212 5.46,69.3 L5.46,81.2567623 L5.46,81.2567623 L5.46,90.3 L0,90.3 L0,69.3 C-8.52205726e-17,68.6041212 0.564121215,68.04 1.26,68.04 Z" id="trs" fill-opacity="0.5"></path>
+                            </g>
+                        </g>
+                        <line x1="250.11" y1="110.25" x2="470.19" y2="110.25" id="Path-8-Copy-6" stroke="#BBBBBB" stroke-width="0.5" fill="none" transform="translate(360.150000, 110.250000) rotate(-270.000000) translate(-360.150000, -110.250000) "></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

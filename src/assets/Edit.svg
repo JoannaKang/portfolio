@@ -1,0 +1,19 @@
+<svg width="31px" height="29px" viewBox="0 0 31 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Add</title>
+    <g id="Vodafone---INS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Left-menu" transform="translate(-22.000000, -450.000000)">
+            <rect id="Left-menu-rectangle" fill="#FFFFFF" x="0" y="0" width="80" height="1400"></rect>
+            <g id="Add" transform="translate(22.000000, 450.000000)">
+                <g id="Group">
+                    <rect id="Rectangle-9" stroke="#767676" stroke-width="1.2" x="0.6" y="0.6" width="27.6" height="27.6" rx="2.4"></rect>
+                    <rect id="Rectangle" fill="#767676" x="7.2" y="12" width="2.4" height="12"></rect>
+                    <rect id="Rectangle-Copy" fill="#767676" x="13.2" y="8.4" width="2.4" height="15.6"></rect>
+                    <rect id="Rectangle-Copy-2" fill="#767676" x="19.2" y="15.6" width="2.4" height="8.4"></rect>
+                </g>
+                <polygon id="Path-7" fill="#FFFFFF" points="18.2302541 7.80487347 18.2302541 20.4929557 30.0779515 20.4929557 30.0779515 7.80487347"></polygon>
+                <rect id="Rectangle-28" fill="#767676" x="23" y="9" width="2" height="10"></rect>
+                <rect id="Rectangle-28-Copy" fill="#767676" x="19" y="13" width="10" height="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

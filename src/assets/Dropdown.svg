@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="6px" viewBox="0 0 13 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rectangle 5</title>
+    <g id="Vodafone---INS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Framework-1" transform="translate(-910.000000, -388.000000)">
+            <path d="M497.4,367 L941.4,367 C942.725483,367 943.8,368.074517 943.8,369.4 L943.8,411.4 C943.8,412.725483 942.725483,413.8 941.4,413.8 L497.4,413.8 C496.074517,413.8 495,412.725483 495,411.4 L495,369.4 C495,368.074517 496.074517,367 497.4,367 Z" id="Rectangle-1" fill-opacity="0.641021286" fill="#FFFFFF"></path>
+            <polygon id="Rectangle-5" fill="#888888" transform="translate(916.800000, 388.000000) rotate(-45.000000) translate(-916.800000, -388.000000) " points="912.6 383.8 921 392.2 912.6 392.2"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="276px" height="182px" viewBox="0 0 276 182" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>db-item</title>
+    <defs>
+        <rect id="path-1" x="0" y="-1.27897692e-13" width="276" height="181.2"></rect>
+        <rect id="path-3" x="0" y="0" width="429" height="182" rx="1.575"></rect>
+    </defs>
+    <g id="Vodafone---INS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard" transform="translate(-726.000000, -765.000000)">
+            <g id="db-item" transform="translate(726.000000, 765.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <g id="Group-3" mask="url(#mask-2)">
+                    <g transform="translate(-152.000000, -7.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Rectangle" stroke="none" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <g id="payment_received" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" mask="url(#mask-4)">
+                            <g transform="translate(4.000000, -1.000000)">
+                                <line x1="201.775" y1="92.575" x2="386.575" y2="92.575" id="Path-8-Copy-6" stroke="#BBBBBB" stroke-width="0.5" fill="none" transform="translate(294.175000, 92.575000) rotate(-270.000000) translate(-294.175000, -92.575000) "></line>
+                                <g id="Time-drop-down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(247.800000, 166.600000)">
+                                    <text id="Last-12-months" font-family="Helvetica" font-size="4.9" font-weight="normal" line-spacing="8.4" fill="#686868">
+                                        <tspan x="0" y="5">Last 12 months</tspan>
+                                    </text>
+                                    <polygon id="Rectangle-5" fill="#888888" transform="translate(37.625000, 4.375000) rotate(-45.000000) translate(-37.625000, -4.375000) " points="36.4 3.15 38.85 5.6 36.4 5.6"></polygon>
+                                </g>
+                                <text id="Jul" stroke="none" fill="none" font-family="Helvetica-Light, Helvetica" font-size="4.2" font-weight="300" letter-spacing="-0.0440000057">
+                                    <tspan x="162.05" y="154.15" fill="#8D9AA9">Jul</tspan>
+                                </text>
+                                <text id="Aug" stroke="none" fill="none" font-family="Helvetica-Light, Helvetica" font-size="4.2" font-weight="300" letter-spacing="-0.0440000057">
+                                    <tspan x="183.05" y="154.15" fill="#8D9AA9">Aug</tspan>
+                                </text>
+                                <text id="Sep" stroke="none" fill="none" font-family="Helvetica-Light, Helvetica" font-size="4.2" font-weight="300" letter-spacing="-0.0440000057">
+                                    <tspan x="206.85" y="154.15" fill="#8D9AA9">Sep</tspan>
+                                </text>
+                                <text id="Oct" stroke="none" fill="none" font-family="Helvetica-Light, Helvetica" font-size="4.2" font-weight="300" letter-spacing="-0.0440000057">
+                                    <tspan x="230.65" y="154.15" fill="#8D9AA9">Oct</tspan>
+                                </text>
+                                <text id="Nov" stroke="none" fill="none" font-family="Helvetica-Light, Helvetica" font-size="4.2" font-weight="300" letter-spacing="-0.0440000057">
+                                    <tspan x="254.45" y="154.15" fill="#8D9AA9">Nov</tspan>
+                                </text>
+                                <text id="Dec" stroke="none" fill="none" font-family="Helvetica-Light, Helvetica" font-size="4.2" font-weight="300" letter-spacing="-0.0440000057">
+                                    <tspan x="278.25" y="154.15" fill="#8D9AA9">Dec</tspan>
+                                </text>
+                                <g id="Group-right-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(303.800000, 106.050000)">
+                                    <g id="Graph" transform="translate(72.800000, 0.000000)" fill="#D8D8D8">
+                                        <path d="M0.35,8.75 L1.75,8.75 C1.94329966,8.75 2.1,8.90670034 2.1,9.1 L2.1,10.85 C2.1,11.0432997 1.94329966,11.2 1.75,11.2 L0.35,11.2 C0.156700338,11.2 2.36723813e-17,11.0432997 0,10.85 L0,9.1 C-2.36723813e-17,8.90670034 0.156700338,8.75 0.35,8.75 Z" id="Rectangle-Copy-31"></path>
+                                        <rect id="Rectangle-Copy-32" x="3.15" y="6.65" width="2.1" height="4.55" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-33" x="6.3" y="7.7" width="2.1" height="3.5" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-34" x="12.6" y="3.85" width="2.1" height="7.35" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-43" x="9.45" y="4.55" width="2.1" height="6.65" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-35" x="15.75" y="6.65" width="2.1" height="4.55" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-36" x="18.9" y="4.55" width="2.1" height="6.65" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-38" x="22.05" y="0" width="2.1" height="11.2" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-39" x="25.2" y="2.1" width="2.1" height="9.1" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-40" x="28.35" y="1.05" width="2.1" height="10.15" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-41" x="34.65" y="2.8" width="2.1" height="8.4" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-42" x="31.5" y="0.35" width="2.1" height="10.85" rx="0.35"></rect>
+                                    </g>
+                                    <text id="in-South-Soudan" font-family="Helvetica" font-size="4.9" font-weight="normal" letter-spacing="-0.0513333417" fill="#000000" fill-opacity="0.25">
+                                        <tspan x="16.1" y="19.35">in South Soudan</tspan>
+                                    </text>
+                                    <text id="130-lessons" font-family="Helvetica" font-size="10.5" font-weight="normal" letter-spacing="0.00315000084" fill="#000000" fill-opacity="0.25">
+                                        <tspan x="16.1" y="10.7">130 </tspan>
+                                        <tspan x="36.5486352" y="10.7" font-size="7.7" letter-spacing="0.00231000048">lessons</tspan>
+                                    </text>
+                                    <g id="Circle-show-2" transform="translate(0.000000, 4.900000)" stroke="#000000" stroke-opacity="0.25" stroke-width="0.5">
+                                        <circle id="Oval" cx="3.6225" cy="3.3775" r="3.0575"></circle>
+                                        <circle id="Oval" cx="3.6225" cy="3.3775" r="1"></circle>
+                                    </g>
+                                </g>
+                                <g id="Group-right-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(303.800000, 133.700000)">
+                                    <g id="Graph" transform="translate(72.800000, 0.000000)" fill="#D8D8D8">
+                                        <path d="M0.35,8.75 L1.75,8.75 C1.94329966,8.75 2.1,8.90670034 2.1,9.1 L2.1,10.85 C2.1,11.0432997 1.94329966,11.2 1.75,11.2 L0.35,11.2 C0.156700338,11.2 2.36723813e-17,11.0432997 0,10.85 L0,9.1 C-2.36723813e-17,8.90670034 0.156700338,8.75 0.35,8.75 Z" id="Rectangle-Copy-31"></path>
+                                        <rect id="Rectangle-Copy-32" x="3.15" y="6.65" width="2.1" height="4.55" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-33" x="6.3" y="7.7" width="2.1" height="3.5" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-34" x="12.6" y="3.85" width="2.1" height="7.35" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-43" x="9.45" y="4.55" width="2.1" height="6.65" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-35" x="15.75" y="6.65" width="2.1" height="4.55" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-36" x="18.9" y="4.55" width="2.1" height="6.65" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-38" x="22.05" y="0" width="2.1" height="11.2" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-39" x="25.2" y="2.1" width="2.1" height="9.1" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-40" x="28.35" y="1.05" width="2.1" height="10.15" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-41" x="34.65" y="2.8" width="2.1" height="8.4" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-42" x="31.5" y="0.35" width="2.1" height="10.85" rx="0.35"></rect>
+                                    </g>
+                                    <text id="in-DR-Congo" font-family="Helvetica" font-size="4.9" font-weight="normal" letter-spacing="-0.0513333417" fill="#000000" fill-opacity="0.25">
+                                        <tspan x="16.1" y="19.35">in DR Congo</tspan>
+                                    </text>
+                                    <text id="110-lessons" font-family="Helvetica" font-size="10.5" font-weight="normal" letter-spacing="0.00315000084" fill="#000000" fill-opacity="0.25">
+                                        <tspan x="16.1" y="10.7">110 </tspan>
+                                        <tspan x="35.7744652" y="10.7" font-size="7.7" letter-spacing="0.00231000048">lessons</tspan>
+                                    </text>
+                                    <g id="Circle-show-2" transform="translate(0.000000, 4.900000)" stroke="#000000" stroke-opacity="0.25" stroke-width="0.5">
+                                        <circle id="Oval" cx="3.6225" cy="3.3775" r="3.0575"></circle>
+                                        <circle id="Oval" cx="3.6225" cy="3.3775" r="1"></circle>
+                                    </g>
+                                </g>
+                                <g id="Group-right-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(303.800000, 78.400000)">
+                                    <g id="Graph" transform="translate(72.800000, 0.000000)">
+                                        <path d="M0.35,8.75 L1.75,8.75 C1.94329966,8.75 2.1,8.90670034 2.1,9.1 L2.1,10.85 C2.1,11.0432997 1.94329966,11.2 1.75,11.2 L0.35,11.2 C0.156700338,11.2 2.36723813e-17,11.0432997 0,10.85 L0,9.1 C-2.36723813e-17,8.90670034 0.156700338,8.75 0.35,8.75 Z" id="Rectangle-Copy-31" fill="#D8D8D8"></path>
+                                        <rect id="Rectangle-Copy-32" fill="#D8D8D8" x="3.15" y="6.65" width="2.1" height="4.55" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-33" fill="#D8D8D8" x="6.3" y="7.7" width="2.1" height="3.5" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-34" fill="#2FB9EF" x="12.6" y="3.85" width="2.1" height="7.35" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-43" fill="#D8D8D8" x="9.45" y="4.55" width="2.1" height="6.65" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-35" fill="#D8D8D8" x="15.75" y="6.65" width="2.1" height="4.55" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-36" fill="#D8D8D8" x="18.9" y="4.55" width="2.1" height="6.65" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-38" fill="#D8D8D8" x="22.05" y="0" width="2.1" height="11.2" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-39" fill="#D8D8D8" x="25.2" y="2.1" width="2.1" height="9.1" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-40" fill="#D8D8D8" x="28.35" y="1.05" width="2.1" height="10.15" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-41" fill="#D8D8D8" x="34.65" y="2.8" width="2.1" height="8.4" rx="0.35"></rect>
+                                        <rect id="Rectangle-Copy-42" fill="#D8D8D8" x="31.5" y="0.35" width="2.1" height="10.85" rx="0.35"></rect>
+                                    </g>
+                                    <text id="in-Tanzania" font-family="Helvetica" font-size="4.9" font-weight="normal" letter-spacing="-0.0513333417" fill="#4A90E2">
+                                        <tspan x="16.1" y="19.35">in Tanzania</tspan>
+                                    </text>
+                                    <text id="180-lessons" font-family="Helvetica" font-size="10.5" font-weight="normal" letter-spacing="0.00315000084" fill="#2FB9EF">
+                                        <tspan x="16.1" y="10.7">180 </tspan>
+                                        <tspan x="36.5486352" y="10.7" font-size="7.7" letter-spacing="0.00231000048">lessons</tspan>
+                                    </text>
+                                    <g id="Circle-show-2" transform="translate(0.000000, 4.900000)">
+                                        <circle id="Oval" stroke="#2FB9EF" stroke-width="0.5" cx="3.6225" cy="3.3775" r="3.0575"></circle>
+                                        <circle id="Oval" fill="#2FB9EF" cx="3.6225" cy="3.3775" r="1.1025"></circle>
+                                    </g>
+                                </g>
+                                <g id="Group-right-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(303.800000, 48.650000)">
+                                    <g id="Graph" transform="translate(72.800000, 0.000000)">
+                                        <path d="M0.35,9.8 L1.75,9.8 C1.94329966,9.8 2.1,9.95670034 2.1,10.15 L2.1,12.95 C2.1,13.1432997 1.94329966,13.3 1.75,13.3 L0.35,13.3 C0.156700338,13.3 7.91835325e-17,13.1432997 0,12.95 L0,10.15 C3.18387699e-17,9.95670034 0.156700338,9.8 0.35,9.8 Z" id="Rectangle" fill="#D8D8D8"></path>
+                                        <rect id="Rectangle" fill="#D8D8D8" x="3.15" y="11.55" width="2.1" height="1.75" rx="0.35"></rect>
+                                        <rect id="Rectangle" fill="#D8D8D8" x="6.3" y="9.8" width="2.1" height="3.5" rx="0.35"></rect>
+                                        <rect id="Rectangle" fill="#EA4C89" x="12.6" y="5.95" width="2.1" height="7.35" rx="0.35"></rect>
+                                        <rect id="Rectangle" fill="#D8D8D8" x="15.75" y="3.85" width="2.1" height="9.45" rx="0.35"></rect>
+                                        <rect id="Rectangle" fill="#D8D8D8" x="18.9" y="1.75" width="2.1" height="11.55" rx="0.35"></rect>
+                                        <rect id="Rectangle" fill="#D8D8D8" x="9.45" y="7.7" width="2.1" height="5.6" rx="0.35"></rect>
+                                        <rect id="Rectangle" fill="#D8D8D8" x="22.05" y="0" width="2.1" height="13.3" rx="0.35"></rect>
+                                        <rect id="Rectangle" fill="#D8D8D8" x="25.2" y="2.45" width="2.1" height="10.85" rx="0.35"></rect>
+                                        <rect id="Rectangle" fill="#D8D8D8" x="28.35" y="1.05" width="2.1" height="12.25" rx="0.35"></rect>
+                                        <rect id="Rectangle" fill="#D8D8D8" x="34.65" y="0" width="2.1" height="13.3" rx="0.35"></rect>
+                                        <rect id="Rectangle" fill="#D8D8D8" x="31.5" y="1.05" width="2.1" height="12.25" rx="0.35"></rect>
+                                    </g>
+                                    <text id="in-Kenya" font-family="Helvetica" font-size="4.9" font-weight="normal" letter-spacing="-0.0513333417" fill="#EA4C89">
+                                        <tspan x="16.1" y="21.45">in Kenya</tspan>
+                                    </text>
+                                    <text id="220-lessons" font-family="Helvetica" font-size="10.5" font-weight="normal" letter-spacing="0.00315000084" fill="#E84F89">
+                                        <tspan x="16.1" y="13.15">220</tspan>
+                                        <tspan x="33.6282488" y="13.15" font-size="7.7" letter-spacing="0.00231000048"> lessons</tspan>
+                                    </text>
+                                    <g id="Circle-show-1" transform="translate(0.000000, 7.000000)">
+                                        <circle id="Oval" stroke="#EA4C89" stroke-width="0.5" cx="3.6225" cy="3.3775" r="3.0575"></circle>
+                                        <circle id="Oval" fill="#EA4C89" cx="3.6225" cy="3.3775" r="1.1025"></circle>
+                                    </g>
+                                </g>
+                                <g id="Total-data" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(303.800000, 14.000000)">
+                                    <g id="%" transform="translate(72.100000, 0.000000)">
+                                        <g id="Time-drop-down" transform="translate(2.100000, 12.950000)">
+                                            <text id="last-12-months" font-family="Helvetica" font-size="4.9" font-weight="normal" letter-spacing="-0.0980000004" fill="#686868">
+                                                <tspan x="0" y="5">last 12 months</tspan>
+                                            </text>
+                                            <polygon id="Rectangle-5" fill-opacity="0.8" fill="#888888" transform="translate(34.125000, 3.325000) rotate(-45.000000) translate(-34.125000, -3.325000) " points="32.9 2.1 35.35 4.55 32.9 4.55"></polygon>
+                                        </g>
+                                        <text id="38%" font-family="Helvetica" font-size="10.5" font-weight="normal" letter-spacing="0.00315000084" fill="#686868">
+                                            <tspan x="6.65" y="10">38</tspan>
+                                            <tspan x="18.3354992" y="10" font-family="Helvetica-Light, Helvetica" font-size="7.7" font-weight="300" letter-spacing="0.00231000048">%</tspan>
+                                        </text>
+                                        <g id="Arrow" transform="translate(0.000000, 1.750000)" fill="#686868" stroke="#686868" stroke-width="0.5376">
+                                            <path d="M3.2312,-0.115569493 L3.2312,2.91556949 L1.46303559,1.4 L3.2312,-0.115569493 Z" id="Triangle-2" transform="translate(2.275000, 1.400000) rotate(89.000000) translate(-2.275000, -1.400000) "></path>
+                                            <line x1="-0.134615385" y1="5.25" x2="5.03461538" y2="5.25" id="Line-5" stroke-linecap="square" transform="translate(2.450000, 5.250000) rotate(89.000000) translate(-2.450000, -5.250000) "></line>
+                                        </g>
+                                    </g>
+                                    <g id="No" fill="#686868" font-family="Helvetica" font-weight="normal">
+                                        <text id="across-countries" font-size="4.9" letter-spacing="-0.0513333417">
+                                            <tspan x="0" y="17.95">across countries</tspan>
+                                        </text>
+                                        <text id="640-lessons" font-size="10.5" letter-spacing="0.00315000084">
+                                            <tspan x="0" y="10">640 </tspan>
+                                            <tspan x="20.4486352" y="10" font-family="Helvetica-Light, Helvetica" font-size="7.7" font-weight="300" letter-spacing="0.00231000048">lessons</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                                <g id="graphic" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 14.000000)">
+                                    <line x1="21.35" y1="132.3875" x2="287.070296" y2="132.3875" id="Path-8-Copy-5" stroke="#8D9AA9" stroke-width="0.5"></line>
+                                    <line x1="21.35" y1="89.3375" x2="287.070296" y2="89.3375" id="Path-8-Copy-10" stroke="#8D9AA9" stroke-width="0.5"></line>
+                                    <line x1="21.35" y1="68.425" x2="287.070296" y2="68.425" id="Path-8-Copy-11" stroke="#8D9AA9" stroke-width="0.5"></line>
+                                    <line x1="21.35" y1="46.375" x2="287.070296" y2="46.375" id="Path-8-Copy-13" stroke="#8D9AA9" stroke-width="0.5"></line>
+                                    <line x1="21.35" y1="25.025" x2="287.070296" y2="25.025" id="Path-8-Copy-15" stroke="#8D9AA9" stroke-width="0.5"></line>
+                                    <line x1="22.05" y1="111.3875" x2="287.070296" y2="111.3875" id="Path-8-Copy-8" stroke="#8D9AA9" stroke-width="0.5"></line>
+                                </g>
+                                <path d="M148.562228,82.25 C149.142127,82.25 149.612228,82.720101 149.612228,83.3 L149.612228,90.65 C149.612228,91.229899 149.142127,91.7 148.562228,91.7 L125.112228,91.7 C124.532329,91.7 124.062228,91.229899 124.062228,90.65 L124.062398,87.6884047 C124.059873,87.6862652 124.057382,87.6840881 124.054923,87.6818736 L122.949819,86.686326 C122.816727,86.5664282 122.816727,86.3720354 122.949819,86.2521376 L124.054923,85.25659 L124.062,85.25 L124.062228,83.3 C124.062228,82.720101 124.532329,82.25 125.112228,82.25 L148.562228,82.25 Z" id="Combined-Shape" stroke="none" fill-opacity="0.5" fill="#000000" fill-rule="evenodd"></path>
+                                <circle id="Oval-Copy-10" stroke="#EA4C89" stroke-width="0.525" fill="none" transform="translate(166.250000, 45.850000) rotate(-360.000000) translate(-166.250000, -45.850000) " cx="166.25" cy="45.85" r="2.0125"></circle>
+                                <circle id="Oval-Copy-10" stroke="#EA4C89" stroke-width="0.525" fill="none" transform="translate(187.600000, 58.100000) rotate(-360.000000) translate(-187.600000, -58.100000) " cx="187.6" cy="58.1" r="2.0125"></circle>
+                                <circle id="Oval-Copy-10" stroke="#EA4C89" stroke-width="0.525" fill="none" transform="translate(210.700000, 50.400000) rotate(-360.000000) translate(-210.700000, -50.400000) " cx="210.7" cy="50.4" r="2.0125"></circle>
+                                <circle id="Oval-Copy-10" stroke="#EA4C89" stroke-width="0.525" fill="none" transform="translate(233.450000, 50.750000) rotate(-360.000000) translate(-233.450000, -50.750000) " cx="233.45" cy="50.75" r="2.0125"></circle>
+                                <circle id="Oval-Copy-10" stroke="#EA4C89" stroke-width="0.525" fill="none" transform="translate(258.300000, 43.750000) rotate(-360.000000) translate(-258.300000, -43.750000) " cx="258.3" cy="43.75" r="2.0125"></circle>
+                                <circle id="Oval-Copy-10" stroke="#EA4C89" stroke-width="0.525" fill="#FFFFFF" fill-rule="evenodd" transform="translate(281.750000, 40.950000) rotate(-360.000000) translate(-281.750000, -40.950000) " cx="281.75" cy="40.95" r="2.0125"></circle>
+                                <circle id="Oval-Copy-15" stroke="#2FB9EF" stroke-width="0.525" fill="none" transform="translate(165.900000, 93.100000) rotate(-360.000000) translate(-165.900000, -93.100000) " cx="165.9" cy="93.1" r="2.0125"></circle>
+                                <circle id="Oval-Copy-16" stroke="#2FB9EF" stroke-width="0.525" fill="none" transform="translate(187.600000, 67.550000) rotate(-360.000000) translate(-187.600000, -67.550000) " cx="187.6" cy="67.55" r="2.0125"></circle>
+                                <circle id="Oval-Copy-17" stroke="#2FB9EF" stroke-width="0.525" fill="none" transform="translate(211.050000, 77.350000) rotate(-360.000000) translate(-211.050000, -77.350000) " cx="211.05" cy="77.35" r="2.0125"></circle>
+                                <circle id="Oval-Copy-17" stroke="#2FB9EF" stroke-width="0.525" fill="none" transform="translate(233.800000, 72.100000) rotate(-360.000000) translate(-233.800000, -72.100000) " cx="233.8" cy="72.1" r="2.0125"></circle>
+                                <circle id="Oval-Copy-17" stroke="#2FB9EF" stroke-width="0.525" fill="none" transform="translate(258.650000, 66.500000) rotate(-360.000000) translate(-258.650000, -66.500000) " cx="258.65" cy="66.5" r="2.0125"></circle>
+                                <circle id="Oval-Copy-18" stroke="#2FB9EF" stroke-width="0.525" fill="none" transform="translate(281.750000, 78.750000) rotate(-360.000000) translate(-281.750000, -78.750000) " cx="281.75" cy="78.75" r="2.0125"></circle>
+                                <line x1="164.5" y1="94.675" x2="144.55" y2="111.3" id="Path-15-Copy-3" stroke="#2FB9EF" stroke-width="0.525" fill="none" stroke-linecap="round"></line>
+                                <line x1="186.2" y1="69.125" x2="167.65" y2="91.875" id="Path-15-Copy-3" stroke="#2FB9EF" stroke-width="0.525" fill="none" stroke-linecap="round"></line>
+                                <line x1="189.525" y1="68.425" x2="209.125" y2="76.475" id="Path-15-Copy-3" stroke="#2FB9EF" stroke-width="0.525" fill="none" stroke-linecap="round"></line>
+                                <line x1="231.7" y1="72.975" x2="213.15" y2="77.7" id="Path-15-Copy-3" stroke="#2FB9EF" stroke-width="0.525" fill="none" stroke-linecap="round"></line>
+                                <line x1="256.55" y1="67.2" x2="235.9" y2="71.75" id="Path-15-Copy-3" stroke="#2FB9EF" stroke-width="0.525" fill="none" stroke-linecap="round"></line>
+                                <line x1="280" y1="77.7" x2="260.75" y2="67.2" id="Path-15-Copy-3" stroke="#2FB9EF" stroke-width="0.525" fill="none" stroke-linecap="round"></line>
+                                <line x1="164.15" y1="46.2" x2="144.9" y2="51.975" id="Path-15" stroke="#EA4C89" stroke-width="0.525" fill="none" stroke-linecap="round"></line>
+                                <line x1="168.175" y1="46.55" x2="185.85" y2="56.875" id="Path-15" stroke="#EA4C89" stroke-width="0.525" fill="none" stroke-linecap="round"></line>
+                                <line x1="189.7875" y1="57.4875" x2="209.125" y2="50.925" id="Path-15" stroke="#EA4C89" stroke-width="0.525" fill="none" stroke-linecap="round"></line>
+                                <line x1="213.325" y1="50.575" x2="230.825" y2="50.575" id="Path-15" stroke="#EA4C89" stroke-width="0.525" fill="none" stroke-linecap="round"></line>
+                                <line x1="235.375" y1="50.575" x2="256.025" y2="43.925" id="Path-15-Copy-2" stroke="#EA4C89" stroke-width="0.525" fill="none" stroke-linecap="round"></line>
+                                <line x1="260.1375" y1="43.3125" x2="279.3875" y2="41.5625" id="Path-15-Copy-2" stroke="#EA4C89" stroke-width="0.525" fill="none" stroke-linecap="round"></line>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

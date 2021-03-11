@@ -1,0 +1,11 @@
+<svg width="33px" height="27px" viewBox="0 0 33 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Home</title>
+    <g id="Vodafone---INS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Left-menu" transform="translate(-20.000000, -235.000000)">
+            <rect id="Left-menu-rectangle" fill="#FFFFFF" x="0" y="0" width="80" height="1400"></rect>
+            <g id="home-icon" transform="translate(22.000000, 236.000000)" fill-rule="nonzero" stroke="#767676" stroke-width="1.2">
+                <polygon id="home-icon" points="11.52 24.6857143 17.28 24.6857143 17.28 15.9731092 17.28 24.6857143 24.48 24.6857143 24.48 13.0689076 28.8 13.0689076 14.4 0 0 13.0689076 4.32 13.0689076 4.32 24.6857143"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

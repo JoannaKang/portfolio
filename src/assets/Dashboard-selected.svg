@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="35px" viewBox="0 0 32 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Dashboard</title>
+    <g id="Vodafone---INS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard">
+            <rect id="Rectangle-2" stroke="#8954BA" x="9.5" y="0.5" width="13" height="5"></rect>
+            <line x1="15.5" y1="23.5" x2="18.5" y2="18.5" id="Line" stroke="#8954BA" stroke-linecap="square"></line>
+            <rect id="Rectangle-9" stroke="#8954BA" x="4.5" y="0.5" width="23" height="23" rx="2"></rect>
+            <circle id="Oval" stroke="#8954BA" cx="16" cy="22" r="8"></circle>
+            <rect id="Rectangle-4" fill="#FFFFFF" x="0" y="24" width="32" height="11"></rect>
+        </g>
+    </g>
+</svg>
