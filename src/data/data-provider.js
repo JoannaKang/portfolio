@@ -1,4 +1,4 @@
-const data = require('./parsed.json')
+const data = require('./dummyJsonData.json')
 const ICT_STUDENT_DATA = require('./ict-data.json')
 const ICT_TEACHER_DATA = require('./ict-teachers-data.json')
 
@@ -142,7 +142,7 @@ export function setYearSelectBox (country) {
     uniqueYear = yearlyIndex.filter((item, index) => yearlyIndex.indexOf(item) === index).sort((a, b) => b - a)
   }
 
-  return uniqueYear.slice(1, uniqueYear.length)
+  return uniqueYear
 }
 
 // for ICT
