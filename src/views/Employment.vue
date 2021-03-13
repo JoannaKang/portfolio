@@ -20,7 +20,7 @@
       <row :gutter="12" >
         <column :lg="1.5"><h3 class="employment-select-country">Select status</h3></column>
         <column :lg="2.5" class="employment-select-box">
-          <v-select :options="countries" v-model="selectedCountry" placeholder="Show all" :searchable="false">
+          <v-select :options="employmentStatus" v-model="selectedCountry" placeholder="Show all" :searchable="false">
           </v-select>
         </column>
         <column :lg="1.5"><h3 class="employment-select-camp">Select fund</h3></column>
@@ -112,7 +112,7 @@ import AimDoughnutChart from '../components/Chart/AimDoughnutChart.vue'
 import TimeDoughnutChart from '../components/Chart/TimeDoughnutChart.vue'
 import Table from '../components/Table'
 import TableForTopic from '../components/TableforTopic'
-import { setYearSelectBox, getCountries, getCamps, getSchools, getLessons, getLessonsByTopics, getTotalLessonsByCountry, getTotalLessonsByCamp } from '../data/data-provider.js'
+import {setYearSelectBox, getCountries, getCamps, getSchools, getLessons, getLessonsByTopics, getTotalLessonsByCountry, getTotalLessonsByCamp } from '../data/data-provider.js'
 import { getAllPurpleColor, getLineChartColorScheme } from '../data/colour-scheme.js'
 import { calcSum, compareDataByYear, getLineChartData, getTableData, getBarChartData, getStackedBarChartData } from '../data/data-handler'
 
@@ -162,7 +162,7 @@ export default {
       TopicTableData: [],
       summaryBoxData: [],
       yearOptions: [],
-      countries: [],
+      employmentStatus: [],
       camps: [],
       schools: [],
       country: '',
@@ -248,8 +248,15 @@ export default {
             },
             ticks: {
               callback: function (value, index) {
-                const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-                value = months[index]
+                const fundNames = [
+                "RLPF1 - St Mungo’s",
+                "RLPF2 - St Mungo’s",
+                "NHPF 1 - Oxford",
+                "NHPF 1 - Bristol",
+                "NHPF 1 - Lancaster",
+                "NHPF 1 - Manchester"
+                ]
+                value = fundNames[index]
                 return value
               }
             }
@@ -270,8 +277,15 @@ export default {
         tooltips: {
           callbacks: {
             title: function (tooltipItem) {
-              const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']          
-              return months[tooltipItem[0].index]
+              const fundNames = [
+                "RLPF1 - St Mungo’s",
+                "RLPF2 - St Mungo’s",
+                "NHPF 1 - Oxford",
+                "NHPF 1 - Bristol",
+                "NHPF 1 - Lancaster",
+                "NHPF 1 - Manchester"
+              ]          
+              return fundNames[tooltipItem[0].index]
             }
           }
         }        
@@ -304,8 +318,8 @@ export default {
   },
   mounted () {
     this.showNavBar()
-    this.countries = getCountries() // Set initial Country select box options
-    this.yearOptions = setYearSelectBox() // Set initial Year select box options
+    this.employmentStatus = getCountries() // Set initial Country select box options
+    this.yearOptions = setYearSelectBox() // Set initial Year select box options        
     this.updateData()
   },
   methods: {
@@ -326,6 +340,7 @@ export default {
         case 'All':
           tableLessons = getLessons(getCountries(), [], [], this.selectedYear)
           prevTableLessons = getLessons(getCountries(), [], [], this.selectedYear - 1)
+          console.log(tableLessons, prevTableLessons)
           if (this.checkedItems.length === 0) {
             lessons = getLessons([], [], [], this.selectedYear)
             prevYearLessons = getLessons([], [], [], this.selectedYear - 1)
@@ -336,9 +351,9 @@ export default {
             lessons = tableLessons
             this.chartData = this.filterChartData(getLineChartData(lessons, getLineChartColorScheme), this.checkedItems)
           }
-          this.barChartData = getBarChartData(getTableData('Country', tableLessons, prevTableLessons))
-          this.tableData = getTableData('Country', tableLessons, prevTableLessons)
-          this.summaryBoxData = this.filterTopics(getTableData('Country', tableLessons, prevTableLessons))
+          this.barChartData = getBarChartData(getTableData('Status', tableLessons, prevTableLessons))
+          this.tableData = getTableData('Status', tableLessons, prevTableLessons)
+          this.summaryBoxData = this.filterTopics(getTableData('Status', tableLessons, prevTableLessons))
           this.updateColors(this.viewMode, getLineChartColorScheme)
           break
 
@@ -358,9 +373,9 @@ export default {
           totalPrevLessons = prevYearLessons.lessons.flatMap(el => Object.values(el))
           this.totalLessons = calcSum(totalCurrLessons)
           this.growthRate = compareDataByYear(totalPrevLessons, totalCurrLessons)
-          this.barChartData = getBarChartData(getTableData('Camps', tableLessons, prevTableLessons))
-          this.tableData = getTableData('Camps', tableLessons, prevTableLessons)
-          this.summaryBoxData = this.filterTopics(getTableData('Camps', tableLessons, prevTableLessons))
+          this.barChartData = getBarChartData(getTableData('Fund', tableLessons, prevTableLessons))
+          this.tableData = getTableData('Fund', tableLessons, prevTableLessons)
+          this.summaryBoxData = this.filterTopics(getTableData('Fund', tableLessons, prevTableLessons))
           this.updateColors(this.viewMode, getLineChartColorScheme)
           break
 

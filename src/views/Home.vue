@@ -20,7 +20,7 @@
           <h1>See the impact of your work</h1>
         </row>
         <row :gutter="12" id="thumbnails">
-          <router-link to="/ins">
+          <router-link to="/employment">
             <column class="thumbnail-tile" :lg="4">
               <div class="link-title">
                 <h1>Tenants in employment</h1>
@@ -91,7 +91,6 @@ export default {
     }
   },
   mounted () {
-    this.getgrowthRate1()
     this.showNavBar()
   },
   methods: {

@@ -1,14 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// *Pages
-// import Attendance from './views/Attendance.vue'
-// import Ict from './views/Ict.vue'
-// import Login from './views/Login.vue'
-// import UploadPage from './views/UploadPage.vue'
-// import Framework from './views/Framework.vue'
-// import Createproject from './views/CreateProject.vue'
 
-// import firebase from 'firebase'
 // import { store } from './store/store'
 
 Vue.use(Router)
@@ -26,12 +18,12 @@ const router = new Router({
       component: () => import('./views/Login.vue')
     },
     {
-      path: '/ins',
-      name: 'ins',
+      path: '/employment',
+      name: 'employment',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/Ins.vue')
+      component: () => import(/* webpackChunkName: "about" */ './views/Employment.vue')
     },
     {
       path: '/attendance',

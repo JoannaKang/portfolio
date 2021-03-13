@@ -5,7 +5,7 @@
         <tr style="width:100%">
           <th style="width:7.6%; border-right:1px solid #D8D8D8;" scope="col">{{tableName}}<img src="../../src/assets/Sorting.svg" v-on:click="sortTable(name)" class="sort-button"/></th>
           <th style="width:3.77%" scope="col" v-for="month in monthlyColumn" :key="month">{{month}}</th>
-          <th style="width:10.415%; border-left:1px solid #D8D8D8;" scope="col">Total lessons <img src="../../src/assets/Sorting.svg" v-on:click="sortTable(totalLessons)" class="sort-button"/></th>
+          <th style="width:10.415%; border-left:1px solid #D8D8D8;" scope="col">Total tenancies<img src="../../src/assets/Sorting.svg" v-on:click="sortTable(totalLessons)" class="sort-button"/></th>
           <th style="width:14%" scope="col">Difference in 12 Months <img src="../../src/assets/Sorting.svg" v-on:click="sortTableDatabyDifference" class="sort-button"/></th>
         </tr>
       </thead>
@@ -72,6 +72,7 @@ export default {
   },
   watch: {
     tableData () {
+      console.log(this.tableData)
       this.tableName = this.tableData[0].type
     }
   }
