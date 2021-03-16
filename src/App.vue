@@ -4,7 +4,6 @@
     <div id="nav">
       <header class="horizontal-nav" :gutter="12">
       <nav class="navbar navbar-light bg-white justify-content-end fixed-top border-bottom">
-        <h1 style="color:red">RESONANCE</h1>
         <button @click="logOut" class="logout-button">Logout</button>
         <img src="../src/assets/alice_logo.png" width="42" height="42" class="company_logo" alt="company_logo">
           <img class="search-icon" src="../src/assets/Search.svg" alt="search-icon">

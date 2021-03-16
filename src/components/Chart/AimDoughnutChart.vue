@@ -1,6 +1,6 @@
 <template>
   <div>
-    <canvas id="box" width="114" height="114"></canvas>
+    <canvas id="box" width="133" height="114"></canvas>
   </div>
 </template>
 
@@ -41,19 +41,19 @@ export default {
       ctx.fillText(this.doughnutChartData.title, 0, 15)
       ctx.font = '300 12px Helvetica'
       ctx.fillStyle = '#686868'
-      ctx.fillText(this.doughnutChartData.subtitle1, 0, 36.2, 60)
+      ctx.fillText(this.doughnutChartData.subtitle1, -2, 36.2, 60)
       ctx.font = '300 10px Helvetica'
       ctx.fillStyle = '#686868'
-      ctx.fillText(' lessons', 23, 36.2, 60)
+      ctx.fillText(' employed', 26, 36.2, 60)
       ctx.font = '300 10px Helvetica'
       ctx.fillStyle = '#686868'
       ctx.fillText(this.doughnutChartData.subtitle2, 0, 49.2, 60)
       ctx.font = '20px Helvetica'
       ctx.fillStyle = '#686868'
-      ctx.fillText(`${this.doughnutChartData.percentage}%`, 50, 68, 60)
+      ctx.fillText(`${this.doughnutChartData.percentage}%`, 60, 68, 60)
       ctx.font = '300 12px Helvetica'
       ctx.fillStyle = '#686868'
-      ctx.fillText(this.doughnutChartData.insideText, 45, 88, 60)
+      ctx.fillText(this.doughnutChartData.insideText, 55, 88, 60)
       // background
       ctx.beginPath()
       ctx.lineWidth = 8

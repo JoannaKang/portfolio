@@ -50,7 +50,7 @@ export function getTotalLessonsByCountry (country, year) {
 export function getTotalLessonsByCamp (country, camp, year) {
   const dataByCamp = {}
   const lessonsData = data.children[country].children[camp].values[year]
-
+  
   if (lessonsData === undefined) {
     dataByCamp.lessons = [getZeroLessonData()]
   } else {

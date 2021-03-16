@@ -72,7 +72,6 @@ export default {
   },
   watch: {
     tableData () {
-      console.log(this.tableData)
       this.tableName = this.tableData[0].type
     }
   }

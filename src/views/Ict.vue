@@ -309,6 +309,7 @@ export default {
           this.growthRate = calcDifference([getStudentAvgAcrossSchools('Total', 'Base')], [getStudentAvgAcrossSchools('Total', 'End')])[0]
           if (this.selectedSchool === null) {
             this.groupBarChartData = this.filterChartData(getGroupBarChartData(getIctSchoolList(), getStudentIctSchoolAvg, 'Total'))
+            console.log(this.groupBarChartData)
             this.tableData = getIctTableData(getStudentIctRate, getStudentAvgAcrossSchools)
             this.summaryBoxData = this.setSummaryBoxData()
             this.updateColor(getGroupBarChartColorSheme, this.colorIndex)

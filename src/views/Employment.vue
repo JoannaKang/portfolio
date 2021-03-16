@@ -20,12 +20,12 @@
       <row :gutter="12" >
         <column :lg="1.5"><h3 class="employment-select-country">Select status</h3></column>
         <column :lg="2.5" class="employment-select-box">
-          <v-select :options="employmentStatus" v-model="selectedCountry" placeholder="Show all" :searchable="false">
+          <v-select :options="employmentStatus" v-model="selectedStatus" placeholder="Show all" :searchable="false">
           </v-select>
         </column>
         <column :lg="1.5"><h3 class="employment-select-camp">Select fund</h3></column>
         <column :lg="2.5" class="employment-select-box">
-          <v-select :options="camps" v-model="selectedCamp" class="select-camp" placeholder="Select country to activate" :searchable="false" :disabled="campSelectboxDisabled">
+          <v-select :options="funds" v-model="selectedFund" class="select-camp" :placeholder="fundPlaceholder" :searchable="false" :disabled="fundSelectboxDisabled">
             <span slot="no-options">
               <h3>No more available options</h3>
             </span>
@@ -33,7 +33,7 @@
         </column>
         <column :lg="1.5"><h3 class="employment-select-school">Select  demographic</h3></column>
         <column :lg="2.5" class="employment-select-box">
-          <v-select :options="schools" v-model="selectedSchool" class="select-school" placeholder="Select camp to activate" :searchable="false" :disabled="schoolSelectboxDisabled">
+          <v-select :options="demographics" v-model="selectedDemo" class="select-school" placeholder="Select fund to activate" :searchable="false" :disabled="demoSelectboxDisabled">
             <span slot="no-options">
               <h3 style="text-align:left; padding-left: 1.8rem; color:#686868; font-family: Helvetica; font-size:1.4rem;">No more available options</h3> 
             </span>            
@@ -43,53 +43,54 @@
     </section>
     <section :gutter="12" class="chart-title-area">
       <row class="chart-title">
-        <column :lg="8" :xs="6"><h2 class="employment-sub-title">Employment status {{country}} {{camp}} {{school}}</h2></column>
+        <column :lg="8" :xs="6"><h2 class="employment-sub-title">Employment status {{status}} {{fund}} {{demo}}</h2></column>
         <column class="chart-summary" :lg="4" :xs="6">
-          <div class="total-lessons"> <span><h1>{{ totalLessons }}</h1> <h2>lessons</h2></span> <h3 style="font-family:'Source Sans Pro';">using INS</h3></div>
-          <div class="growth-rate"> <h1>{{growthRate}}</h1> <h3 style="font-family:'Source Sans Pro';">in {{selectedYear}}</h3></div>
+          <div class="total-tenants"> <span><h1>{{ totalTenants }}</h1> <h2>tenants</h2></span> <h3 style="font-family:'Source Sans Pro';">employment status - all</h3></div>
+          <div class="growth-rate"> <h1>{{growthRate}}</h1> <h3 style="font-family:'Source Sans Pro';">last 12 months</h3></div>
         </column>
       </row>
     </section>
     <section id="chart-area">
       <row :gutter="12" class="chart-main">
         <column :lg="8.16" class="line-chart-area">
-          <h3> No of lessons in {{selectedYear}}</h3>
-          <line-chart :chart-data="chartData" :options="options" v-if="linechartShow === true"></line-chart>
+          <h3>No of tenancies</h3>
+          <line-chart :chart-data="chartData" :options="options" v-if="linechartShow "></line-chart>
+          <!-- <group-bar-chart :chart-data="groupBarChartData" :options="groupBarchartOption" v-if="linechartShow === false"></group-bar-chart> -->
           <stacked-bar-chart id="stacked-bar-chart" :chart-data="stackedBarChartData" :options="stackedBarchartOption" v-if="stackedChartShow === true"></stacked-bar-chart>
           <column :lg="4" :xs="12" class="year-select-box" ><v-select :options="yearOptions" v-model="selectedYear" class="select-year" placeholder="Show all" :searchable="false"></v-select></column>
         </column>
-        <column :lg="3.84" class="summary-area">
-          <div class="country-wrapper" v-for="country in summaryBoxData" v-bind:key="country.vForId" :value="country.vForId">
+        <column :lg="3.84" class="summary-area" v-if="selectedStatus === null && stackedChartShow === false">
+          <div class="summary-wrapper" v-for="status in summaryBoxData" v-bind:key="status.vForId" :value="status.vForId">
             <div class="text-container">
-              <input type="checkbox" v-bind:class="country.cssId" v-bind:id="country.cssId" v-bind:key="country.vForId" :value="country.vForId" v-model="checkedItems" style="display:none">
-                <label v-bind:class="country.cssId" v-bind:for="country.cssId">
-                  <div v-bind:class="country.cssId" v-bind:for="country.cssId" style="justify-content:center; align-item:center;">
-                    <span v-bind:class="country.cssId" v-bind:for="country.cssId" style="color:#ffffff; margin:2px 2px 2px 5px; width:10px; height:10px;">V</span>
+              <input type="checkbox" v-bind:class="status.cssId" v-bind:id="status.cssId" v-bind:key="status.vForId" :value="status.vForId" v-model="checkedItems" style="display:none">
+                <label v-bind:class="status.cssId" v-bind:for="status.cssId">
+                  <div v-bind:class="status.cssId" v-bind:for="status.cssId" style="justify-content:center; align-item:center;">
+                    <span v-bind:class="status.cssId" v-bind:for="status.cssId" style="color:#ffffff; margin:2px 2px 2px 5px; width:10px; height:10px;">V</span>
                   </div>
                 </label>
                 <!-- Lessons summary start-->
-                <div class="summary-text" v-bind:class="country.cssId" v-bind:for="country.cssId" v-if="linechartShow === true">
-                  <div v-bind:class="country.cssId" v-bind:for="country.cssId" style="border:none; color:'#D8D8D8' !important; display:flex; width:27.7rem; justify-content:space-between; align-items:flex-end;">
+                <div class="summary-text" v-bind:class="status.cssId" v-bind:for="status.cssId">
+                  <div v-bind:class="status.cssId" v-bind:for="status.cssId" style="border:none; color:'#D8D8D8' !important; display:flex; width:27.7rem; justify-content:space-between; align-items:flex-end;">
                     <div>
-                      <h1 style="display: inline; color:'#D8D8D8'; font-family: Helvetica; font-size:3rem; font-weight:500;" v-bind:class="country.cssId" v-bind:for="country.cssId">
-                        {{ country.totalLessons }}
+                      <h1 style="display: inline; color:'#D8D8D8'; font-family: Helvetica; font-size:3rem; font-weight:500;" v-bind:class="status.cssId" v-bind:for="status.cssId">
+                        {{ status.totalLessons }}
                       </h1>
-                      <h2 style="display: inline; color:'#D8D8D8'; font-family:'Source Sans Pro'; font-size:2.2rem;" v-bind:class="country.cssId" v-bind:for="country.cssId">lessons </h2>
+                      <h2 style="display: inline; color:'#D8D8D8'; font-family:'Source Sans Pro'; font-size:2.2rem;" v-bind:class="status.cssId" v-bind:for="status.cssId">lessons </h2>
                     </div>
-                    <div class="summary-bar-chart-container" v-if="linechartShow === true" style="align-self:flex-end;">
-                      <bar-chart id="bar-chart" class="barChart" :chart-data="barChartData[country.name]" :options="barchartOption"></bar-chart>
+                    <div class="summary-bar-chart-container" v-if="linechartShow" style="align-self:flex-end;">
+                      <bar-chart id="bar-chart" class="barChart" :chart-data="barChartData[status.name]" :options="barchartOption"></bar-chart>
                     </div>
                   </div>
-                  <div v-bind:class="country.cssId" v-bind:for="country.cssId" style="text-align:left; border:none; color:'#D8D8D8';">
-                    <h2 style="font-family:'Source Sans Pro'; font-size:1.4rem; font-weight:300;">in {{country.vForId}}</h2>
+                  <div v-bind:class="status.cssId" v-bind:for="status.cssId" style="text-align:left; border:none; color:'#D8D8D8';">
+                    <h2 style="font-family:'Source Sans Pro'; font-size:1.4rem; font-weight:300;">in {{status.vForId}}</h2>
                   </div>
                 </div>
                 <!-- Lessons summary end-->
                 <!-- Topic summary -->
-                <div class="summary-text" v-bind:class="country.cssId" v-bind:for="country.cssId" v-if="stackedChartShow === true">
-                  <div v-bind:class="country.cssId" v-bind:for="country.cssId" style="border:none; color:'#D8D8D8' !important; padding: 0;">
-                      <h2 v-bind:class="country.cssId" v-bind:for="country.cssId">
-                        {{ country.vForId }}
+                <div class="summary-text" v-bind:class="status.cssId" v-bind:for="status.cssId" v-if="stackedChartShow && viewMode === 'Demo'">
+                  <div v-bind:class="status.cssId" v-bind:for="status.cssId" style="border:none; color:'#D8D8D8' !important; padding: 0;">
+                      <h2 v-bind:class="status.cssId" v-bind:for="status.cssId">
+                        {{ status.vForId }}
                       </h2>
                   </div>
                 </div>
@@ -97,15 +98,35 @@
             </div>
           </div>
         </column>
+        <column :lg="3.44" class="summary-grid-area" v-if="stackedChartShow && viewMode === 'Status'">
+          <row v-for="i in setNoOfRows" v-bind:key="i">
+            <column v-for="j in [0, 1]" v-bind:key="i*2+j" :lg="6" :xs="6">
+              <div v-if="i*2+j < summaryBoxData.length" class="summary-grid">
+                <input type="checkbox" style="display:none" v-bind:id="summaryBoxData[i*2+j].cssId" v-bind:class="summaryBoxData[i*2+j].cssId" v-bind:value="summaryBoxData[i*2+j].name" v-model="checkedItems">
+                <label v-bind:class="summaryBoxData[i*2+j].cssId" v-bind:for="summaryBoxData[i*2+j].cssId" id="checkbox-label">
+                  <div v-bind:class="summaryBoxData[i*2+j].cssId" style="justify-content:center; align-item:center;">
+                    <span v-bind:class="summaryBoxData[i*2+j].cssId" style="color: #ffffff; margin:2px 2px 2px 2.5px; width:10px; height:10px;">V</span>
+                  </div>
+                </label>
+                <div v-bind:class="summaryBoxData[i*2+j].cssId" id="checkbox-text-area">
+                  <h1>{{summaryBoxData[i*2+j].monthlyData.lessons[13]}}</h1>
+                  <h3>{{summaryBoxData[i*2+j].name}}</h3>
+                </div>
+                </div>
+            </column>
+          </row>
+          </column>                
       </row>
-      <Table :tableData="tableData" v-if="linechartShow === true"></Table>
-      <table-for-topic :TopicTableData="TopicTableData" v-if="stackedChartShow === true"></table-for-topic>
+      <Table :tableData="tableData" v-if="linechartShow === true && viewMode !=='Fund'"></Table>
+      <Table :tableData="tableDataByStatus" v-if="stackedChartShow === true && viewMode === 'Status' || linechartShow === true && viewMode ==='Fund'"></Table>
+      <table-for-topic :TopicTableData="TopicTableData" v-if="viewMode === 'Demo'"></table-for-topic>
     </section>
   </main>
 </template>
 
 <script>
 import LineChart from '../components/Chart/LineChart.js'
+// import GroupBarChart from '../components/Chart/GroupBarChart'
 import BarChart from '../components/Chart/BarChart.js'
 import StackedBarChart from '../components/Chart/StackedBarChart.js'
 import AimDoughnutChart from '../components/Chart/AimDoughnutChart.vue'
@@ -113,12 +134,14 @@ import TimeDoughnutChart from '../components/Chart/TimeDoughnutChart.vue'
 import Table from '../components/Table'
 import TableForTopic from '../components/TableforTopic'
 import {setYearSelectBox, getCountries, getCamps, getSchools, getLessons, getLessonsByTopics, getTotalLessonsByCountry, getTotalLessonsByCamp } from '../data/data-provider.js'
-import { getAllPurpleColor, getLineChartColorScheme } from '../data/colour-scheme.js'
+import { getAllPurpleColor, getLineChartColorScheme, getSkillsGroupBarChartColorSheme } from '../data/colour-scheme.js'
 import { calcSum, compareDataByYear, getLineChartData, getTableData, getBarChartData, getStackedBarChartData } from '../data/data-handler'
+import { getRandomInt } from '../data/dummyDataGenerator'
 
 export default {
   components: {
     LineChart,
+    // GroupBarChart,
     BarChart,
     Table,
     TableForTopic,
@@ -129,48 +152,74 @@ export default {
   data () {
     return {
       viewMode: 'All',
-      selectedCountry: null,
-      selectedCamp: null,
-      selectedSchool: null,
-      selectedYear: 2019,
+      selectedStatus: null,
+      selectedFund: null,
+      selectedDemo: null,
+      selectedYear: 2020,
       chartData: {},
       linechartShow: true,
+      groupBarchartShow: false,
       stackedChartShow: false,
-      campSelectboxDisabled: true,
-      schoolSelectboxDisabled: true,
+      fundSelectboxDisabled: true,
+      demoSelectboxDisabled: true,
       barChartData: [],
       stackedBarChartData: {},
+      groupBarChartData: {
+        datasets: [
+          {backgroundColor: [
+            "rgb(232, 79, 137)",
+            "rgb(47, 185, 239)",
+            "rgb(103, 182, 117)",
+            "rgb(247, 101, 17)",
+            "rgb(28, 184, 196)",
+            "rgb(247, 181, 0)"
+            ],
+          barThickness: 15,
+          data: [55, 73, 33, 24, 34, 2]},          
+        ],
+        labels: [
+          "RLPF1 - St Mungo’s",
+          "RLPF2 - St Mungo’s",
+          "NHPF 1 - Oxford",
+          "NHPF 1 - Bristol",
+          "NHPF 1 - Lancaster",
+          "NHPF 1 - Manchester"
+        ]
+      },
       doughnutChartData1: {
         box: 'box1',
         title: 'Aim',
-        subtitle1: '800',
-        subtitle2: 'using INS',
-        percentage: '87',
+        subtitle1: '1200',
+        subtitle2: 'full time',
+        percentage: '80',
         insideText: 'complete',
         color: '#8954BA'
       },
       doughnutChartData2: {
         box: 'box2',
         title: 'Time',
-        subtitle1: '3 years',
+        subtitle1: '2 years',
         subtitle2: '',
         percentage: '1',
         insideText: 'more year',
         color: '#0091FF'
       },
       tableData: [],
+      tableDataByStatus: [],
       TopicTableData: [],
       summaryBoxData: [],
       yearOptions: [],
       employmentStatus: [],
-      camps: [],
-      schools: [],
-      country: '',
-      camp: '',
-      school: '',
+      funds: [],
+      demographics: [],
+      status: '',
+      fund: '',
+      demo: '',
       checkedItems: [],
-      totalLessons: '',
+      totalTenants: '',
       growthRate: '',
+      fundPlaceholder: 'Select status to activate',
+      colorIndex: [],
       options: {
         responsive: true,
         maintainAspectRatio: false,
@@ -208,7 +257,7 @@ export default {
               return data.datasets[0].label + ' | ' + months[tooltipItem[0].index]
             },
             label: function (tooltipItem) {
-              return tooltipItem.value + ' lessons'
+              return tooltipItem.value + ' tenancies'
             }
           }
         }
@@ -272,7 +321,8 @@ export default {
         legend: {
           labels: {
             boxWidth: 10
-          }
+          },
+          display: true
         },
         tooltips: {
           callbacks: {
@@ -313,7 +363,45 @@ export default {
             }
           }
         }
-      },      
+      },
+      groupBarchartOption: {
+        legend: { display: false },
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          xAxes: [{
+            gridLines: { color: '#ffffff' },
+            display: true,
+            stacked: false,
+            ticks: {
+              // fontColor: '#EA4C89'
+            }
+          }],
+          yAxes: [{
+            display: true,
+            position: 'left',
+            ticks: {
+              beginAtZero: true,
+              callback: function (value) {
+                return value + '%'
+              }
+            } }]
+        },
+        tooltips: {
+          callbacks: {
+            title: function (tooltipItem) {
+              if (tooltipItem[0].datasetIndex === 0) {
+                return 'Before Ins'
+              } else if (tooltipItem[0].datasetIndex === 1) {
+                return 'After Ins'
+              }
+            },
+            label: function (tooltipItem) {
+              return parseInt(tooltipItem.value).toFixed(0) + '%'
+            }
+          }
+        }
+      }    
     }
   },
   mounted () {
@@ -335,16 +423,39 @@ export default {
       let totalPrevLessons = []
       let tableLessons = {}
       let prevTableLessons = {}
+      let summaryboxLessons = {}
+      let prevSummaryboxLessons = {}
+      const dummyBarchartData = {
+        datasets: [
+          {backgroundColor: [
+            "rgb(232, 79, 137)",
+            "rgb(47, 185, 239)",
+            "rgb(103, 182, 117)",
+            "rgb(247, 101, 17)",
+            "rgb(28, 184, 196)",
+            "rgb(247, 181, 0)"
+            ],
+          barThickness: 15,
+          data: [getRandomInt(0 ,250), getRandomInt(0 ,250), getRandomInt(0 ,250), getRandomInt(0 ,250), getRandomInt(0 ,250), getRandomInt(0 ,250)]},          
+        ],
+        labels: [
+          "RLPF1 - St Mungo’s",
+          "RLPF2 - St Mungo’s",
+          "NHPF 1 - Oxford",
+          "NHPF 1 - Bristol",
+          "NHPF 1 - Lancaster",
+          "NHPF 1 - Manchester"
+        ]
+      }
 
       switch (this.viewMode) {
         case 'All':
           tableLessons = getLessons(getCountries(), [], [], this.selectedYear)
           prevTableLessons = getLessons(getCountries(), [], [], this.selectedYear - 1)
-          console.log(tableLessons, prevTableLessons)
           if (this.checkedItems.length === 0) {
             lessons = getLessons([], [], [], this.selectedYear)
             prevYearLessons = getLessons([], [], [], this.selectedYear - 1)
-            this.totalLessons = calcSum(Object.values(lessons.lessons[0]))
+            this.totalTenants = calcSum(Object.values(lessons.lessons[0]))
             this.growthRate = compareDataByYear(Object.values(prevYearLessons.lessons[0]), Object.values(lessons.lessons[0]))
             this.chartData = getLineChartData(lessons, getAllPurpleColor)
           } else {
@@ -357,45 +468,47 @@ export default {
           this.updateColors(this.viewMode, getLineChartColorScheme)
           break
 
-        case 'Country':
-          tableLessons = getLessons([this.selectedCountry], getCamps(this.selectedCountry), [], this.selectedYear)
-          prevTableLessons = getLessons([this.selectedCountry], getCamps(this.selectedCountry), [], this.selectedYear - 1)
+        case 'Status':
+          tableLessons = getLessons([this.selectedStatus], [], [], this.selectedYear)
+          prevTableLessons = getLessons([this.selectedStatus], [], [], this.selectedYear - 1)
           if (this.checkedItems.length === 0) {
-            lessons = getTotalLessonsByCountry(this.selectedCountry, this.selectedYear)
-            prevYearLessons = getTotalLessonsByCountry(this.selectedCountry, this.selectedYear - 1)
-            this.chartData = getLineChartData(lessons, getAllPurpleColor)
+            console.log( this.summaryBoxData)
+            lessons = getTotalLessonsByCountry(this.selectedStatus, this.selectedYear)
+            prevYearLessons = getTotalLessonsByCountry(this.selectedStatus, this.selectedYear - 1)
+            this.stackedBarChartData = dummyBarchartData
+            this.tableDataByStatus = getTableData('Schools', tableLessons, prevTableLessons)
           } else {
-            lessons = getLessons([this.selectedCountry], getCamps(this.selectedCountry), [], this.selectedYear)
-            prevYearLessons = getLessons([this.selectedCountry], getCamps(this.selectedCountry), [], this.selectedYear - 1)
-            this.chartData = this.filterChartData(getLineChartData(lessons, getLineChartColorScheme), this.checkedItems)
+            lessons = getLessons([this.selectedStatus], getCamps(this.selectedStatus), [], this.selectedYear)
+            prevYearLessons = getLessons([this.selectedStatus], getCamps(this.selectedStatus), [], this.selectedYear - 1)
+            this.stackedBarChartData = this.filterBarChartData(dummyBarchartData)
           }
+          summaryboxLessons = getLessons([this.selectedStatus], getCamps(this.selectedStatus), [], this.selectedYear)
+          prevSummaryboxLessons = getLessons([this.selectedStatus], getCamps(this.selectedStatus), [], this.selectedYear - 1)
+          this.summaryBoxData =  this.filterTopics(getTableData('Fund', summaryboxLessons, prevSummaryboxLessons))          
           totalCurrLessons = lessons.lessons.flatMap(el => Object.values(el))
           totalPrevLessons = prevYearLessons.lessons.flatMap(el => Object.values(el))
-          this.totalLessons = calcSum(totalCurrLessons)
+          this.totalTenants = calcSum(totalCurrLessons)
           this.growthRate = compareDataByYear(totalPrevLessons, totalCurrLessons)
-          this.barChartData = getBarChartData(getTableData('Fund', tableLessons, prevTableLessons))
-          this.tableData = getTableData('Fund', tableLessons, prevTableLessons)
-          this.summaryBoxData = this.filterTopics(getTableData('Fund', tableLessons, prevTableLessons))
-          this.updateColors(this.viewMode, getLineChartColorScheme)
+          this.updateBarchartColor(getSkillsGroupBarChartColorSheme, this.colorIndex)
           break
 
-        case 'Camp':
+        case 'Fund':
           // table lessons data
-          tableLessons = getLessons([this.selectedCountry], [this.selectedCamp], getSchools(this.selectedCountry, this.selectedCamp), this.selectedYear)
-          prevTableLessons = getLessons([this.selectedCountry], [this.selectedCamp], getSchools(this.selectedCountry, this.selectedCamp), this.selectedYear - 1)
-          
+          this.linechartShow = true
+          tableLessons = getLessons([this.selectedStatus], [this.selectedFund], getSchools(this.selectedStatus, this.selectedFund), this.selectedYear)
+          prevTableLessons = getLessons([this.selectedStatus], [this.selectedFund], getSchools(this.selectedStatus, this.selectedFund), this.selectedYear - 1)
           if (this.checkedItems.length === 0) {
-            lessons = getTotalLessonsByCamp(this.selectedCountry, this.selectedCamp, this.selectedYear)
-            prevYearLessons = getTotalLessonsByCamp(this.selectedCountry, this.selectedCamp, this.selectedYear - 1)
+            lessons = getTotalLessonsByCamp(this.selectedStatus, this.selectedFund, this.selectedYear)
+            prevYearLessons = getTotalLessonsByCamp(this.selectedStatus, this.selectedFund, this.selectedYear - 1)
             this.chartData = getLineChartData(lessons, getAllPurpleColor)
           } else {
-            lessons = getLessons([this.selectedCountry], [this.selectedCamp], getSchools(this.selectedCountry, this.selectedCamp), this.selectedYear)
-            prevYearLessons = getLessons([this.selectedCountry], [this.selectedCamp], getSchools(this.selectedCountry, this.selectedCamp), this.selectedYear - 1)
+            lessons = getLessons([this.selectedStatus], [this.selectedFund], getSchools(this.selectedStatus, this.selectedFund), this.selectedYear)
+            prevYearLessons = getLessons([this.selectedStatus], [this.selectedFund], getSchools(this.selectedStatus, this.selectedFund), this.selectedYear - 1)
             this.chartData = this.filterChartData(getLineChartData(lessons, getLineChartColorScheme), this.checkedItems)
           }
           totalCurrLessons = lessons.lessons.flatMap(el => Object.values(el))
           totalPrevLessons = prevYearLessons.lessons.flatMap(el => Object.values(el))
-          this.totalLessons = calcSum(totalCurrLessons)
+          this.totalTenants = calcSum(totalCurrLessons)
           this.growthRate = compareDataByYear(totalPrevLessons, totalCurrLessons)
           this.barChartData = getBarChartData(getTableData('Schools', tableLessons, prevTableLessons))
           this.tableData = getTableData('Schools', tableLessons, prevTableLessons)
@@ -403,14 +516,15 @@ export default {
           this.updateColors(this.viewMode, getLineChartColorScheme)
           break
 
-        case 'School':
-          lessons = getLessonsByTopics([this.selectedCountry], [this.selectedCamp], [this.selectedSchool], this.selectedYear)
-          prevYearLessons = getLessonsByTopics([this.selectedCountry], [this.selectedCamp], [this.selectedSchool], this.selectedYear - 1)
+        case 'Demo':
+          lessons = getLessonsByTopics([this.selectedStatus], [this.selectedFund], [this.selectedDemo], this.selectedYear)
+          prevYearLessons = getLessonsByTopics([this.selectedStatus], [this.selectedFund], [this.selectedDemo], this.selectedYear - 1)
           totalCurrLessons = lessons.lessons.flatMap(el => Object.values(el))
           totalPrevLessons = prevYearLessons.lessons.flatMap(el => Object.values(el))
-          this.totalLessons = calcSum(totalCurrLessons)
+          this.totalTenants = calcSum(totalCurrLessons)
           this.growthRate = compareDataByYear(totalPrevLessons, totalCurrLessons)
           this.stackedBarChartData = this.filterChartData(getStackedBarChartData(lessons, getLineChartColorScheme), this.checkedItems)
+          console.log(this.stackedBarChartData)
           this.TopicTableData = getTableData('Topics', lessons, prevYearLessons)
           this.summaryBoxData = this.filterTopics(getTableData('Topics', lessons, prevYearLessons)) // for checkbox rendering
           this.updateColors(this.viewMode, getLineChartColorScheme)
@@ -418,47 +532,52 @@ export default {
       }
     },
     updateConditionalRendering () {
+      console.log(this.viewMode)
       switch (this.viewMode) {
         case 'All':
           this.linechartShow = true
           this.stackedChartShow = false
-          this.camplSelectboxDisabled = true
-          this.schoolSelectboxDisabled = true
-          this.selectedCountry = null
-          this.selectedCamp = null
-          this.selectedSchool = null
-          this.country = '- all, across funds'
-          this.camp = ''
-          this.school = ''
+          this.fundPlaceholder = 'Select status to activate'
+          this.fundSelectboxDisabled = true
+          this.demoSelectboxDisabled = true
+          this.selectedStatus = null
+          this.selectedFund = null
+          this.selectedDemo = null
+          this.status = '- all, across funds'
+          this.fund = ''
+          this.demo = ''
           break
-        case 'Country':
+        case 'Status':
+          this.linechartShow = (this.selectedStatus === null) ? true : false
+          this.stackedChartShow = (this.selectedStatus !== null) ? true : false
+          this.fundPlaceholder = 'Show All'
+          this.fundSelectboxDisabled = false
+          this.demoSelectboxDisabled = true
+          this.stackedBarchartOption.legend.display = false          
+          this.selectedFund = null
+          this.selectedDemo = null
+          this.funds = getCamps(this.selectedStatus)
+          this.status = '- ' + this.selectedStatus
+          this.fund = ''
+          this.demo = ''
+          break
+        case 'Fund':
           this.linechartShow = true
           this.stackedChartShow = false
-          this.campSelectboxDisabled = false
-          this.schoolSelectboxDisabled = true
-          this.selectedCamp = null
-          this.selectedSchool = null
-          this.camps = getCamps(this.selectedCountry)
-          this.country = '- ' + this.selectedCountry
-          this.camp = ''
-          this.school = ''
+          this.fundSelectboxDisabled = false
+          this.demoSelectboxDisabled = false
+          this.selectedDemo = null
+          this.demographics = getSchools(this.selectedStatus, this.selectedFund)
+          this.fund = ', ' + this.selectedFund
+          this.demo = ''
           break
-        case 'Camp':
-          this.linechartShow = true
-          this.stackedChartShow = false
-          this.campSelectboxDisabled = false
-          this.schoolSelectboxDisabled = false
-          this.selectedSchool = null
-          this.schools = getSchools(this.selectedCountry, this.selectedCamp)
-          this.camp = ', ' + this.selectedCamp
-          this.school = ''
-          break
-        case 'School':
+        case 'Demo':
           this.linechartShow = false
           this.stackedChartShow = true
-          this.campSelectboxDisabled = false
-          this.schoolSelectboxDisabled = false
-          this.school = ', ' + this.selectedSchool
+          this.fundSelectboxDisabled = false
+          this.demoSelectboxDisabled = false
+          this.stackedBarchartOption.legend.display = true
+          this.demo = ', ' + this.selectedDemo
           break
       }
     },
@@ -482,8 +601,51 @@ export default {
       }
       return chartData
     },
+    filterBarChartData (chartData) {
+      console.log(chartData)
+      if (this.checkedItems.length === 0) {
+        return chartData
+      } else {
+        const checked = this.checkedItems
+        const colorIndex = []
+        checked.forEach(el => {
+          colorIndex.push(chartData.labels.indexOf(el))
+        })
+        this.colorIndex = colorIndex
+      
+        const dataIndex = [...Array(chartData.labels.length).keys()].filter(el => colorIndex.includes(el) === false)
+        dataIndex.forEach(el => {
+          chartData.datasets[0].data.splice(el, 1, '-')
+          chartData.labels.splice(el, 1, '-')
+        })
+        return chartData
+      }
+    },
+    updateBarchartColor (colorScheme, colorIndex) {
+      let haveSet = 0
+      colorIndex.sort((a, b) => a - b)
+      for (let i = 0; i < this.summaryBoxData.length; i++) {
+        const school = this.summaryBoxData[i].cssId
+        const dom = document.getElementsByClassName(`${school}`)
+        console.log(dom)
+        if (dom.length !== 0 && dom[0].checked === true) {
+          const setColor = colorScheme().normal[colorIndex[haveSet]]
+          dom[1].style.color = setColor
+          dom[2].style.border = `1px solid ${setColor}`
+          dom[3].style.color = setColor
+          dom[4].style.color = setColor
+          haveSet += 1
+        } else if (dom.length !== 0) {
+          dom[1].style.color = '#D8D8D8'
+          dom[2].style.border = `1px solid ${'#D8D8D8'}`
+          dom[3].style.color = '#ffffff'
+          dom[4].style.color = '#D8D8D8'
+        }
+      }
+    },
     updateColors (view, colorScheme) {
-      const tableFontDomIndex = view === 'School' ? 7 : 9
+      // console.log(view, colorScheme, this.summaryBoxData)
+      const tableFontDomIndex = view === 'Demo' ? 7 : 9
       for (let i = 0; i < this.summaryBoxData.length; i++) {
         const cssId = this.summaryBoxData[i].cssId
         const dom = document.getElementsByClassName(`${cssId}`)
@@ -512,38 +674,43 @@ export default {
       this.uncheckAllCheckboxes()
       this.updateData()
     },
-    selectedCountry () {
-      if (this.selectedCountry === null) {
+    selectedStatus () {
+      if (this.selectedStatus === null) {
         this.viewMode = 'All'
         this.uncheckAllCheckboxes()
         this.updateData()
       } else {
-        this.viewMode = 'Country'
+        this.viewMode = 'Status'
         this.uncheckAllCheckboxes()
         this.updateData()
       }
     },
-    selectedCamp () {
-      if (this.selectedCamp === null) {
-        this.viewMode = 'Country'
+    selectedFund () {
+      if (this.selectedFund === null) {
+        this.viewMode = 'Status'
         this.uncheckAllCheckboxes()
         this.updateData()
       } else {
-        this.viewMode = 'Camp'
+        this.viewMode = 'Fund'
         this.uncheckAllCheckboxes()
         this.updateData()
       }
     },
-    selectedSchool () {
-      if (this.selectedSchool === null) {
-        this.viewMode = 'Camp'
+    selectedDemo () {
+      if (this.selectedFund !== null & this.selectedDemo === null) {
+        this.viewMode = 'Fund'
         this.uncheckAllCheckboxes()
         this.updateData()
-      } else {
-        this.viewMode = 'School'
+      } else if (this.selectedFund !== null & this.selectedStatus !== null) {
+        this.viewMode = 'Demo'
         this.uncheckAllCheckboxes()
         this.updateData()
       }
+    }
+  },
+  computed: {
+    setNoOfRows () {
+      return Array(Math.ceil(this.summaryBoxData.length / 2)).keys()
     }
   }
 }
@@ -737,36 +904,36 @@ main#employment {
   font-weight: 100;
 }
 
-.total-lessons {
+.total-tenants {
   display: flex;
   flex-direction: column;
   padding-left: 7rem;
   padding-right: 2rem;
 }
 
-.total-lessons span {
+.total-tenants span {
   align-self: start;
 }
 
-.total-lessons h1,
-.total-lessons h2,
-.total-lessons h3 {
+.total-tenants h1,
+.total-tenants h2,
+.total-tenants h3 {
   display: inline;
   color: var(--color-purple);
 }
 
-.total-lessons h1 {
+.total-tenants h1 {
   margin-right: 1rem;
   font-size:3rem;
   font-weight: 500;
 }
 
-.total-lessons h2 {
+.total-tenants h2 {
   font-size: 2.2rem;
   font-weight: 300;
 }
 
-.total-lessons h3 {
+.total-tenants h3 {
   text-align: left;
   font-size: 1.4rem;
   font-weight: 100;
@@ -831,6 +998,7 @@ canvas#line-chart.chartjs-render-monitor {
   margin: 2.5rem 0 1.5rem 2.5rem;
 }
 
+#employment .summary-grid-area,
 #employment .summary-area {
   display: flex;
   flex-direction: column;
@@ -839,6 +1007,17 @@ canvas#line-chart.chartjs-render-monitor {
   border: none;
   align-items: left;
   margin: 8rem 0 5rem 0;
+}
+
+#employment .summary-grid-area label div {
+  display:flex;
+  width:18px;
+  height:18px;
+  background:white;
+  border:1px solid var(--color-light-grey);
+  cursor:pointer;
+  border-radius: 3px;
+  margin: 0 2rem 0 2rem;
 }
 
 #employment .summary-area::-webkit-scrollbar {
@@ -851,6 +1030,33 @@ canvas#line-chart.chartjs-render-monitor {
   width: 4px;
   height: 60px;
   background-color: #d8d8d8;
+}
+
+#employment .summary-grid {
+ display: inline-flex;
+  align-items: center;
+  margin-bottom : 1.5rem;
+  width: 100%;
+  color: #d8d8d8;
+  padding-left: 2.5rem;
+}
+
+#employment .summary-grid h1 {
+  font-size: 2.5rem;
+  font-family: Helvetica;
+  font-weight: 500;
+}
+
+#employment .summary-grid h3 {
+  font-size: 1rem;
+  font-family:'Source Sans Pro'; 
+  font-weight:300;
+}
+
+#checkbox-text-area {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .text-container {
@@ -895,7 +1101,7 @@ canvas#line-chart.chartjs-render-monitor {
   height: 43.8rem !important;
 }
 
-.country-wrapper {
+.summary-wrapper {
   display: flex;
   align-items: center;
   height: 8rem;
