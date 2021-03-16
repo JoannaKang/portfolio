@@ -55,11 +55,11 @@
         <column :lg="8.16" class="line-chart-area">
           <h3>No of tenancies</h3>
           <line-chart :chart-data="chartData" :options="options" v-if="linechartShow "></line-chart>
-          <!-- <group-bar-chart :chart-data="groupBarChartData" :options="groupBarchartOption" v-if="linechartShow === false"></group-bar-chart> -->
           <stacked-bar-chart id="stacked-bar-chart" :chart-data="stackedBarChartData" :options="stackedBarchartOption" v-if="stackedChartShow === true"></stacked-bar-chart>
           <column :lg="4" :xs="12" class="year-select-box" ><v-select :options="yearOptions" v-model="selectedYear" class="select-year" placeholder="Show all" :searchable="false"></v-select></column>
         </column>
-        <column :lg="3.84" class="summary-area" v-if="selectedStatus === null && stackedChartShow === false">
+        <!-- Status summary start-->
+        <column :lg="3.84" class="summary-area" v-if="selectedStatus === null && stackedChartShow === false || linechartShow === true && viewMode ==='Fund'">
           <div class="summary-wrapper" v-for="status in summaryBoxData" v-bind:key="status.vForId" :value="status.vForId">
             <div class="text-container">
               <input type="checkbox" v-bind:class="status.cssId" v-bind:id="status.cssId" v-bind:key="status.vForId" :value="status.vForId" v-model="checkedItems" style="display:none">
@@ -68,7 +68,6 @@
                     <span v-bind:class="status.cssId" v-bind:for="status.cssId" style="color:#ffffff; margin:2px 2px 2px 5px; width:10px; height:10px;">V</span>
                   </div>
                 </label>
-                <!-- Lessons summary start-->
                 <div class="summary-text" v-bind:class="status.cssId" v-bind:for="status.cssId">
                   <div v-bind:class="status.cssId" v-bind:for="status.cssId" style="border:none; color:'#D8D8D8' !important; display:flex; width:27.7rem; justify-content:space-between; align-items:flex-end;">
                     <div>
@@ -82,22 +81,34 @@
                     </div>
                   </div>
                   <div v-bind:class="status.cssId" v-bind:for="status.cssId" style="text-align:left; border:none; color:'#D8D8D8';">
-                    <h2 style="font-family:'Source Sans Pro'; font-size:1.4rem; font-weight:300;">in {{status.vForId}}</h2>
+                    <h2 style="font-family:'Source Sans Pro'; font-size:1.4rem; font-weight:300;">in {{status.name}}</h2>
                   </div>
                 </div>
-                <!-- Lessons summary end-->
-                <!-- Topic summary -->
-                <div class="summary-text" v-bind:class="status.cssId" v-bind:for="status.cssId" v-if="stackedChartShow && viewMode === 'Demo'">
+            </div>
+          </div>
+        </column>
+        <!-- Status summary end-->
+        <!-- Demo summary -->
+        <column :lg="3.84" class="summary-area" v-if="stackedChartShow && viewMode === 'Demo'">
+          <div class="summary-wrapper" v-for="status in summaryBoxData" v-bind:key="status.vForId" :value="status.vForId">
+            <div class="text-container">
+              <input type="checkbox" v-bind:class="status.cssId" v-bind:id="status.cssId" v-bind:key="status.vForId" :value="status.vForId" v-model="checkedItems" style="display:none">
+                <label v-bind:class="status.cssId" v-bind:for="status.cssId">
+                  <div v-bind:class="status.cssId" v-bind:for="status.cssId" style="justify-content:center; align-item:center;">
+                    <span v-bind:class="status.cssId" v-bind:for="status.cssId" style="color:#ffffff; margin:2px 2px 2px 5px; width:10px; height:10px;">V</span>
+                  </div>
+                </label>        
+                <div class="summary-text" v-bind:class="status.cssId" v-bind:for="status.cssId" >
                   <div v-bind:class="status.cssId" v-bind:for="status.cssId" style="border:none; color:'#D8D8D8' !important; padding: 0;">
                       <h2 v-bind:class="status.cssId" v-bind:for="status.cssId">
                         {{ status.vForId }}
                       </h2>
                   </div>
                 </div>
-                <!-- Topic summary end -->
             </div>
           </div>
         </column>
+        <!-- Demo summary end -->
         <column :lg="3.44" class="summary-grid-area" v-if="stackedChartShow && viewMode === 'Status'">
           <row v-for="i in setNoOfRows" v-bind:key="i">
             <column v-for="j in [0, 1]" v-bind:key="i*2+j" :lg="6" :xs="6">
@@ -133,7 +144,7 @@ import AimDoughnutChart from '../components/Chart/AimDoughnutChart.vue'
 import TimeDoughnutChart from '../components/Chart/TimeDoughnutChart.vue'
 import Table from '../components/Table'
 import TableForTopic from '../components/TableforTopic'
-import {setYearSelectBox, getCountries, getCamps, getSchools, getLessons, getLessonsByTopics, getTotalLessonsByCountry, getTotalLessonsByCamp } from '../data/data-provider.js'
+import {setYearSelectBox, getCountries, getCamps, getSchools, getLessons, getLessonsByTopics, getTotalLessonsByCountry } from '../data/data-provider.js'
 import { getAllPurpleColor, getLineChartColorScheme, getSkillsGroupBarChartColorSheme } from '../data/colour-scheme.js'
 import { calcSum, compareDataByYear, getLineChartData, getTableData, getBarChartData, getStackedBarChartData } from '../data/data-handler'
 import { getRandomInt } from '../data/dummyDataGenerator'
@@ -472,11 +483,10 @@ export default {
           tableLessons = getLessons([this.selectedStatus], [], [], this.selectedYear)
           prevTableLessons = getLessons([this.selectedStatus], [], [], this.selectedYear - 1)
           if (this.checkedItems.length === 0) {
-            console.log( this.summaryBoxData)
             lessons = getTotalLessonsByCountry(this.selectedStatus, this.selectedYear)
             prevYearLessons = getTotalLessonsByCountry(this.selectedStatus, this.selectedYear - 1)
             this.stackedBarChartData = dummyBarchartData
-            this.tableDataByStatus = getTableData('Schools', tableLessons, prevTableLessons)
+            this.tableDataByStatus = getTableData('Status', tableLessons, prevTableLessons)
           } else {
             lessons = getLessons([this.selectedStatus], getCamps(this.selectedStatus), [], this.selectedYear)
             prevYearLessons = getLessons([this.selectedStatus], getCamps(this.selectedStatus), [], this.selectedYear - 1)
@@ -495,24 +505,18 @@ export default {
         case 'Fund':
           // table lessons data
           this.linechartShow = true
-          tableLessons = getLessons([this.selectedStatus], [this.selectedFund], getSchools(this.selectedStatus, this.selectedFund), this.selectedYear)
-          prevTableLessons = getLessons([this.selectedStatus], [this.selectedFund], getSchools(this.selectedStatus, this.selectedFund), this.selectedYear - 1)
-          if (this.checkedItems.length === 0) {
-            lessons = getTotalLessonsByCamp(this.selectedStatus, this.selectedFund, this.selectedYear)
-            prevYearLessons = getTotalLessonsByCamp(this.selectedStatus, this.selectedFund, this.selectedYear - 1)
-            this.chartData = getLineChartData(lessons, getAllPurpleColor)
-          } else {
-            lessons = getLessons([this.selectedStatus], [this.selectedFund], getSchools(this.selectedStatus, this.selectedFund), this.selectedYear)
-            prevYearLessons = getLessons([this.selectedStatus], [this.selectedFund], getSchools(this.selectedStatus, this.selectedFund), this.selectedYear - 1)
-            this.chartData = this.filterChartData(getLineChartData(lessons, getLineChartColorScheme), this.checkedItems)
-          }
+          lessons = getLessons([this.selectedStatus], [this.selectedFund], [], this.selectedYear)
+          prevYearLessons = getLessons([this.selectedStatus], [this.selectedFund], [], this.selectedYear - 1)
           totalCurrLessons = lessons.lessons.flatMap(el => Object.values(el))
           totalPrevLessons = prevYearLessons.lessons.flatMap(el => Object.values(el))
+          this.chartData = this.filterChartData(getLineChartData(lessons, getLineChartColorScheme), this.checkedItems)
           this.totalTenants = calcSum(totalCurrLessons)
           this.growthRate = compareDataByYear(totalPrevLessons, totalCurrLessons)
-          this.barChartData = getBarChartData(getTableData('Schools', tableLessons, prevTableLessons))
-          this.tableData = getTableData('Schools', tableLessons, prevTableLessons)
-          this.summaryBoxData = this.filterTopics(getTableData('Schools', tableLessons, prevTableLessons))
+          tableLessons = getTableData('Status', lessons, prevYearLessons)
+          tableLessons[0].name = this.selectedStatus
+          this.barChartData = getBarChartData(tableLessons)
+          this.tableDataByStatus = tableLessons
+          this.summaryBoxData = this.filterTopics(tableLessons)
           this.updateColors(this.viewMode, getLineChartColorScheme)
           break
 
@@ -524,9 +528,9 @@ export default {
           this.totalTenants = calcSum(totalCurrLessons)
           this.growthRate = compareDataByYear(totalPrevLessons, totalCurrLessons)
           this.stackedBarChartData = this.filterChartData(getStackedBarChartData(lessons, getLineChartColorScheme), this.checkedItems)
-          console.log(this.stackedBarChartData)
           this.TopicTableData = getTableData('Topics', lessons, prevYearLessons)
           this.summaryBoxData = this.filterTopics(getTableData('Topics', lessons, prevYearLessons)) // for checkbox rendering
+          console.log(this.summaryBoxData)
           this.updateColors(this.viewMode, getLineChartColorScheme)
           break
       }
@@ -602,7 +606,6 @@ export default {
       return chartData
     },
     filterBarChartData (chartData) {
-      console.log(chartData)
       if (this.checkedItems.length === 0) {
         return chartData
       } else {
@@ -627,7 +630,6 @@ export default {
       for (let i = 0; i < this.summaryBoxData.length; i++) {
         const school = this.summaryBoxData[i].cssId
         const dom = document.getElementsByClassName(`${school}`)
-        console.log(dom)
         if (dom.length !== 0 && dom[0].checked === true) {
           const setColor = colorScheme().normal[colorIndex[haveSet]]
           dom[1].style.color = setColor
@@ -644,7 +646,6 @@ export default {
       }
     },
     updateColors (view, colorScheme) {
-      // console.log(view, colorScheme, this.summaryBoxData)
       const tableFontDomIndex = view === 'Demo' ? 7 : 9
       for (let i = 0; i < this.summaryBoxData.length; i++) {
         const cssId = this.summaryBoxData[i].cssId
