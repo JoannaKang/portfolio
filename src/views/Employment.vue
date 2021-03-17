@@ -33,7 +33,7 @@
         </column>
         <column :lg="1.5"><h3 class="employment-select-school">Select  demographic</h3></column>
         <column :lg="2.5" class="employment-select-box">
-          <v-select :options="demographics" v-model="selectedDemo" class="select-school" placeholder="Select fund to activate" :searchable="false" :disabled="demoSelectboxDisabled">
+          <v-select :options="demographics" v-model="selectedDemo" class="select-school" placeholder="Show none" :searchable="false" :disabled="demoSelectboxDisabled">
             <span slot="no-options">
               <h3 style="text-align:left; padding-left: 1.8rem; color:#686868; font-family: Helvetica; font-size:1.4rem;">No more available options</h3> 
             </span>            
@@ -74,7 +74,7 @@
                       <h1 style="display: inline; color:'#D8D8D8'; font-family: Helvetica; font-size:3rem; font-weight:500;" v-bind:class="status.cssId" v-bind:for="status.cssId">
                         {{ status.totalLessons }}
                       </h1>
-                      <h2 style="display: inline; color:'#D8D8D8'; font-family:'Source Sans Pro'; font-size:2.2rem;" v-bind:class="status.cssId" v-bind:for="status.cssId">lessons </h2>
+                      <h2 style="display: inline; color:'#D8D8D8'; font-family:'Source Sans Pro'; font-size:2.47rem;" v-bind:class="status.cssId" v-bind:for="status.cssId">employed </h2>
                     </div>
                     <div class="summary-bar-chart-container" v-if="linechartShow" style="align-self:flex-end;">
                       <bar-chart id="bar-chart" class="barChart" :chart-data="barChartData[status.name]" :options="barchartOption"></bar-chart>
@@ -137,22 +137,19 @@
 
 <script>
 import LineChart from '../components/Chart/LineChart.js'
-// import GroupBarChart from '../components/Chart/GroupBarChart'
 import BarChart from '../components/Chart/BarChart.js'
 import StackedBarChart from '../components/Chart/StackedBarChart.js'
 import AimDoughnutChart from '../components/Chart/AimDoughnutChart.vue'
 import TimeDoughnutChart from '../components/Chart/TimeDoughnutChart.vue'
 import Table from '../components/Table'
 import TableForTopic from '../components/TableforTopic'
-import {setYearSelectBox, getCountries, getCamps, getSchools, getLessons, getLessonsByTopics, getTotalLessonsByCountry } from '../data/data-provider.js'
+import { getValueByDemo, setYearSelectBox, getCamps, getLessons, getLessonsByTopics, getTotalLessonsByCountry } from '../data/data-provider.js'
 import { getAllPurpleColor, getLineChartColorScheme, getSkillsGroupBarChartColorSheme } from '../data/colour-scheme.js'
-import { calcSum, compareDataByYear, getLineChartData, getTableData, getBarChartData, getStackedBarChartData } from '../data/data-handler'
-import { getRandomInt } from '../data/dummyDataGenerator'
+import { getMonthlyColumn, calcSum, compareDataByYear, getLineChartData, getTableData, getBarChartData, getStackedBarChartData } from '../data/data-handler'
 
 export default {
   components: {
     LineChart,
-    // GroupBarChart,
     BarChart,
     Table,
     TableForTopic,
@@ -175,28 +172,6 @@ export default {
       demoSelectboxDisabled: true,
       barChartData: [],
       stackedBarChartData: {},
-      groupBarChartData: {
-        datasets: [
-          {backgroundColor: [
-            "rgb(232, 79, 137)",
-            "rgb(47, 185, 239)",
-            "rgb(103, 182, 117)",
-            "rgb(247, 101, 17)",
-            "rgb(28, 184, 196)",
-            "rgb(247, 181, 0)"
-            ],
-          barThickness: 15,
-          data: [55, 73, 33, 24, 34, 2]},          
-        ],
-        labels: [
-          "RLPF1 - St Mungo’s",
-          "RLPF2 - St Mungo’s",
-          "NHPF 1 - Oxford",
-          "NHPF 1 - Bristol",
-          "NHPF 1 - Lancaster",
-          "NHPF 1 - Manchester"
-        ]
-      },
       doughnutChartData1: {
         box: 'box1',
         title: 'Aim',
@@ -220,9 +195,28 @@ export default {
       TopicTableData: [],
       summaryBoxData: [],
       yearOptions: [],
-      employmentStatus: [],
-      funds: [],
-      demographics: [],
+      employmentStatus: [
+        'Full time - 35+ hours/week',
+        '24+ hours/week',
+        '16+ hours/week',
+        '16- hours/week',
+        'Zero hours contract',
+        'Unemployed',
+        'Unemployed - not eligible'],
+      funds: [
+        "RLPF1 - St Mungo’s",
+        "RLPF2 - St Mungo’s",
+        "NHPF 1 - Oxford",
+        "NHPF 1 - Bristol",
+        "NHPF 1 - Lancaster",
+        "NHPF 1 - Manchester"],
+      demographics: [
+      'Age at survey date',
+      'Benefits',
+      'Households with children',
+      'Tenants with disabilities',
+      'Ethnic origin',
+      'Gender'],
       status: '',
       fund: '',
       demo: '',
@@ -241,7 +235,7 @@ export default {
             },
             ticks: {
               callback: function (value, index) {
-                const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+                const months = getMonthlyColumn()
                 value = months[index]
                 return value
               }
@@ -264,7 +258,7 @@ export default {
         tooltips: {
           callbacks: {
             title: function (tooltipItem, data) {
-              const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']          
+              const months = getMonthlyColumn()        
               return data.datasets[0].label + ' | ' + months[tooltipItem[0].index]
             },
             label: function (tooltipItem) {
@@ -291,7 +285,7 @@ export default {
         tooltips: {
           callbacks: {
             title: function (tooltipItem) {
-              const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']          
+              const months = getMonthlyColumn()          
               return months[tooltipItem[0].index]
             }
           }
@@ -308,16 +302,12 @@ export default {
             },
             ticks: {
               callback: function (value, index) {
-                const fundNames = [
-                "RLPF1 - St Mungo’s",
-                "RLPF2 - St Mungo’s",
-                "NHPF 1 - Oxford",
-                "NHPF 1 - Bristol",
-                "NHPF 1 - Lancaster",
-                "NHPF 1 - Manchester"
-                ]
-                value = fundNames[index]
-                return value
+                if (value.length < 3) {
+                  value = getMonthlyColumn()[index]
+                  return value
+                } else {
+                  return value
+                }
               }
             }
           }],
@@ -338,15 +328,8 @@ export default {
         tooltips: {
           callbacks: {
             title: function (tooltipItem) {
-              const fundNames = [
-                "RLPF1 - St Mungo’s",
-                "RLPF2 - St Mungo’s",
-                "NHPF 1 - Oxford",
-                "NHPF 1 - Bristol",
-                "NHPF 1 - Lancaster",
-                "NHPF 1 - Manchester"
-              ]          
-              return fundNames[tooltipItem[0].index]
+              const month = getMonthlyColumn()
+              return month[tooltipItem[0].index]
             }
           }
         }        
@@ -369,59 +352,25 @@ export default {
         tooltips: {
           callbacks: {
             title: function (tooltipItem) {
-              const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']          
+              const months = getMonthlyColumn()         
               return months[tooltipItem[0].index]
             }
           }
         }
-      },
-      groupBarchartOption: {
-        legend: { display: false },
-        responsive: true,
-        maintainAspectRatio: false,
-        scales: {
-          xAxes: [{
-            gridLines: { color: '#ffffff' },
-            display: true,
-            stacked: false,
-            ticks: {
-              // fontColor: '#EA4C89'
-            }
-          }],
-          yAxes: [{
-            display: true,
-            position: 'left',
-            ticks: {
-              beginAtZero: true,
-              callback: function (value) {
-                return value + '%'
-              }
-            } }]
-        },
-        tooltips: {
-          callbacks: {
-            title: function (tooltipItem) {
-              if (tooltipItem[0].datasetIndex === 0) {
-                return 'Before Ins'
-              } else if (tooltipItem[0].datasetIndex === 1) {
-                return 'After Ins'
-              }
-            },
-            label: function (tooltipItem) {
-              return parseInt(tooltipItem.value).toFixed(0) + '%'
-            }
-          }
-        }
-      }    
+      }
     }
   },
   mounted () {
     this.showNavBar()
-    this.employmentStatus = getCountries() // Set initial Country select box options
     this.yearOptions = setYearSelectBox() // Set initial Year select box options        
     this.updateData()
   },
   methods: {
+    getRandomInt (min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min)) + min
+    },
     showNavBar () {
       const navbar = document.getElementById('nav')
       navbar.style.display = 'inline'
@@ -447,7 +396,7 @@ export default {
             "rgb(247, 181, 0)"
             ],
           barThickness: 15,
-          data: [getRandomInt(0 ,250), getRandomInt(0 ,250), getRandomInt(0 ,250), getRandomInt(0 ,250), getRandomInt(0 ,250), getRandomInt(0 ,250)]},          
+          data: [this.getRandomInt(0 ,250), this.getRandomInt(0 ,250), this.getRandomInt(0 ,250), this.getRandomInt(0 ,250), this.getRandomInt(0 ,250), this.getRandomInt(0 ,250)]},          
         ],
         labels: [
           "RLPF1 - St Mungo’s",
@@ -459,13 +408,14 @@ export default {
         ]
       }
 
+        console.log(this.viewMode)
       switch (this.viewMode) {
         case 'All':
-          tableLessons = getLessons(getCountries(), [], [], this.selectedYear)
-          prevTableLessons = getLessons(getCountries(), [], [], this.selectedYear - 1)
+          tableLessons = getLessons(this.employmentStatus, [], [], this.selectedYear, 'All')
+          prevTableLessons = getLessons(this.employmentStatus, [], [], this.selectedYear - 1, 'All')
           if (this.checkedItems.length === 0) {
-            lessons = getLessons([], [], [], this.selectedYear)
-            prevYearLessons = getLessons([], [], [], this.selectedYear - 1)
+            lessons = getLessons([], [], [], this.selectedYear, 'All')
+            prevYearLessons = getLessons([], [], [], this.selectedYear - 1, 'All')
             this.totalTenants = calcSum(Object.values(lessons.lessons[0]))
             this.growthRate = compareDataByYear(Object.values(prevYearLessons.lessons[0]), Object.values(lessons.lessons[0]))
             this.chartData = getLineChartData(lessons, getAllPurpleColor)
@@ -480,20 +430,20 @@ export default {
           break
 
         case 'Status':
-          tableLessons = getLessons([this.selectedStatus], [], [], this.selectedYear)
-          prevTableLessons = getLessons([this.selectedStatus], [], [], this.selectedYear - 1)
+          tableLessons = getLessons([this.selectedStatus], [], [], this.selectedYear, 'Status')
+          prevTableLessons = getLessons([this.selectedStatus], [], [], this.selectedYear - 1, 'Status')
           if (this.checkedItems.length === 0) {
-            lessons = getTotalLessonsByCountry(this.selectedStatus, this.selectedYear)
-            prevYearLessons = getTotalLessonsByCountry(this.selectedStatus, this.selectedYear - 1)
+            lessons = getTotalLessonsByCountry(this.selectedStatus, this.selectedYear, 'Status')
+            prevYearLessons = getTotalLessonsByCountry(this.selectedStatus, this.selectedYear - 1, 'Status')
             this.stackedBarChartData = dummyBarchartData
             this.tableDataByStatus = getTableData('Status', tableLessons, prevTableLessons)
           } else {
-            lessons = getLessons([this.selectedStatus], getCamps(this.selectedStatus), [], this.selectedYear)
-            prevYearLessons = getLessons([this.selectedStatus], getCamps(this.selectedStatus), [], this.selectedYear - 1)
+            lessons = getLessons([this.selectedStatus], getCamps(this.selectedStatus), [], this.selectedYear, 'Status')
+            prevYearLessons = getLessons([this.selectedStatus], getCamps(this.selectedStatus), [], this.selectedYear - 1, 'Status')
             this.stackedBarChartData = this.filterBarChartData(dummyBarchartData)
           }
-          summaryboxLessons = getLessons([this.selectedStatus], getCamps(this.selectedStatus), [], this.selectedYear)
-          prevSummaryboxLessons = getLessons([this.selectedStatus], getCamps(this.selectedStatus), [], this.selectedYear - 1)
+          summaryboxLessons = getLessons([this.selectedStatus], getCamps(this.selectedStatus), [], this.selectedYear, 'Status')
+          prevSummaryboxLessons = getLessons([this.selectedStatus], getCamps(this.selectedStatus), [], this.selectedYear - 1, 'Status')
           this.summaryBoxData =  this.filterTopics(getTableData('Fund', summaryboxLessons, prevSummaryboxLessons))          
           totalCurrLessons = lessons.lessons.flatMap(el => Object.values(el))
           totalPrevLessons = prevYearLessons.lessons.flatMap(el => Object.values(el))
@@ -503,26 +453,45 @@ export default {
           break
 
         case 'Fund':
-          // table lessons data
           this.linechartShow = true
-          lessons = getLessons([this.selectedStatus], [this.selectedFund], [], this.selectedYear)
-          prevYearLessons = getLessons([this.selectedStatus], [this.selectedFund], [], this.selectedYear - 1)
-          totalCurrLessons = lessons.lessons.flatMap(el => Object.values(el))
-          totalPrevLessons = prevYearLessons.lessons.flatMap(el => Object.values(el))
-          this.chartData = this.filterChartData(getLineChartData(lessons, getLineChartColorScheme), this.checkedItems)
-          this.totalTenants = calcSum(totalCurrLessons)
-          this.growthRate = compareDataByYear(totalPrevLessons, totalCurrLessons)
-          tableLessons = getTableData('Status', lessons, prevYearLessons)
-          tableLessons[0].name = this.selectedStatus
-          this.barChartData = getBarChartData(tableLessons)
-          this.tableDataByStatus = tableLessons
-          this.summaryBoxData = this.filterTopics(tableLessons)
+            // status x / fund o : all employment status line graph + summary Area & Table by status
+            if (this.selectedStatus === null && this.selectedFund !== null) {
+              tableLessons = getLessons([this.selectedFund], this.employmentStatus, [], this.selectedYear, 'Fund')
+              prevTableLessons = getLessons([this.selectedFund], this.employmentStatus, [], this.selectedYear -1, 'Fund')
+              lessons = getLessons([this.selectedFund], [], [], this.selectedYear, 'Fund')
+              prevYearLessons = getLessons([], [], [], this.selectedYear - 1, 'Fund')
+              this.totalTenants = calcSum(Object.values(lessons.lessons[0]))
+              this.growthRate = compareDataByYear(Object.values(prevYearLessons.lessons[0]), Object.values(lessons.lessons[0]))
+              this.chartData = getLineChartData(lessons, getAllPurpleColor)         
+              this.barChartData = getBarChartData(getTableData('Status', tableLessons, prevTableLessons))
+              this.tableDataByStatus = getTableData('Status', tableLessons, prevTableLessons)
+              this.summaryBoxData = this.filterTopics(getTableData('Status', tableLessons, prevTableLessons))
+          } else if (this.selectedStatus && this.selectedFund) {
+            // status o / fund o : selected employment status line graph + summary Area & Table by selected status
+            lessons = getLessons([this.selectedFund], [this.selectedStatus], [], this.selectedYear, 'Fund')
+            prevYearLessons = getLessons([this.selectedFund], [this.selectedStatus], [], this.selectedYear - 1, 'Fund')          
+            totalCurrLessons = lessons.lessons.flatMap(el => Object.values(el))
+            totalPrevLessons = prevYearLessons.lessons.flatMap(el => Object.values(el))
+            this.totalTenants = calcSum(totalCurrLessons)
+            this.growthRate = compareDataByYear(totalPrevLessons, totalCurrLessons)
+            this.barChartData = getBarChartData(getTableData('Status', lessons, prevYearLessons))
+            this.tableDataByStatus = getTableData('Status', lessons, prevYearLessons)
+            this.chartData = this.filterChartData(getLineChartData(lessons, getLineChartColorScheme), this.checkedItems)
+            this.summaryBoxData = this.filterTopics(getTableData('Status', lessons, prevYearLessons))
+          }
           this.updateColors(this.viewMode, getLineChartColorScheme)
           break
 
         case 'Demo':
-          lessons = getLessonsByTopics([this.selectedStatus], [this.selectedFund], [this.selectedDemo], this.selectedYear)
-          prevYearLessons = getLessonsByTopics([this.selectedStatus], [this.selectedFund], [this.selectedDemo], this.selectedYear - 1)
+          // if status & fund & demographic options selected -> year data render
+          // if status & demographic options selected -> fund data render
+          if (this.selectedStatus && this.selectedFund && this.selectedYear) {
+            lessons = getLessonsByTopics([this.selectedStatus], [this.selectedFund], [this.selectedDemo], this.selectedYear)
+            prevYearLessons = getLessonsByTopics([this.selectedStatus], [this.selectedFund], [this.selectedDemo], this.selectedYear - 1)
+          } else {
+            lessons = getValueByDemo(this.selectedStatus, this.selectedDemo, this.selectedYear)
+            prevYearLessons = getValueByDemo(this.selectedStatus, this.selectedDemo, this.selectedYear - 1)
+          }
           totalCurrLessons = lessons.lessons.flatMap(el => Object.values(el))
           totalPrevLessons = prevYearLessons.lessons.flatMap(el => Object.values(el))
           this.totalTenants = calcSum(totalCurrLessons)
@@ -530,19 +499,17 @@ export default {
           this.stackedBarChartData = this.filterChartData(getStackedBarChartData(lessons, getLineChartColorScheme), this.checkedItems)
           this.TopicTableData = getTableData('Topics', lessons, prevYearLessons)
           this.summaryBoxData = this.filterTopics(getTableData('Topics', lessons, prevYearLessons)) // for checkbox rendering
-          console.log(this.summaryBoxData)
           this.updateColors(this.viewMode, getLineChartColorScheme)
           break
       }
     },
     updateConditionalRendering () {
-      console.log(this.viewMode)
       switch (this.viewMode) {
         case 'All':
           this.linechartShow = true
           this.stackedChartShow = false
-          this.fundPlaceholder = 'Select status to activate'
-          this.fundSelectboxDisabled = true
+          this.fundPlaceholder = 'Show all'
+          this.fundSelectboxDisabled = false
           this.demoSelectboxDisabled = true
           this.selectedStatus = null
           this.selectedFund = null
@@ -556,11 +523,11 @@ export default {
           this.stackedChartShow = (this.selectedStatus !== null) ? true : false
           this.fundPlaceholder = 'Show All'
           this.fundSelectboxDisabled = false
-          this.demoSelectboxDisabled = true
+          this.demoSelectboxDisabled = false
           this.stackedBarchartOption.legend.display = false          
           this.selectedFund = null
           this.selectedDemo = null
-          this.funds = getCamps(this.selectedStatus)
+          // this.funds = getCamps(this.selectedStatus)
           this.status = '- ' + this.selectedStatus
           this.fund = ''
           this.demo = ''
@@ -570,8 +537,9 @@ export default {
           this.stackedChartShow = false
           this.fundSelectboxDisabled = false
           this.demoSelectboxDisabled = false
+          this.selectedStatus = (this.selectedFund === 'null') ? null : this.selectedStatus
           this.selectedDemo = null
-          this.demographics = getSchools(this.selectedStatus, this.selectedFund)
+          // this.demographics = getSchools(this.selectedStatus, this.selectedFund)
           this.fund = ', ' + this.selectedFund
           this.demo = ''
           break
@@ -688,7 +656,7 @@ export default {
     },
     selectedFund () {
       if (this.selectedFund === null) {
-        this.viewMode = 'Status'
+        this.viewMode = 'All'
         this.uncheckAllCheckboxes()
         this.updateData()
       } else {
@@ -700,13 +668,13 @@ export default {
     selectedDemo () {
       if (this.selectedFund !== null & this.selectedDemo === null) {
         this.viewMode = 'Fund'
-        this.uncheckAllCheckboxes()
-        this.updateData()
-      } else if (this.selectedFund !== null & this.selectedStatus !== null) {
+      } else if (this.selectedFund === null & this.selectedDemo === null) {
+        this.viewMode = 'All'
+      } else {
         this.viewMode = 'Demo'
+      }
         this.uncheckAllCheckboxes()
         this.updateData()
-      }
     }
   },
   computed: {
@@ -1068,18 +1036,19 @@ canvas#line-chart.chartjs-render-monitor {
 
 .summary-text{
   color: #D8D8D8;
+  width: 100%;
 }
 
 .summary-text h1 {
   margin: 0 0 0 0;
 }
 
-.summary-text h2 {
+/* .summary-text h2 {
   display: inline;
-  margin: 0 0.5rem 0 0;
+  margin: 0 0.2rem 0 0;
   color:'#D8D8D8';
   font-size: 2rem;
-}
+} */
 
 .summary-bar-chart-container {
   display: flex;

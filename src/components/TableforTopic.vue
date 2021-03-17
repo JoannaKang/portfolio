@@ -4,7 +4,7 @@
       <thead style="width:100%">
         <tr style="width:100%">
           <th style="width:7%; border-right:1px solid #D8D8D8;" scope="col">{{tableName}}<img src="../../src/assets/Sorting.svg" v-on:click="sortTableDatabyName" class="sort-button"/></th>
-          <th style="width:7.7%" scope="col" v-for="month in monthlyColumn" :key="month">{{month}}</th>
+          <th v-bind:style="columnWidth()" scope="col" v-for="month in monthlyColumn" :key="month">{{month}}</th>
           <th style="width:10%; border-left:1px solid #D8D8D8;" scope="col">Total tenants<img src="../../src/assets/Sorting.svg" v-on:click="sortTableDatabyLessons" class="sort-button"/></th>
           <th style="width:14.5%" scope="col">Difference in 12 Months <img src="../../src/assets/Sorting.svg" v-on:click="sortTableDatabyDifference" class="sort-button"/></th>
         </tr>
@@ -24,7 +24,7 @@
 </template>
 
 <script>
-// import { getMonthlyColumn } from '../data/data-handler'
+import { getMonthlyColumn, getFundColumn } from '../data/data-handler'
 export default {
   props: {
     TopicTableData: {
@@ -36,15 +36,11 @@ export default {
       sortedByLessons: false,
       sortedByDifference: false,
       tableName: 'Topic',
-      monthlyColumn: [
-  "RLPF1 - St Mungo’s",
-  "RLPF2 - St Mungo’s",
-  "NHPF 1 - Oxford",
-  "NHPF 1 - Bristol",
-  "NHPF 1 - Lancaster",
-  "NHPF 1 - Manchester"
-]
+      monthlyColumn: []
     }
+  },
+  mounted () {
+    this.monthlyColumn = (this.TopicTableData[0].monthlyData.lessons.length === 14) ? getMonthlyColumn() : getFundColumn()
   },
   methods: {
     sortTableDatabyName () {
@@ -81,9 +77,14 @@ export default {
       }
     },
     borderStyle (index) {
-      if (index === 5) {
+      if (index === this.monthlyColumn.length - 1) {
         return 'border-right:1px solid #D8D8D8;'
       }
+    },
+    columnWidth () {
+      const width = (this.TopicTableData[0].monthlyData.lessons.length === 14) ? 'width:3.77%;' : 'width:7.7%;'
+      console.log(width)
+      return width
     }
   },
   watch: {

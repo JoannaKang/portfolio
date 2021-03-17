@@ -1,4 +1,6 @@
-const data = require('./dummyJsonData.json')
+const data = require('./dummyStatusJsonData.json')
+const fundData = require('./dummyFundJsonData.json')
+const demoData = require('./dummyDemoJsonData.json')
 const ICT_STUDENT_DATA = require('./ict-data.json')
 const ICT_TEACHER_DATA = require('./ict-teachers-data.json')
 
@@ -61,16 +63,22 @@ export function getTotalLessonsByCamp (country, camp, year) {
   return dataByCamp
 }
 
-export function getLessons (countries, camps, schools, year) {
+export function getLessons (countries, camps, schools, year, viewMode) {
   let values = {}
-
+  let chartdata = {}
+  if (viewMode === 'Fund') {
+    chartdata = fundData
+  } else {
+    chartdata = data
+  }
+  
   if (countries.length === 0) {
-    values['All'] = data.values[year] ? data.values[year] : getZeroLessonData()
+    values['All'] = chartdata.values[year] ? chartdata.values[year] : getZeroLessonData()
   } else {
     for (let countryIndex = 0; countryIndex < countries.length; countryIndex++) {
       const country = countries[countryIndex]
       if (camps.length === 0) {
-        const lessons = data.children[country].values[year]
+        const lessons = chartdata.children[country].values[year]
         if (lessons) {
           values[country] = lessons
         } else {
@@ -80,7 +88,7 @@ export function getLessons (countries, camps, schools, year) {
         for (let campIndex = 0; campIndex < camps.length; campIndex++) {
           const camp = camps[campIndex]
           if (schools.length === 0) {
-            const lessons = data.children[country].children[camp].values[year]
+            const lessons = chartdata.children[country].children[camp].values[year]           
             if (lessons) {
               values[camp] = lessons
             } else {
@@ -89,7 +97,7 @@ export function getLessons (countries, camps, schools, year) {
           } else {
             for (let schoolIndex = 0; schoolIndex < schools.length; schoolIndex++) {
               const school = schools[schoolIndex]
-              const lessons = data.children[country].children[camp].children[school].values[year]
+              const lessons = chartdata.children[country].children[camp].children[school].values[year]
               if (lessons) {
                 values[school] = lessons
               } else {
@@ -124,7 +132,26 @@ export function getLessonsByTopics (country, camp, school, year) {
 
   return {
     labels: Object.keys(existingTopicsInYear),
-    lessons: Object.values(existingTopicsInYear)
+    lessons: Object.values(existingTopicsInYear),
+    type: 'Month'
+  }
+}
+
+export function getValueByDemo (status, demo, year) {
+  const values = demoData.children[status].children[demo].children
+  const valuesByDemo = Object.values(values)
+  const allDemoCategory = Object.keys(values)
+
+  const demoDataInYear = {}
+  allDemoCategory.forEach((el, index) => {
+    const dataByFund = valuesByDemo[index].values[year]
+    demoDataInYear[el] = dataByFund || getZeroLessonData()
+  })
+  
+  return {
+    labels: Object.keys(demoDataInYear),
+    lessons: Object.values(demoDataInYear),
+    type: 'Fund'
   }
 }
 

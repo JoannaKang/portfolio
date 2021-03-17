@@ -267,3 +267,15 @@ export function getMonthlyColumn () {
   const MONTH = [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ]
   return MONTH
 }
+
+export function getFundColumn () {
+  const FUNDS = [
+    "RLPF1 - St Mungo’s",
+    "RLPF2 - St Mungo’s",
+    "NHPF 1 - Oxford",
+    "NHPF 1 - Bristol",
+    "NHPF 1 - Lancaster",
+    "NHPF 1 - Manchester"]
+  
+    return FUNDS
+}

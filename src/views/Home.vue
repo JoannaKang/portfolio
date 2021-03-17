@@ -42,7 +42,7 @@
               <h3>Showing data till {{lastUpdate}}</h3>
             </column>
           </router-link>
-          <router-link to="/ict">
+          <router-link to="/employment">
             <column class="thumbnail-tile" :lg="4">
               <div class="link-title">
                 <h1>Tenants’ savings</h1>
@@ -55,14 +55,14 @@
           </router-link>
         </row>
         <row :gutter="12" id="thumbnails">
-          <router-link to="/ins">
+          <router-link to="/employment">
             <column class="thumbnail-tile" :lg="4">
               <div class="link-title">
                 <h1>Payments on time</h1>
                 <h1 style="color:#8954BA;">{{growthRate4}}</h1>
               </div>
               <div class="link-sub-title">Maintaining home</div>
-              <img src="../../src/assets/dummy1.svg"/>
+              <img src="../../src/assets/dummy3.svg"/>
               <h3>Showing data till {{lastUpdate}}</h3>
             </column>
           </router-link>

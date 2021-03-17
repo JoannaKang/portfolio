@@ -1,0 +1,5542 @@
+{
+  "values": {},
+  "children": {
+    "Full time - 35+ hours/week": {
+      "values": {},
+      "children": {
+        "Age at survey date": {
+          "values": {},
+          "children": {
+            "18-21 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 16,
+                  "RLPF2 - St Mungo’s": 17,
+                  "NHPF 1 - Oxford": 30,
+                  "NHPF 1 - Bristol": 43,
+                  "NHPF 1 - Lancaster": 3,
+                  "NHPF 1 - Manchester": 12
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 17,
+                  "RLPF2 - St Mungo’s": 29,
+                  "NHPF 1 - Oxford": 38,
+                  "NHPF 1 - Bristol": 14,
+                  "NHPF 1 - Lancaster": 17,
+                  "NHPF 1 - Manchester": 7
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 39,
+                  "RLPF2 - St Mungo’s": 22,
+                  "NHPF 1 - Oxford": 33,
+                  "NHPF 1 - Bristol": 5,
+                  "NHPF 1 - Lancaster": 16,
+                  "NHPF 1 - Manchester": 40
+                }
+              }
+            },
+            "22-24 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 30,
+                  "RLPF2 - St Mungo’s": 24,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 47,
+                  "NHPF 1 - Lancaster": 9,
+                  "NHPF 1 - Manchester": 47
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 40,
+                  "RLPF2 - St Mungo’s": 40,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 3,
+                  "NHPF 1 - Lancaster": 35,
+                  "NHPF 1 - Manchester": 13
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 5,
+                  "RLPF2 - St Mungo’s": 17,
+                  "NHPF 1 - Oxford": 30,
+                  "NHPF 1 - Bristol": 37,
+                  "NHPF 1 - Lancaster": 17,
+                  "NHPF 1 - Manchester": 27
+                }
+              }
+            },
+            "25-34 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 12,
+                  "RLPF2 - St Mungo’s": 30,
+                  "NHPF 1 - Oxford": 44,
+                  "NHPF 1 - Bristol": 42,
+                  "NHPF 1 - Lancaster": 20,
+                  "NHPF 1 - Manchester": 37
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 31,
+                  "RLPF2 - St Mungo’s": 31,
+                  "NHPF 1 - Oxford": 31,
+                  "NHPF 1 - Bristol": 29,
+                  "NHPF 1 - Lancaster": 37,
+                  "NHPF 1 - Manchester": 20
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 15,
+                  "RLPF2 - St Mungo’s": 47,
+                  "NHPF 1 - Oxford": 20,
+                  "NHPF 1 - Bristol": 7,
+                  "NHPF 1 - Lancaster": 18,
+                  "NHPF 1 - Manchester": 36
+                }
+              }
+            },
+            "35-44 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 22,
+                  "RLPF2 - St Mungo’s": 21,
+                  "NHPF 1 - Oxford": 44,
+                  "NHPF 1 - Bristol": 1,
+                  "NHPF 1 - Lancaster": 46,
+                  "NHPF 1 - Manchester": 11
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 21,
+                  "RLPF2 - St Mungo’s": 21,
+                  "NHPF 1 - Oxford": 37,
+                  "NHPF 1 - Bristol": 26,
+                  "NHPF 1 - Lancaster": 11,
+                  "NHPF 1 - Manchester": 45
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 48,
+                  "RLPF2 - St Mungo’s": 37,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 20,
+                  "NHPF 1 - Lancaster": 35,
+                  "NHPF 1 - Manchester": 16
+                }
+              }
+            },
+            "45-54 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 1,
+                  "RLPF2 - St Mungo’s": 15,
+                  "NHPF 1 - Oxford": 49,
+                  "NHPF 1 - Bristol": 28,
+                  "NHPF 1 - Lancaster": 27,
+                  "NHPF 1 - Manchester": 29
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 20,
+                  "RLPF2 - St Mungo’s": 38,
+                  "NHPF 1 - Oxford": 12,
+                  "NHPF 1 - Bristol": 43,
+                  "NHPF 1 - Lancaster": 6,
+                  "NHPF 1 - Manchester": 12
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 21,
+                  "RLPF2 - St Mungo’s": 15,
+                  "NHPF 1 - Oxford": 39,
+                  "NHPF 1 - Bristol": 0,
+                  "NHPF 1 - Lancaster": 1,
+                  "NHPF 1 - Manchester": 41
+                }
+              }
+            }
+          }
+        },
+        "Benefits": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 35,
+                  "RLPF2 - St Mungo’s": 40,
+                  "NHPF 1 - Oxford": 15,
+                  "NHPF 1 - Bristol": 43,
+                  "NHPF 1 - Lancaster": 0,
+                  "NHPF 1 - Manchester": 41
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 5,
+                  "RLPF2 - St Mungo’s": 21,
+                  "NHPF 1 - Oxford": 27,
+                  "NHPF 1 - Bristol": 45,
+                  "NHPF 1 - Lancaster": 2,
+                  "NHPF 1 - Manchester": 1
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 0,
+                  "RLPF2 - St Mungo’s": 21,
+                  "NHPF 1 - Oxford": 49,
+                  "NHPF 1 - Bristol": 49,
+                  "NHPF 1 - Lancaster": 14,
+                  "NHPF 1 - Manchester": 45
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 36,
+                  "RLPF2 - St Mungo’s": 12,
+                  "NHPF 1 - Oxford": 38,
+                  "NHPF 1 - Bristol": 14,
+                  "NHPF 1 - Lancaster": 22,
+                  "NHPF 1 - Manchester": 27
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 49,
+                  "RLPF2 - St Mungo’s": 32,
+                  "NHPF 1 - Oxford": 14,
+                  "NHPF 1 - Bristol": 40,
+                  "NHPF 1 - Lancaster": 28,
+                  "NHPF 1 - Manchester": 37
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 12,
+                  "RLPF2 - St Mungo’s": 44,
+                  "NHPF 1 - Oxford": 8,
+                  "NHPF 1 - Bristol": 37,
+                  "NHPF 1 - Lancaster": 35,
+                  "NHPF 1 - Manchester": 20
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 3,
+                  "RLPF2 - St Mungo’s": 32,
+                  "NHPF 1 - Oxford": 28,
+                  "NHPF 1 - Bristol": 34,
+                  "NHPF 1 - Lancaster": 35,
+                  "NHPF 1 - Manchester": 37
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 34,
+                  "RLPF2 - St Mungo’s": 3,
+                  "NHPF 1 - Oxford": 27,
+                  "NHPF 1 - Bristol": 30,
+                  "NHPF 1 - Lancaster": 13,
+                  "NHPF 1 - Manchester": 4
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 49,
+                  "RLPF2 - St Mungo’s": 19,
+                  "NHPF 1 - Oxford": 29,
+                  "NHPF 1 - Bristol": 4,
+                  "NHPF 1 - Lancaster": 8,
+                  "NHPF 1 - Manchester": 6
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 17,
+                  "RLPF2 - St Mungo’s": 0,
+                  "NHPF 1 - Oxford": 36,
+                  "NHPF 1 - Bristol": 13,
+                  "NHPF 1 - Lancaster": 32,
+                  "NHPF 1 - Manchester": 19
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 6,
+                  "RLPF2 - St Mungo’s": 14,
+                  "NHPF 1 - Oxford": 46,
+                  "NHPF 1 - Bristol": 38,
+                  "NHPF 1 - Lancaster": 9,
+                  "NHPF 1 - Manchester": 8
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 48,
+                  "RLPF2 - St Mungo’s": 49,
+                  "NHPF 1 - Oxford": 13,
+                  "NHPF 1 - Bristol": 3,
+                  "NHPF 1 - Lancaster": 37,
+                  "NHPF 1 - Manchester": 1
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 42,
+                  "RLPF2 - St Mungo’s": 36,
+                  "NHPF 1 - Oxford": 43,
+                  "NHPF 1 - Bristol": 35,
+                  "NHPF 1 - Lancaster": 10,
+                  "NHPF 1 - Manchester": 29
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 42,
+                  "RLPF2 - St Mungo’s": 40,
+                  "NHPF 1 - Oxford": 8,
+                  "NHPF 1 - Bristol": 30,
+                  "NHPF 1 - Lancaster": 45,
+                  "NHPF 1 - Manchester": 40
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 12,
+                  "RLPF2 - St Mungo’s": 18,
+                  "NHPF 1 - Oxford": 49,
+                  "NHPF 1 - Bristol": 40,
+                  "NHPF 1 - Lancaster": 41,
+                  "NHPF 1 - Manchester": 27
+                }
+              }
+            }
+          }
+        },
+        "Households with children": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 19,
+                  "RLPF2 - St Mungo’s": 33,
+                  "NHPF 1 - Oxford": 22,
+                  "NHPF 1 - Bristol": 5,
+                  "NHPF 1 - Lancaster": 43,
+                  "NHPF 1 - Manchester": 6
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 35,
+                  "RLPF2 - St Mungo’s": 33,
+                  "NHPF 1 - Oxford": 26,
+                  "NHPF 1 - Bristol": 38,
+                  "NHPF 1 - Lancaster": 24,
+                  "NHPF 1 - Manchester": 41
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 33,
+                  "RLPF2 - St Mungo’s": 38,
+                  "NHPF 1 - Oxford": 20,
+                  "NHPF 1 - Bristol": 27,
+                  "NHPF 1 - Lancaster": 37,
+                  "NHPF 1 - Manchester": 24
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 17,
+                  "RLPF2 - St Mungo’s": 8,
+                  "NHPF 1 - Oxford": 16,
+                  "NHPF 1 - Bristol": 0,
+                  "NHPF 1 - Lancaster": 0,
+                  "NHPF 1 - Manchester": 43
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 33,
+                  "RLPF2 - St Mungo’s": 26,
+                  "NHPF 1 - Oxford": 26,
+                  "NHPF 1 - Bristol": 14,
+                  "NHPF 1 - Lancaster": 16,
+                  "NHPF 1 - Manchester": 45
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 27,
+                  "RLPF2 - St Mungo’s": 15,
+                  "NHPF 1 - Oxford": 42,
+                  "NHPF 1 - Bristol": 49,
+                  "NHPF 1 - Lancaster": 35,
+                  "NHPF 1 - Manchester": 12
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 33,
+                  "RLPF2 - St Mungo’s": 38,
+                  "NHPF 1 - Oxford": 4,
+                  "NHPF 1 - Bristol": 0,
+                  "NHPF 1 - Lancaster": 3,
+                  "NHPF 1 - Manchester": 45
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 45,
+                  "RLPF2 - St Mungo’s": 41,
+                  "NHPF 1 - Oxford": 35,
+                  "NHPF 1 - Bristol": 17,
+                  "NHPF 1 - Lancaster": 15,
+                  "NHPF 1 - Manchester": 29
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 8,
+                  "RLPF2 - St Mungo’s": 27,
+                  "NHPF 1 - Oxford": 10,
+                  "NHPF 1 - Bristol": 9,
+                  "NHPF 1 - Lancaster": 20,
+                  "NHPF 1 - Manchester": 25
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 12,
+                  "RLPF2 - St Mungo’s": 45,
+                  "NHPF 1 - Oxford": 4,
+                  "NHPF 1 - Bristol": 33,
+                  "NHPF 1 - Lancaster": 35,
+                  "NHPF 1 - Manchester": 36
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 10,
+                  "RLPF2 - St Mungo’s": 20,
+                  "NHPF 1 - Oxford": 29,
+                  "NHPF 1 - Bristol": 12,
+                  "NHPF 1 - Lancaster": 39,
+                  "NHPF 1 - Manchester": 3
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 7,
+                  "RLPF2 - St Mungo’s": 48,
+                  "NHPF 1 - Oxford": 29,
+                  "NHPF 1 - Bristol": 45,
+                  "NHPF 1 - Lancaster": 25,
+                  "NHPF 1 - Manchester": 9
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 18,
+                  "RLPF2 - St Mungo’s": 35,
+                  "NHPF 1 - Oxford": 33,
+                  "NHPF 1 - Bristol": 26,
+                  "NHPF 1 - Lancaster": 3,
+                  "NHPF 1 - Manchester": 16
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 47,
+                  "RLPF2 - St Mungo’s": 12,
+                  "NHPF 1 - Oxford": 17,
+                  "NHPF 1 - Bristol": 47,
+                  "NHPF 1 - Lancaster": 27,
+                  "NHPF 1 - Manchester": 6
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 38,
+                  "RLPF2 - St Mungo’s": 8,
+                  "NHPF 1 - Oxford": 34,
+                  "NHPF 1 - Bristol": 1,
+                  "NHPF 1 - Lancaster": 22,
+                  "NHPF 1 - Manchester": 29
+                }
+              }
+            }
+          }
+        },
+        "Tenants with disabilities": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 16,
+                  "RLPF2 - St Mungo’s": 10,
+                  "NHPF 1 - Oxford": 11,
+                  "NHPF 1 - Bristol": 14,
+                  "NHPF 1 - Lancaster": 25,
+                  "NHPF 1 - Manchester": 5
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 41,
+                  "RLPF2 - St Mungo’s": 18,
+                  "NHPF 1 - Oxford": 48,
+                  "NHPF 1 - Bristol": 7,
+                  "NHPF 1 - Lancaster": 12,
+                  "NHPF 1 - Manchester": 48
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 21,
+                  "RLPF2 - St Mungo’s": 19,
+                  "NHPF 1 - Oxford": 23,
+                  "NHPF 1 - Bristol": 18,
+                  "NHPF 1 - Lancaster": 6,
+                  "NHPF 1 - Manchester": 6
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 5,
+                  "RLPF2 - St Mungo’s": 48,
+                  "NHPF 1 - Oxford": 46,
+                  "NHPF 1 - Bristol": 19,
+                  "NHPF 1 - Lancaster": 28,
+                  "NHPF 1 - Manchester": 28
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 20,
+                  "RLPF2 - St Mungo’s": 11,
+                  "NHPF 1 - Oxford": 41,
+                  "NHPF 1 - Bristol": 49,
+                  "NHPF 1 - Lancaster": 22,
+                  "NHPF 1 - Manchester": 35
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 35,
+                  "RLPF2 - St Mungo’s": 5,
+                  "NHPF 1 - Oxford": 47,
+                  "NHPF 1 - Bristol": 40,
+                  "NHPF 1 - Lancaster": 47,
+                  "NHPF 1 - Manchester": 31
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 5,
+                  "RLPF2 - St Mungo’s": 28,
+                  "NHPF 1 - Oxford": 27,
+                  "NHPF 1 - Bristol": 13,
+                  "NHPF 1 - Lancaster": 39,
+                  "NHPF 1 - Manchester": 27
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 22,
+                  "RLPF2 - St Mungo’s": 26,
+                  "NHPF 1 - Oxford": 12,
+                  "NHPF 1 - Bristol": 22,
+                  "NHPF 1 - Lancaster": 19,
+                  "NHPF 1 - Manchester": 32
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 25,
+                  "RLPF2 - St Mungo’s": 47,
+                  "NHPF 1 - Oxford": 23,
+                  "NHPF 1 - Bristol": 38,
+                  "NHPF 1 - Lancaster": 44,
+                  "NHPF 1 - Manchester": 21
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 15,
+                  "RLPF2 - St Mungo’s": 16,
+                  "NHPF 1 - Oxford": 28,
+                  "NHPF 1 - Bristol": 18,
+                  "NHPF 1 - Lancaster": 49,
+                  "NHPF 1 - Manchester": 15
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 49,
+                  "RLPF2 - St Mungo’s": 20,
+                  "NHPF 1 - Oxford": 47,
+                  "NHPF 1 - Bristol": 23,
+                  "NHPF 1 - Lancaster": 24,
+                  "NHPF 1 - Manchester": 15
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 25,
+                  "RLPF2 - St Mungo’s": 6,
+                  "NHPF 1 - Oxford": 25,
+                  "NHPF 1 - Bristol": 30,
+                  "NHPF 1 - Lancaster": 30,
+                  "NHPF 1 - Manchester": 29
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 0,
+                  "RLPF2 - St Mungo’s": 49,
+                  "NHPF 1 - Oxford": 11,
+                  "NHPF 1 - Bristol": 31,
+                  "NHPF 1 - Lancaster": 4,
+                  "NHPF 1 - Manchester": 43
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 47,
+                  "RLPF2 - St Mungo’s": 4,
+                  "NHPF 1 - Oxford": 2,
+                  "NHPF 1 - Bristol": 26,
+                  "NHPF 1 - Lancaster": 35,
+                  "NHPF 1 - Manchester": 17
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 17,
+                  "RLPF2 - St Mungo’s": 6,
+                  "NHPF 1 - Oxford": 13,
+                  "NHPF 1 - Bristol": 6,
+                  "NHPF 1 - Lancaster": 9,
+                  "NHPF 1 - Manchester": 27
+                }
+              }
+            }
+          }
+        },
+        "Ethnic origin": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 18,
+                  "RLPF2 - St Mungo’s": 35,
+                  "NHPF 1 - Oxford": 9,
+                  "NHPF 1 - Bristol": 39,
+                  "NHPF 1 - Lancaster": 10,
+                  "NHPF 1 - Manchester": 25
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 34,
+                  "RLPF2 - St Mungo’s": 34,
+                  "NHPF 1 - Oxford": 24,
+                  "NHPF 1 - Bristol": 17,
+                  "NHPF 1 - Lancaster": 34,
+                  "NHPF 1 - Manchester": 25
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 38,
+                  "RLPF2 - St Mungo’s": 29,
+                  "NHPF 1 - Oxford": 42,
+                  "NHPF 1 - Bristol": 4,
+                  "NHPF 1 - Lancaster": 12,
+                  "NHPF 1 - Manchester": 14
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 43,
+                  "RLPF2 - St Mungo’s": 48,
+                  "NHPF 1 - Oxford": 8,
+                  "NHPF 1 - Bristol": 22,
+                  "NHPF 1 - Lancaster": 24,
+                  "NHPF 1 - Manchester": 4
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 17,
+                  "RLPF2 - St Mungo’s": 25,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 15,
+                  "NHPF 1 - Lancaster": 25,
+                  "NHPF 1 - Manchester": 49
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 40,
+                  "RLPF2 - St Mungo’s": 47,
+                  "NHPF 1 - Oxford": 37,
+                  "NHPF 1 - Bristol": 4,
+                  "NHPF 1 - Lancaster": 45,
+                  "NHPF 1 - Manchester": 2
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 16,
+                  "RLPF2 - St Mungo’s": 39,
+                  "NHPF 1 - Oxford": 40,
+                  "NHPF 1 - Bristol": 49,
+                  "NHPF 1 - Lancaster": 13,
+                  "NHPF 1 - Manchester": 14
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 42,
+                  "RLPF2 - St Mungo’s": 25,
+                  "NHPF 1 - Oxford": 35,
+                  "NHPF 1 - Bristol": 21,
+                  "NHPF 1 - Lancaster": 33,
+                  "NHPF 1 - Manchester": 22
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 33,
+                  "RLPF2 - St Mungo’s": 14,
+                  "NHPF 1 - Oxford": 39,
+                  "NHPF 1 - Bristol": 19,
+                  "NHPF 1 - Lancaster": 19,
+                  "NHPF 1 - Manchester": 8
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 33,
+                  "RLPF2 - St Mungo’s": 26,
+                  "NHPF 1 - Oxford": 44,
+                  "NHPF 1 - Bristol": 34,
+                  "NHPF 1 - Lancaster": 6,
+                  "NHPF 1 - Manchester": 5
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 21,
+                  "RLPF2 - St Mungo’s": 0,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 3,
+                  "NHPF 1 - Lancaster": 31,
+                  "NHPF 1 - Manchester": 4
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 48,
+                  "RLPF2 - St Mungo’s": 11,
+                  "NHPF 1 - Oxford": 49,
+                  "NHPF 1 - Bristol": 40,
+                  "NHPF 1 - Lancaster": 46,
+                  "NHPF 1 - Manchester": 26
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 13,
+                  "RLPF2 - St Mungo’s": 8,
+                  "NHPF 1 - Oxford": 3,
+                  "NHPF 1 - Bristol": 19,
+                  "NHPF 1 - Lancaster": 23,
+                  "NHPF 1 - Manchester": 11
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 36,
+                  "RLPF2 - St Mungo’s": 32,
+                  "NHPF 1 - Oxford": 34,
+                  "NHPF 1 - Bristol": 27,
+                  "NHPF 1 - Lancaster": 18,
+                  "NHPF 1 - Manchester": 18
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 17,
+                  "RLPF2 - St Mungo’s": 38,
+                  "NHPF 1 - Oxford": 8,
+                  "NHPF 1 - Bristol": 11,
+                  "NHPF 1 - Lancaster": 3,
+                  "NHPF 1 - Manchester": 20
+                }
+              }
+            }
+          }
+        },
+        "Gender": {
+          "values": {},
+          "children": {
+            "Male": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 28,
+                  "RLPF2 - St Mungo’s": 3,
+                  "NHPF 1 - Oxford": 26,
+                  "NHPF 1 - Bristol": 39,
+                  "NHPF 1 - Lancaster": 1,
+                  "NHPF 1 - Manchester": 20
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 10,
+                  "RLPF2 - St Mungo’s": 12,
+                  "NHPF 1 - Oxford": 37,
+                  "NHPF 1 - Bristol": 25,
+                  "NHPF 1 - Lancaster": 38,
+                  "NHPF 1 - Manchester": 10
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 13,
+                  "RLPF2 - St Mungo’s": 29,
+                  "NHPF 1 - Oxford": 49,
+                  "NHPF 1 - Bristol": 14,
+                  "NHPF 1 - Lancaster": 24,
+                  "NHPF 1 - Manchester": 36
+                }
+              }
+            },
+            "Female": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 18,
+                  "RLPF2 - St Mungo’s": 12,
+                  "NHPF 1 - Oxford": 34,
+                  "NHPF 1 - Bristol": 37,
+                  "NHPF 1 - Lancaster": 37,
+                  "NHPF 1 - Manchester": 1
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 33,
+                  "RLPF2 - St Mungo’s": 17,
+                  "NHPF 1 - Oxford": 3,
+                  "NHPF 1 - Bristol": 35,
+                  "NHPF 1 - Lancaster": 43,
+                  "NHPF 1 - Manchester": 28
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 40,
+                  "RLPF2 - St Mungo’s": 7,
+                  "NHPF 1 - Oxford": 48,
+                  "NHPF 1 - Bristol": 36,
+                  "NHPF 1 - Lancaster": 40,
+                  "NHPF 1 - Manchester": 40
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "24+ hours/week": {
+      "values": {},
+      "children": {
+        "Age at survey date": {
+          "values": {},
+          "children": {
+            "18-21 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 30,
+                  "RLPF2 - St Mungo’s": 25,
+                  "NHPF 1 - Oxford": 20,
+                  "NHPF 1 - Bristol": 2,
+                  "NHPF 1 - Lancaster": 29,
+                  "NHPF 1 - Manchester": 16
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 40,
+                  "RLPF2 - St Mungo’s": 34,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 36,
+                  "NHPF 1 - Lancaster": 29,
+                  "NHPF 1 - Manchester": 9
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 34,
+                  "RLPF2 - St Mungo’s": 16,
+                  "NHPF 1 - Oxford": 22,
+                  "NHPF 1 - Bristol": 16,
+                  "NHPF 1 - Lancaster": 43,
+                  "NHPF 1 - Manchester": 13
+                }
+              }
+            },
+            "22-24 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 43,
+                  "RLPF2 - St Mungo’s": 20,
+                  "NHPF 1 - Oxford": 6,
+                  "NHPF 1 - Bristol": 45,
+                  "NHPF 1 - Lancaster": 15,
+                  "NHPF 1 - Manchester": 2
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 16,
+                  "RLPF2 - St Mungo’s": 13,
+                  "NHPF 1 - Oxford": 20,
+                  "NHPF 1 - Bristol": 30,
+                  "NHPF 1 - Lancaster": 47,
+                  "NHPF 1 - Manchester": 31
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 7,
+                  "RLPF2 - St Mungo’s": 5,
+                  "NHPF 1 - Oxford": 5,
+                  "NHPF 1 - Bristol": 14,
+                  "NHPF 1 - Lancaster": 9,
+                  "NHPF 1 - Manchester": 42
+                }
+              }
+            },
+            "25-34 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 15,
+                  "RLPF2 - St Mungo’s": 14,
+                  "NHPF 1 - Oxford": 6,
+                  "NHPF 1 - Bristol": 9,
+                  "NHPF 1 - Lancaster": 26,
+                  "NHPF 1 - Manchester": 41
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 46,
+                  "RLPF2 - St Mungo’s": 12,
+                  "NHPF 1 - Oxford": 36,
+                  "NHPF 1 - Bristol": 9,
+                  "NHPF 1 - Lancaster": 42,
+                  "NHPF 1 - Manchester": 47
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 1,
+                  "RLPF2 - St Mungo’s": 0,
+                  "NHPF 1 - Oxford": 6,
+                  "NHPF 1 - Bristol": 40,
+                  "NHPF 1 - Lancaster": 49,
+                  "NHPF 1 - Manchester": 18
+                }
+              }
+            },
+            "35-44 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 4,
+                  "RLPF2 - St Mungo’s": 16,
+                  "NHPF 1 - Oxford": 12,
+                  "NHPF 1 - Bristol": 12,
+                  "NHPF 1 - Lancaster": 49,
+                  "NHPF 1 - Manchester": 26
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 31,
+                  "RLPF2 - St Mungo’s": 13,
+                  "NHPF 1 - Oxford": 36,
+                  "NHPF 1 - Bristol": 7,
+                  "NHPF 1 - Lancaster": 7,
+                  "NHPF 1 - Manchester": 23
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 2,
+                  "RLPF2 - St Mungo’s": 48,
+                  "NHPF 1 - Oxford": 38,
+                  "NHPF 1 - Bristol": 39,
+                  "NHPF 1 - Lancaster": 48,
+                  "NHPF 1 - Manchester": 38
+                }
+              }
+            },
+            "45-54 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 29,
+                  "RLPF2 - St Mungo’s": 30,
+                  "NHPF 1 - Oxford": 46,
+                  "NHPF 1 - Bristol": 29,
+                  "NHPF 1 - Lancaster": 32,
+                  "NHPF 1 - Manchester": 40
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 44,
+                  "RLPF2 - St Mungo’s": 17,
+                  "NHPF 1 - Oxford": 46,
+                  "NHPF 1 - Bristol": 46,
+                  "NHPF 1 - Lancaster": 21,
+                  "NHPF 1 - Manchester": 25
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 16,
+                  "RLPF2 - St Mungo’s": 1,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 9,
+                  "NHPF 1 - Lancaster": 12,
+                  "NHPF 1 - Manchester": 37
+                }
+              }
+            }
+          }
+        },
+        "Benefits": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 21,
+                  "RLPF2 - St Mungo’s": 23,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 19,
+                  "NHPF 1 - Lancaster": 21,
+                  "NHPF 1 - Manchester": 21
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 13,
+                  "RLPF2 - St Mungo’s": 7,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 33,
+                  "NHPF 1 - Lancaster": 24,
+                  "NHPF 1 - Manchester": 9
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 36,
+                  "RLPF2 - St Mungo’s": 29,
+                  "NHPF 1 - Oxford": 10,
+                  "NHPF 1 - Bristol": 0,
+                  "NHPF 1 - Lancaster": 30,
+                  "NHPF 1 - Manchester": 42
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 31,
+                  "RLPF2 - St Mungo’s": 29,
+                  "NHPF 1 - Oxford": 39,
+                  "NHPF 1 - Bristol": 25,
+                  "NHPF 1 - Lancaster": 17,
+                  "NHPF 1 - Manchester": 16
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 19,
+                  "RLPF2 - St Mungo’s": 38,
+                  "NHPF 1 - Oxford": 28,
+                  "NHPF 1 - Bristol": 43,
+                  "NHPF 1 - Lancaster": 49,
+                  "NHPF 1 - Manchester": 13
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 18,
+                  "RLPF2 - St Mungo’s": 6,
+                  "NHPF 1 - Oxford": 1,
+                  "NHPF 1 - Bristol": 44,
+                  "NHPF 1 - Lancaster": 30,
+                  "NHPF 1 - Manchester": 7
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 20,
+                  "RLPF2 - St Mungo’s": 45,
+                  "NHPF 1 - Oxford": 48,
+                  "NHPF 1 - Bristol": 17,
+                  "NHPF 1 - Lancaster": 23,
+                  "NHPF 1 - Manchester": 38
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 49,
+                  "RLPF2 - St Mungo’s": 28,
+                  "NHPF 1 - Oxford": 40,
+                  "NHPF 1 - Bristol": 43,
+                  "NHPF 1 - Lancaster": 3,
+                  "NHPF 1 - Manchester": 49
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 23,
+                  "RLPF2 - St Mungo’s": 6,
+                  "NHPF 1 - Oxford": 48,
+                  "NHPF 1 - Bristol": 13,
+                  "NHPF 1 - Lancaster": 16,
+                  "NHPF 1 - Manchester": 47
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 19,
+                  "RLPF2 - St Mungo’s": 42,
+                  "NHPF 1 - Oxford": 23,
+                  "NHPF 1 - Bristol": 47,
+                  "NHPF 1 - Lancaster": 10,
+                  "NHPF 1 - Manchester": 9
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 1,
+                  "RLPF2 - St Mungo’s": 8,
+                  "NHPF 1 - Oxford": 38,
+                  "NHPF 1 - Bristol": 39,
+                  "NHPF 1 - Lancaster": 43,
+                  "NHPF 1 - Manchester": 1
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 17,
+                  "RLPF2 - St Mungo’s": 5,
+                  "NHPF 1 - Oxford": 36,
+                  "NHPF 1 - Bristol": 18,
+                  "NHPF 1 - Lancaster": 1,
+                  "NHPF 1 - Manchester": 4
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 24,
+                  "RLPF2 - St Mungo’s": 10,
+                  "NHPF 1 - Oxford": 9,
+                  "NHPF 1 - Bristol": 40,
+                  "NHPF 1 - Lancaster": 33,
+                  "NHPF 1 - Manchester": 10
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 36,
+                  "RLPF2 - St Mungo’s": 48,
+                  "NHPF 1 - Oxford": 37,
+                  "NHPF 1 - Bristol": 4,
+                  "NHPF 1 - Lancaster": 27,
+                  "NHPF 1 - Manchester": 5
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 5,
+                  "RLPF2 - St Mungo’s": 33,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 30,
+                  "NHPF 1 - Lancaster": 14,
+                  "NHPF 1 - Manchester": 27
+                }
+              }
+            }
+          }
+        },
+        "Households with children": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 0,
+                  "RLPF2 - St Mungo’s": 31,
+                  "NHPF 1 - Oxford": 19,
+                  "NHPF 1 - Bristol": 49,
+                  "NHPF 1 - Lancaster": 33,
+                  "NHPF 1 - Manchester": 13
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 11,
+                  "RLPF2 - St Mungo’s": 20,
+                  "NHPF 1 - Oxford": 26,
+                  "NHPF 1 - Bristol": 18,
+                  "NHPF 1 - Lancaster": 0,
+                  "NHPF 1 - Manchester": 29
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 34,
+                  "RLPF2 - St Mungo’s": 28,
+                  "NHPF 1 - Oxford": 16,
+                  "NHPF 1 - Bristol": 6,
+                  "NHPF 1 - Lancaster": 6,
+                  "NHPF 1 - Manchester": 14
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 12,
+                  "RLPF2 - St Mungo’s": 3,
+                  "NHPF 1 - Oxford": 39,
+                  "NHPF 1 - Bristol": 39,
+                  "NHPF 1 - Lancaster": 35,
+                  "NHPF 1 - Manchester": 9
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 47,
+                  "RLPF2 - St Mungo’s": 46,
+                  "NHPF 1 - Oxford": 28,
+                  "NHPF 1 - Bristol": 4,
+                  "NHPF 1 - Lancaster": 25,
+                  "NHPF 1 - Manchester": 1
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 10,
+                  "RLPF2 - St Mungo’s": 20,
+                  "NHPF 1 - Oxford": 28,
+                  "NHPF 1 - Bristol": 21,
+                  "NHPF 1 - Lancaster": 28,
+                  "NHPF 1 - Manchester": 35
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 15,
+                  "RLPF2 - St Mungo’s": 11,
+                  "NHPF 1 - Oxford": 22,
+                  "NHPF 1 - Bristol": 33,
+                  "NHPF 1 - Lancaster": 31,
+                  "NHPF 1 - Manchester": 31
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 49,
+                  "RLPF2 - St Mungo’s": 7,
+                  "NHPF 1 - Oxford": 1,
+                  "NHPF 1 - Bristol": 16,
+                  "NHPF 1 - Lancaster": 13,
+                  "NHPF 1 - Manchester": 0
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 15,
+                  "RLPF2 - St Mungo’s": 16,
+                  "NHPF 1 - Oxford": 11,
+                  "NHPF 1 - Bristol": 1,
+                  "NHPF 1 - Lancaster": 25,
+                  "NHPF 1 - Manchester": 45
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 44,
+                  "RLPF2 - St Mungo’s": 35,
+                  "NHPF 1 - Oxford": 0,
+                  "NHPF 1 - Bristol": 48,
+                  "NHPF 1 - Lancaster": 2,
+                  "NHPF 1 - Manchester": 11
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 38,
+                  "RLPF2 - St Mungo’s": 3,
+                  "NHPF 1 - Oxford": 34,
+                  "NHPF 1 - Bristol": 26,
+                  "NHPF 1 - Lancaster": 33,
+                  "NHPF 1 - Manchester": 4
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 19,
+                  "RLPF2 - St Mungo’s": 3,
+                  "NHPF 1 - Oxford": 15,
+                  "NHPF 1 - Bristol": 16,
+                  "NHPF 1 - Lancaster": 48,
+                  "NHPF 1 - Manchester": 42
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 44,
+                  "RLPF2 - St Mungo’s": 33,
+                  "NHPF 1 - Oxford": 32,
+                  "NHPF 1 - Bristol": 13,
+                  "NHPF 1 - Lancaster": 14,
+                  "NHPF 1 - Manchester": 29
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 13,
+                  "RLPF2 - St Mungo’s": 10,
+                  "NHPF 1 - Oxford": 5,
+                  "NHPF 1 - Bristol": 48,
+                  "NHPF 1 - Lancaster": 29,
+                  "NHPF 1 - Manchester": 31
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 21,
+                  "RLPF2 - St Mungo’s": 40,
+                  "NHPF 1 - Oxford": 2,
+                  "NHPF 1 - Bristol": 40,
+                  "NHPF 1 - Lancaster": 46,
+                  "NHPF 1 - Manchester": 2
+                }
+              }
+            }
+          }
+        },
+        "Tenants with disabilities": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 43,
+                  "RLPF2 - St Mungo’s": 14,
+                  "NHPF 1 - Oxford": 39,
+                  "NHPF 1 - Bristol": 24,
+                  "NHPF 1 - Lancaster": 35,
+                  "NHPF 1 - Manchester": 36
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 20,
+                  "RLPF2 - St Mungo’s": 33,
+                  "NHPF 1 - Oxford": 22,
+                  "NHPF 1 - Bristol": 2,
+                  "NHPF 1 - Lancaster": 10,
+                  "NHPF 1 - Manchester": 18
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 20,
+                  "RLPF2 - St Mungo’s": 20,
+                  "NHPF 1 - Oxford": 7,
+                  "NHPF 1 - Bristol": 13,
+                  "NHPF 1 - Lancaster": 43,
+                  "NHPF 1 - Manchester": 27
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 26,
+                  "RLPF2 - St Mungo’s": 35,
+                  "NHPF 1 - Oxford": 20,
+                  "NHPF 1 - Bristol": 9,
+                  "NHPF 1 - Lancaster": 39,
+                  "NHPF 1 - Manchester": 27
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 39,
+                  "RLPF2 - St Mungo’s": 2,
+                  "NHPF 1 - Oxford": 36,
+                  "NHPF 1 - Bristol": 43,
+                  "NHPF 1 - Lancaster": 9,
+                  "NHPF 1 - Manchester": 28
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 16,
+                  "RLPF2 - St Mungo’s": 47,
+                  "NHPF 1 - Oxford": 49,
+                  "NHPF 1 - Bristol": 7,
+                  "NHPF 1 - Lancaster": 23,
+                  "NHPF 1 - Manchester": 18
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 19,
+                  "RLPF2 - St Mungo’s": 19,
+                  "NHPF 1 - Oxford": 42,
+                  "NHPF 1 - Bristol": 33,
+                  "NHPF 1 - Lancaster": 46,
+                  "NHPF 1 - Manchester": 24
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 33,
+                  "RLPF2 - St Mungo’s": 8,
+                  "NHPF 1 - Oxford": 41,
+                  "NHPF 1 - Bristol": 46,
+                  "NHPF 1 - Lancaster": 41,
+                  "NHPF 1 - Manchester": 31
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 6,
+                  "RLPF2 - St Mungo’s": 25,
+                  "NHPF 1 - Oxford": 9,
+                  "NHPF 1 - Bristol": 11,
+                  "NHPF 1 - Lancaster": 30,
+                  "NHPF 1 - Manchester": 32
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 20,
+                  "RLPF2 - St Mungo’s": 4,
+                  "NHPF 1 - Oxford": 17,
+                  "NHPF 1 - Bristol": 17,
+                  "NHPF 1 - Lancaster": 24,
+                  "NHPF 1 - Manchester": 6
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 38,
+                  "RLPF2 - St Mungo’s": 45,
+                  "NHPF 1 - Oxford": 48,
+                  "NHPF 1 - Bristol": 4,
+                  "NHPF 1 - Lancaster": 0,
+                  "NHPF 1 - Manchester": 20
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 45,
+                  "RLPF2 - St Mungo’s": 31,
+                  "NHPF 1 - Oxford": 35,
+                  "NHPF 1 - Bristol": 1,
+                  "NHPF 1 - Lancaster": 37,
+                  "NHPF 1 - Manchester": 34
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 27,
+                  "RLPF2 - St Mungo’s": 46,
+                  "NHPF 1 - Oxford": 9,
+                  "NHPF 1 - Bristol": 45,
+                  "NHPF 1 - Lancaster": 7,
+                  "NHPF 1 - Manchester": 30
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 42,
+                  "RLPF2 - St Mungo’s": 25,
+                  "NHPF 1 - Oxford": 36,
+                  "NHPF 1 - Bristol": 14,
+                  "NHPF 1 - Lancaster": 8,
+                  "NHPF 1 - Manchester": 33
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 8,
+                  "RLPF2 - St Mungo’s": 39,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 30,
+                  "NHPF 1 - Lancaster": 6,
+                  "NHPF 1 - Manchester": 27
+                }
+              }
+            }
+          }
+        },
+        "Ethnic origin": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 24,
+                  "RLPF2 - St Mungo’s": 22,
+                  "NHPF 1 - Oxford": 49,
+                  "NHPF 1 - Bristol": 27,
+                  "NHPF 1 - Lancaster": 22,
+                  "NHPF 1 - Manchester": 13
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 30,
+                  "RLPF2 - St Mungo’s": 37,
+                  "NHPF 1 - Oxford": 47,
+                  "NHPF 1 - Bristol": 23,
+                  "NHPF 1 - Lancaster": 12,
+                  "NHPF 1 - Manchester": 43
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 28,
+                  "RLPF2 - St Mungo’s": 11,
+                  "NHPF 1 - Oxford": 44,
+                  "NHPF 1 - Bristol": 2,
+                  "NHPF 1 - Lancaster": 0,
+                  "NHPF 1 - Manchester": 33
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 44,
+                  "RLPF2 - St Mungo’s": 45,
+                  "NHPF 1 - Oxford": 5,
+                  "NHPF 1 - Bristol": 16,
+                  "NHPF 1 - Lancaster": 36,
+                  "NHPF 1 - Manchester": 39
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 6,
+                  "RLPF2 - St Mungo’s": 13,
+                  "NHPF 1 - Oxford": 49,
+                  "NHPF 1 - Bristol": 28,
+                  "NHPF 1 - Lancaster": 40,
+                  "NHPF 1 - Manchester": 2
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 17,
+                  "RLPF2 - St Mungo’s": 38,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 28,
+                  "NHPF 1 - Lancaster": 7,
+                  "NHPF 1 - Manchester": 48
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 46,
+                  "RLPF2 - St Mungo’s": 34,
+                  "NHPF 1 - Oxford": 27,
+                  "NHPF 1 - Bristol": 35,
+                  "NHPF 1 - Lancaster": 29,
+                  "NHPF 1 - Manchester": 41
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 37,
+                  "RLPF2 - St Mungo’s": 26,
+                  "NHPF 1 - Oxford": 32,
+                  "NHPF 1 - Bristol": 46,
+                  "NHPF 1 - Lancaster": 14,
+                  "NHPF 1 - Manchester": 44
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 38,
+                  "RLPF2 - St Mungo’s": 41,
+                  "NHPF 1 - Oxford": 30,
+                  "NHPF 1 - Bristol": 4,
+                  "NHPF 1 - Lancaster": 8,
+                  "NHPF 1 - Manchester": 47
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 49,
+                  "RLPF2 - St Mungo’s": 8,
+                  "NHPF 1 - Oxford": 46,
+                  "NHPF 1 - Bristol": 29,
+                  "NHPF 1 - Lancaster": 18,
+                  "NHPF 1 - Manchester": 22
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 44,
+                  "RLPF2 - St Mungo’s": 7,
+                  "NHPF 1 - Oxford": 24,
+                  "NHPF 1 - Bristol": 2,
+                  "NHPF 1 - Lancaster": 11,
+                  "NHPF 1 - Manchester": 29
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 36,
+                  "RLPF2 - St Mungo’s": 10,
+                  "NHPF 1 - Oxford": 0,
+                  "NHPF 1 - Bristol": 24,
+                  "NHPF 1 - Lancaster": 0,
+                  "NHPF 1 - Manchester": 23
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 39,
+                  "RLPF2 - St Mungo’s": 3,
+                  "NHPF 1 - Oxford": 14,
+                  "NHPF 1 - Bristol": 40,
+                  "NHPF 1 - Lancaster": 34,
+                  "NHPF 1 - Manchester": 22
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 3,
+                  "RLPF2 - St Mungo’s": 34,
+                  "NHPF 1 - Oxford": 4,
+                  "NHPF 1 - Bristol": 49,
+                  "NHPF 1 - Lancaster": 36,
+                  "NHPF 1 - Manchester": 9
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 47,
+                  "RLPF2 - St Mungo’s": 2,
+                  "NHPF 1 - Oxford": 39,
+                  "NHPF 1 - Bristol": 47,
+                  "NHPF 1 - Lancaster": 17,
+                  "NHPF 1 - Manchester": 48
+                }
+              }
+            }
+          }
+        },
+        "Gender": {
+          "values": {},
+          "children": {
+            "Male": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 27,
+                  "RLPF2 - St Mungo’s": 25,
+                  "NHPF 1 - Oxford": 33,
+                  "NHPF 1 - Bristol": 19,
+                  "NHPF 1 - Lancaster": 15,
+                  "NHPF 1 - Manchester": 5
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 47,
+                  "RLPF2 - St Mungo’s": 48,
+                  "NHPF 1 - Oxford": 0,
+                  "NHPF 1 - Bristol": 5,
+                  "NHPF 1 - Lancaster": 46,
+                  "NHPF 1 - Manchester": 12
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 37,
+                  "RLPF2 - St Mungo’s": 6,
+                  "NHPF 1 - Oxford": 47,
+                  "NHPF 1 - Bristol": 23,
+                  "NHPF 1 - Lancaster": 49,
+                  "NHPF 1 - Manchester": 20
+                }
+              }
+            },
+            "Female": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 25,
+                  "RLPF2 - St Mungo’s": 9,
+                  "NHPF 1 - Oxford": 12,
+                  "NHPF 1 - Bristol": 46,
+                  "NHPF 1 - Lancaster": 26,
+                  "NHPF 1 - Manchester": 46
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 36,
+                  "RLPF2 - St Mungo’s": 22,
+                  "NHPF 1 - Oxford": 9,
+                  "NHPF 1 - Bristol": 24,
+                  "NHPF 1 - Lancaster": 11,
+                  "NHPF 1 - Manchester": 48
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 34,
+                  "RLPF2 - St Mungo’s": 42,
+                  "NHPF 1 - Oxford": 23,
+                  "NHPF 1 - Bristol": 23,
+                  "NHPF 1 - Lancaster": 6,
+                  "NHPF 1 - Manchester": 37
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "16+ hours/week": {
+      "values": {},
+      "children": {
+        "Age at survey date": {
+          "values": {},
+          "children": {
+            "18-21 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 37,
+                  "RLPF2 - St Mungo’s": 34,
+                  "NHPF 1 - Oxford": 39,
+                  "NHPF 1 - Bristol": 7,
+                  "NHPF 1 - Lancaster": 16,
+                  "NHPF 1 - Manchester": 24
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 16,
+                  "RLPF2 - St Mungo’s": 39,
+                  "NHPF 1 - Oxford": 21,
+                  "NHPF 1 - Bristol": 33,
+                  "NHPF 1 - Lancaster": 26,
+                  "NHPF 1 - Manchester": 23
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 43,
+                  "RLPF2 - St Mungo’s": 9,
+                  "NHPF 1 - Oxford": 11,
+                  "NHPF 1 - Bristol": 14,
+                  "NHPF 1 - Lancaster": 38,
+                  "NHPF 1 - Manchester": 46
+                }
+              }
+            },
+            "22-24 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 2,
+                  "RLPF2 - St Mungo’s": 39,
+                  "NHPF 1 - Oxford": 8,
+                  "NHPF 1 - Bristol": 5,
+                  "NHPF 1 - Lancaster": 43,
+                  "NHPF 1 - Manchester": 18
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 20,
+                  "RLPF2 - St Mungo’s": 5,
+                  "NHPF 1 - Oxford": 5,
+                  "NHPF 1 - Bristol": 42,
+                  "NHPF 1 - Lancaster": 29,
+                  "NHPF 1 - Manchester": 30
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 0,
+                  "RLPF2 - St Mungo’s": 9,
+                  "NHPF 1 - Oxford": 14,
+                  "NHPF 1 - Bristol": 7,
+                  "NHPF 1 - Lancaster": 46,
+                  "NHPF 1 - Manchester": 42
+                }
+              }
+            },
+            "25-34 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 27,
+                  "RLPF2 - St Mungo’s": 44,
+                  "NHPF 1 - Oxford": 6,
+                  "NHPF 1 - Bristol": 8,
+                  "NHPF 1 - Lancaster": 11,
+                  "NHPF 1 - Manchester": 43
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 34,
+                  "RLPF2 - St Mungo’s": 21,
+                  "NHPF 1 - Oxford": 27,
+                  "NHPF 1 - Bristol": 46,
+                  "NHPF 1 - Lancaster": 6,
+                  "NHPF 1 - Manchester": 48
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 20,
+                  "RLPF2 - St Mungo’s": 29,
+                  "NHPF 1 - Oxford": 24,
+                  "NHPF 1 - Bristol": 10,
+                  "NHPF 1 - Lancaster": 0,
+                  "NHPF 1 - Manchester": 29
+                }
+              }
+            },
+            "35-44 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 18,
+                  "RLPF2 - St Mungo’s": 6,
+                  "NHPF 1 - Oxford": 2,
+                  "NHPF 1 - Bristol": 23,
+                  "NHPF 1 - Lancaster": 22,
+                  "NHPF 1 - Manchester": 28
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 1,
+                  "RLPF2 - St Mungo’s": 44,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 28,
+                  "NHPF 1 - Lancaster": 43,
+                  "NHPF 1 - Manchester": 32
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 40,
+                  "RLPF2 - St Mungo’s": 44,
+                  "NHPF 1 - Oxford": 36,
+                  "NHPF 1 - Bristol": 15,
+                  "NHPF 1 - Lancaster": 40,
+                  "NHPF 1 - Manchester": 24
+                }
+              }
+            },
+            "45-54 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 44,
+                  "RLPF2 - St Mungo’s": 20,
+                  "NHPF 1 - Oxford": 16,
+                  "NHPF 1 - Bristol": 48,
+                  "NHPF 1 - Lancaster": 37,
+                  "NHPF 1 - Manchester": 44
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 18,
+                  "RLPF2 - St Mungo’s": 24,
+                  "NHPF 1 - Oxford": 32,
+                  "NHPF 1 - Bristol": 9,
+                  "NHPF 1 - Lancaster": 48,
+                  "NHPF 1 - Manchester": 6
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 3,
+                  "RLPF2 - St Mungo’s": 43,
+                  "NHPF 1 - Oxford": 38,
+                  "NHPF 1 - Bristol": 38,
+                  "NHPF 1 - Lancaster": 19,
+                  "NHPF 1 - Manchester": 17
+                }
+              }
+            }
+          }
+        },
+        "Benefits": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 18,
+                  "RLPF2 - St Mungo’s": 32,
+                  "NHPF 1 - Oxford": 46,
+                  "NHPF 1 - Bristol": 39,
+                  "NHPF 1 - Lancaster": 19,
+                  "NHPF 1 - Manchester": 29
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 15,
+                  "RLPF2 - St Mungo’s": 44,
+                  "NHPF 1 - Oxford": 2,
+                  "NHPF 1 - Bristol": 46,
+                  "NHPF 1 - Lancaster": 14,
+                  "NHPF 1 - Manchester": 4
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 37,
+                  "RLPF2 - St Mungo’s": 45,
+                  "NHPF 1 - Oxford": 25,
+                  "NHPF 1 - Bristol": 45,
+                  "NHPF 1 - Lancaster": 0,
+                  "NHPF 1 - Manchester": 9
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 19,
+                  "RLPF2 - St Mungo’s": 0,
+                  "NHPF 1 - Oxford": 3,
+                  "NHPF 1 - Bristol": 39,
+                  "NHPF 1 - Lancaster": 44,
+                  "NHPF 1 - Manchester": 10
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 49,
+                  "RLPF2 - St Mungo’s": 6,
+                  "NHPF 1 - Oxford": 31,
+                  "NHPF 1 - Bristol": 41,
+                  "NHPF 1 - Lancaster": 4,
+                  "NHPF 1 - Manchester": 10
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 1,
+                  "RLPF2 - St Mungo’s": 3,
+                  "NHPF 1 - Oxford": 1,
+                  "NHPF 1 - Bristol": 26,
+                  "NHPF 1 - Lancaster": 16,
+                  "NHPF 1 - Manchester": 6
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 47,
+                  "RLPF2 - St Mungo’s": 5,
+                  "NHPF 1 - Oxford": 15,
+                  "NHPF 1 - Bristol": 29,
+                  "NHPF 1 - Lancaster": 6,
+                  "NHPF 1 - Manchester": 23
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 6,
+                  "RLPF2 - St Mungo’s": 33,
+                  "NHPF 1 - Oxford": 48,
+                  "NHPF 1 - Bristol": 39,
+                  "NHPF 1 - Lancaster": 13,
+                  "NHPF 1 - Manchester": 36
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 1,
+                  "RLPF2 - St Mungo’s": 18,
+                  "NHPF 1 - Oxford": 12,
+                  "NHPF 1 - Bristol": 4,
+                  "NHPF 1 - Lancaster": 1,
+                  "NHPF 1 - Manchester": 17
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 48,
+                  "RLPF2 - St Mungo’s": 42,
+                  "NHPF 1 - Oxford": 22,
+                  "NHPF 1 - Bristol": 44,
+                  "NHPF 1 - Lancaster": 45,
+                  "NHPF 1 - Manchester": 33
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 31,
+                  "RLPF2 - St Mungo’s": 12,
+                  "NHPF 1 - Oxford": 33,
+                  "NHPF 1 - Bristol": 6,
+                  "NHPF 1 - Lancaster": 31,
+                  "NHPF 1 - Manchester": 10
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 24,
+                  "RLPF2 - St Mungo’s": 47,
+                  "NHPF 1 - Oxford": 17,
+                  "NHPF 1 - Bristol": 18,
+                  "NHPF 1 - Lancaster": 22,
+                  "NHPF 1 - Manchester": 34
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 19,
+                  "RLPF2 - St Mungo’s": 43,
+                  "NHPF 1 - Oxford": 48,
+                  "NHPF 1 - Bristol": 16,
+                  "NHPF 1 - Lancaster": 47,
+                  "NHPF 1 - Manchester": 13
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 27,
+                  "RLPF2 - St Mungo’s": 47,
+                  "NHPF 1 - Oxford": 29,
+                  "NHPF 1 - Bristol": 37,
+                  "NHPF 1 - Lancaster": 25,
+                  "NHPF 1 - Manchester": 0
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 9,
+                  "RLPF2 - St Mungo’s": 20,
+                  "NHPF 1 - Oxford": 19,
+                  "NHPF 1 - Bristol": 24,
+                  "NHPF 1 - Lancaster": 23,
+                  "NHPF 1 - Manchester": 12
+                }
+              }
+            }
+          }
+        },
+        "Households with children": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 12,
+                  "RLPF2 - St Mungo’s": 1,
+                  "NHPF 1 - Oxford": 31,
+                  "NHPF 1 - Bristol": 18,
+                  "NHPF 1 - Lancaster": 32,
+                  "NHPF 1 - Manchester": 4
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 43,
+                  "RLPF2 - St Mungo’s": 44,
+                  "NHPF 1 - Oxford": 23,
+                  "NHPF 1 - Bristol": 19,
+                  "NHPF 1 - Lancaster": 30,
+                  "NHPF 1 - Manchester": 39
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 34,
+                  "RLPF2 - St Mungo’s": 5,
+                  "NHPF 1 - Oxford": 42,
+                  "NHPF 1 - Bristol": 6,
+                  "NHPF 1 - Lancaster": 25,
+                  "NHPF 1 - Manchester": 23
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 1,
+                  "RLPF2 - St Mungo’s": 9,
+                  "NHPF 1 - Oxford": 35,
+                  "NHPF 1 - Bristol": 6,
+                  "NHPF 1 - Lancaster": 37,
+                  "NHPF 1 - Manchester": 30
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 15,
+                  "RLPF2 - St Mungo’s": 39,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 3,
+                  "NHPF 1 - Lancaster": 15,
+                  "NHPF 1 - Manchester": 49
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 25,
+                  "RLPF2 - St Mungo’s": 31,
+                  "NHPF 1 - Oxford": 25,
+                  "NHPF 1 - Bristol": 26,
+                  "NHPF 1 - Lancaster": 18,
+                  "NHPF 1 - Manchester": 17
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 4,
+                  "RLPF2 - St Mungo’s": 41,
+                  "NHPF 1 - Oxford": 36,
+                  "NHPF 1 - Bristol": 38,
+                  "NHPF 1 - Lancaster": 16,
+                  "NHPF 1 - Manchester": 12
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 38,
+                  "RLPF2 - St Mungo’s": 32,
+                  "NHPF 1 - Oxford": 33,
+                  "NHPF 1 - Bristol": 2,
+                  "NHPF 1 - Lancaster": 4,
+                  "NHPF 1 - Manchester": 20
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 27,
+                  "RLPF2 - St Mungo’s": 48,
+                  "NHPF 1 - Oxford": 29,
+                  "NHPF 1 - Bristol": 27,
+                  "NHPF 1 - Lancaster": 24,
+                  "NHPF 1 - Manchester": 36
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 44,
+                  "RLPF2 - St Mungo’s": 30,
+                  "NHPF 1 - Oxford": 32,
+                  "NHPF 1 - Bristol": 8,
+                  "NHPF 1 - Lancaster": 49,
+                  "NHPF 1 - Manchester": 27
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 5,
+                  "RLPF2 - St Mungo’s": 44,
+                  "NHPF 1 - Oxford": 6,
+                  "NHPF 1 - Bristol": 20,
+                  "NHPF 1 - Lancaster": 13,
+                  "NHPF 1 - Manchester": 2
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 0,
+                  "RLPF2 - St Mungo’s": 3,
+                  "NHPF 1 - Oxford": 9,
+                  "NHPF 1 - Bristol": 48,
+                  "NHPF 1 - Lancaster": 35,
+                  "NHPF 1 - Manchester": 17
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 11,
+                  "RLPF2 - St Mungo’s": 26,
+                  "NHPF 1 - Oxford": 9,
+                  "NHPF 1 - Bristol": 8,
+                  "NHPF 1 - Lancaster": 37,
+                  "NHPF 1 - Manchester": 43
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 10,
+                  "RLPF2 - St Mungo’s": 27,
+                  "NHPF 1 - Oxford": 32,
+                  "NHPF 1 - Bristol": 33,
+                  "NHPF 1 - Lancaster": 8,
+                  "NHPF 1 - Manchester": 34
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 27,
+                  "RLPF2 - St Mungo’s": 27,
+                  "NHPF 1 - Oxford": 35,
+                  "NHPF 1 - Bristol": 13,
+                  "NHPF 1 - Lancaster": 26,
+                  "NHPF 1 - Manchester": 22
+                }
+              }
+            }
+          }
+        },
+        "Tenants with disabilities": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 30,
+                  "RLPF2 - St Mungo’s": 24,
+                  "NHPF 1 - Oxford": 24,
+                  "NHPF 1 - Bristol": 6,
+                  "NHPF 1 - Lancaster": 7,
+                  "NHPF 1 - Manchester": 29
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 4,
+                  "RLPF2 - St Mungo’s": 1,
+                  "NHPF 1 - Oxford": 4,
+                  "NHPF 1 - Bristol": 34,
+                  "NHPF 1 - Lancaster": 9,
+                  "NHPF 1 - Manchester": 40
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 31,
+                  "RLPF2 - St Mungo’s": 2,
+                  "NHPF 1 - Oxford": 8,
+                  "NHPF 1 - Bristol": 38,
+                  "NHPF 1 - Lancaster": 33,
+                  "NHPF 1 - Manchester": 34
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 5,
+                  "RLPF2 - St Mungo’s": 47,
+                  "NHPF 1 - Oxford": 34,
+                  "NHPF 1 - Bristol": 37,
+                  "NHPF 1 - Lancaster": 17,
+                  "NHPF 1 - Manchester": 1
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 2,
+                  "RLPF2 - St Mungo’s": 18,
+                  "NHPF 1 - Oxford": 13,
+                  "NHPF 1 - Bristol": 5,
+                  "NHPF 1 - Lancaster": 21,
+                  "NHPF 1 - Manchester": 47
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 29,
+                  "RLPF2 - St Mungo’s": 48,
+                  "NHPF 1 - Oxford": 0,
+                  "NHPF 1 - Bristol": 15,
+                  "NHPF 1 - Lancaster": 14,
+                  "NHPF 1 - Manchester": 47
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 2,
+                  "RLPF2 - St Mungo’s": 40,
+                  "NHPF 1 - Oxford": 16,
+                  "NHPF 1 - Bristol": 30,
+                  "NHPF 1 - Lancaster": 35,
+                  "NHPF 1 - Manchester": 24
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 4,
+                  "RLPF2 - St Mungo’s": 45,
+                  "NHPF 1 - Oxford": 28,
+                  "NHPF 1 - Bristol": 0,
+                  "NHPF 1 - Lancaster": 47,
+                  "NHPF 1 - Manchester": 2
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 20,
+                  "RLPF2 - St Mungo’s": 48,
+                  "NHPF 1 - Oxford": 5,
+                  "NHPF 1 - Bristol": 38,
+                  "NHPF 1 - Lancaster": 49,
+                  "NHPF 1 - Manchester": 45
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 29,
+                  "RLPF2 - St Mungo’s": 46,
+                  "NHPF 1 - Oxford": 19,
+                  "NHPF 1 - Bristol": 0,
+                  "NHPF 1 - Lancaster": 43,
+                  "NHPF 1 - Manchester": 4
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 15,
+                  "RLPF2 - St Mungo’s": 15,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 43,
+                  "NHPF 1 - Lancaster": 18,
+                  "NHPF 1 - Manchester": 6
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 9,
+                  "RLPF2 - St Mungo’s": 28,
+                  "NHPF 1 - Oxford": 49,
+                  "NHPF 1 - Bristol": 25,
+                  "NHPF 1 - Lancaster": 30,
+                  "NHPF 1 - Manchester": 1
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 43,
+                  "RLPF2 - St Mungo’s": 10,
+                  "NHPF 1 - Oxford": 44,
+                  "NHPF 1 - Bristol": 31,
+                  "NHPF 1 - Lancaster": 24,
+                  "NHPF 1 - Manchester": 43
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 12,
+                  "RLPF2 - St Mungo’s": 12,
+                  "NHPF 1 - Oxford": 12,
+                  "NHPF 1 - Bristol": 0,
+                  "NHPF 1 - Lancaster": 37,
+                  "NHPF 1 - Manchester": 23
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 35,
+                  "RLPF2 - St Mungo’s": 16,
+                  "NHPF 1 - Oxford": 36,
+                  "NHPF 1 - Bristol": 48,
+                  "NHPF 1 - Lancaster": 48,
+                  "NHPF 1 - Manchester": 19
+                }
+              }
+            }
+          }
+        },
+        "Ethnic origin": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 4,
+                  "RLPF2 - St Mungo’s": 49,
+                  "NHPF 1 - Oxford": 43,
+                  "NHPF 1 - Bristol": 10,
+                  "NHPF 1 - Lancaster": 20,
+                  "NHPF 1 - Manchester": 11
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 27,
+                  "RLPF2 - St Mungo’s": 39,
+                  "NHPF 1 - Oxford": 26,
+                  "NHPF 1 - Bristol": 32,
+                  "NHPF 1 - Lancaster": 8,
+                  "NHPF 1 - Manchester": 37
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 44,
+                  "RLPF2 - St Mungo’s": 14,
+                  "NHPF 1 - Oxford": 11,
+                  "NHPF 1 - Bristol": 48,
+                  "NHPF 1 - Lancaster": 22,
+                  "NHPF 1 - Manchester": 13
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 6,
+                  "RLPF2 - St Mungo’s": 17,
+                  "NHPF 1 - Oxford": 25,
+                  "NHPF 1 - Bristol": 3,
+                  "NHPF 1 - Lancaster": 25,
+                  "NHPF 1 - Manchester": 49
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 13,
+                  "RLPF2 - St Mungo’s": 18,
+                  "NHPF 1 - Oxford": 13,
+                  "NHPF 1 - Bristol": 19,
+                  "NHPF 1 - Lancaster": 46,
+                  "NHPF 1 - Manchester": 27
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 33,
+                  "RLPF2 - St Mungo’s": 14,
+                  "NHPF 1 - Oxford": 16,
+                  "NHPF 1 - Bristol": 22,
+                  "NHPF 1 - Lancaster": 23,
+                  "NHPF 1 - Manchester": 45
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 44,
+                  "RLPF2 - St Mungo’s": 36,
+                  "NHPF 1 - Oxford": 32,
+                  "NHPF 1 - Bristol": 46,
+                  "NHPF 1 - Lancaster": 10,
+                  "NHPF 1 - Manchester": 37
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 17,
+                  "RLPF2 - St Mungo’s": 48,
+                  "NHPF 1 - Oxford": 1,
+                  "NHPF 1 - Bristol": 42,
+                  "NHPF 1 - Lancaster": 16,
+                  "NHPF 1 - Manchester": 2
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 40,
+                  "RLPF2 - St Mungo’s": 8,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 11,
+                  "NHPF 1 - Lancaster": 33,
+                  "NHPF 1 - Manchester": 18
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 0,
+                  "RLPF2 - St Mungo’s": 20,
+                  "NHPF 1 - Oxford": 17,
+                  "NHPF 1 - Bristol": 5,
+                  "NHPF 1 - Lancaster": 39,
+                  "NHPF 1 - Manchester": 13
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 11,
+                  "RLPF2 - St Mungo’s": 33,
+                  "NHPF 1 - Oxford": 35,
+                  "NHPF 1 - Bristol": 34,
+                  "NHPF 1 - Lancaster": 41,
+                  "NHPF 1 - Manchester": 21
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 11,
+                  "RLPF2 - St Mungo’s": 7,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 2,
+                  "NHPF 1 - Lancaster": 37,
+                  "NHPF 1 - Manchester": 20
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 27,
+                  "RLPF2 - St Mungo’s": 4,
+                  "NHPF 1 - Oxford": 46,
+                  "NHPF 1 - Bristol": 25,
+                  "NHPF 1 - Lancaster": 23,
+                  "NHPF 1 - Manchester": 8
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 12,
+                  "RLPF2 - St Mungo’s": 33,
+                  "NHPF 1 - Oxford": 14,
+                  "NHPF 1 - Bristol": 11,
+                  "NHPF 1 - Lancaster": 49,
+                  "NHPF 1 - Manchester": 7
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 1,
+                  "RLPF2 - St Mungo’s": 46,
+                  "NHPF 1 - Oxford": 6,
+                  "NHPF 1 - Bristol": 30,
+                  "NHPF 1 - Lancaster": 9,
+                  "NHPF 1 - Manchester": 8
+                }
+              }
+            }
+          }
+        },
+        "Gender": {
+          "values": {},
+          "children": {
+            "Male": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 23,
+                  "RLPF2 - St Mungo’s": 17,
+                  "NHPF 1 - Oxford": 4,
+                  "NHPF 1 - Bristol": 16,
+                  "NHPF 1 - Lancaster": 20,
+                  "NHPF 1 - Manchester": 32
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 30,
+                  "RLPF2 - St Mungo’s": 24,
+                  "NHPF 1 - Oxford": 40,
+                  "NHPF 1 - Bristol": 22,
+                  "NHPF 1 - Lancaster": 23,
+                  "NHPF 1 - Manchester": 8
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 24,
+                  "RLPF2 - St Mungo’s": 5,
+                  "NHPF 1 - Oxford": 34,
+                  "NHPF 1 - Bristol": 17,
+                  "NHPF 1 - Lancaster": 2,
+                  "NHPF 1 - Manchester": 29
+                }
+              }
+            },
+            "Female": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 31,
+                  "RLPF2 - St Mungo’s": 27,
+                  "NHPF 1 - Oxford": 46,
+                  "NHPF 1 - Bristol": 9,
+                  "NHPF 1 - Lancaster": 6,
+                  "NHPF 1 - Manchester": 33
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 43,
+                  "RLPF2 - St Mungo’s": 0,
+                  "NHPF 1 - Oxford": 47,
+                  "NHPF 1 - Bristol": 24,
+                  "NHPF 1 - Lancaster": 1,
+                  "NHPF 1 - Manchester": 46
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 46,
+                  "RLPF2 - St Mungo’s": 7,
+                  "NHPF 1 - Oxford": 7,
+                  "NHPF 1 - Bristol": 19,
+                  "NHPF 1 - Lancaster": 3,
+                  "NHPF 1 - Manchester": 16
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "16- hours/week": {
+      "values": {},
+      "children": {
+        "Age at survey date": {
+          "values": {},
+          "children": {
+            "18-21 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 22,
+                  "RLPF2 - St Mungo’s": 10,
+                  "NHPF 1 - Oxford": 9,
+                  "NHPF 1 - Bristol": 20,
+                  "NHPF 1 - Lancaster": 8,
+                  "NHPF 1 - Manchester": 32
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 12,
+                  "RLPF2 - St Mungo’s": 22,
+                  "NHPF 1 - Oxford": 44,
+                  "NHPF 1 - Bristol": 46,
+                  "NHPF 1 - Lancaster": 41,
+                  "NHPF 1 - Manchester": 22
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 41,
+                  "RLPF2 - St Mungo’s": 1,
+                  "NHPF 1 - Oxford": 4,
+                  "NHPF 1 - Bristol": 19,
+                  "NHPF 1 - Lancaster": 44,
+                  "NHPF 1 - Manchester": 21
+                }
+              }
+            },
+            "22-24 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 20,
+                  "RLPF2 - St Mungo’s": 17,
+                  "NHPF 1 - Oxford": 0,
+                  "NHPF 1 - Bristol": 39,
+                  "NHPF 1 - Lancaster": 34,
+                  "NHPF 1 - Manchester": 12
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 14,
+                  "RLPF2 - St Mungo’s": 3,
+                  "NHPF 1 - Oxford": 5,
+                  "NHPF 1 - Bristol": 6,
+                  "NHPF 1 - Lancaster": 0,
+                  "NHPF 1 - Manchester": 48
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 4,
+                  "RLPF2 - St Mungo’s": 38,
+                  "NHPF 1 - Oxford": 28,
+                  "NHPF 1 - Bristol": 20,
+                  "NHPF 1 - Lancaster": 1,
+                  "NHPF 1 - Manchester": 6
+                }
+              }
+            },
+            "25-34 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 24,
+                  "RLPF2 - St Mungo’s": 6,
+                  "NHPF 1 - Oxford": 8,
+                  "NHPF 1 - Bristol": 44,
+                  "NHPF 1 - Lancaster": 1,
+                  "NHPF 1 - Manchester": 23
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 46,
+                  "RLPF2 - St Mungo’s": 49,
+                  "NHPF 1 - Oxford": 26,
+                  "NHPF 1 - Bristol": 37,
+                  "NHPF 1 - Lancaster": 5,
+                  "NHPF 1 - Manchester": 11
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 25,
+                  "RLPF2 - St Mungo’s": 24,
+                  "NHPF 1 - Oxford": 21,
+                  "NHPF 1 - Bristol": 35,
+                  "NHPF 1 - Lancaster": 20,
+                  "NHPF 1 - Manchester": 8
+                }
+              }
+            },
+            "35-44 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 9,
+                  "RLPF2 - St Mungo’s": 19,
+                  "NHPF 1 - Oxford": 6,
+                  "NHPF 1 - Bristol": 0,
+                  "NHPF 1 - Lancaster": 31,
+                  "NHPF 1 - Manchester": 10
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 43,
+                  "RLPF2 - St Mungo’s": 31,
+                  "NHPF 1 - Oxford": 47,
+                  "NHPF 1 - Bristol": 48,
+                  "NHPF 1 - Lancaster": 39,
+                  "NHPF 1 - Manchester": 15
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 13,
+                  "RLPF2 - St Mungo’s": 14,
+                  "NHPF 1 - Oxford": 20,
+                  "NHPF 1 - Bristol": 17,
+                  "NHPF 1 - Lancaster": 1,
+                  "NHPF 1 - Manchester": 39
+                }
+              }
+            },
+            "45-54 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 10,
+                  "RLPF2 - St Mungo’s": 25,
+                  "NHPF 1 - Oxford": 7,
+                  "NHPF 1 - Bristol": 25,
+                  "NHPF 1 - Lancaster": 23,
+                  "NHPF 1 - Manchester": 5
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 1,
+                  "RLPF2 - St Mungo’s": 7,
+                  "NHPF 1 - Oxford": 26,
+                  "NHPF 1 - Bristol": 38,
+                  "NHPF 1 - Lancaster": 30,
+                  "NHPF 1 - Manchester": 27
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 39,
+                  "RLPF2 - St Mungo’s": 19,
+                  "NHPF 1 - Oxford": 4,
+                  "NHPF 1 - Bristol": 36,
+                  "NHPF 1 - Lancaster": 44,
+                  "NHPF 1 - Manchester": 21
+                }
+              }
+            }
+          }
+        },
+        "Benefits": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 38,
+                  "RLPF2 - St Mungo’s": 31,
+                  "NHPF 1 - Oxford": 23,
+                  "NHPF 1 - Bristol": 40,
+                  "NHPF 1 - Lancaster": 44,
+                  "NHPF 1 - Manchester": 48
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 45,
+                  "RLPF2 - St Mungo’s": 41,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 20,
+                  "NHPF 1 - Lancaster": 37,
+                  "NHPF 1 - Manchester": 34
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 37,
+                  "RLPF2 - St Mungo’s": 37,
+                  "NHPF 1 - Oxford": 35,
+                  "NHPF 1 - Bristol": 6,
+                  "NHPF 1 - Lancaster": 44,
+                  "NHPF 1 - Manchester": 27
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 49,
+                  "RLPF2 - St Mungo’s": 31,
+                  "NHPF 1 - Oxford": 11,
+                  "NHPF 1 - Bristol": 16,
+                  "NHPF 1 - Lancaster": 42,
+                  "NHPF 1 - Manchester": 46
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 13,
+                  "RLPF2 - St Mungo’s": 0,
+                  "NHPF 1 - Oxford": 8,
+                  "NHPF 1 - Bristol": 21,
+                  "NHPF 1 - Lancaster": 49,
+                  "NHPF 1 - Manchester": 26
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 45,
+                  "RLPF2 - St Mungo’s": 1,
+                  "NHPF 1 - Oxford": 29,
+                  "NHPF 1 - Bristol": 4,
+                  "NHPF 1 - Lancaster": 5,
+                  "NHPF 1 - Manchester": 2
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 44,
+                  "RLPF2 - St Mungo’s": 46,
+                  "NHPF 1 - Oxford": 7,
+                  "NHPF 1 - Bristol": 40,
+                  "NHPF 1 - Lancaster": 44,
+                  "NHPF 1 - Manchester": 30
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 10,
+                  "RLPF2 - St Mungo’s": 36,
+                  "NHPF 1 - Oxford": 39,
+                  "NHPF 1 - Bristol": 25,
+                  "NHPF 1 - Lancaster": 8,
+                  "NHPF 1 - Manchester": 49
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 19,
+                  "RLPF2 - St Mungo’s": 28,
+                  "NHPF 1 - Oxford": 23,
+                  "NHPF 1 - Bristol": 27,
+                  "NHPF 1 - Lancaster": 34,
+                  "NHPF 1 - Manchester": 19
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 13,
+                  "RLPF2 - St Mungo’s": 48,
+                  "NHPF 1 - Oxford": 6,
+                  "NHPF 1 - Bristol": 17,
+                  "NHPF 1 - Lancaster": 39,
+                  "NHPF 1 - Manchester": 12
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 23,
+                  "RLPF2 - St Mungo’s": 47,
+                  "NHPF 1 - Oxford": 7,
+                  "NHPF 1 - Bristol": 1,
+                  "NHPF 1 - Lancaster": 14,
+                  "NHPF 1 - Manchester": 26
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 16,
+                  "RLPF2 - St Mungo’s": 21,
+                  "NHPF 1 - Oxford": 7,
+                  "NHPF 1 - Bristol": 21,
+                  "NHPF 1 - Lancaster": 21,
+                  "NHPF 1 - Manchester": 2
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 30,
+                  "RLPF2 - St Mungo’s": 21,
+                  "NHPF 1 - Oxford": 9,
+                  "NHPF 1 - Bristol": 21,
+                  "NHPF 1 - Lancaster": 47,
+                  "NHPF 1 - Manchester": 48
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 24,
+                  "RLPF2 - St Mungo’s": 14,
+                  "NHPF 1 - Oxford": 37,
+                  "NHPF 1 - Bristol": 27,
+                  "NHPF 1 - Lancaster": 32,
+                  "NHPF 1 - Manchester": 0
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 1,
+                  "RLPF2 - St Mungo’s": 49,
+                  "NHPF 1 - Oxford": 24,
+                  "NHPF 1 - Bristol": 16,
+                  "NHPF 1 - Lancaster": 9,
+                  "NHPF 1 - Manchester": 3
+                }
+              }
+            }
+          }
+        },
+        "Households with children": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 26,
+                  "RLPF2 - St Mungo’s": 18,
+                  "NHPF 1 - Oxford": 2,
+                  "NHPF 1 - Bristol": 33,
+                  "NHPF 1 - Lancaster": 34,
+                  "NHPF 1 - Manchester": 40
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 49,
+                  "RLPF2 - St Mungo’s": 9,
+                  "NHPF 1 - Oxford": 34,
+                  "NHPF 1 - Bristol": 17,
+                  "NHPF 1 - Lancaster": 36,
+                  "NHPF 1 - Manchester": 6
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 22,
+                  "RLPF2 - St Mungo’s": 33,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 26,
+                  "NHPF 1 - Lancaster": 38,
+                  "NHPF 1 - Manchester": 31
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 31,
+                  "RLPF2 - St Mungo’s": 20,
+                  "NHPF 1 - Oxford": 26,
+                  "NHPF 1 - Bristol": 49,
+                  "NHPF 1 - Lancaster": 7,
+                  "NHPF 1 - Manchester": 46
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 33,
+                  "RLPF2 - St Mungo’s": 3,
+                  "NHPF 1 - Oxford": 0,
+                  "NHPF 1 - Bristol": 12,
+                  "NHPF 1 - Lancaster": 46,
+                  "NHPF 1 - Manchester": 7
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 5,
+                  "RLPF2 - St Mungo’s": 16,
+                  "NHPF 1 - Oxford": 17,
+                  "NHPF 1 - Bristol": 26,
+                  "NHPF 1 - Lancaster": 2,
+                  "NHPF 1 - Manchester": 10
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 47,
+                  "RLPF2 - St Mungo’s": 37,
+                  "NHPF 1 - Oxford": 32,
+                  "NHPF 1 - Bristol": 22,
+                  "NHPF 1 - Lancaster": 31,
+                  "NHPF 1 - Manchester": 22
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 38,
+                  "RLPF2 - St Mungo’s": 14,
+                  "NHPF 1 - Oxford": 43,
+                  "NHPF 1 - Bristol": 22,
+                  "NHPF 1 - Lancaster": 27,
+                  "NHPF 1 - Manchester": 32
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 30,
+                  "RLPF2 - St Mungo’s": 34,
+                  "NHPF 1 - Oxford": 16,
+                  "NHPF 1 - Bristol": 39,
+                  "NHPF 1 - Lancaster": 14,
+                  "NHPF 1 - Manchester": 7
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 11,
+                  "RLPF2 - St Mungo’s": 44,
+                  "NHPF 1 - Oxford": 30,
+                  "NHPF 1 - Bristol": 16,
+                  "NHPF 1 - Lancaster": 45,
+                  "NHPF 1 - Manchester": 22
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 37,
+                  "RLPF2 - St Mungo’s": 12,
+                  "NHPF 1 - Oxford": 19,
+                  "NHPF 1 - Bristol": 22,
+                  "NHPF 1 - Lancaster": 39,
+                  "NHPF 1 - Manchester": 32
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 5,
+                  "RLPF2 - St Mungo’s": 35,
+                  "NHPF 1 - Oxford": 12,
+                  "NHPF 1 - Bristol": 44,
+                  "NHPF 1 - Lancaster": 32,
+                  "NHPF 1 - Manchester": 30
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 48,
+                  "RLPF2 - St Mungo’s": 42,
+                  "NHPF 1 - Oxford": 11,
+                  "NHPF 1 - Bristol": 13,
+                  "NHPF 1 - Lancaster": 1,
+                  "NHPF 1 - Manchester": 36
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 42,
+                  "RLPF2 - St Mungo’s": 16,
+                  "NHPF 1 - Oxford": 49,
+                  "NHPF 1 - Bristol": 33,
+                  "NHPF 1 - Lancaster": 12,
+                  "NHPF 1 - Manchester": 43
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 16,
+                  "RLPF2 - St Mungo’s": 28,
+                  "NHPF 1 - Oxford": 33,
+                  "NHPF 1 - Bristol": 49,
+                  "NHPF 1 - Lancaster": 20,
+                  "NHPF 1 - Manchester": 46
+                }
+              }
+            }
+          }
+        },
+        "Tenants with disabilities": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 32,
+                  "RLPF2 - St Mungo’s": 40,
+                  "NHPF 1 - Oxford": 42,
+                  "NHPF 1 - Bristol": 33,
+                  "NHPF 1 - Lancaster": 44,
+                  "NHPF 1 - Manchester": 48
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 42,
+                  "RLPF2 - St Mungo’s": 1,
+                  "NHPF 1 - Oxford": 35,
+                  "NHPF 1 - Bristol": 44,
+                  "NHPF 1 - Lancaster": 0,
+                  "NHPF 1 - Manchester": 32
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 33,
+                  "RLPF2 - St Mungo’s": 29,
+                  "NHPF 1 - Oxford": 46,
+                  "NHPF 1 - Bristol": 15,
+                  "NHPF 1 - Lancaster": 49,
+                  "NHPF 1 - Manchester": 35
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 4,
+                  "RLPF2 - St Mungo’s": 29,
+                  "NHPF 1 - Oxford": 44,
+                  "NHPF 1 - Bristol": 12,
+                  "NHPF 1 - Lancaster": 31,
+                  "NHPF 1 - Manchester": 47
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 32,
+                  "RLPF2 - St Mungo’s": 41,
+                  "NHPF 1 - Oxford": 33,
+                  "NHPF 1 - Bristol": 47,
+                  "NHPF 1 - Lancaster": 19,
+                  "NHPF 1 - Manchester": 7
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 45,
+                  "RLPF2 - St Mungo’s": 47,
+                  "NHPF 1 - Oxford": 2,
+                  "NHPF 1 - Bristol": 11,
+                  "NHPF 1 - Lancaster": 9,
+                  "NHPF 1 - Manchester": 3
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 38,
+                  "RLPF2 - St Mungo’s": 33,
+                  "NHPF 1 - Oxford": 39,
+                  "NHPF 1 - Bristol": 22,
+                  "NHPF 1 - Lancaster": 27,
+                  "NHPF 1 - Manchester": 23
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 13,
+                  "RLPF2 - St Mungo’s": 37,
+                  "NHPF 1 - Oxford": 14,
+                  "NHPF 1 - Bristol": 11,
+                  "NHPF 1 - Lancaster": 7,
+                  "NHPF 1 - Manchester": 6
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 40,
+                  "RLPF2 - St Mungo’s": 36,
+                  "NHPF 1 - Oxford": 43,
+                  "NHPF 1 - Bristol": 19,
+                  "NHPF 1 - Lancaster": 40,
+                  "NHPF 1 - Manchester": 10
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 48,
+                  "RLPF2 - St Mungo’s": 44,
+                  "NHPF 1 - Oxford": 16,
+                  "NHPF 1 - Bristol": 7,
+                  "NHPF 1 - Lancaster": 36,
+                  "NHPF 1 - Manchester": 19
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 29,
+                  "RLPF2 - St Mungo’s": 36,
+                  "NHPF 1 - Oxford": 44,
+                  "NHPF 1 - Bristol": 28,
+                  "NHPF 1 - Lancaster": 21,
+                  "NHPF 1 - Manchester": 14
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 8,
+                  "RLPF2 - St Mungo’s": 35,
+                  "NHPF 1 - Oxford": 31,
+                  "NHPF 1 - Bristol": 1,
+                  "NHPF 1 - Lancaster": 21,
+                  "NHPF 1 - Manchester": 33
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 0,
+                  "RLPF2 - St Mungo’s": 6,
+                  "NHPF 1 - Oxford": 16,
+                  "NHPF 1 - Bristol": 18,
+                  "NHPF 1 - Lancaster": 49,
+                  "NHPF 1 - Manchester": 15
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 34,
+                  "RLPF2 - St Mungo’s": 11,
+                  "NHPF 1 - Oxford": 41,
+                  "NHPF 1 - Bristol": 29,
+                  "NHPF 1 - Lancaster": 30,
+                  "NHPF 1 - Manchester": 30
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 20,
+                  "RLPF2 - St Mungo’s": 40,
+                  "NHPF 1 - Oxford": 3,
+                  "NHPF 1 - Bristol": 24,
+                  "NHPF 1 - Lancaster": 41,
+                  "NHPF 1 - Manchester": 46
+                }
+              }
+            }
+          }
+        },
+        "Ethnic origin": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 20,
+                  "RLPF2 - St Mungo’s": 29,
+                  "NHPF 1 - Oxford": 47,
+                  "NHPF 1 - Bristol": 45,
+                  "NHPF 1 - Lancaster": 4,
+                  "NHPF 1 - Manchester": 30
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 45,
+                  "RLPF2 - St Mungo’s": 45,
+                  "NHPF 1 - Oxford": 32,
+                  "NHPF 1 - Bristol": 48,
+                  "NHPF 1 - Lancaster": 40,
+                  "NHPF 1 - Manchester": 8
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 21,
+                  "RLPF2 - St Mungo’s": 0,
+                  "NHPF 1 - Oxford": 9,
+                  "NHPF 1 - Bristol": 3,
+                  "NHPF 1 - Lancaster": 38,
+                  "NHPF 1 - Manchester": 23
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 10,
+                  "RLPF2 - St Mungo’s": 3,
+                  "NHPF 1 - Oxford": 6,
+                  "NHPF 1 - Bristol": 12,
+                  "NHPF 1 - Lancaster": 47,
+                  "NHPF 1 - Manchester": 7
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 33,
+                  "RLPF2 - St Mungo’s": 14,
+                  "NHPF 1 - Oxford": 24,
+                  "NHPF 1 - Bristol": 27,
+                  "NHPF 1 - Lancaster": 48,
+                  "NHPF 1 - Manchester": 38
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 8,
+                  "RLPF2 - St Mungo’s": 33,
+                  "NHPF 1 - Oxford": 29,
+                  "NHPF 1 - Bristol": 15,
+                  "NHPF 1 - Lancaster": 21,
+                  "NHPF 1 - Manchester": 4
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 40,
+                  "RLPF2 - St Mungo’s": 45,
+                  "NHPF 1 - Oxford": 15,
+                  "NHPF 1 - Bristol": 32,
+                  "NHPF 1 - Lancaster": 8,
+                  "NHPF 1 - Manchester": 18
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 20,
+                  "RLPF2 - St Mungo’s": 16,
+                  "NHPF 1 - Oxford": 10,
+                  "NHPF 1 - Bristol": 24,
+                  "NHPF 1 - Lancaster": 4,
+                  "NHPF 1 - Manchester": 48
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 26,
+                  "RLPF2 - St Mungo’s": 37,
+                  "NHPF 1 - Oxford": 49,
+                  "NHPF 1 - Bristol": 3,
+                  "NHPF 1 - Lancaster": 17,
+                  "NHPF 1 - Manchester": 27
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 23,
+                  "RLPF2 - St Mungo’s": 17,
+                  "NHPF 1 - Oxford": 39,
+                  "NHPF 1 - Bristol": 49,
+                  "NHPF 1 - Lancaster": 19,
+                  "NHPF 1 - Manchester": 32
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 35,
+                  "RLPF2 - St Mungo’s": 30,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 21,
+                  "NHPF 1 - Lancaster": 1,
+                  "NHPF 1 - Manchester": 1
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 31,
+                  "RLPF2 - St Mungo’s": 28,
+                  "NHPF 1 - Oxford": 16,
+                  "NHPF 1 - Bristol": 39,
+                  "NHPF 1 - Lancaster": 1,
+                  "NHPF 1 - Manchester": 46
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 17,
+                  "RLPF2 - St Mungo’s": 45,
+                  "NHPF 1 - Oxford": 2,
+                  "NHPF 1 - Bristol": 47,
+                  "NHPF 1 - Lancaster": 36,
+                  "NHPF 1 - Manchester": 1
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 30,
+                  "RLPF2 - St Mungo’s": 31,
+                  "NHPF 1 - Oxford": 42,
+                  "NHPF 1 - Bristol": 17,
+                  "NHPF 1 - Lancaster": 14,
+                  "NHPF 1 - Manchester": 19
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 6,
+                  "RLPF2 - St Mungo’s": 39,
+                  "NHPF 1 - Oxford": 14,
+                  "NHPF 1 - Bristol": 32,
+                  "NHPF 1 - Lancaster": 12,
+                  "NHPF 1 - Manchester": 42
+                }
+              }
+            }
+          }
+        },
+        "Gender": {
+          "values": {},
+          "children": {
+            "Male": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 40,
+                  "RLPF2 - St Mungo’s": 47,
+                  "NHPF 1 - Oxford": 43,
+                  "NHPF 1 - Bristol": 11,
+                  "NHPF 1 - Lancaster": 8,
+                  "NHPF 1 - Manchester": 44
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 0,
+                  "RLPF2 - St Mungo’s": 18,
+                  "NHPF 1 - Oxford": 32,
+                  "NHPF 1 - Bristol": 44,
+                  "NHPF 1 - Lancaster": 28,
+                  "NHPF 1 - Manchester": 27
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 19,
+                  "RLPF2 - St Mungo’s": 20,
+                  "NHPF 1 - Oxford": 23,
+                  "NHPF 1 - Bristol": 22,
+                  "NHPF 1 - Lancaster": 47,
+                  "NHPF 1 - Manchester": 18
+                }
+              }
+            },
+            "Female": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 29,
+                  "RLPF2 - St Mungo’s": 31,
+                  "NHPF 1 - Oxford": 32,
+                  "NHPF 1 - Bristol": 32,
+                  "NHPF 1 - Lancaster": 27,
+                  "NHPF 1 - Manchester": 33
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 47,
+                  "RLPF2 - St Mungo’s": 29,
+                  "NHPF 1 - Oxford": 30,
+                  "NHPF 1 - Bristol": 15,
+                  "NHPF 1 - Lancaster": 49,
+                  "NHPF 1 - Manchester": 20
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 33,
+                  "RLPF2 - St Mungo’s": 10,
+                  "NHPF 1 - Oxford": 36,
+                  "NHPF 1 - Bristol": 12,
+                  "NHPF 1 - Lancaster": 47,
+                  "NHPF 1 - Manchester": 36
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Zero hours contract": {
+      "values": {},
+      "children": {
+        "Age at survey date": {
+          "values": {},
+          "children": {
+            "18-21 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 44,
+                  "RLPF2 - St Mungo’s": 16,
+                  "NHPF 1 - Oxford": 15,
+                  "NHPF 1 - Bristol": 7,
+                  "NHPF 1 - Lancaster": 31,
+                  "NHPF 1 - Manchester": 18
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 3,
+                  "RLPF2 - St Mungo’s": 39,
+                  "NHPF 1 - Oxford": 28,
+                  "NHPF 1 - Bristol": 11,
+                  "NHPF 1 - Lancaster": 19,
+                  "NHPF 1 - Manchester": 6
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 22,
+                  "RLPF2 - St Mungo’s": 8,
+                  "NHPF 1 - Oxford": 49,
+                  "NHPF 1 - Bristol": 41,
+                  "NHPF 1 - Lancaster": 25,
+                  "NHPF 1 - Manchester": 22
+                }
+              }
+            },
+            "22-24 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 43,
+                  "RLPF2 - St Mungo’s": 18,
+                  "NHPF 1 - Oxford": 15,
+                  "NHPF 1 - Bristol": 20,
+                  "NHPF 1 - Lancaster": 39,
+                  "NHPF 1 - Manchester": 42
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 21,
+                  "RLPF2 - St Mungo’s": 47,
+                  "NHPF 1 - Oxford": 19,
+                  "NHPF 1 - Bristol": 40,
+                  "NHPF 1 - Lancaster": 20,
+                  "NHPF 1 - Manchester": 45
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 29,
+                  "RLPF2 - St Mungo’s": 19,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 38,
+                  "NHPF 1 - Lancaster": 27,
+                  "NHPF 1 - Manchester": 24
+                }
+              }
+            },
+            "25-34 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 46,
+                  "RLPF2 - St Mungo’s": 48,
+                  "NHPF 1 - Oxford": 44,
+                  "NHPF 1 - Bristol": 25,
+                  "NHPF 1 - Lancaster": 35,
+                  "NHPF 1 - Manchester": 12
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 40,
+                  "RLPF2 - St Mungo’s": 15,
+                  "NHPF 1 - Oxford": 32,
+                  "NHPF 1 - Bristol": 10,
+                  "NHPF 1 - Lancaster": 14,
+                  "NHPF 1 - Manchester": 28
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 29,
+                  "RLPF2 - St Mungo’s": 36,
+                  "NHPF 1 - Oxford": 35,
+                  "NHPF 1 - Bristol": 48,
+                  "NHPF 1 - Lancaster": 2,
+                  "NHPF 1 - Manchester": 5
+                }
+              }
+            },
+            "35-44 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 27,
+                  "RLPF2 - St Mungo’s": 8,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 31,
+                  "NHPF 1 - Lancaster": 2,
+                  "NHPF 1 - Manchester": 42
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 13,
+                  "RLPF2 - St Mungo’s": 30,
+                  "NHPF 1 - Oxford": 31,
+                  "NHPF 1 - Bristol": 26,
+                  "NHPF 1 - Lancaster": 16,
+                  "NHPF 1 - Manchester": 18
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 19,
+                  "RLPF2 - St Mungo’s": 19,
+                  "NHPF 1 - Oxford": 1,
+                  "NHPF 1 - Bristol": 3,
+                  "NHPF 1 - Lancaster": 34,
+                  "NHPF 1 - Manchester": 29
+                }
+              }
+            },
+            "45-54 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 29,
+                  "RLPF2 - St Mungo’s": 42,
+                  "NHPF 1 - Oxford": 17,
+                  "NHPF 1 - Bristol": 43,
+                  "NHPF 1 - Lancaster": 44,
+                  "NHPF 1 - Manchester": 35
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 19,
+                  "RLPF2 - St Mungo’s": 31,
+                  "NHPF 1 - Oxford": 10,
+                  "NHPF 1 - Bristol": 19,
+                  "NHPF 1 - Lancaster": 25,
+                  "NHPF 1 - Manchester": 5
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 43,
+                  "RLPF2 - St Mungo’s": 16,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 24,
+                  "NHPF 1 - Lancaster": 43,
+                  "NHPF 1 - Manchester": 15
+                }
+              }
+            }
+          }
+        },
+        "Benefits": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 19,
+                  "RLPF2 - St Mungo’s": 8,
+                  "NHPF 1 - Oxford": 31,
+                  "NHPF 1 - Bristol": 21,
+                  "NHPF 1 - Lancaster": 27,
+                  "NHPF 1 - Manchester": 12
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 25,
+                  "RLPF2 - St Mungo’s": 36,
+                  "NHPF 1 - Oxford": 44,
+                  "NHPF 1 - Bristol": 16,
+                  "NHPF 1 - Lancaster": 33,
+                  "NHPF 1 - Manchester": 44
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 31,
+                  "RLPF2 - St Mungo’s": 2,
+                  "NHPF 1 - Oxford": 32,
+                  "NHPF 1 - Bristol": 41,
+                  "NHPF 1 - Lancaster": 16,
+                  "NHPF 1 - Manchester": 46
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 5,
+                  "RLPF2 - St Mungo’s": 40,
+                  "NHPF 1 - Oxford": 21,
+                  "NHPF 1 - Bristol": 36,
+                  "NHPF 1 - Lancaster": 19,
+                  "NHPF 1 - Manchester": 45
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 46,
+                  "RLPF2 - St Mungo’s": 13,
+                  "NHPF 1 - Oxford": 7,
+                  "NHPF 1 - Bristol": 0,
+                  "NHPF 1 - Lancaster": 15,
+                  "NHPF 1 - Manchester": 4
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 7,
+                  "RLPF2 - St Mungo’s": 38,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 30,
+                  "NHPF 1 - Lancaster": 12,
+                  "NHPF 1 - Manchester": 34
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 7,
+                  "RLPF2 - St Mungo’s": 40,
+                  "NHPF 1 - Oxford": 6,
+                  "NHPF 1 - Bristol": 29,
+                  "NHPF 1 - Lancaster": 11,
+                  "NHPF 1 - Manchester": 27
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 8,
+                  "RLPF2 - St Mungo’s": 49,
+                  "NHPF 1 - Oxford": 30,
+                  "NHPF 1 - Bristol": 36,
+                  "NHPF 1 - Lancaster": 7,
+                  "NHPF 1 - Manchester": 20
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 28,
+                  "RLPF2 - St Mungo’s": 15,
+                  "NHPF 1 - Oxford": 14,
+                  "NHPF 1 - Bristol": 29,
+                  "NHPF 1 - Lancaster": 9,
+                  "NHPF 1 - Manchester": 43
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 34,
+                  "RLPF2 - St Mungo’s": 0,
+                  "NHPF 1 - Oxford": 46,
+                  "NHPF 1 - Bristol": 45,
+                  "NHPF 1 - Lancaster": 28,
+                  "NHPF 1 - Manchester": 3
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 17,
+                  "RLPF2 - St Mungo’s": 37,
+                  "NHPF 1 - Oxford": 6,
+                  "NHPF 1 - Bristol": 26,
+                  "NHPF 1 - Lancaster": 23,
+                  "NHPF 1 - Manchester": 22
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 15,
+                  "RLPF2 - St Mungo’s": 27,
+                  "NHPF 1 - Oxford": 46,
+                  "NHPF 1 - Bristol": 36,
+                  "NHPF 1 - Lancaster": 42,
+                  "NHPF 1 - Manchester": 39
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 35,
+                  "RLPF2 - St Mungo’s": 30,
+                  "NHPF 1 - Oxford": 37,
+                  "NHPF 1 - Bristol": 19,
+                  "NHPF 1 - Lancaster": 10,
+                  "NHPF 1 - Manchester": 23
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 13,
+                  "RLPF2 - St Mungo’s": 47,
+                  "NHPF 1 - Oxford": 49,
+                  "NHPF 1 - Bristol": 24,
+                  "NHPF 1 - Lancaster": 34,
+                  "NHPF 1 - Manchester": 42
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 27,
+                  "RLPF2 - St Mungo’s": 38,
+                  "NHPF 1 - Oxford": 28,
+                  "NHPF 1 - Bristol": 22,
+                  "NHPF 1 - Lancaster": 13,
+                  "NHPF 1 - Manchester": 15
+                }
+              }
+            }
+          }
+        },
+        "Households with children": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 19,
+                  "RLPF2 - St Mungo’s": 46,
+                  "NHPF 1 - Oxford": 8,
+                  "NHPF 1 - Bristol": 24,
+                  "NHPF 1 - Lancaster": 21,
+                  "NHPF 1 - Manchester": 34
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 15,
+                  "RLPF2 - St Mungo’s": 36,
+                  "NHPF 1 - Oxford": 29,
+                  "NHPF 1 - Bristol": 33,
+                  "NHPF 1 - Lancaster": 33,
+                  "NHPF 1 - Manchester": 19
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 19,
+                  "RLPF2 - St Mungo’s": 9,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 5,
+                  "NHPF 1 - Lancaster": 12,
+                  "NHPF 1 - Manchester": 12
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 0,
+                  "RLPF2 - St Mungo’s": 23,
+                  "NHPF 1 - Oxford": 43,
+                  "NHPF 1 - Bristol": 27,
+                  "NHPF 1 - Lancaster": 18,
+                  "NHPF 1 - Manchester": 0
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 41,
+                  "RLPF2 - St Mungo’s": 29,
+                  "NHPF 1 - Oxford": 32,
+                  "NHPF 1 - Bristol": 24,
+                  "NHPF 1 - Lancaster": 27,
+                  "NHPF 1 - Manchester": 46
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 2,
+                  "RLPF2 - St Mungo’s": 5,
+                  "NHPF 1 - Oxford": 35,
+                  "NHPF 1 - Bristol": 17,
+                  "NHPF 1 - Lancaster": 1,
+                  "NHPF 1 - Manchester": 27
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 1,
+                  "RLPF2 - St Mungo’s": 0,
+                  "NHPF 1 - Oxford": 20,
+                  "NHPF 1 - Bristol": 28,
+                  "NHPF 1 - Lancaster": 48,
+                  "NHPF 1 - Manchester": 36
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 28,
+                  "RLPF2 - St Mungo’s": 45,
+                  "NHPF 1 - Oxford": 0,
+                  "NHPF 1 - Bristol": 43,
+                  "NHPF 1 - Lancaster": 23,
+                  "NHPF 1 - Manchester": 14
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 26,
+                  "RLPF2 - St Mungo’s": 3,
+                  "NHPF 1 - Oxford": 29,
+                  "NHPF 1 - Bristol": 14,
+                  "NHPF 1 - Lancaster": 31,
+                  "NHPF 1 - Manchester": 27
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 21,
+                  "RLPF2 - St Mungo’s": 45,
+                  "NHPF 1 - Oxford": 38,
+                  "NHPF 1 - Bristol": 39,
+                  "NHPF 1 - Lancaster": 0,
+                  "NHPF 1 - Manchester": 41
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 30,
+                  "RLPF2 - St Mungo’s": 0,
+                  "NHPF 1 - Oxford": 0,
+                  "NHPF 1 - Bristol": 37,
+                  "NHPF 1 - Lancaster": 47,
+                  "NHPF 1 - Manchester": 19
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 19,
+                  "RLPF2 - St Mungo’s": 28,
+                  "NHPF 1 - Oxford": 11,
+                  "NHPF 1 - Bristol": 6,
+                  "NHPF 1 - Lancaster": 6,
+                  "NHPF 1 - Manchester": 3
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 15,
+                  "RLPF2 - St Mungo’s": 29,
+                  "NHPF 1 - Oxford": 3,
+                  "NHPF 1 - Bristol": 22,
+                  "NHPF 1 - Lancaster": 14,
+                  "NHPF 1 - Manchester": 8
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 8,
+                  "RLPF2 - St Mungo’s": 36,
+                  "NHPF 1 - Oxford": 6,
+                  "NHPF 1 - Bristol": 12,
+                  "NHPF 1 - Lancaster": 26,
+                  "NHPF 1 - Manchester": 27
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 18,
+                  "RLPF2 - St Mungo’s": 20,
+                  "NHPF 1 - Oxford": 9,
+                  "NHPF 1 - Bristol": 4,
+                  "NHPF 1 - Lancaster": 8,
+                  "NHPF 1 - Manchester": 32
+                }
+              }
+            }
+          }
+        },
+        "Tenants with disabilities": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 13,
+                  "RLPF2 - St Mungo’s": 28,
+                  "NHPF 1 - Oxford": 48,
+                  "NHPF 1 - Bristol": 42,
+                  "NHPF 1 - Lancaster": 7,
+                  "NHPF 1 - Manchester": 25
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 29,
+                  "RLPF2 - St Mungo’s": 12,
+                  "NHPF 1 - Oxford": 25,
+                  "NHPF 1 - Bristol": 26,
+                  "NHPF 1 - Lancaster": 9,
+                  "NHPF 1 - Manchester": 22
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 19,
+                  "RLPF2 - St Mungo’s": 40,
+                  "NHPF 1 - Oxford": 0,
+                  "NHPF 1 - Bristol": 27,
+                  "NHPF 1 - Lancaster": 21,
+                  "NHPF 1 - Manchester": 25
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 40,
+                  "RLPF2 - St Mungo’s": 2,
+                  "NHPF 1 - Oxford": 5,
+                  "NHPF 1 - Bristol": 5,
+                  "NHPF 1 - Lancaster": 29,
+                  "NHPF 1 - Manchester": 16
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 14,
+                  "RLPF2 - St Mungo’s": 21,
+                  "NHPF 1 - Oxford": 27,
+                  "NHPF 1 - Bristol": 21,
+                  "NHPF 1 - Lancaster": 0,
+                  "NHPF 1 - Manchester": 34
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 33,
+                  "RLPF2 - St Mungo’s": 16,
+                  "NHPF 1 - Oxford": 30,
+                  "NHPF 1 - Bristol": 49,
+                  "NHPF 1 - Lancaster": 24,
+                  "NHPF 1 - Manchester": 9
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 28,
+                  "RLPF2 - St Mungo’s": 10,
+                  "NHPF 1 - Oxford": 30,
+                  "NHPF 1 - Bristol": 21,
+                  "NHPF 1 - Lancaster": 19,
+                  "NHPF 1 - Manchester": 2
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 17,
+                  "RLPF2 - St Mungo’s": 7,
+                  "NHPF 1 - Oxford": 10,
+                  "NHPF 1 - Bristol": 29,
+                  "NHPF 1 - Lancaster": 17,
+                  "NHPF 1 - Manchester": 25
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 24,
+                  "RLPF2 - St Mungo’s": 4,
+                  "NHPF 1 - Oxford": 17,
+                  "NHPF 1 - Bristol": 12,
+                  "NHPF 1 - Lancaster": 42,
+                  "NHPF 1 - Manchester": 13
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 14,
+                  "RLPF2 - St Mungo’s": 1,
+                  "NHPF 1 - Oxford": 12,
+                  "NHPF 1 - Bristol": 38,
+                  "NHPF 1 - Lancaster": 10,
+                  "NHPF 1 - Manchester": 36
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 6,
+                  "RLPF2 - St Mungo’s": 26,
+                  "NHPF 1 - Oxford": 42,
+                  "NHPF 1 - Bristol": 11,
+                  "NHPF 1 - Lancaster": 24,
+                  "NHPF 1 - Manchester": 34
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 47,
+                  "RLPF2 - St Mungo’s": 13,
+                  "NHPF 1 - Oxford": 35,
+                  "NHPF 1 - Bristol": 25,
+                  "NHPF 1 - Lancaster": 28,
+                  "NHPF 1 - Manchester": 13
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 0,
+                  "RLPF2 - St Mungo’s": 9,
+                  "NHPF 1 - Oxford": 10,
+                  "NHPF 1 - Bristol": 6,
+                  "NHPF 1 - Lancaster": 33,
+                  "NHPF 1 - Manchester": 42
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 29,
+                  "RLPF2 - St Mungo’s": 41,
+                  "NHPF 1 - Oxford": 48,
+                  "NHPF 1 - Bristol": 5,
+                  "NHPF 1 - Lancaster": 28,
+                  "NHPF 1 - Manchester": 21
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 21,
+                  "RLPF2 - St Mungo’s": 29,
+                  "NHPF 1 - Oxford": 30,
+                  "NHPF 1 - Bristol": 41,
+                  "NHPF 1 - Lancaster": 3,
+                  "NHPF 1 - Manchester": 26
+                }
+              }
+            }
+          }
+        },
+        "Ethnic origin": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 38,
+                  "RLPF2 - St Mungo’s": 17,
+                  "NHPF 1 - Oxford": 7,
+                  "NHPF 1 - Bristol": 10,
+                  "NHPF 1 - Lancaster": 30,
+                  "NHPF 1 - Manchester": 25
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 1,
+                  "RLPF2 - St Mungo’s": 17,
+                  "NHPF 1 - Oxford": 4,
+                  "NHPF 1 - Bristol": 0,
+                  "NHPF 1 - Lancaster": 10,
+                  "NHPF 1 - Manchester": 2
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 21,
+                  "RLPF2 - St Mungo’s": 6,
+                  "NHPF 1 - Oxford": 37,
+                  "NHPF 1 - Bristol": 47,
+                  "NHPF 1 - Lancaster": 1,
+                  "NHPF 1 - Manchester": 11
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 4,
+                  "RLPF2 - St Mungo’s": 37,
+                  "NHPF 1 - Oxford": 9,
+                  "NHPF 1 - Bristol": 10,
+                  "NHPF 1 - Lancaster": 10,
+                  "NHPF 1 - Manchester": 21
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 4,
+                  "RLPF2 - St Mungo’s": 34,
+                  "NHPF 1 - Oxford": 42,
+                  "NHPF 1 - Bristol": 0,
+                  "NHPF 1 - Lancaster": 16,
+                  "NHPF 1 - Manchester": 47
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 17,
+                  "RLPF2 - St Mungo’s": 9,
+                  "NHPF 1 - Oxford": 4,
+                  "NHPF 1 - Bristol": 42,
+                  "NHPF 1 - Lancaster": 13,
+                  "NHPF 1 - Manchester": 43
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 17,
+                  "RLPF2 - St Mungo’s": 43,
+                  "NHPF 1 - Oxford": 10,
+                  "NHPF 1 - Bristol": 18,
+                  "NHPF 1 - Lancaster": 11,
+                  "NHPF 1 - Manchester": 13
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 11,
+                  "RLPF2 - St Mungo’s": 8,
+                  "NHPF 1 - Oxford": 33,
+                  "NHPF 1 - Bristol": 11,
+                  "NHPF 1 - Lancaster": 16,
+                  "NHPF 1 - Manchester": 39
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 22,
+                  "RLPF2 - St Mungo’s": 25,
+                  "NHPF 1 - Oxford": 1,
+                  "NHPF 1 - Bristol": 17,
+                  "NHPF 1 - Lancaster": 48,
+                  "NHPF 1 - Manchester": 25
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 15,
+                  "RLPF2 - St Mungo’s": 1,
+                  "NHPF 1 - Oxford": 5,
+                  "NHPF 1 - Bristol": 6,
+                  "NHPF 1 - Lancaster": 23,
+                  "NHPF 1 - Manchester": 15
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 10,
+                  "RLPF2 - St Mungo’s": 24,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 43,
+                  "NHPF 1 - Lancaster": 32,
+                  "NHPF 1 - Manchester": 36
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 7,
+                  "RLPF2 - St Mungo’s": 23,
+                  "NHPF 1 - Oxford": 1,
+                  "NHPF 1 - Bristol": 5,
+                  "NHPF 1 - Lancaster": 42,
+                  "NHPF 1 - Manchester": 38
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 46,
+                  "RLPF2 - St Mungo’s": 2,
+                  "NHPF 1 - Oxford": 31,
+                  "NHPF 1 - Bristol": 5,
+                  "NHPF 1 - Lancaster": 48,
+                  "NHPF 1 - Manchester": 27
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 41,
+                  "RLPF2 - St Mungo’s": 11,
+                  "NHPF 1 - Oxford": 21,
+                  "NHPF 1 - Bristol": 9,
+                  "NHPF 1 - Lancaster": 8,
+                  "NHPF 1 - Manchester": 49
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 48,
+                  "RLPF2 - St Mungo’s": 44,
+                  "NHPF 1 - Oxford": 19,
+                  "NHPF 1 - Bristol": 46,
+                  "NHPF 1 - Lancaster": 39,
+                  "NHPF 1 - Manchester": 12
+                }
+              }
+            }
+          }
+        },
+        "Gender": {
+          "values": {},
+          "children": {
+            "Male": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 11,
+                  "RLPF2 - St Mungo’s": 1,
+                  "NHPF 1 - Oxford": 37,
+                  "NHPF 1 - Bristol": 49,
+                  "NHPF 1 - Lancaster": 32,
+                  "NHPF 1 - Manchester": 32
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 5,
+                  "RLPF2 - St Mungo’s": 15,
+                  "NHPF 1 - Oxford": 44,
+                  "NHPF 1 - Bristol": 15,
+                  "NHPF 1 - Lancaster": 12,
+                  "NHPF 1 - Manchester": 40
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 11,
+                  "RLPF2 - St Mungo’s": 38,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 38,
+                  "NHPF 1 - Lancaster": 39,
+                  "NHPF 1 - Manchester": 1
+                }
+              }
+            },
+            "Female": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 36,
+                  "RLPF2 - St Mungo’s": 8,
+                  "NHPF 1 - Oxford": 22,
+                  "NHPF 1 - Bristol": 17,
+                  "NHPF 1 - Lancaster": 40,
+                  "NHPF 1 - Manchester": 38
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 26,
+                  "RLPF2 - St Mungo’s": 15,
+                  "NHPF 1 - Oxford": 30,
+                  "NHPF 1 - Bristol": 14,
+                  "NHPF 1 - Lancaster": 9,
+                  "NHPF 1 - Manchester": 12
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 40,
+                  "RLPF2 - St Mungo’s": 27,
+                  "NHPF 1 - Oxford": 14,
+                  "NHPF 1 - Bristol": 1,
+                  "NHPF 1 - Lancaster": 38,
+                  "NHPF 1 - Manchester": 11
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Unemployed": {
+      "values": {},
+      "children": {
+        "Age at survey date": {
+          "values": {},
+          "children": {
+            "18-21 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 32,
+                  "RLPF2 - St Mungo’s": 34,
+                  "NHPF 1 - Oxford": 4,
+                  "NHPF 1 - Bristol": 33,
+                  "NHPF 1 - Lancaster": 20,
+                  "NHPF 1 - Manchester": 49
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 4,
+                  "RLPF2 - St Mungo’s": 24,
+                  "NHPF 1 - Oxford": 44,
+                  "NHPF 1 - Bristol": 31,
+                  "NHPF 1 - Lancaster": 19,
+                  "NHPF 1 - Manchester": 7
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 41,
+                  "RLPF2 - St Mungo’s": 40,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 14,
+                  "NHPF 1 - Lancaster": 41,
+                  "NHPF 1 - Manchester": 21
+                }
+              }
+            },
+            "22-24 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 6,
+                  "RLPF2 - St Mungo’s": 4,
+                  "NHPF 1 - Oxford": 34,
+                  "NHPF 1 - Bristol": 15,
+                  "NHPF 1 - Lancaster": 31,
+                  "NHPF 1 - Manchester": 2
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 42,
+                  "RLPF2 - St Mungo’s": 49,
+                  "NHPF 1 - Oxford": 28,
+                  "NHPF 1 - Bristol": 19,
+                  "NHPF 1 - Lancaster": 2,
+                  "NHPF 1 - Manchester": 28
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 9,
+                  "RLPF2 - St Mungo’s": 45,
+                  "NHPF 1 - Oxford": 22,
+                  "NHPF 1 - Bristol": 19,
+                  "NHPF 1 - Lancaster": 5,
+                  "NHPF 1 - Manchester": 15
+                }
+              }
+            },
+            "25-34 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 5,
+                  "RLPF2 - St Mungo’s": 13,
+                  "NHPF 1 - Oxford": 48,
+                  "NHPF 1 - Bristol": 40,
+                  "NHPF 1 - Lancaster": 33,
+                  "NHPF 1 - Manchester": 14
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 3,
+                  "RLPF2 - St Mungo’s": 49,
+                  "NHPF 1 - Oxford": 39,
+                  "NHPF 1 - Bristol": 39,
+                  "NHPF 1 - Lancaster": 31,
+                  "NHPF 1 - Manchester": 19
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 30,
+                  "RLPF2 - St Mungo’s": 14,
+                  "NHPF 1 - Oxford": 30,
+                  "NHPF 1 - Bristol": 19,
+                  "NHPF 1 - Lancaster": 38,
+                  "NHPF 1 - Manchester": 8
+                }
+              }
+            },
+            "35-44 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 30,
+                  "RLPF2 - St Mungo’s": 12,
+                  "NHPF 1 - Oxford": 49,
+                  "NHPF 1 - Bristol": 25,
+                  "NHPF 1 - Lancaster": 36,
+                  "NHPF 1 - Manchester": 0
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 27,
+                  "RLPF2 - St Mungo’s": 25,
+                  "NHPF 1 - Oxford": 31,
+                  "NHPF 1 - Bristol": 45,
+                  "NHPF 1 - Lancaster": 41,
+                  "NHPF 1 - Manchester": 10
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 5,
+                  "RLPF2 - St Mungo’s": 38,
+                  "NHPF 1 - Oxford": 41,
+                  "NHPF 1 - Bristol": 32,
+                  "NHPF 1 - Lancaster": 37,
+                  "NHPF 1 - Manchester": 16
+                }
+              }
+            },
+            "45-54 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 4,
+                  "RLPF2 - St Mungo’s": 8,
+                  "NHPF 1 - Oxford": 13,
+                  "NHPF 1 - Bristol": 44,
+                  "NHPF 1 - Lancaster": 13,
+                  "NHPF 1 - Manchester": 10
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 48,
+                  "RLPF2 - St Mungo’s": 9,
+                  "NHPF 1 - Oxford": 49,
+                  "NHPF 1 - Bristol": 45,
+                  "NHPF 1 - Lancaster": 40,
+                  "NHPF 1 - Manchester": 8
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 45,
+                  "RLPF2 - St Mungo’s": 3,
+                  "NHPF 1 - Oxford": 14,
+                  "NHPF 1 - Bristol": 8,
+                  "NHPF 1 - Lancaster": 13,
+                  "NHPF 1 - Manchester": 18
+                }
+              }
+            }
+          }
+        },
+        "Benefits": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 24,
+                  "RLPF2 - St Mungo’s": 24,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 34,
+                  "NHPF 1 - Lancaster": 16,
+                  "NHPF 1 - Manchester": 2
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 45,
+                  "RLPF2 - St Mungo’s": 23,
+                  "NHPF 1 - Oxford": 44,
+                  "NHPF 1 - Bristol": 3,
+                  "NHPF 1 - Lancaster": 6,
+                  "NHPF 1 - Manchester": 28
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 35,
+                  "RLPF2 - St Mungo’s": 15,
+                  "NHPF 1 - Oxford": 6,
+                  "NHPF 1 - Bristol": 11,
+                  "NHPF 1 - Lancaster": 26,
+                  "NHPF 1 - Manchester": 40
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 16,
+                  "RLPF2 - St Mungo’s": 22,
+                  "NHPF 1 - Oxford": 20,
+                  "NHPF 1 - Bristol": 29,
+                  "NHPF 1 - Lancaster": 3,
+                  "NHPF 1 - Manchester": 12
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 19,
+                  "RLPF2 - St Mungo’s": 0,
+                  "NHPF 1 - Oxford": 37,
+                  "NHPF 1 - Bristol": 5,
+                  "NHPF 1 - Lancaster": 7,
+                  "NHPF 1 - Manchester": 49
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 4,
+                  "RLPF2 - St Mungo’s": 36,
+                  "NHPF 1 - Oxford": 42,
+                  "NHPF 1 - Bristol": 41,
+                  "NHPF 1 - Lancaster": 7,
+                  "NHPF 1 - Manchester": 13
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 13,
+                  "RLPF2 - St Mungo’s": 44,
+                  "NHPF 1 - Oxford": 48,
+                  "NHPF 1 - Bristol": 16,
+                  "NHPF 1 - Lancaster": 40,
+                  "NHPF 1 - Manchester": 35
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 42,
+                  "RLPF2 - St Mungo’s": 45,
+                  "NHPF 1 - Oxford": 39,
+                  "NHPF 1 - Bristol": 36,
+                  "NHPF 1 - Lancaster": 35,
+                  "NHPF 1 - Manchester": 19
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 13,
+                  "RLPF2 - St Mungo’s": 49,
+                  "NHPF 1 - Oxford": 11,
+                  "NHPF 1 - Bristol": 24,
+                  "NHPF 1 - Lancaster": 2,
+                  "NHPF 1 - Manchester": 2
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 30,
+                  "RLPF2 - St Mungo’s": 26,
+                  "NHPF 1 - Oxford": 32,
+                  "NHPF 1 - Bristol": 6,
+                  "NHPF 1 - Lancaster": 3,
+                  "NHPF 1 - Manchester": 36
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 34,
+                  "RLPF2 - St Mungo’s": 34,
+                  "NHPF 1 - Oxford": 31,
+                  "NHPF 1 - Bristol": 26,
+                  "NHPF 1 - Lancaster": 0,
+                  "NHPF 1 - Manchester": 2
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 3,
+                  "RLPF2 - St Mungo’s": 14,
+                  "NHPF 1 - Oxford": 27,
+                  "NHPF 1 - Bristol": 26,
+                  "NHPF 1 - Lancaster": 3,
+                  "NHPF 1 - Manchester": 9
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 23,
+                  "RLPF2 - St Mungo’s": 12,
+                  "NHPF 1 - Oxford": 25,
+                  "NHPF 1 - Bristol": 13,
+                  "NHPF 1 - Lancaster": 10,
+                  "NHPF 1 - Manchester": 41
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 8,
+                  "RLPF2 - St Mungo’s": 5,
+                  "NHPF 1 - Oxford": 40,
+                  "NHPF 1 - Bristol": 19,
+                  "NHPF 1 - Lancaster": 31,
+                  "NHPF 1 - Manchester": 36
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 15,
+                  "RLPF2 - St Mungo’s": 46,
+                  "NHPF 1 - Oxford": 11,
+                  "NHPF 1 - Bristol": 49,
+                  "NHPF 1 - Lancaster": 8,
+                  "NHPF 1 - Manchester": 49
+                }
+              }
+            }
+          }
+        },
+        "Households with children": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 46,
+                  "RLPF2 - St Mungo’s": 23,
+                  "NHPF 1 - Oxford": 31,
+                  "NHPF 1 - Bristol": 38,
+                  "NHPF 1 - Lancaster": 10,
+                  "NHPF 1 - Manchester": 0
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 25,
+                  "RLPF2 - St Mungo’s": 40,
+                  "NHPF 1 - Oxford": 17,
+                  "NHPF 1 - Bristol": 48,
+                  "NHPF 1 - Lancaster": 29,
+                  "NHPF 1 - Manchester": 14
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 7,
+                  "RLPF2 - St Mungo’s": 18,
+                  "NHPF 1 - Oxford": 30,
+                  "NHPF 1 - Bristol": 10,
+                  "NHPF 1 - Lancaster": 33,
+                  "NHPF 1 - Manchester": 2
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 26,
+                  "RLPF2 - St Mungo’s": 24,
+                  "NHPF 1 - Oxford": 16,
+                  "NHPF 1 - Bristol": 49,
+                  "NHPF 1 - Lancaster": 34,
+                  "NHPF 1 - Manchester": 1
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 34,
+                  "RLPF2 - St Mungo’s": 8,
+                  "NHPF 1 - Oxford": 26,
+                  "NHPF 1 - Bristol": 30,
+                  "NHPF 1 - Lancaster": 35,
+                  "NHPF 1 - Manchester": 38
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 18,
+                  "RLPF2 - St Mungo’s": 47,
+                  "NHPF 1 - Oxford": 15,
+                  "NHPF 1 - Bristol": 34,
+                  "NHPF 1 - Lancaster": 21,
+                  "NHPF 1 - Manchester": 38
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 11,
+                  "RLPF2 - St Mungo’s": 25,
+                  "NHPF 1 - Oxford": 13,
+                  "NHPF 1 - Bristol": 38,
+                  "NHPF 1 - Lancaster": 11,
+                  "NHPF 1 - Manchester": 13
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 2,
+                  "RLPF2 - St Mungo’s": 41,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 2,
+                  "NHPF 1 - Lancaster": 47,
+                  "NHPF 1 - Manchester": 4
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 35,
+                  "RLPF2 - St Mungo’s": 16,
+                  "NHPF 1 - Oxford": 22,
+                  "NHPF 1 - Bristol": 18,
+                  "NHPF 1 - Lancaster": 18,
+                  "NHPF 1 - Manchester": 21
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 24,
+                  "RLPF2 - St Mungo’s": 26,
+                  "NHPF 1 - Oxford": 17,
+                  "NHPF 1 - Bristol": 39,
+                  "NHPF 1 - Lancaster": 34,
+                  "NHPF 1 - Manchester": 2
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 19,
+                  "RLPF2 - St Mungo’s": 30,
+                  "NHPF 1 - Oxford": 22,
+                  "NHPF 1 - Bristol": 2,
+                  "NHPF 1 - Lancaster": 17,
+                  "NHPF 1 - Manchester": 38
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 36,
+                  "RLPF2 - St Mungo’s": 4,
+                  "NHPF 1 - Oxford": 16,
+                  "NHPF 1 - Bristol": 42,
+                  "NHPF 1 - Lancaster": 10,
+                  "NHPF 1 - Manchester": 12
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 26,
+                  "RLPF2 - St Mungo’s": 41,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 27,
+                  "NHPF 1 - Lancaster": 5,
+                  "NHPF 1 - Manchester": 9
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 2,
+                  "RLPF2 - St Mungo’s": 26,
+                  "NHPF 1 - Oxford": 19,
+                  "NHPF 1 - Bristol": 45,
+                  "NHPF 1 - Lancaster": 30,
+                  "NHPF 1 - Manchester": 36
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 1,
+                  "RLPF2 - St Mungo’s": 10,
+                  "NHPF 1 - Oxford": 42,
+                  "NHPF 1 - Bristol": 34,
+                  "NHPF 1 - Lancaster": 33,
+                  "NHPF 1 - Manchester": 18
+                }
+              }
+            }
+          }
+        },
+        "Tenants with disabilities": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 30,
+                  "RLPF2 - St Mungo’s": 4,
+                  "NHPF 1 - Oxford": 5,
+                  "NHPF 1 - Bristol": 24,
+                  "NHPF 1 - Lancaster": 36,
+                  "NHPF 1 - Manchester": 44
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 34,
+                  "RLPF2 - St Mungo’s": 4,
+                  "NHPF 1 - Oxford": 5,
+                  "NHPF 1 - Bristol": 15,
+                  "NHPF 1 - Lancaster": 13,
+                  "NHPF 1 - Manchester": 4
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 33,
+                  "RLPF2 - St Mungo’s": 32,
+                  "NHPF 1 - Oxford": 6,
+                  "NHPF 1 - Bristol": 17,
+                  "NHPF 1 - Lancaster": 43,
+                  "NHPF 1 - Manchester": 44
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 5,
+                  "RLPF2 - St Mungo’s": 24,
+                  "NHPF 1 - Oxford": 32,
+                  "NHPF 1 - Bristol": 0,
+                  "NHPF 1 - Lancaster": 42,
+                  "NHPF 1 - Manchester": 33
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 20,
+                  "RLPF2 - St Mungo’s": 10,
+                  "NHPF 1 - Oxford": 40,
+                  "NHPF 1 - Bristol": 10,
+                  "NHPF 1 - Lancaster": 44,
+                  "NHPF 1 - Manchester": 38
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 9,
+                  "RLPF2 - St Mungo’s": 32,
+                  "NHPF 1 - Oxford": 20,
+                  "NHPF 1 - Bristol": 13,
+                  "NHPF 1 - Lancaster": 18,
+                  "NHPF 1 - Manchester": 11
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 39,
+                  "RLPF2 - St Mungo’s": 33,
+                  "NHPF 1 - Oxford": 29,
+                  "NHPF 1 - Bristol": 49,
+                  "NHPF 1 - Lancaster": 47,
+                  "NHPF 1 - Manchester": 2
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 35,
+                  "RLPF2 - St Mungo’s": 41,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 39,
+                  "NHPF 1 - Lancaster": 32,
+                  "NHPF 1 - Manchester": 42
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 28,
+                  "RLPF2 - St Mungo’s": 33,
+                  "NHPF 1 - Oxford": 21,
+                  "NHPF 1 - Bristol": 33,
+                  "NHPF 1 - Lancaster": 48,
+                  "NHPF 1 - Manchester": 40
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 37,
+                  "RLPF2 - St Mungo’s": 27,
+                  "NHPF 1 - Oxford": 20,
+                  "NHPF 1 - Bristol": 2,
+                  "NHPF 1 - Lancaster": 24,
+                  "NHPF 1 - Manchester": 44
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 2,
+                  "RLPF2 - St Mungo’s": 43,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 40,
+                  "NHPF 1 - Lancaster": 0,
+                  "NHPF 1 - Manchester": 3
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 34,
+                  "RLPF2 - St Mungo’s": 21,
+                  "NHPF 1 - Oxford": 34,
+                  "NHPF 1 - Bristol": 30,
+                  "NHPF 1 - Lancaster": 1,
+                  "NHPF 1 - Manchester": 15
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 6,
+                  "RLPF2 - St Mungo’s": 34,
+                  "NHPF 1 - Oxford": 20,
+                  "NHPF 1 - Bristol": 38,
+                  "NHPF 1 - Lancaster": 30,
+                  "NHPF 1 - Manchester": 40
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 1,
+                  "RLPF2 - St Mungo’s": 40,
+                  "NHPF 1 - Oxford": 21,
+                  "NHPF 1 - Bristol": 36,
+                  "NHPF 1 - Lancaster": 24,
+                  "NHPF 1 - Manchester": 46
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 10,
+                  "RLPF2 - St Mungo’s": 0,
+                  "NHPF 1 - Oxford": 28,
+                  "NHPF 1 - Bristol": 34,
+                  "NHPF 1 - Lancaster": 19,
+                  "NHPF 1 - Manchester": 39
+                }
+              }
+            }
+          }
+        },
+        "Ethnic origin": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 45,
+                  "RLPF2 - St Mungo’s": 18,
+                  "NHPF 1 - Oxford": 16,
+                  "NHPF 1 - Bristol": 34,
+                  "NHPF 1 - Lancaster": 6,
+                  "NHPF 1 - Manchester": 16
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 9,
+                  "RLPF2 - St Mungo’s": 46,
+                  "NHPF 1 - Oxford": 49,
+                  "NHPF 1 - Bristol": 33,
+                  "NHPF 1 - Lancaster": 44,
+                  "NHPF 1 - Manchester": 8
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 22,
+                  "RLPF2 - St Mungo’s": 4,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 43,
+                  "NHPF 1 - Lancaster": 46,
+                  "NHPF 1 - Manchester": 30
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 11,
+                  "RLPF2 - St Mungo’s": 18,
+                  "NHPF 1 - Oxford": 16,
+                  "NHPF 1 - Bristol": 2,
+                  "NHPF 1 - Lancaster": 39,
+                  "NHPF 1 - Manchester": 30
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 32,
+                  "RLPF2 - St Mungo’s": 29,
+                  "NHPF 1 - Oxford": 4,
+                  "NHPF 1 - Bristol": 13,
+                  "NHPF 1 - Lancaster": 23,
+                  "NHPF 1 - Manchester": 22
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 25,
+                  "RLPF2 - St Mungo’s": 38,
+                  "NHPF 1 - Oxford": 35,
+                  "NHPF 1 - Bristol": 9,
+                  "NHPF 1 - Lancaster": 13,
+                  "NHPF 1 - Manchester": 23
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 16,
+                  "RLPF2 - St Mungo’s": 2,
+                  "NHPF 1 - Oxford": 42,
+                  "NHPF 1 - Bristol": 19,
+                  "NHPF 1 - Lancaster": 29,
+                  "NHPF 1 - Manchester": 7
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 49,
+                  "RLPF2 - St Mungo’s": 25,
+                  "NHPF 1 - Oxford": 41,
+                  "NHPF 1 - Bristol": 42,
+                  "NHPF 1 - Lancaster": 40,
+                  "NHPF 1 - Manchester": 15
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 49,
+                  "RLPF2 - St Mungo’s": 22,
+                  "NHPF 1 - Oxford": 17,
+                  "NHPF 1 - Bristol": 23,
+                  "NHPF 1 - Lancaster": 40,
+                  "NHPF 1 - Manchester": 7
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 2,
+                  "RLPF2 - St Mungo’s": 34,
+                  "NHPF 1 - Oxford": 16,
+                  "NHPF 1 - Bristol": 7,
+                  "NHPF 1 - Lancaster": 39,
+                  "NHPF 1 - Manchester": 36
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 33,
+                  "RLPF2 - St Mungo’s": 43,
+                  "NHPF 1 - Oxford": 2,
+                  "NHPF 1 - Bristol": 42,
+                  "NHPF 1 - Lancaster": 39,
+                  "NHPF 1 - Manchester": 7
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 7,
+                  "RLPF2 - St Mungo’s": 20,
+                  "NHPF 1 - Oxford": 12,
+                  "NHPF 1 - Bristol": 3,
+                  "NHPF 1 - Lancaster": 15,
+                  "NHPF 1 - Manchester": 21
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 25,
+                  "RLPF2 - St Mungo’s": 24,
+                  "NHPF 1 - Oxford": 30,
+                  "NHPF 1 - Bristol": 0,
+                  "NHPF 1 - Lancaster": 9,
+                  "NHPF 1 - Manchester": 20
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 18,
+                  "RLPF2 - St Mungo’s": 42,
+                  "NHPF 1 - Oxford": 11,
+                  "NHPF 1 - Bristol": 2,
+                  "NHPF 1 - Lancaster": 6,
+                  "NHPF 1 - Manchester": 31
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 48,
+                  "RLPF2 - St Mungo’s": 13,
+                  "NHPF 1 - Oxford": 23,
+                  "NHPF 1 - Bristol": 46,
+                  "NHPF 1 - Lancaster": 44,
+                  "NHPF 1 - Manchester": 22
+                }
+              }
+            }
+          }
+        },
+        "Gender": {
+          "values": {},
+          "children": {
+            "Male": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 23,
+                  "RLPF2 - St Mungo’s": 40,
+                  "NHPF 1 - Oxford": 10,
+                  "NHPF 1 - Bristol": 48,
+                  "NHPF 1 - Lancaster": 36,
+                  "NHPF 1 - Manchester": 26
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 35,
+                  "RLPF2 - St Mungo’s": 13,
+                  "NHPF 1 - Oxford": 26,
+                  "NHPF 1 - Bristol": 3,
+                  "NHPF 1 - Lancaster": 24,
+                  "NHPF 1 - Manchester": 31
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 6,
+                  "RLPF2 - St Mungo’s": 40,
+                  "NHPF 1 - Oxford": 12,
+                  "NHPF 1 - Bristol": 43,
+                  "NHPF 1 - Lancaster": 46,
+                  "NHPF 1 - Manchester": 9
+                }
+              }
+            },
+            "Female": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 27,
+                  "RLPF2 - St Mungo’s": 16,
+                  "NHPF 1 - Oxford": 22,
+                  "NHPF 1 - Bristol": 23,
+                  "NHPF 1 - Lancaster": 19,
+                  "NHPF 1 - Manchester": 26
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 26,
+                  "RLPF2 - St Mungo’s": 20,
+                  "NHPF 1 - Oxford": 31,
+                  "NHPF 1 - Bristol": 44,
+                  "NHPF 1 - Lancaster": 48,
+                  "NHPF 1 - Manchester": 44
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 34,
+                  "RLPF2 - St Mungo’s": 48,
+                  "NHPF 1 - Oxford": 42,
+                  "NHPF 1 - Bristol": 10,
+                  "NHPF 1 - Lancaster": 46,
+                  "NHPF 1 - Manchester": 33
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Unemployed - not eligible": {
+      "values": {},
+      "children": {
+        "Age at survey date": {
+          "values": {},
+          "children": {
+            "18-21 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 3,
+                  "RLPF2 - St Mungo’s": 35,
+                  "NHPF 1 - Oxford": 32,
+                  "NHPF 1 - Bristol": 11,
+                  "NHPF 1 - Lancaster": 19,
+                  "NHPF 1 - Manchester": 42
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 34,
+                  "RLPF2 - St Mungo’s": 47,
+                  "NHPF 1 - Oxford": 28,
+                  "NHPF 1 - Bristol": 30,
+                  "NHPF 1 - Lancaster": 27,
+                  "NHPF 1 - Manchester": 21
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 32,
+                  "RLPF2 - St Mungo’s": 29,
+                  "NHPF 1 - Oxford": 10,
+                  "NHPF 1 - Bristol": 15,
+                  "NHPF 1 - Lancaster": 19,
+                  "NHPF 1 - Manchester": 21
+                }
+              }
+            },
+            "22-24 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 25,
+                  "RLPF2 - St Mungo’s": 46,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 37,
+                  "NHPF 1 - Lancaster": 29,
+                  "NHPF 1 - Manchester": 11
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 10,
+                  "RLPF2 - St Mungo’s": 29,
+                  "NHPF 1 - Oxford": 11,
+                  "NHPF 1 - Bristol": 8,
+                  "NHPF 1 - Lancaster": 20,
+                  "NHPF 1 - Manchester": 12
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 0,
+                  "RLPF2 - St Mungo’s": 31,
+                  "NHPF 1 - Oxford": 6,
+                  "NHPF 1 - Bristol": 20,
+                  "NHPF 1 - Lancaster": 41,
+                  "NHPF 1 - Manchester": 33
+                }
+              }
+            },
+            "25-34 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 13,
+                  "RLPF2 - St Mungo’s": 3,
+                  "NHPF 1 - Oxford": 44,
+                  "NHPF 1 - Bristol": 22,
+                  "NHPF 1 - Lancaster": 13,
+                  "NHPF 1 - Manchester": 32
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 5,
+                  "RLPF2 - St Mungo’s": 42,
+                  "NHPF 1 - Oxford": 21,
+                  "NHPF 1 - Bristol": 27,
+                  "NHPF 1 - Lancaster": 32,
+                  "NHPF 1 - Manchester": 40
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 16,
+                  "RLPF2 - St Mungo’s": 38,
+                  "NHPF 1 - Oxford": 22,
+                  "NHPF 1 - Bristol": 8,
+                  "NHPF 1 - Lancaster": 1,
+                  "NHPF 1 - Manchester": 6
+                }
+              }
+            },
+            "35-44 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 28,
+                  "RLPF2 - St Mungo’s": 40,
+                  "NHPF 1 - Oxford": 30,
+                  "NHPF 1 - Bristol": 12,
+                  "NHPF 1 - Lancaster": 16,
+                  "NHPF 1 - Manchester": 0
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 32,
+                  "RLPF2 - St Mungo’s": 30,
+                  "NHPF 1 - Oxford": 11,
+                  "NHPF 1 - Bristol": 17,
+                  "NHPF 1 - Lancaster": 16,
+                  "NHPF 1 - Manchester": 43
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 48,
+                  "RLPF2 - St Mungo’s": 41,
+                  "NHPF 1 - Oxford": 25,
+                  "NHPF 1 - Bristol": 13,
+                  "NHPF 1 - Lancaster": 14,
+                  "NHPF 1 - Manchester": 47
+                }
+              }
+            },
+            "45-54 years old": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 1,
+                  "RLPF2 - St Mungo’s": 14,
+                  "NHPF 1 - Oxford": 39,
+                  "NHPF 1 - Bristol": 29,
+                  "NHPF 1 - Lancaster": 7,
+                  "NHPF 1 - Manchester": 28
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 26,
+                  "RLPF2 - St Mungo’s": 3,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 40,
+                  "NHPF 1 - Lancaster": 8,
+                  "NHPF 1 - Manchester": 47
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 17,
+                  "RLPF2 - St Mungo’s": 46,
+                  "NHPF 1 - Oxford": 49,
+                  "NHPF 1 - Bristol": 6,
+                  "NHPF 1 - Lancaster": 4,
+                  "NHPF 1 - Manchester": 6
+                }
+              }
+            }
+          }
+        },
+        "Benefits": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 2,
+                  "RLPF2 - St Mungo’s": 12,
+                  "NHPF 1 - Oxford": 13,
+                  "NHPF 1 - Bristol": 38,
+                  "NHPF 1 - Lancaster": 40,
+                  "NHPF 1 - Manchester": 22
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 20,
+                  "RLPF2 - St Mungo’s": 11,
+                  "NHPF 1 - Oxford": 28,
+                  "NHPF 1 - Bristol": 27,
+                  "NHPF 1 - Lancaster": 37,
+                  "NHPF 1 - Manchester": 2
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 15,
+                  "RLPF2 - St Mungo’s": 24,
+                  "NHPF 1 - Oxford": 1,
+                  "NHPF 1 - Bristol": 33,
+                  "NHPF 1 - Lancaster": 13,
+                  "NHPF 1 - Manchester": 22
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 48,
+                  "RLPF2 - St Mungo’s": 49,
+                  "NHPF 1 - Oxford": 13,
+                  "NHPF 1 - Bristol": 42,
+                  "NHPF 1 - Lancaster": 2,
+                  "NHPF 1 - Manchester": 12
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 4,
+                  "RLPF2 - St Mungo’s": 1,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 20,
+                  "NHPF 1 - Lancaster": 16,
+                  "NHPF 1 - Manchester": 7
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 14,
+                  "RLPF2 - St Mungo’s": 24,
+                  "NHPF 1 - Oxford": 17,
+                  "NHPF 1 - Bristol": 17,
+                  "NHPF 1 - Lancaster": 48,
+                  "NHPF 1 - Manchester": 26
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 39,
+                  "RLPF2 - St Mungo’s": 34,
+                  "NHPF 1 - Oxford": 7,
+                  "NHPF 1 - Bristol": 2,
+                  "NHPF 1 - Lancaster": 9,
+                  "NHPF 1 - Manchester": 6
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 6,
+                  "RLPF2 - St Mungo’s": 1,
+                  "NHPF 1 - Oxford": 25,
+                  "NHPF 1 - Bristol": 28,
+                  "NHPF 1 - Lancaster": 33,
+                  "NHPF 1 - Manchester": 44
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 9,
+                  "RLPF2 - St Mungo’s": 9,
+                  "NHPF 1 - Oxford": 47,
+                  "NHPF 1 - Bristol": 14,
+                  "NHPF 1 - Lancaster": 2,
+                  "NHPF 1 - Manchester": 32
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 46,
+                  "RLPF2 - St Mungo’s": 44,
+                  "NHPF 1 - Oxford": 7,
+                  "NHPF 1 - Bristol": 32,
+                  "NHPF 1 - Lancaster": 47,
+                  "NHPF 1 - Manchester": 28
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 27,
+                  "RLPF2 - St Mungo’s": 7,
+                  "NHPF 1 - Oxford": 39,
+                  "NHPF 1 - Bristol": 28,
+                  "NHPF 1 - Lancaster": 32,
+                  "NHPF 1 - Manchester": 24
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 34,
+                  "RLPF2 - St Mungo’s": 7,
+                  "NHPF 1 - Oxford": 8,
+                  "NHPF 1 - Bristol": 24,
+                  "NHPF 1 - Lancaster": 42,
+                  "NHPF 1 - Manchester": 30
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 15,
+                  "RLPF2 - St Mungo’s": 4,
+                  "NHPF 1 - Oxford": 15,
+                  "NHPF 1 - Bristol": 48,
+                  "NHPF 1 - Lancaster": 47,
+                  "NHPF 1 - Manchester": 34
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 12,
+                  "RLPF2 - St Mungo’s": 12,
+                  "NHPF 1 - Oxford": 39,
+                  "NHPF 1 - Bristol": 5,
+                  "NHPF 1 - Lancaster": 25,
+                  "NHPF 1 - Manchester": 11
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 36,
+                  "RLPF2 - St Mungo’s": 27,
+                  "NHPF 1 - Oxford": 36,
+                  "NHPF 1 - Bristol": 44,
+                  "NHPF 1 - Lancaster": 16,
+                  "NHPF 1 - Manchester": 41
+                }
+              }
+            }
+          }
+        },
+        "Households with children": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 35,
+                  "RLPF2 - St Mungo’s": 11,
+                  "NHPF 1 - Oxford": 37,
+                  "NHPF 1 - Bristol": 30,
+                  "NHPF 1 - Lancaster": 26,
+                  "NHPF 1 - Manchester": 15
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 29,
+                  "RLPF2 - St Mungo’s": 21,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 4,
+                  "NHPF 1 - Lancaster": 13,
+                  "NHPF 1 - Manchester": 1
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 13,
+                  "RLPF2 - St Mungo’s": 33,
+                  "NHPF 1 - Oxford": 22,
+                  "NHPF 1 - Bristol": 48,
+                  "NHPF 1 - Lancaster": 25,
+                  "NHPF 1 - Manchester": 40
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 24,
+                  "RLPF2 - St Mungo’s": 13,
+                  "NHPF 1 - Oxford": 26,
+                  "NHPF 1 - Bristol": 33,
+                  "NHPF 1 - Lancaster": 0,
+                  "NHPF 1 - Manchester": 2
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 11,
+                  "RLPF2 - St Mungo’s": 27,
+                  "NHPF 1 - Oxford": 34,
+                  "NHPF 1 - Bristol": 10,
+                  "NHPF 1 - Lancaster": 32,
+                  "NHPF 1 - Manchester": 29
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 30,
+                  "RLPF2 - St Mungo’s": 13,
+                  "NHPF 1 - Oxford": 33,
+                  "NHPF 1 - Bristol": 40,
+                  "NHPF 1 - Lancaster": 6,
+                  "NHPF 1 - Manchester": 17
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 10,
+                  "RLPF2 - St Mungo’s": 12,
+                  "NHPF 1 - Oxford": 19,
+                  "NHPF 1 - Bristol": 32,
+                  "NHPF 1 - Lancaster": 36,
+                  "NHPF 1 - Manchester": 26
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 49,
+                  "RLPF2 - St Mungo’s": 33,
+                  "NHPF 1 - Oxford": 40,
+                  "NHPF 1 - Bristol": 4,
+                  "NHPF 1 - Lancaster": 33,
+                  "NHPF 1 - Manchester": 37
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 3,
+                  "RLPF2 - St Mungo’s": 27,
+                  "NHPF 1 - Oxford": 20,
+                  "NHPF 1 - Bristol": 9,
+                  "NHPF 1 - Lancaster": 19,
+                  "NHPF 1 - Manchester": 42
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 28,
+                  "RLPF2 - St Mungo’s": 27,
+                  "NHPF 1 - Oxford": 2,
+                  "NHPF 1 - Bristol": 19,
+                  "NHPF 1 - Lancaster": 38,
+                  "NHPF 1 - Manchester": 11
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 22,
+                  "RLPF2 - St Mungo’s": 2,
+                  "NHPF 1 - Oxford": 5,
+                  "NHPF 1 - Bristol": 32,
+                  "NHPF 1 - Lancaster": 18,
+                  "NHPF 1 - Manchester": 13
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 24,
+                  "RLPF2 - St Mungo’s": 13,
+                  "NHPF 1 - Oxford": 13,
+                  "NHPF 1 - Bristol": 27,
+                  "NHPF 1 - Lancaster": 12,
+                  "NHPF 1 - Manchester": 43
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 47,
+                  "RLPF2 - St Mungo’s": 8,
+                  "NHPF 1 - Oxford": 37,
+                  "NHPF 1 - Bristol": 18,
+                  "NHPF 1 - Lancaster": 4,
+                  "NHPF 1 - Manchester": 23
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 3,
+                  "RLPF2 - St Mungo’s": 7,
+                  "NHPF 1 - Oxford": 2,
+                  "NHPF 1 - Bristol": 0,
+                  "NHPF 1 - Lancaster": 27,
+                  "NHPF 1 - Manchester": 26
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 31,
+                  "RLPF2 - St Mungo’s": 25,
+                  "NHPF 1 - Oxford": 38,
+                  "NHPF 1 - Bristol": 42,
+                  "NHPF 1 - Lancaster": 30,
+                  "NHPF 1 - Manchester": 38
+                }
+              }
+            }
+          }
+        },
+        "Tenants with disabilities": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 24,
+                  "RLPF2 - St Mungo’s": 16,
+                  "NHPF 1 - Oxford": 3,
+                  "NHPF 1 - Bristol": 1,
+                  "NHPF 1 - Lancaster": 7,
+                  "NHPF 1 - Manchester": 42
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 4,
+                  "RLPF2 - St Mungo’s": 45,
+                  "NHPF 1 - Oxford": 23,
+                  "NHPF 1 - Bristol": 38,
+                  "NHPF 1 - Lancaster": 4,
+                  "NHPF 1 - Manchester": 5
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 49,
+                  "RLPF2 - St Mungo’s": 34,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 42,
+                  "NHPF 1 - Lancaster": 25,
+                  "NHPF 1 - Manchester": 17
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 21,
+                  "RLPF2 - St Mungo’s": 47,
+                  "NHPF 1 - Oxford": 39,
+                  "NHPF 1 - Bristol": 45,
+                  "NHPF 1 - Lancaster": 30,
+                  "NHPF 1 - Manchester": 34
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 23,
+                  "RLPF2 - St Mungo’s": 31,
+                  "NHPF 1 - Oxford": 37,
+                  "NHPF 1 - Bristol": 21,
+                  "NHPF 1 - Lancaster": 16,
+                  "NHPF 1 - Manchester": 31
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 15,
+                  "RLPF2 - St Mungo’s": 32,
+                  "NHPF 1 - Oxford": 46,
+                  "NHPF 1 - Bristol": 25,
+                  "NHPF 1 - Lancaster": 36,
+                  "NHPF 1 - Manchester": 29
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 24,
+                  "RLPF2 - St Mungo’s": 10,
+                  "NHPF 1 - Oxford": 0,
+                  "NHPF 1 - Bristol": 47,
+                  "NHPF 1 - Lancaster": 48,
+                  "NHPF 1 - Manchester": 22
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 31,
+                  "RLPF2 - St Mungo’s": 36,
+                  "NHPF 1 - Oxford": 1,
+                  "NHPF 1 - Bristol": 1,
+                  "NHPF 1 - Lancaster": 26,
+                  "NHPF 1 - Manchester": 42
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 0,
+                  "RLPF2 - St Mungo’s": 32,
+                  "NHPF 1 - Oxford": 8,
+                  "NHPF 1 - Bristol": 33,
+                  "NHPF 1 - Lancaster": 32,
+                  "NHPF 1 - Manchester": 15
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 42,
+                  "RLPF2 - St Mungo’s": 44,
+                  "NHPF 1 - Oxford": 48,
+                  "NHPF 1 - Bristol": 7,
+                  "NHPF 1 - Lancaster": 17,
+                  "NHPF 1 - Manchester": 33
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 25,
+                  "RLPF2 - St Mungo’s": 38,
+                  "NHPF 1 - Oxford": 26,
+                  "NHPF 1 - Bristol": 2,
+                  "NHPF 1 - Lancaster": 29,
+                  "NHPF 1 - Manchester": 40
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 39,
+                  "RLPF2 - St Mungo’s": 3,
+                  "NHPF 1 - Oxford": 23,
+                  "NHPF 1 - Bristol": 39,
+                  "NHPF 1 - Lancaster": 18,
+                  "NHPF 1 - Manchester": 10
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 42,
+                  "RLPF2 - St Mungo’s": 40,
+                  "NHPF 1 - Oxford": 20,
+                  "NHPF 1 - Bristol": 43,
+                  "NHPF 1 - Lancaster": 30,
+                  "NHPF 1 - Manchester": 34
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 7,
+                  "RLPF2 - St Mungo’s": 12,
+                  "NHPF 1 - Oxford": 4,
+                  "NHPF 1 - Bristol": 37,
+                  "NHPF 1 - Lancaster": 36,
+                  "NHPF 1 - Manchester": 20
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 13,
+                  "RLPF2 - St Mungo’s": 35,
+                  "NHPF 1 - Oxford": 45,
+                  "NHPF 1 - Bristol": 15,
+                  "NHPF 1 - Lancaster": 18,
+                  "NHPF 1 - Manchester": 35
+                }
+              }
+            }
+          }
+        },
+        "Ethnic origin": {
+          "values": {},
+          "children": {
+            "Case 1": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 10,
+                  "RLPF2 - St Mungo’s": 37,
+                  "NHPF 1 - Oxford": 31,
+                  "NHPF 1 - Bristol": 21,
+                  "NHPF 1 - Lancaster": 35,
+                  "NHPF 1 - Manchester": 42
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 49,
+                  "RLPF2 - St Mungo’s": 15,
+                  "NHPF 1 - Oxford": 21,
+                  "NHPF 1 - Bristol": 28,
+                  "NHPF 1 - Lancaster": 39,
+                  "NHPF 1 - Manchester": 34
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 41,
+                  "RLPF2 - St Mungo’s": 31,
+                  "NHPF 1 - Oxford": 43,
+                  "NHPF 1 - Bristol": 33,
+                  "NHPF 1 - Lancaster": 19,
+                  "NHPF 1 - Manchester": 19
+                }
+              }
+            },
+            "Case 2": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 7,
+                  "RLPF2 - St Mungo’s": 33,
+                  "NHPF 1 - Oxford": 36,
+                  "NHPF 1 - Bristol": 32,
+                  "NHPF 1 - Lancaster": 22,
+                  "NHPF 1 - Manchester": 36
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 13,
+                  "RLPF2 - St Mungo’s": 20,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 35,
+                  "NHPF 1 - Lancaster": 49,
+                  "NHPF 1 - Manchester": 36
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 43,
+                  "RLPF2 - St Mungo’s": 47,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 26,
+                  "NHPF 1 - Lancaster": 33,
+                  "NHPF 1 - Manchester": 18
+                }
+              }
+            },
+            "Case 3": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 15,
+                  "RLPF2 - St Mungo’s": 22,
+                  "NHPF 1 - Oxford": 34,
+                  "NHPF 1 - Bristol": 23,
+                  "NHPF 1 - Lancaster": 14,
+                  "NHPF 1 - Manchester": 12
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 3,
+                  "RLPF2 - St Mungo’s": 0,
+                  "NHPF 1 - Oxford": 10,
+                  "NHPF 1 - Bristol": 12,
+                  "NHPF 1 - Lancaster": 21,
+                  "NHPF 1 - Manchester": 31
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 45,
+                  "RLPF2 - St Mungo’s": 27,
+                  "NHPF 1 - Oxford": 47,
+                  "NHPF 1 - Bristol": 33,
+                  "NHPF 1 - Lancaster": 12,
+                  "NHPF 1 - Manchester": 36
+                }
+              }
+            },
+            "Case 4": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 44,
+                  "RLPF2 - St Mungo’s": 18,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 44,
+                  "NHPF 1 - Lancaster": 1,
+                  "NHPF 1 - Manchester": 12
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 28,
+                  "RLPF2 - St Mungo’s": 49,
+                  "NHPF 1 - Oxford": 27,
+                  "NHPF 1 - Bristol": 22,
+                  "NHPF 1 - Lancaster": 3,
+                  "NHPF 1 - Manchester": 21
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 11,
+                  "RLPF2 - St Mungo’s": 14,
+                  "NHPF 1 - Oxford": 46,
+                  "NHPF 1 - Bristol": 40,
+                  "NHPF 1 - Lancaster": 41,
+                  "NHPF 1 - Manchester": 4
+                }
+              }
+            },
+            "Case 5": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 28,
+                  "RLPF2 - St Mungo’s": 17,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 40,
+                  "NHPF 1 - Lancaster": 0,
+                  "NHPF 1 - Manchester": 39
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 48,
+                  "RLPF2 - St Mungo’s": 15,
+                  "NHPF 1 - Oxford": 8,
+                  "NHPF 1 - Bristol": 18,
+                  "NHPF 1 - Lancaster": 23,
+                  "NHPF 1 - Manchester": 9
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 47,
+                  "RLPF2 - St Mungo’s": 32,
+                  "NHPF 1 - Oxford": 3,
+                  "NHPF 1 - Bristol": 16,
+                  "NHPF 1 - Lancaster": 44,
+                  "NHPF 1 - Manchester": 25
+                }
+              }
+            }
+          }
+        },
+        "Gender": {
+          "values": {},
+          "children": {
+            "Male": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 30,
+                  "RLPF2 - St Mungo’s": 14,
+                  "NHPF 1 - Oxford": 18,
+                  "NHPF 1 - Bristol": 24,
+                  "NHPF 1 - Lancaster": 26,
+                  "NHPF 1 - Manchester": 31
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 27,
+                  "RLPF2 - St Mungo’s": 28,
+                  "NHPF 1 - Oxford": 22,
+                  "NHPF 1 - Bristol": 17,
+                  "NHPF 1 - Lancaster": 46,
+                  "NHPF 1 - Manchester": 45
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 33,
+                  "RLPF2 - St Mungo’s": 22,
+                  "NHPF 1 - Oxford": 43,
+                  "NHPF 1 - Bristol": 35,
+                  "NHPF 1 - Lancaster": 0,
+                  "NHPF 1 - Manchester": 14
+                }
+              }
+            },
+            "Female": {
+              "values": {
+                "2018": {
+                  "RLPF1 - St Mungo’s": 29,
+                  "RLPF2 - St Mungo’s": 18,
+                  "NHPF 1 - Oxford": 22,
+                  "NHPF 1 - Bristol": 7,
+                  "NHPF 1 - Lancaster": 10,
+                  "NHPF 1 - Manchester": 9
+                },
+                "2019": {
+                  "RLPF1 - St Mungo’s": 44,
+                  "RLPF2 - St Mungo’s": 13,
+                  "NHPF 1 - Oxford": 49,
+                  "NHPF 1 - Bristol": 22,
+                  "NHPF 1 - Lancaster": 44,
+                  "NHPF 1 - Manchester": 9
+                },
+                "2020": {
+                  "RLPF1 - St Mungo’s": 23,
+                  "RLPF2 - St Mungo’s": 27,
+                  "NHPF 1 - Oxford": 35,
+                  "NHPF 1 - Bristol": 23,
+                  "NHPF 1 - Lancaster": 11,
+                  "NHPF 1 - Manchester": 26
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
