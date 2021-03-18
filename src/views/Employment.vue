@@ -59,7 +59,7 @@
           <column :lg="4" :xs="12" class="year-select-box" ><v-select :options="yearOptions" v-model="selectedYear" class="select-year" placeholder="Show all" :searchable="false"></v-select></column>
         </column>
         <!-- Status summary start-->
-        <column :lg="3.84" class="summary-area" v-if="selectedStatus === null && stackedChartShow === false || linechartShow === true && viewMode ==='Fund'">
+        <column :lg="3.84" class="summary-area" v-if="viewMode ==='All' || selectedStatus === null && stackedChartShow === false || linechartShow === true && viewMode ==='Fund'">
           <div class="summary-wrapper" v-for="status in summaryBoxData" v-bind:key="status.vForId" :value="status.vForId">
             <div class="text-container">
               <input type="checkbox" v-bind:class="status.cssId" v-bind:id="status.cssId" v-bind:key="status.vForId" :value="status.vForId" v-model="checkedItems" style="display:none">
@@ -426,6 +426,7 @@ export default {
           this.barChartData = getBarChartData(getTableData('Status', tableLessons, prevTableLessons))
           this.tableData = getTableData('Status', tableLessons, prevTableLessons)
           this.summaryBoxData = this.filterTopics(getTableData('Status', tableLessons, prevTableLessons))
+          console.log(this.summaryBoxData)
           this.updateColors(this.viewMode, getLineChartColorScheme)
           break
 
@@ -511,7 +512,7 @@ export default {
           this.fundPlaceholder = 'Show all'
           this.fundSelectboxDisabled = false
           this.demoSelectboxDisabled = true
-          this.selectedStatus = null
+          // this.selectedStatus = null
           this.selectedFund = null
           this.selectedDemo = null
           this.status = '- all, across funds'

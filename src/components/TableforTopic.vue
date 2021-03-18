@@ -36,11 +36,10 @@ export default {
       sortedByLessons: false,
       sortedByDifference: false,
       tableName: 'Topic',
-      monthlyColumn: []
+      monthlyColumn: (this.TopicTableData[0].monthlyData.lessons.length === 14) ? getMonthlyColumn() : getFundColumn()
     }
   },
   mounted () {
-    this.monthlyColumn = (this.TopicTableData[0].monthlyData.lessons.length === 14) ? getMonthlyColumn() : getFundColumn()
   },
   methods: {
     sortTableDatabyName () {
@@ -83,7 +82,6 @@ export default {
     },
     columnWidth () {
       const width = (this.TopicTableData[0].monthlyData.lessons.length === 14) ? 'width:3.77%;' : 'width:7.7%;'
-      console.log(width)
       return width
     }
   },
