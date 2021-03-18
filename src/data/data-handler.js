@@ -1,6 +1,12 @@
 import { getStudentIctSchoolAvg, getTeacherIctSchoolAvg, getIctSchoolList } from './data-provider'
 import { getGroupBarChartColorSheme, getLineChartColorScheme } from './colour-scheme'
 
+export function getRandomInt (min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min
+}
+
 // For INS Page
 export function calcSum (lessons) {
   const sum = lessons.reduce(
@@ -107,6 +113,10 @@ export function getTableData (tabletype, lessons, prevYear) {
     tableDataSet.monthlyData.lessons.push(growthRate)
     tableDataSet.monthlyData.months.push('Total Lessons')
     tableDataSet.monthlyData.months.push('Difference in 12 Months')
+    if (tabletype === 'Topics') {
+      tableDataSet.monthlyData.lessons.push(getRandomInt(0, 100))
+      tableDataSet.monthlyData.months.push('% of total')    
+    }
     tableDataArray.push(tableDataSet)
   }
   return tableDataArray

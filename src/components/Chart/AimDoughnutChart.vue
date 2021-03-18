@@ -41,13 +41,17 @@ export default {
       ctx.fillText(this.doughnutChartData.title, 0, 15)
       ctx.font = '300 12px Helvetica'
       ctx.fillStyle = '#686868'
-      ctx.fillText(this.doughnutChartData.subtitle1, -2, 36.2, 60)
+      ctx.fillText(this.doughnutChartData.subtitle1, 0, 36.2, 60)
       ctx.font = '300 10px Helvetica'
       ctx.fillStyle = '#686868'
-      ctx.fillText(' employed', 26, 36.2, 60)
+      ctx.fillText(this.doughnutChartData.subtitle2, 
+        // subtitle 2nd line position (x, y, maxwidth)
+        this.doughnutChartData.subtitle2Position[0],
+        this.doughnutChartData.subtitle2Position[1],
+        this.doughnutChartData.subtitle2Position[2])
       ctx.font = '300 10px Helvetica'
       ctx.fillStyle = '#686868'
-      ctx.fillText(this.doughnutChartData.subtitle2, 0, 49.2, 60)
+      ctx.fillText(this.doughnutChartData.subtitle3, 0, 49.2, 80)
       ctx.font = '20px Helvetica'
       ctx.fillStyle = '#686868'
       ctx.fillText(`${this.doughnutChartData.percentage}%`, 60, 68, 60)

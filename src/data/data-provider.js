@@ -1,6 +1,7 @@
 const data = require('./dummyStatusJsonData.json')
 const fundData = require('./dummyFundJsonData.json')
 const demoData = require('./dummyDemoJsonData.json')
+const moneyData = require('./dummyMoneyJsonData.json')
 const ICT_STUDENT_DATA = require('./ict-data.json')
 const ICT_TEACHER_DATA = require('./ict-teachers-data.json')
 
@@ -153,6 +154,20 @@ export function getValueByDemo (status, demo, year) {
     lessons: Object.values(demoDataInYear),
     type: 'Fund'
   }
+}
+
+export function getValueByMoney (year) {
+  const data = moneyData.children
+  const labelsArray = Object.keys(data)
+  const values = Object.values(data)
+  const valuesArray = []
+  labelsArray.forEach((el, index) => {
+    valuesArray.push(values[index].values[year])
+  })
+  const returnObj = {}
+  returnObj.labels = labelsArray
+  returnObj.lessons = valuesArray
+  return returnObj
 }
 
 // set year select box options

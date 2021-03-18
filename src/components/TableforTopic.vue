@@ -6,7 +6,8 @@
           <th style="width:7%; border-right:1px solid #D8D8D8;" scope="col">{{tableName}}<img src="../../src/assets/Sorting.svg" v-on:click="sortTableDatabyName" class="sort-button"/></th>
           <th v-bind:style="columnWidth()" scope="col" v-for="month in monthlyColumn" :key="month">{{month}}</th>
           <th style="width:10%; border-left:1px solid #D8D8D8;" scope="col">Total tenants<img src="../../src/assets/Sorting.svg" v-on:click="sortTableDatabyLessons" class="sort-button"/></th>
-          <th style="width:14.5%" scope="col">Difference in 12 Months <img src="../../src/assets/Sorting.svg" v-on:click="sortTableDatabyDifference" class="sort-button"/></th>
+          <th style="width:7.25%" scope="col">Difference in 12 Months <img src="../../src/assets/Sorting.svg" v-on:click="sortTableDatabyDifference" class="sort-button"/></th>
+          <th style="width:7.25%" scope="col">% of total <img src="../../src/assets/Sorting.svg" class="sort-button"/></th>
         </tr>
       </thead>
       <tbody style="width:100%; border-bottom:1px solid #D8D8D8;">
@@ -16,6 +17,7 @@
           </td>
           <th scope="row" class="monthly-data" v-for="(lesson, index) in topic.monthlyData.lessons"  v-bind:key="index"  v-bind:style="borderStyle(index)">
             {{lesson}}
+            <demo-doughnut-chart :doughnutChartData="lesson" v-if="index === topic.monthlyData.lessons.length - 1"></demo-doughnut-chart>
           </th>
         </tr>
       </tbody>
@@ -25,7 +27,12 @@
 
 <script>
 import { getMonthlyColumn, getFundColumn } from '../data/data-handler'
+import DemoDoughnutChart from '../components/Chart/DemoDoughnutChart'
+
 export default {
+  components: {
+    DemoDoughnutChart
+  },  
   props: {
     TopicTableData: {
       type: Array
@@ -36,7 +43,7 @@ export default {
       sortedByLessons: false,
       sortedByDifference: false,
       tableName: 'Topic',
-      monthlyColumn: (this.TopicTableData[0].monthlyData.lessons.length === 14) ? getMonthlyColumn() : getFundColumn()
+      monthlyColumn: (this.TopicTableData[0].monthlyData.lessons.length === 15) ? getMonthlyColumn() : getFundColumn()
     }
   },
   mounted () {
@@ -81,7 +88,7 @@ export default {
       }
     },
     columnWidth () {
-      const width = (this.TopicTableData[0].monthlyData.lessons.length === 14) ? 'width:3.77%;' : 'width:7.7%;'
+      const width = (this.TopicTableData[0].monthlyData.lessons.length === 15) ? 'width:3.77%;' : 'width:7.7%;'
       return width
     }
   },

@@ -45,6 +45,12 @@ const GENDER = [
   'Female'
 ]
 
+const MONEY = [
+  'Offered to tenants',
+  'Saved by tenants',
+  'spent by tenants'
+]
+
 function getRandomInt (min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -58,6 +64,18 @@ function setMonthlyValues () {
     yearObj[YEARS[i]] = nestedObj
     for (let j = 1; j <= 12; j++) {
       nestedObj[j] = getRandomInt(0,50)
+    }
+  }
+  return yearObj
+}
+
+function setMoneyMonthlyValues () {
+  const yearObj = {}
+  for (let i = 0; i < YEARS.length; i++) {
+    const nestedObj = {}
+    yearObj[YEARS[i]] = nestedObj
+    for (let j = 1; j <= 12; j++) {
+      nestedObj[j] = getRandomInt(300,1000)
     }
   }
   return yearObj
@@ -200,6 +218,16 @@ function setChildrenByStatusForDemo () {
   return childrenObj
 }
 
+function setChildrenByMoney () {
+  const childrenObj = {}
+  for (let index = 0; index < MONEY.length; index++) {
+    childrenObj[MONEY[index]] = { 
+      values: setMoneyMonthlyValues(),
+      children: {} }
+}
+  return childrenObj
+}
+
 function setFullDataByStatus () {
   const dummyData = {}
   dummyData.values = setMonthlyValues()
@@ -221,6 +249,13 @@ function setFullDataByDemo () {
   return dummyData
 }
 
+function setFullDataByMoney () {
+  const dummyData = {}
+  dummyData.values = {}
+  dummyData.children = setChildrenByMoney()
+  return dummyData
+}
+
 const statusData = setFullDataByStatus()
 const statusParsed =  JSON.stringify(statusData)
 
@@ -230,9 +265,13 @@ const fundParsed =  JSON.stringify(fundData)
 const demoData = setFullDataByDemo()
 const demoParsed = JSON.stringify(demoData)
 
+const moneyData = setFullDataByMoney()
+const moneyDataParsed = JSON.stringify(moneyData)
+
 
 fs.writeFileSync('dummyStatusJsonData.json', statusParsed)
 fs.writeFileSync('dummyFundJsonData.json', fundParsed)
 fs.writeFileSync('dummyDemoJsonData.json', demoParsed)
+fs.writeFileSync('dummyMoneyJsonData.json', moneyDataParsed)
 
 console.log('exported')

@@ -100,7 +100,7 @@
                 </label>        
                 <div class="summary-text" v-bind:class="status.cssId" v-bind:for="status.cssId" >
                   <div v-bind:class="status.cssId" v-bind:for="status.cssId" style="border:none; color:'#D8D8D8' !important; padding: 0;">
-                      <h2 v-bind:class="status.cssId" v-bind:for="status.cssId">
+                      <h2 v-bind:class="status.cssId" v-bind:for="status.cssId" style="font-size: 2rem;">
                         {{ status.vForId }}
                       </h2>
                   </div>
@@ -145,7 +145,7 @@ import Table from '../components/Table'
 import TableForTopic from '../components/TableforTopic'
 import { getValueByDemo, setYearSelectBox, getCamps, getLessons, getLessonsByTopics, getTotalLessonsByCountry } from '../data/data-provider.js'
 import { getAllPurpleColor, getLineChartColorScheme, getSkillsGroupBarChartColorSheme } from '../data/colour-scheme.js'
-import { getMonthlyColumn, calcSum, compareDataByYear, getLineChartData, getTableData, getBarChartData, getStackedBarChartData } from '../data/data-handler'
+import { getRandomInt, getMonthlyColumn, calcSum, compareDataByYear, getLineChartData, getTableData, getBarChartData, getStackedBarChartData } from '../data/data-handler'
 
 export default {
   components: {
@@ -176,7 +176,9 @@ export default {
         box: 'box1',
         title: 'Aim',
         subtitle1: '1200',
-        subtitle2: 'full time',
+        subtitle2: 'employed',
+        subtitle2Position: [29, 36.2, 60],
+        subtitle3: 'full time',
         percentage: '80',
         insideText: 'complete',
         color: '#8954BA'
@@ -366,11 +368,6 @@ export default {
     this.updateData()
   },
   methods: {
-    getRandomInt (min, max) {
-      min = Math.ceil(min);
-      max = Math.floor(max);
-      return Math.floor(Math.random() * (max - min)) + min
-    },
     showNavBar () {
       const navbar = document.getElementById('nav')
       navbar.style.display = 'inline'
@@ -396,7 +393,7 @@ export default {
             "rgb(247, 181, 0)"
             ],
           barThickness: 15,
-          data: [this.getRandomInt(0 ,250), this.getRandomInt(0 ,250), this.getRandomInt(0 ,250), this.getRandomInt(0 ,250), this.getRandomInt(0 ,250), this.getRandomInt(0 ,250)]},          
+          data: [getRandomInt(0 ,250), getRandomInt(0 ,250), getRandomInt(0 ,250), getRandomInt(0 ,250), getRandomInt(0 ,250), getRandomInt(0 ,250)]},          
         ],
         labels: [
           "RLPF1 - St Mungo’s",
@@ -413,6 +410,7 @@ export default {
         case 'All':
           tableLessons = getLessons(this.employmentStatus, [], [], this.selectedYear, 'All')
           prevTableLessons = getLessons(this.employmentStatus, [], [], this.selectedYear - 1, 'All')
+          console.log(tableLessons)
           if (this.checkedItems.length === 0) {
             lessons = getLessons([], [], [], this.selectedYear, 'All')
             prevYearLessons = getLessons([], [], [], this.selectedYear - 1, 'All')
@@ -426,7 +424,6 @@ export default {
           this.barChartData = getBarChartData(getTableData('Status', tableLessons, prevTableLessons))
           this.tableData = getTableData('Status', tableLessons, prevTableLessons)
           this.summaryBoxData = this.filterTopics(getTableData('Status', tableLessons, prevTableLessons))
-          console.log(this.summaryBoxData)
           this.updateColors(this.viewMode, getLineChartColorScheme)
           break
 

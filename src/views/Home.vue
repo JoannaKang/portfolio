@@ -31,7 +31,7 @@
               <h3>Showing data till {{lastUpdate}}</h3>
             </column>
           </router-link>
-          <router-link to="/attendance">
+          <router-link to="/tenants">
             <column class="thumbnail-tile" :lg="4">
               <div class="link-title">
                 <h1>Avg tenants stay</h1>
