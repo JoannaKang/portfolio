@@ -145,7 +145,8 @@ export default {
         subtitle2: '',
         percentage: '1',
         insideText: 'more year',
-        color: '#0091FF'
+        color: '#0091FF',
+        totalYear: 3
       },
       tableData: [],
       tableDataByStatus: [],
@@ -455,12 +456,14 @@ main#tenants {
 
 .doughnut-2 {
   padding-left: 4.2825rem;
+  margin-right: 3rem;
 }
 
 .progress-summary{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  margin-bottom : 3.2rem;
 }
 
 .back {

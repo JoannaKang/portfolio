@@ -14,14 +14,30 @@ export default {
   },
   mounted () {
 
-    let min = 0
-    let max = this.doughnutChartData.percentage
+  
+    let max1 = this.doughnutChartData.percentageForChart[0]
+    let max2 = this.doughnutChartData.percentageForChart[1]
+    let max3 = this.doughnutChartData.percentageForChart[2]
+
     setInterval(() => {
-      if (min <= max) {
-        min += 0.3
-        this.drawCircle(min)
+      if (this.endpoint1 <= max1) {
+        this.endpoint1 += 0.3
+        this.drawCircle()
       }
     }, 0.01)
+    setInterval(() => {
+      if (this.endpoint2 <= max2) {
+        this.endpoint2 += 0.3
+        this.drawCircle()
+      }
+    }, 0.01)   
+    setInterval(() => {
+      if (this.endpoint3 <= max3) {
+        this.endpoint3 += 0.3
+        this.drawCircle()
+      }
+    }, 0.01)        
+    
   },
   data () {
     return {
@@ -29,12 +45,15 @@ export default {
       centerX: this.doughnutChartData.centerX,
       centerY: this.doughnutChartData.centerY,
       width: 455,
-      height: 327
+      height: 327,
+      endpoint1: 0,
+      endpoint2: 0,
+      endpoint3: 0
     }
   },
   methods: {
-    drawCircle (endpoint) {
-      const canvas = document.getElementById(`${this.doughnutChartData.canvasId}`)
+    drawCircle () {
+      const canvas = document.getElementById(`${this.canvasId}`)
       const ctx = canvas.getContext('2d')
       
       ctx.clearRect(0, 0, canvas.width, canvas.height)
@@ -88,9 +107,9 @@ export default {
         this.doughnutChartData.insideTextPostiion[1],
         this.doughnutChartData.insideTextPostiion[2])
       // circle chart : 325 * 325
-      this.fillCircles(ctx, endpoint, 314, '#FE8708') // out
-      this.fillCircles(ctx, endpoint, 250, '#2FB9EF') // middle
-      this.fillCircles(ctx, endpoint, 186, '#EA4C89') // inside
+      this.fillCircles(ctx, this.endpoint1, 314, '#FE8708') // out
+      this.fillCircles(ctx, this.endpoint2, 250, '#2FB9EF') // middle
+      this.fillCircles(ctx, this.endpoint3, 186, '#EA4C89') // inside
     },
     fillCircles (ctx, endpoint, radius, color) {
       // background
@@ -116,19 +135,19 @@ export default {
     }
   },
   watch: {
-    doughnutChartData: {
-      handler: function (val) {
-        this.drawCircle(
-          val.box,
-          val.title,
-          val.subtitle1,
-          val.subtitle2,
-          val.percentage,
-          val.insideText,
-          val.color)
-      },
-      deep: true
-    }
+    // doughnutChartData: {
+    //   handler: function (val) {
+    //     this.drawCircle(
+    //       val.box,
+    //       val.title,
+    //       val.subtitle1,
+    //       val.subtitle2,
+    //       val.percentage,
+    //       val.insideText,
+    //       val.color)
+    //   },
+    //   deep: true
+    // }
   }
 }
 </script>

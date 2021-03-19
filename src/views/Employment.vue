@@ -190,7 +190,8 @@ export default {
         subtitle2: '',
         percentage: '1',
         insideText: 'more year',
-        color: '#0091FF'
+        color: '#0091FF',
+        totalYear: 3
       },
       tableData: [],
       tableDataByStatus: [],
@@ -410,7 +411,6 @@ export default {
         case 'All':
           tableLessons = getLessons(this.employmentStatus, [], [], this.selectedYear, 'All')
           prevTableLessons = getLessons(this.employmentStatus, [], [], this.selectedYear - 1, 'All')
-          console.log(tableLessons)
           if (this.checkedItems.length === 0) {
             lessons = getLessons([], [], [], this.selectedYear, 'All')
             prevYearLessons = getLessons([], [], [], this.selectedYear - 1, 'All')

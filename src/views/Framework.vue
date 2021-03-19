@@ -1,7 +1,7 @@
 <template>
   <main id="framework">
     <section id="page-title">
-      <see-framework-btn class="see-framework"></see-framework-btn>
+      <router-link to="/tenants"><img src="../assets/FrameworkBtn.svg" class="framework-btn"></router-link>
       <row>
         <column :lg="8" class="page-title">
           <div align="left" class="back">
@@ -30,7 +30,7 @@
       <row class="chart-title">
         <column :lg="8" :xs="6"><h2 class="framework-sub-title">Low income households’ savings - across funds</h2></column>
         <column class="chart-summary" :lg="4" :xs="6">
-          <div class="total-tenants"> <span><h1>£ {{ totalTenants }}</h1></span> <h3 style="font-family:'Source Sans Pro';">by Resonance’s tenants</h3></div>
+          <div class="total-money"> <span><h1>£ {{ totalTenants }}</h1></span> <h3 style="font-family:'Source Sans Pro';">by Resonance’s tenants</h3></div>
           <div class="growth-rate"> <h1>{{growthRate}}</h1> <h3 style="font-family:'Source Sans Pro';">in 2020</h3></div>
         </column>
       </row>
@@ -55,7 +55,7 @@
 <script>
 import AimDoughnutChart from '../components/Chart/AimDoughnutChart.vue'
 import TimeDoughnutChart from '../components/Chart/TimeDoughnutChart.vue'
-import SeeFrameworkBtn from '../components/SeeFrameworkBtn.vue'
+// import SeeFrameworkBtn from '../components/SeeFrameworkBtn.vue'
 import FrameworkDoughnutChart from '../components/Chart/FrameworkDoughnutChart'
 import { getValueByMoney, setYearSelectBox, getLessons } from '../data/data-provider.js'
 import { getAllPurpleColor, getLineChartColorScheme} from '../data/colour-scheme.js'
@@ -65,7 +65,7 @@ export default {
   components: {
     AimDoughnutChart,
     TimeDoughnutChart,
-    SeeFrameworkBtn,
+    // SeeFrameworkBtn,
     FrameworkDoughnutChart
   },
   data () {
@@ -82,11 +82,11 @@ export default {
       doughnutChartData1: {
         box: 'box1',
         title: 'Aim',
-        subtitle1: '£1200',
-        subtitle2: 'savings',
-        subtitle2Position: [36, 36.2, 60],
-        subtitle3: '/household/annum',
-        percentage: '80',
+        subtitle1: '£50K',
+        subtitle2: '/year',
+        subtitle2Position: [36, 36.2, 40],
+        subtitle3: 'by Resonance',
+        percentage: '20',
         insideText: 'complete',
         color: '#8954BA',
         canvasId:'achieved'
@@ -94,11 +94,12 @@ export default {
       doughnutChartData2: {
         box: 'box2',
         title: 'Time',
-        subtitle1: '3 years',
+        subtitle1: '8 years',
         subtitle2: '',
-        percentage: '1',
+        percentage: '5',
         insideText: 'more year',
-        color: '#0091FF'
+        color: '#0091FF',
+        totalYear: 8
       },
       achievedDoughnutChartData: {
         canvasId:'achieved',
@@ -111,6 +112,7 @@ export default {
         thirdlinebold: '£4k',
         thirdlinelight: 'spent by Resonance tenants',
         thirdlinePostiion: [15, 75, 500, 45, 75, 500],
+        percentageForChart: [90, 20, 10], // out / middle / inside
         percentage: '16.6',
         percentageTextPostiion: [180, 160, 500],
         insideText: 'contribution',
@@ -129,6 +131,7 @@ export default {
         thirdlinebold: '£34k',
         thirdlinelight: 'spending aim by Resonance tenants ',
         thirdlinePostiion: [10, 75, 500, 50, 75, 500],
+        percentageForChart: [60, 30, 40], // out / middle / inside
         percentage: '30',
         percentageTextPostiion: [250, 160, 500],        
         insideText: 'contribution',
@@ -277,7 +280,7 @@ main#framework {
   padding: 1.5rem 0 1.5rem 0;
 }
 
-.title {
+#framework .title {
   font-family: Helvetica;
   font-size: 3.4rem;
   color: #F19C42;
@@ -285,6 +288,15 @@ main#framework {
   text-align: left;
   padding-bottom: 2rem;
 }
+
+#framework .framework-btn {
+  width: 11.5rem; 
+  height: 11.5rem;
+  position: absolute;
+  top: 2.5rem;
+  right: -2.9rem;  
+}
+
 
 #page-title {
   display: flex;
@@ -420,61 +432,61 @@ main#framework {
 /* selectbox design customizing end */
 
 
-.chart-summary {
+#framework .chart-summary {
   display: flex;
   flex-direction: row;
 }
 
-.growth-rate {
+#framework .growth-rate {
   margin-left: 2rem;
 }
 
-.growth-rate h3 {
+#framework .growth-rate h3 {
   font-size: 1rem;
   font-weight: 100;
 }
 
-.total-tenants {
+#framework .total-money {
   display: flex;
   flex-direction: column;
   padding-left: 7rem;
   padding-right: 2rem;
 }
 
-.total-tenants span {
+#framework .total-money span {
   align-self: start;
 }
 
-.total-tenants h1,
-.total-tenants h2,
-.total-tenants h3 {
+#framework .total-money h1,
+#framework .total-money h2,
+#framework .total-money h3 {
   display: inline;
   color: #F19C42;
 }
 
-.total-tenants h1 {
+#framework .total-money h1 {
   margin-right: 1rem;
   font-size:3rem;
   font-weight: 500;
 }
 
-.total-tenants h2 {
+#framework .total-money h2 {
   font-size: 2.2rem;
   font-weight: 300;
 }
 
-.total-tenants h3 {
+#framework .total-money h3 {
   text-align: left;
   font-size: 1.4rem;
   font-weight: 100;
 }
 
-.growth-rate h1 {
+#framework .growth-rate h1 {
   font-size: 3rem;
   font-weight: 500;
 }
 
-.growth-rate h3 {
+#framework .growth-rate h3 {
   font-size: 1.4rem;
 }
 
@@ -492,75 +504,76 @@ main#framework {
   font-size: 1.6rem;
 }
 
-.chart-title-area {
+#framework .chart-title-area {
   display: flex;
   color: #F19C42;
   margin-top: 3rem;
 }
 
-.framework-sub-title {
+#framework .framework-sub-title {
   font-size: 2.88rem;
   font-family: 'Source Sans Pro';
   font-weight: 300 !important;
   text-align: left;
+  color: #F19C42;
 }
 
-.chart-summary {
+#framework .chart-summary {
   display: flex;
   flex-direction: row;
 }
 
-.growth-rate {
+#framework .growth-rate {
   margin-left: 2rem;
 }
 
-.growth-rate h3 {
+#framework .growth-rate h3 {
   font-size: 1rem;
   font-weight: 100;
 }
 
-.total-tenants {
+#framework .total-money {
   display: flex;
   flex-direction: column;
   padding-left: 7rem;
   padding-right: 2rem;
 }
 
-.total-tenants span {
+#framework .total-money span {
   align-self: start;
 }
 
-.total-tenants h1,
-.total-tenants h2,
-.total-tenants h3 {
+#framework .total-money h1,
+#framework .total-money h2,
+#framework .total-money h3 {
   display: inline;
   color: #F19C42;
 }
 
-.total-tenants h1 {
+#framework .total-money h1 {
   margin-right: 1rem;
   font-size:3rem;
   font-weight: 500;
 }
 
-.total-tenants h2 {
+#framework .total-money h2 {
   font-size: 2.2rem;
   font-weight: 300;
 }
 
-.total-tenants h3 {
+#framework .total-tenamoneynts h3 {
   text-align: left;
   font-size: 1.4rem;
   font-weight: 100;
 }
 
-.growth-rate h1 {
+#framework .growth-rate h1 {
   font-size: 3rem;
   font-weight: 500;
   margin: 0;
 }
 
-.growth-rate h3 {
+#framework .growth-rate h3 {
   font-size: 1.4rem;
 }
 

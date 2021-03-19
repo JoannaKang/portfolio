@@ -7,21 +7,8 @@
 <script>
 export default {
   mounted () {
-    // let min = 0
-    // let max = this.doughnutChartData.percentage
-    // setInterval(() => {
-    //   if (min <= max) {
-    //     min += 0.3
-    //     this.drawCircle(min)
-    //   }
-    // }, 0.01)
     this.drawCircle()
   },
-  // data () {
-  //   return {
-  //     box: ''
-  //   }
-  // },
   methods: {
     drawCircle () {
       const canvas = document.getElementById('frameworkBtn')

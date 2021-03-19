@@ -13,7 +13,7 @@ export default {
   },
   mounted () {
     let min = 0
-    let max = this.doughnutChartData.percentage / 3 * 100
+    let max = this.doughnutChartData.percentage / this.doughnutChartData.totalYear * 100
     setInterval(() => {
       if (min <= max) {
         min += 0.3
