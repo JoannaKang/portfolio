@@ -1,7 +1,7 @@
 <template>
   <main id="tenants">
     <section id="page-title">
-      <see-framework-btn class="see-framework"></see-framework-btn>
+      <router-link to="/framework"><see-framework-btn class="see-framework"></see-framework-btn></router-link>
       <row>
         <column :lg="8" class="page-title">
           <div align="left" class="back">

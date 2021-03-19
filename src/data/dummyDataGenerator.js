@@ -48,7 +48,7 @@ const GENDER = [
 const MONEY = [
   'Offered to tenants',
   'Saved by tenants',
-  'spent by tenants'
+  'Spent by tenants'
 ]
 
 function getRandomInt (min, max) {
