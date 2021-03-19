@@ -1,7 +1,9 @@
 <template>
   <main id="tenants">
+    <div @click="frameworkBtnClick"><see-framework-btn :buttonClicked="frameworkBtnClicked" class="see-framework"></see-framework-btn></div>
+    <div class="btn-wrapper" v-if="frameworkBtnClicked"></div>
+    <img src="../assets/FrameworkBtn.svg" class="framework-btn" v-if="frameworkBtnClicked">
     <section id="page-title">
-      <router-link to="/framework"><see-framework-btn class="see-framework"></see-framework-btn></router-link>
       <row>
         <column :lg="8" class="page-title">
           <div align="left" class="back">
@@ -115,6 +117,7 @@ export default {
   },
   data () {
     return {
+      frameworkBtnClicked: false,
       selectedStatus: null,
       selectedFund: null,
       selectedDemo: null,
@@ -309,6 +312,10 @@ export default {
     this.updateData()
   },
   methods: {
+    frameworkBtnClick() {
+      console.log('clicked')
+      this.frameworkBtnClicked = true 
+    },
     showNavBar () {
       const navbar = document.getElementById('nav')
       navbar.style.display = 'inline'
@@ -421,10 +428,108 @@ main#tenants {
   background: white;
 }
 
-.see-framework {
+#tenants .see-framework {
   position: absolute;
-  top: 2.4rem;
-  right: -2.4rem;
+  top: 2.8rem;
+  right: -1.5rem;
+  z-index: 9;
+}
+
+#tenants .framework-btn {
+  position: absolute;
+  z-index: 10;
+  width: 11.5rem; 
+  height: 11.5rem;
+  top: 2.5rem;
+  right: -4.5rem;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+#tenants .btn-wrapper {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 10;
+  top: 4rem;
+  right: -2rem;   
+}
+
+@-webkit-keyframes bounceIn {
+  0%, 100%, 20%, 40%, 60%, 80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3)
+  }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1)
+  }
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9)
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03)
+  }
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97)
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+  }
+}
+@keyframes bounceIn {
+  0%, 100%, 20%, 40%, 60%, 80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    -ms-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3)
+  }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    -ms-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1)
+  }
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    -ms-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9)
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    -ms-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03)
+  }
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    -ms-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97)
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+  }
 }
 
 .back {
@@ -879,5 +984,7 @@ table#table-content td {
 .sort-button {
   margin-left: 0.7rem;
 }
+
+
 
 </style>

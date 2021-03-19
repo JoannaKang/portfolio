@@ -294,7 +294,7 @@ main#framework {
   height: 11.5rem;
   position: absolute;
   top: 2.5rem;
-  right: -2.9rem;  
+  right: -4.5rem;  
 }
 
 
@@ -598,5 +598,7 @@ main#framework {
   color:  #F19C42;
   margin-bottom: 2.48rem;
 }
+
+
 
 </style>

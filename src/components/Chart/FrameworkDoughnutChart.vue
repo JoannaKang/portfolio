@@ -13,8 +13,6 @@ export default {
     }
   },
   mounted () {
-
-  
     let max1 = this.doughnutChartData.percentageForChart[0]
     let max2 = this.doughnutChartData.percentageForChart[1]
     let max3 = this.doughnutChartData.percentageForChart[2]
