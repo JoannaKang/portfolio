@@ -1,6 +1,7 @@
 <template>
   <main id="tenants">
-    <div @click="frameworkBtnClick"><see-framework-btn :buttonClicked="frameworkBtnClicked" class="see-framework"></see-framework-btn></div>
+    <div class="clickbtn" @click="frameworkBtnClick"></div>
+    <see-framework-btn :buttonClicked="frameworkBtnClicked" class="see-framework" :style="setZindex()"></see-framework-btn>
     <div class="btn-wrapper" v-if="frameworkBtnClicked"></div>
     <img src="../assets/FrameworkBtn.svg" class="framework-btn" v-if="frameworkBtnClicked">
     <section id="page-title">
@@ -312,8 +313,12 @@ export default {
     this.updateData()
   },
   methods: {
+    setZindex () {
+      if (this.frameworkBtnClicked) {
+        return 'z-index: 10;'
+      }
+    },
     frameworkBtnClick() {
-      console.log('clicked')
       this.frameworkBtnClicked = true 
     },
     showNavBar () {
@@ -428,11 +433,20 @@ main#tenants {
   background: white;
 }
 
+#tenants .clickbtn {
+  /* background-color: yellow; */
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 4rem;
+  right: -1.5rem;  
+  z-index: 10;  
+}
+
 #tenants .see-framework {
   position: absolute;
   top: 2.8rem;
   right: -1.5rem;
-  z-index: 9;
 }
 
 #tenants .framework-btn {

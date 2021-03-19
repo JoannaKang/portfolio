@@ -21,6 +21,8 @@ export default {
   },
   mounted () {
     this.drawCircle(60)
+    // min size: 112 * 92
+    // max size: 1363 * 686 
   },
   methods: {
     drawCircle (maxsize) {
@@ -62,12 +64,10 @@ export default {
   watch: {
     min () {
       if (this.min > this.max) {
-        console.log(this.min , this.max)
         router.push('/framework')
       }
     },
     buttonClicked () {
-      console.log(this.buttonClicked)
       if (this.buttonClicked) {
         setInterval(() => {
           if (this.min <= this.max) {
