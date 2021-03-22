@@ -26,7 +26,7 @@ export default {
   },
   data () {
     return {
-      canvasId: this.doughnutChartData.topic + '-' + this.doughnutChartData.lesson
+      canvasId: this.doughnutChartData.topic.cssId + '-' + this.doughnutChartData.lesson
     }
   },
   methods: {
