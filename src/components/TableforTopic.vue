@@ -16,8 +16,8 @@
             {{topic.name}}
           </td>
           <th scope="row" class="monthly-data" v-for="(lesson, index) in topic.monthlyData.lessons"  v-bind:key="index"  v-bind:style="borderStyle(index)">
+            <div style="display: inline;"><demo-doughnut-chart class="chart" :doughnutChartData="{lesson, topic}" v-if="index === topic.monthlyData.lessons.length - 1"></demo-doughnut-chart></div>
             {{lesson}}
-            <demo-doughnut-chart :doughnutChartData="lesson" v-if="index === topic.monthlyData.lessons.length - 1"></demo-doughnut-chart>
           </th>
         </tr>
       </tbody>
@@ -86,6 +86,10 @@ export default {
       if (index === this.monthlyColumn.length - 1) {
         return 'border-right:1px solid #D8D8D8;'
       }
+
+      if (index === this.monthlyColumn.length + 2) {
+        return 'color: white; font-size: 0px;'
+      }
     },
     columnWidth () {
       const width = (this.TopicTableData[0].monthlyData.lessons.length === 15) ? 'width:3.77%;' : 'width:7.7%;'
@@ -99,3 +103,4 @@ export default {
   }
 }
 </script>
+

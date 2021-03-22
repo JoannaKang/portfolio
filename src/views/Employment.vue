@@ -144,7 +144,7 @@ import TimeDoughnutChart from '../components/Chart/TimeDoughnutChart.vue'
 import Table from '../components/Table'
 import TableForTopic from '../components/TableforTopic'
 import { getValueByDemo, setYearSelectBox, getCamps, getLessons, getLessonsByTopics, getTotalLessonsByCountry } from '../data/data-provider.js'
-import { getAllPurpleColor, getLineChartColorScheme, getSkillsGroupBarChartColorSheme } from '../data/colour-scheme.js'
+import { getAllPurpleColor, getLineChartColorScheme, getSkillsGroupBarChartColorSheme, getTopicColorSchme } from '../data/colour-scheme.js'
 import { getRandomInt, getMonthlyColumn, calcSum, compareDataByYear, getLineChartData, getTableData, getBarChartData, getStackedBarChartData } from '../data/data-handler'
 
 export default {
@@ -494,10 +494,10 @@ export default {
           totalPrevLessons = prevYearLessons.lessons.flatMap(el => Object.values(el))
           this.totalTenants = calcSum(totalCurrLessons)
           this.growthRate = compareDataByYear(totalPrevLessons, totalCurrLessons)
-          this.stackedBarChartData = this.filterChartData(getStackedBarChartData(lessons, getLineChartColorScheme), this.checkedItems)
+          this.stackedBarChartData = this.filterChartData(getStackedBarChartData(lessons, getTopicColorSchme), this.checkedItems)
           this.TopicTableData = getTableData('Topics', lessons, prevYearLessons)
           this.summaryBoxData = this.filterTopics(getTableData('Topics', lessons, prevYearLessons)) // for checkbox rendering
-          this.updateColors(this.viewMode, getLineChartColorScheme)
+          this.updateColors(this.viewMode, getTopicColorSchme)
           break
       }
     },
@@ -509,7 +509,6 @@ export default {
           this.fundPlaceholder = 'Show all'
           this.fundSelectboxDisabled = false
           this.demoSelectboxDisabled = true
-          // this.selectedStatus = null
           this.selectedFund = null
           this.selectedDemo = null
           this.status = '- all, across funds'
@@ -525,7 +524,6 @@ export default {
           this.stackedBarchartOption.legend.display = false          
           this.selectedFund = null
           this.selectedDemo = null
-          // this.funds = getCamps(this.selectedStatus)
           this.status = '- ' + this.selectedStatus
           this.fund = ''
           this.demo = ''
@@ -537,7 +535,6 @@ export default {
           this.demoSelectboxDisabled = false
           this.selectedStatus = (this.selectedFund === 'null') ? null : this.selectedStatus
           this.selectedDemo = null
-          // this.demographics = getSchools(this.selectedStatus, this.selectedFund)
           this.fund = ', ' + this.selectedFund
           this.demo = ''
           break

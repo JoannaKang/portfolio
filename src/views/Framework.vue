@@ -597,6 +597,7 @@ main#framework {
 .douhnut-chart-area h2 {
   color:  #F19C42;
   margin-bottom: 2.48rem;
+  font-size: 2rem;
 }
 
 #framework {
