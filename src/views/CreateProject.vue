@@ -1,7 +1,7 @@
 <template>
   <main id="creat-project">
     <section class="creat-project-form-area">
-      <img src="../assets/alice_logo.png" width="91rem"/>
+      <router-link to='/'><img src="../assets/alice_logo.png" width="91rem"/></router-link>
       <h1 class="creat-project-title">Create your project</h1>
       <form>
         <h1>Your company's name</h1>
@@ -22,7 +22,6 @@
           </div>
       </form>
     <button @click="projectCreate" class="project-create-button">Create</button>
-    <button @click="logOut" class="logout-button">Logout</button>
     </section>
       <section class="upload-area">
         <upload-module v-if="uploadAreaShow === true" @upload-status-change="uploadStatusChange"></upload-module>
@@ -61,21 +60,21 @@ export default {
       const navbar = document.getElementById('nav')
       navbar.style.display = 'none'
     },
-    logOut () {
-      this.$firebase.auth().signOut().then(() => {
-        this.$firebase.auth().onAuthStateChanged((user) => {
-          if (!user) {
-            store.commit('clearObjectives')
-            store.commit('clearFileList')
-            store.commit('setLogOut')
-            alert('You have logged out')
-            router.push('/login')
-          }
-        })
-      }).catch((error) => {
-        alert(error)
-      })
-    },
+    // logOut () {
+    //   this.$firebase.auth().signOut().then(() => {
+    //     this.$firebase.auth().onAuthStateChanged((user) => {
+    //       if (!user) {
+    //         store.commit('clearObjectives')
+    //         store.commit('clearFileList')
+    //         store.commit('setLogOut')
+    //         alert('You have logged out')
+    //         router.push('/login')
+    //       }
+    //     })
+    //   }).catch((error) => {
+    //     alert(error)
+    //   })
+    // },
     addObjectives (addedObj) {
       const userInput = addedObj.userInputSubComp
       const index = addedObj.noOfIndex
@@ -164,7 +163,6 @@ export default {
 
 <style>
 textarea:focus,
-input:focus,
 button:focus {
   outline: none !important;
 }
@@ -173,7 +171,6 @@ button:focus {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* height: 100vh; */
   background-image: url('../assets/Loginbackground.svg');
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -258,7 +255,6 @@ button:focus {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* margin-top: 2rem; */
 }
 
 .project-objective-input {
@@ -280,56 +276,25 @@ button:focus {
   margin-bottom: 2rem;
 }
 
-.creat-project-form-area .logout-button {
-  border: none;
-  padding: 0 1.5rem;
-  margin: 0 0.5rem;
-  border-radius: 0.2rem;
-  transition: all 0.3s ease;
-  font-size: 1.68rem;
-}
-
 .project-create-button {
   border: none;
   padding: 1rem 1.5rem;
-  margin: 0 0.5rem;
+  margin: 3rem 0.5rem;
   border-radius: 0.2rem;
   transition: all 0.3s ease;
   background-color: #5D38DB;
   color: #ffffff;
   font-size: 1.68rem;
   position: relative;
-  right: -22rem;
+  right: -17rem;
   width: 12rem;
-}
-
-.creat-project-form-area .logout-button:hover {
-  border: none;
-  padding: 1rem 1.5rem;
-  border-radius: 0.2rem;
-  background-color: #5D38DB;
-  color: #ffffff;
-  font-size: 1.88rem;
 }
 
 .project-create-button:hover {
   border: none;
   padding: 1rem 1.5rem;
   border-radius: 0.2rem;
-  background-color: #efefef;
-  color: #000000;
   font-size: 1.88rem;
-}
-
-.project-create-button,
-.creat-project-form-area .logout-button {
-  margin-top: 3rem;
-  height: 5.5rem;
-}
-
-.creat-project-form-area .logout-button {
-  position: relative;
-  left: -5rem;
 }
 
 .file-upload-button {

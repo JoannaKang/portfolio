@@ -121,6 +121,11 @@ body {
   margin: 0;
 }
 
+input:focus {
+  outline-color: rgb(137, 84, 186, 0.8);
+  outline-width: 1.2px;
+}
+
 .container-fluid {
   background-color: #F5F7FC !important;
 }
