@@ -1,6 +1,6 @@
 <template>
   <div>
-    <canvas id="box" width="133" height="114"></canvas>
+    <canvas :id="cssId" width="133" height="114"></canvas>
   </div>
 </template>
 
@@ -22,14 +22,14 @@ export default {
       }
     }, 0.01)
   },
-  // data () {
-  //   return {
-  //     box: ''
-  //   }
-  // },
+  data () {
+    return {
+      cssId: this.doughnutChartData.cssId
+    }
+  },
   methods: {
     drawCircle (endpoint) {
-      const canvas = document.getElementById('box')
+      const canvas = document.getElementById(`${this.doughnutChartData.cssId}`)
       const centerX = canvas.width / 1.65
       const centerY = canvas.height / 1.6
       const ctx = canvas.getContext('2d')
@@ -80,19 +80,6 @@ export default {
     }
   },
   watch: {
-    doughnutChartData: {
-      handler: function (val) {
-        this.drawCircle(
-          val.box,
-          val.title,
-          val.subtitle1,
-          val.subtitle2,
-          val.percentage,
-          val.insideText,
-          val.color)
-      },
-      deep: true
-    }
   }
 }
 </script>

@@ -75,7 +75,7 @@
                   <div v-bind:class="status.cssId" v-bind:for="status.cssId" style="border:none; color:'#D8D8D8' !important; display:flex; width:27.7rem; justify-content:space-between; align-items:flex-end;">
                     <div>
                       <h1 style="display: inline; color:'#D8D8D8'; font-family: Helvetica; font-size:3rem; font-weight:500;" v-bind:class="status.cssId" v-bind:for="status.cssId">
-                        £ {{ status.totalLessons }}
+                        £ {{ status.totalTenants }}
                       </h1>
                     </div>
                     <div class="summary-bar-chart-container" style="align-self:flex-end;">
@@ -103,7 +103,7 @@ import AimDoughnutChart from '../components/Chart/AimDoughnutChart.vue'
 import TimeDoughnutChart from '../components/Chart/TimeDoughnutChart.vue'
 import SeeFrameworkBtn from '../components/SeeFrameworkBtn.vue'
 import Table from '../components/TableForTenants.vue'
-import { getValueByMoney, setYearSelectBox, getLessons } from '../data/data-provider.js'
+import { getValueByMoney, setYearSelectBox, getTenantsNumber } from '../data/data-provider.js'
 import { getAllPurpleColor, getLineChartColorScheme} from '../data/colour-scheme.js'
 import { getMonthlyColumn, calcSum, compareDataByYear, getLineChartData, getTableData, getBarChartData } from '../data/data-handler'
 
@@ -132,7 +132,7 @@ export default {
       barChartData: [],
       stackedBarChartData: {},
       doughnutChartData1: {
-        box: 'box1',
+        cssId: 'aim-chart',
         title: 'Aim',
         subtitle1: '£1200',
         subtitle2: 'savings',
@@ -326,30 +326,31 @@ export default {
       navbar.style.display = 'inline'
     },
     updateData () {
-      let lessons = {}
-      let prevYearLessons = {}
-      let tableLessons = {}
-      let prevTableLessons = {}
+      let tenants = {}
+      let prevYearTenants = {}
+      let tableData = {}
+      let prevtableData = {}
 
-      tableLessons = getValueByMoney(this.selectedYear) // for table & summary area
-      prevTableLessons = getValueByMoney(this.selectedYear - 1)
+      tableData = getValueByMoney(this.selectedYear) // for table & summary area
+      prevtableData = getValueByMoney(this.selectedYear - 1)
       if (this.checkedItems.length === 0) {
-        lessons = getLessons([], [], [], this.selectedYear, 'All') // for line graph
-        prevYearLessons = getLessons([], [], [], this.selectedYear - 1, 'All')
-        this.totalTenants = calcSum(Object.values(lessons.lessons[0]))
-        this.growthRate = compareDataByYear(Object.values(prevYearLessons.lessons[0]), Object.values(lessons.lessons[0]))
-        this.chartData = getLineChartData(lessons, getAllPurpleColor)
+        tenants = getTenantsNumber([], [], [], this.selectedYear, 'All') // for line graph
+        prevYearTenants = getTenantsNumber([], [], [], this.selectedYear - 1, 'All')
+        this.totalTenants = calcSum(Object.values(tenants.tenants[0]))
+        this.growthRate = compareDataByYear(Object.values(prevYearTenants.tenants[0]), Object.values(tenants.tenants[0]))
+        this.chartData = getLineChartData(tenants, getAllPurpleColor)
       } else {
-        lessons = tableLessons
-        this.chartData = this.filterChartData(getLineChartData(lessons, getLineChartColorScheme), this.checkedItems)
+        tenants = tableData
+        this.chartData = this.filterChartData(getLineChartData(tenants, getLineChartColorScheme), this.checkedItems)
       }
-      this.barChartData = getBarChartData(getTableData('Money', tableLessons, prevTableLessons))
-      this.tableData = getTableData('Money', tableLessons, prevTableLessons)
-      this.summaryBoxData = this.filterTopics(getTableData('Money', tableLessons, prevTableLessons))
+      this.barChartData = getBarChartData(getTableData('Money', tableData, prevtableData))
+      console.log(getTableData('Money', tableData, prevtableData))
+      this.tableData = getTableData('Money', tableData, prevtableData)
+      this.summaryBoxData = this.filterTopics(getTableData('Money', tableData, prevtableData))
       this.updateColors(getLineChartColorScheme)
     },
     filterTopics (tableData) {
-      const filtered = tableData.filter(el => el.totalLessons !== 0)
+      const filtered = tableData.filter(el => el.totalTenants !== 0)
       return filtered
     },
     uncheckAllCheckboxes () {
@@ -998,7 +999,5 @@ table#table-content td {
 .sort-button {
   margin-left: 0.7rem;
 }
-
-
 
 </style>

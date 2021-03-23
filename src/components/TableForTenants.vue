@@ -5,16 +5,16 @@
         <tr style="width:100%">
           <th style="width:7.6%; border-right:1px solid #D8D8D8;" scope="col">{{tableName}}<img src="../../src/assets/Sorting.svg" v-on:click="sortTable(name)" class="sort-button"/></th>
           <th style="width:3.77%" scope="col" v-for="month in monthlyColumn" :key="month">{{month}}</th>
-          <th style="width:10.415%; border-left:1px solid #D8D8D8;" scope="col">Total monies<img src="../../src/assets/Sorting.svg" v-on:click="sortTable(totalLessons)" class="sort-button"/></th>
+          <th style="width:10.415%; border-left:1px solid #D8D8D8;" scope="col">Total monies<img src="../../src/assets/Sorting.svg" v-on:click="sortTable(totalMoney)" class="sort-button"/></th>
           <th style="width:14%" scope="col">Difference in 12 Months <img src="../../src/assets/Sorting.svg" v-on:click="sortTableDatabyDifference" class="sort-button"/></th>
         </tr>
       </thead>
       <tbody style="width:100%; border-bottom:1px solid #D8D8D8;">
-        <tr style="width:100%;" v-for="country in tableData" v-bind:key="country.name">
-          <th v-bind:class="country.cssId" id="country-name" style="border-right:1px solid #D8D8D8;">
-            {{country.name}}
+        <tr style="width:100%;" v-for="data in tableData" v-bind:key="data.name">
+          <th v-bind:class="data.cssId" id="country-name" style="border-right:1px solid #D8D8D8;">
+            {{data.name}}
           </th>
-          <td scope="row" class="monthly-data" v-for="(month, index) in country.monthlyData.lessons" v-bind:key="index" v-bind:style="borderStyle(index)">
+          <td scope="row" class="monthly-data" v-for="(month, index) in data.monthlyData.tenants" v-bind:key="index" v-bind:style="borderStyle(index)">
             <div v-if="index !== 13" style="display:inline;">£</div> {{month}}
           </td>
         </tr>
@@ -30,15 +30,15 @@ export default {
   props: {
     tableData: {
       type: Array
-    }},
+    }},   
   data () {
     return {
       sortedByDifference: false,
       sorted: false,
-      tableName: 'Name',
+      tableName: '',
       monthlyColumn: getMonthlyColumn(),
       name: '',
-      totalLessons: ''
+      totalMoney: ''
     }
   },
   methods: {
@@ -56,11 +56,11 @@ export default {
     sortTableDatabyDifference () {
       if (this.sortedByDifference === false) {
         const unsorted = this.tableData
-        unsorted.sort((a, b) => (parseInt(a.monthlyData.lessons[13].slice(0, -1), 10) > parseInt(b.monthlyData.lessons[13].slice(0, -1), 10)) ? 1 : -1)
+        unsorted.sort((a, b) => (parseInt(a.monthlyData.tenants[13].slice(0, -1), 10) > parseInt(b.monthlyData.tenants[13].slice(0, -1), 10)) ? 1 : -1)
         this.sortedByDifference = true
       } else if (this.sortedByDifference === true) {
         const sorted = this.tableData
-        sorted.sort((a, b) => (parseInt(a.monthlyData.lessons[13].slice(0, -1), 10) < parseInt(b.monthlyData.lessons[13].slice(0, -1), 10)) ? 1 : -1)
+        sorted.sort((a, b) => (parseInt(a.monthlyData.tenants[13].slice(0, -1), 10) < parseInt(b.monthlyData.tenants[13].slice(0, -1), 10)) ? 1 : -1)
         this.sortedByDifference = false
       }
     },

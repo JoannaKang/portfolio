@@ -12,7 +12,7 @@
         </column>
         <column :lg="4" class="progress-summary">
           <div class="doughnut-1"><aim-doughnut-chart :doughnutChartData="doughnutChartData1"></aim-doughnut-chart></div>
-          <div class="doughnut-2"><time-doughnut-chart :doughnutChartData="doughnutChartData2"></time-doughnut-chart></div>
+          <div class="doughnut-2"><time-doughnut-chart  :doughnutChartData="doughnutChartData2"></time-doughnut-chart></div>
         </column>
       </row>
     </section>
@@ -53,7 +53,7 @@
     <section id="chart-area">
       <row :gutter="12" class="chart-main">
         <column :lg="8.16" class="line-chart-area">
-          <h3>No of tenancies</h3>
+          <h3>No of Tenants</h3>
           <line-chart :chart-data="chartData" :options="options" v-if="linechartShow "></line-chart>
           <stacked-bar-chart id="stacked-bar-chart" :chart-data="stackedBarChartData" :options="stackedBarchartOption" v-if="stackedChartShow === true"></stacked-bar-chart>
           <column :lg="4" :xs="12" class="year-select-box" ><v-select :options="yearOptions" v-model="selectedYear" class="select-year" placeholder="Show all" :searchable="false"></v-select></column>
@@ -72,7 +72,7 @@
                   <div v-bind:class="status.cssId" v-bind:for="status.cssId" style="border:none; color:'#D8D8D8' !important; display:flex; width:27.7rem; justify-content:space-between; align-items:flex-end;">
                     <div>
                       <h1 style="display: inline; color:'#D8D8D8'; font-family: Helvetica; font-size:3rem; font-weight:500;" v-bind:class="status.cssId" v-bind:for="status.cssId">
-                        {{ status.totalLessons }}
+                        {{ status.totalTenants }}
                       </h1>
                       <h2 style="display: inline; color:'#D8D8D8'; font-family:'Source Sans Pro'; font-size:2.47rem;" v-bind:class="status.cssId" v-bind:for="status.cssId">employed </h2>
                     </div>
@@ -120,7 +120,7 @@
                   </div>
                 </label>
                 <div v-bind:class="summaryBoxData[i*2+j].cssId" id="checkbox-text-area">
-                  <h1>{{summaryBoxData[i*2+j].monthlyData.lessons[13]}}</h1>
+                  <h1>{{summaryBoxData[i*2+j].monthlyData.tenants[13]}}</h1>
                   <h3>{{summaryBoxData[i*2+j].name}}</h3>
                 </div>
                 </div>
@@ -143,7 +143,7 @@ import AimDoughnutChart from '../components/Chart/AimDoughnutChart.vue'
 import TimeDoughnutChart from '../components/Chart/TimeDoughnutChart.vue'
 import Table from '../components/Table'
 import TableForTopic from '../components/TableforTopic'
-import { getValueByDemo, setYearSelectBox, getCamps, getLessons, getLessonsByTopics, getTotalLessonsByCountry } from '../data/data-provider.js'
+import { getValueByDemo, setYearSelectBox, getFundNames, getTenantsNumber, getTenantsByTopics, getTotalTenantsByStatus } from '../data/data-provider.js'
 import { getAllPurpleColor, getLineChartColorScheme, getSkillsGroupBarChartColorSheme, getTopicColorSchme } from '../data/colour-scheme.js'
 import { getRandomInt, getMonthlyColumn, calcSum, compareDataByYear, getLineChartData, getTableData, getBarChartData, getStackedBarChartData } from '../data/data-handler'
 
@@ -173,7 +173,7 @@ export default {
       barChartData: [],
       stackedBarChartData: {},
       doughnutChartData1: {
-        box: 'box1',
+        cssId: 'aim-chart',
         title: 'Aim',
         subtitle1: '1200',
         subtitle2: 'employed',
@@ -265,7 +265,7 @@ export default {
               return data.datasets[0].label + ' | ' + months[tooltipItem[0].index]
             },
             label: function (tooltipItem) {
-              return tooltipItem.value + ' tenancies'
+              return tooltipItem.value + ' Tenants'
             }
           }
         }
@@ -375,14 +375,14 @@ export default {
     },
     updateData () {
       this.updateConditionalRendering()
-      let lessons = {}
-      let prevYearLessons = {}
-      let totalCurrLessons = []
-      let totalPrevLessons = []
-      let tableLessons = {}
-      let prevTableLessons = {}
-      let summaryboxLessons = {}
-      let prevSummaryboxLessons = {}
+      let tenants = {}
+      let prevYearTenants = {}
+      let totalCurrTenants = []
+      let totalPrevTenants = []
+      let tableTenants = {}
+      let prevtableTenants = {}
+      let summaryboxTenants = {}
+      let prevsummaryboxTenants = {}
       const dummyBarchartData = {
         datasets: [
           {backgroundColor: [
@@ -406,47 +406,46 @@ export default {
         ]
       }
 
-        console.log(this.viewMode)
       switch (this.viewMode) {
         case 'All':
-          tableLessons = getLessons(this.employmentStatus, [], [], this.selectedYear, 'All')
-          prevTableLessons = getLessons(this.employmentStatus, [], [], this.selectedYear - 1, 'All')
+          tableTenants = getTenantsNumber(this.employmentStatus, [], [], this.selectedYear, 'All')
+          prevtableTenants = getTenantsNumber(this.employmentStatus, [], [], this.selectedYear - 1, 'All')
           if (this.checkedItems.length === 0) {
-            lessons = getLessons([], [], [], this.selectedYear, 'All')
-            prevYearLessons = getLessons([], [], [], this.selectedYear - 1, 'All')
-            this.totalTenants = calcSum(Object.values(lessons.lessons[0]))
-            this.growthRate = compareDataByYear(Object.values(prevYearLessons.lessons[0]), Object.values(lessons.lessons[0]))
-            this.chartData = getLineChartData(lessons, getAllPurpleColor)
+            tenants = getTenantsNumber([], [], [], this.selectedYear, 'All')
+            prevYearTenants = getTenantsNumber([], [], [], this.selectedYear - 1, 'All')
+            this.totalTenants = calcSum(Object.values(tenants.tenants[0]))
+            this.growthRate = compareDataByYear(Object.values(prevYearTenants.tenants[0]), Object.values(tenants.tenants[0]))
+            this.chartData = getLineChartData(tenants, getAllPurpleColor)
           } else {
-            lessons = tableLessons
-            this.chartData = this.filterChartData(getLineChartData(lessons, getLineChartColorScheme), this.checkedItems)
+            tenants = tableTenants
+            this.chartData = this.filterChartData(getLineChartData(tenants, getLineChartColorScheme), this.checkedItems)
           }
-          this.barChartData = getBarChartData(getTableData('Status', tableLessons, prevTableLessons))
-          this.tableData = getTableData('Status', tableLessons, prevTableLessons)
-          this.summaryBoxData = this.filterTopics(getTableData('Status', tableLessons, prevTableLessons))
+          this.barChartData = getBarChartData(getTableData('Status', tableTenants, prevtableTenants))
+          this.tableData = getTableData('Status', tableTenants, prevtableTenants)
+          this.summaryBoxData = this.filterTopics(getTableData('Status', tableTenants, prevtableTenants))
           this.updateColors(this.viewMode, getLineChartColorScheme)
           break
 
         case 'Status':
-          tableLessons = getLessons([this.selectedStatus], [], [], this.selectedYear, 'Status')
-          prevTableLessons = getLessons([this.selectedStatus], [], [], this.selectedYear - 1, 'Status')
+          tableTenants = getTenantsNumber([this.selectedStatus], [], [], this.selectedYear, 'Status')
+          prevtableTenants = getTenantsNumber([this.selectedStatus], [], [], this.selectedYear - 1, 'Status')
           if (this.checkedItems.length === 0) {
-            lessons = getTotalLessonsByCountry(this.selectedStatus, this.selectedYear, 'Status')
-            prevYearLessons = getTotalLessonsByCountry(this.selectedStatus, this.selectedYear - 1, 'Status')
+            tenants = getTotalTenantsByStatus(this.selectedStatus, this.selectedYear, 'Status')
+            prevYearTenants = getTotalTenantsByStatus(this.selectedStatus, this.selectedYear - 1, 'Status')
             this.stackedBarChartData = dummyBarchartData
-            this.tableDataByStatus = getTableData('Status', tableLessons, prevTableLessons)
+            this.tableDataByStatus = getTableData('Status', tableTenants, prevtableTenants)
           } else {
-            lessons = getLessons([this.selectedStatus], getCamps(this.selectedStatus), [], this.selectedYear, 'Status')
-            prevYearLessons = getLessons([this.selectedStatus], getCamps(this.selectedStatus), [], this.selectedYear - 1, 'Status')
+            tenants = getTenantsNumber([this.selectedStatus], getFundNames(this.selectedStatus), [], this.selectedYear, 'Status')
+            prevYearTenants = getTenantsNumber([this.selectedStatus], getFundNames(this.selectedStatus), [], this.selectedYear - 1, 'Status')
             this.stackedBarChartData = this.filterBarChartData(dummyBarchartData)
           }
-          summaryboxLessons = getLessons([this.selectedStatus], getCamps(this.selectedStatus), [], this.selectedYear, 'Status')
-          prevSummaryboxLessons = getLessons([this.selectedStatus], getCamps(this.selectedStatus), [], this.selectedYear - 1, 'Status')
-          this.summaryBoxData =  this.filterTopics(getTableData('Fund', summaryboxLessons, prevSummaryboxLessons))          
-          totalCurrLessons = lessons.lessons.flatMap(el => Object.values(el))
-          totalPrevLessons = prevYearLessons.lessons.flatMap(el => Object.values(el))
-          this.totalTenants = calcSum(totalCurrLessons)
-          this.growthRate = compareDataByYear(totalPrevLessons, totalCurrLessons)
+          summaryboxTenants = getTenantsNumber([this.selectedStatus], getFundNames(this.selectedStatus), [], this.selectedYear, 'Status')
+          prevsummaryboxTenants = getTenantsNumber([this.selectedStatus], getFundNames(this.selectedStatus), [], this.selectedYear - 1, 'Status')
+          this.summaryBoxData =  this.filterTopics(getTableData('Fund', summaryboxTenants, prevsummaryboxTenants))          
+          totalCurrTenants = tenants.tenants.flatMap(el => Object.values(el))
+          totalPrevTenants = prevYearTenants.tenants.flatMap(el => Object.values(el))
+          this.totalTenants = calcSum(totalCurrTenants)
+          this.growthRate = compareDataByYear(totalPrevTenants, totalCurrTenants)
           this.updateBarchartColor(getSkillsGroupBarChartColorSheme, this.colorIndex)
           break
 
@@ -454,28 +453,28 @@ export default {
           this.linechartShow = true
             // status x / fund o : all employment status line graph + summary Area & Table by status
             if (this.selectedStatus === null && this.selectedFund !== null) {
-              tableLessons = getLessons([this.selectedFund], this.employmentStatus, [], this.selectedYear, 'Fund')
-              prevTableLessons = getLessons([this.selectedFund], this.employmentStatus, [], this.selectedYear -1, 'Fund')
-              lessons = getLessons([this.selectedFund], [], [], this.selectedYear, 'Fund')
-              prevYearLessons = getLessons([], [], [], this.selectedYear - 1, 'Fund')
-              this.totalTenants = calcSum(Object.values(lessons.lessons[0]))
-              this.growthRate = compareDataByYear(Object.values(prevYearLessons.lessons[0]), Object.values(lessons.lessons[0]))
-              this.chartData = getLineChartData(lessons, getAllPurpleColor)         
-              this.barChartData = getBarChartData(getTableData('Status', tableLessons, prevTableLessons))
-              this.tableDataByStatus = getTableData('Status', tableLessons, prevTableLessons)
-              this.summaryBoxData = this.filterTopics(getTableData('Status', tableLessons, prevTableLessons))
+              tableTenants = getTenantsNumber([this.selectedFund], this.employmentStatus, [], this.selectedYear, 'Fund')
+              prevtableTenants = getTenantsNumber([this.selectedFund], this.employmentStatus, [], this.selectedYear -1, 'Fund')
+              tenants = getTenantsNumber([this.selectedFund], [], [], this.selectedYear, 'Fund')
+              prevYearTenants = getTenantsNumber([], [], [], this.selectedYear - 1, 'Fund')
+              this.totalTenants = calcSum(Object.values(tenants.tenants[0]))
+              this.growthRate = compareDataByYear(Object.values(prevYearTenants.tenants[0]), Object.values(tenants.tenants[0]))
+              this.chartData = getLineChartData(tenants, getAllPurpleColor)         
+              this.barChartData = getBarChartData(getTableData('Status', tableTenants, prevtableTenants))
+              this.tableDataByStatus = getTableData('Status', tableTenants, prevtableTenants)
+              this.summaryBoxData = this.filterTopics(getTableData('Status', tableTenants, prevtableTenants))
           } else if (this.selectedStatus && this.selectedFund) {
             // status o / fund o : selected employment status line graph + summary Area & Table by selected status
-            lessons = getLessons([this.selectedFund], [this.selectedStatus], [], this.selectedYear, 'Fund')
-            prevYearLessons = getLessons([this.selectedFund], [this.selectedStatus], [], this.selectedYear - 1, 'Fund')          
-            totalCurrLessons = lessons.lessons.flatMap(el => Object.values(el))
-            totalPrevLessons = prevYearLessons.lessons.flatMap(el => Object.values(el))
-            this.totalTenants = calcSum(totalCurrLessons)
-            this.growthRate = compareDataByYear(totalPrevLessons, totalCurrLessons)
-            this.barChartData = getBarChartData(getTableData('Status', lessons, prevYearLessons))
-            this.tableDataByStatus = getTableData('Status', lessons, prevYearLessons)
-            this.chartData = this.filterChartData(getLineChartData(lessons, getLineChartColorScheme), this.checkedItems)
-            this.summaryBoxData = this.filterTopics(getTableData('Status', lessons, prevYearLessons))
+            tenants = getTenantsNumber([this.selectedFund], [this.selectedStatus], [], this.selectedYear, 'Fund')
+            prevYearTenants = getTenantsNumber([this.selectedFund], [this.selectedStatus], [], this.selectedYear - 1, 'Fund')   
+            totalCurrTenants = tenants.tenants.flatMap(el => Object.values(el))
+            totalPrevTenants = prevYearTenants.tenants.flatMap(el => Object.values(el))
+            this.totalTenants = calcSum(totalCurrTenants)
+            this.growthRate = compareDataByYear(totalPrevTenants, totalCurrTenants)
+            this.barChartData = getBarChartData(getTableData('Status', tenants, prevYearTenants))
+            this.tableDataByStatus = getTableData('Status', tenants, prevYearTenants)
+            this.chartData = this.filterChartData(getLineChartData(tenants, getLineChartColorScheme), this.checkedItems)
+            this.summaryBoxData = this.filterTopics(getTableData('Status', tenants, prevYearTenants))
           }
           this.updateColors(this.viewMode, getLineChartColorScheme)
           break
@@ -484,19 +483,19 @@ export default {
           // if status & fund & demographic options selected -> year data render
           // if status & demographic options selected -> fund data render
           if (this.selectedStatus && this.selectedFund && this.selectedYear) {
-            lessons = getLessonsByTopics([this.selectedStatus], [this.selectedFund], [this.selectedDemo], this.selectedYear)
-            prevYearLessons = getLessonsByTopics([this.selectedStatus], [this.selectedFund], [this.selectedDemo], this.selectedYear - 1)
+            tenants = getTenantsByTopics([this.selectedStatus], [this.selectedFund], [this.selectedDemo], this.selectedYear)
+            prevYearTenants = getTenantsByTopics([this.selectedStatus], [this.selectedFund], [this.selectedDemo], this.selectedYear - 1)
           } else {
-            lessons = getValueByDemo(this.selectedStatus, this.selectedDemo, this.selectedYear)
-            prevYearLessons = getValueByDemo(this.selectedStatus, this.selectedDemo, this.selectedYear - 1)
+            tenants = getValueByDemo(this.selectedStatus, this.selectedDemo, this.selectedYear)
+            prevYearTenants = getValueByDemo(this.selectedStatus, this.selectedDemo, this.selectedYear - 1)
           }
-          totalCurrLessons = lessons.lessons.flatMap(el => Object.values(el))
-          totalPrevLessons = prevYearLessons.lessons.flatMap(el => Object.values(el))
-          this.totalTenants = calcSum(totalCurrLessons)
-          this.growthRate = compareDataByYear(totalPrevLessons, totalCurrLessons)
-          this.stackedBarChartData = this.filterChartData(getStackedBarChartData(lessons, getTopicColorSchme), this.checkedItems)
-          this.TopicTableData = getTableData('Topics', lessons, prevYearLessons)
-          this.summaryBoxData = this.filterTopics(getTableData('Topics', lessons, prevYearLessons)) // for checkbox rendering
+          totalCurrTenants = tenants.tenants.flatMap(el => Object.values(el))
+          totalPrevTenants = prevYearTenants.tenants.flatMap(el => Object.values(el))
+          this.totalTenants = calcSum(totalCurrTenants)
+          this.growthRate = compareDataByYear(totalPrevTenants, totalCurrTenants)
+          this.stackedBarChartData = this.filterChartData(getStackedBarChartData(tenants, getTopicColorSchme), this.checkedItems)
+          this.TopicTableData = getTableData('Topics', tenants, prevYearTenants)
+          this.summaryBoxData = this.filterTopics(getTableData('Topics', tenants, prevYearTenants)) // for checkbox rendering
           this.updateColors(this.viewMode, getTopicColorSchme)
           break
       }
@@ -549,7 +548,7 @@ export default {
       }
     },
     filterTopics (tableData) {
-      const filtered = tableData.filter(el => el.totalLessons !== 0)
+      const filtered = tableData.filter(el => el.totalTenants !== 0)
       return filtered
     },
     uncheckAllCheckboxes () {
@@ -1038,13 +1037,6 @@ canvas#line-chart.chartjs-render-monitor {
   margin: 0 0 0 0;
 }
 
-/* .summary-text h2 {
-  display: inline;
-  margin: 0 0.2rem 0 0;
-  color:'#D8D8D8';
-  font-size: 2rem;
-} */
-
 .summary-bar-chart-container {
   display: flex;
   padding-left: 1.5rem;
@@ -1092,56 +1084,4 @@ canvas#line-chart.chartjs-render-monitor {
   border-radius: 3px;
   margin: 0 1rem 0 0;
 }
-
-.table-responsive {
-  display: flex;
-  color: var(--color-dark-grey);
-  overflow: hidden;
-  max-width: 144rem;
-  margin-top: 3rem;
-  padding: 0 0.8rem 0 0.8rem;
-}
-
-table#table-content tr {
-  width: 100%;
-}
-
-table#table-content th {
-  vertical-align: middle;
-}
-
-table#table-content td {
-  vertical-align: middle;
-}
-
-#country-name {
-  font-weight: 500;
-}
-
-.monthly-data {
-  font-weight: 200;
-}
-
-#table-content {
-  margin-top: 3rem;
-  font-size: 1.2rem;
-  width: 100%;
-}
-
-#table-content thead th {
-  border-bottom: none;
-}
-
-#table-content.thead{
-  width: 100%;
-}
-
-#table-content .thead {
-  width: 100%;
-}
-
-.sort-button {
-  margin-left: 0.7rem;
-}
-
 </style>

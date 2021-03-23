@@ -2,11 +2,9 @@ const data = require('./dummyStatusJsonData.json')
 const fundData = require('./dummyFundJsonData.json')
 const demoData = require('./dummyDemoJsonData.json')
 const moneyData = require('./dummyMoneyJsonData.json')
-const ICT_STUDENT_DATA = require('./ict-data.json')
-const ICT_TEACHER_DATA = require('./ict-teachers-data.json')
 
 // for INS
-function getZeroLessonData () {
+function getZeroData () {
   return {
     '1': 0,
     '2': 0,
@@ -23,48 +21,48 @@ function getZeroLessonData () {
   }
 }
 
-export function getCountries () {
-  const countryList = Object.keys(data.children)
-  return countryList
+export function getStatusNames () { // getCountries
+  const statusList = Object.keys(data.children)
+  return statusList
 }
 
-export function getCamps (country) {
-  return Object.keys(data.children[country].children)
+export function getFundNames (fund) { // getCamps
+  return Object.keys(data.children[fund].children)
 }
 
-export function getSchools (country, camp) {
-  return Object.keys(data.children[country].children[camp].children)
+export function getDemoCategories (status, fund) { //getSchools
+  return Object.keys(data.children[status].children[fund].children)
 }
 
-export function getTotalLessonsByCountry (country, year) {
-  const dataByCountry = {}
-  const lessonsData = data.children[country].values[year]
+export function getTotalTenantsByStatus (status, year) {
+  const dataByStatus = {}
+  const tenantsData = data.children[status].values[year]
 
-  if (lessonsData === undefined) {
-    dataByCountry.lessons = [getZeroLessonData()]
+  if (tenantsData === undefined) {
+    dataByStatus.tenants = [getZeroData()]
   } else {
-    dataByCountry.lessons = [lessonsData]
+    dataByStatus.tenants = [tenantsData]
   }
-  dataByCountry.labels = ['All']
+  dataByStatus.labels = ['All']
 
-  return dataByCountry
+  return dataByStatus
 }
 
-export function getTotalLessonsByCamp (country, camp, year) {
-  const dataByCamp = {}
-  const lessonsData = data.children[country].children[camp].values[year]
+export function getTotalTenantsByFund (status, fund, year) { //getTotalLessonsByCamp
+  const dataByFund = {}
+  const tenantsData = data.children[status].children[fund].values[year]
   
-  if (lessonsData === undefined) {
-    dataByCamp.lessons = [getZeroLessonData()]
+  if (tenantsData === undefined) {
+    dataByFund.tenants = [getZeroData()]
   } else {
-    dataByCamp.lessons = [lessonsData]
+    dataByFund.tenants = [tenantsData]
   }
-  dataByCamp.labels = ['All']
+  dataByFund.labels = ['All']
 
-  return dataByCamp
+  return dataByFund
 }
 
-export function getLessons (countries, camps, schools, year, viewMode) {
+export function getTenantsNumber (employmentStatus, funds, demographics, year, viewMode) {
   let values = {}
   let chartdata = {}
   if (viewMode === 'Fund') {
@@ -73,36 +71,36 @@ export function getLessons (countries, camps, schools, year, viewMode) {
     chartdata = data
   }
   
-  if (countries.length === 0) {
-    values['All'] = chartdata.values[year] ? chartdata.values[year] : getZeroLessonData()
+  if (employmentStatus.length === 0) {
+    values['All'] = chartdata.values[year] ? chartdata.values[year] : getZeroData()
   } else {
-    for (let countryIndex = 0; countryIndex < countries.length; countryIndex++) {
-      const country = countries[countryIndex]
-      if (camps.length === 0) {
-        const lessons = chartdata.children[country].values[year]
-        if (lessons) {
-          values[country] = lessons
+    for (let statusIndex = 0; statusIndex < employmentStatus.length; statusIndex++) {
+      const status = employmentStatus[statusIndex]
+      if (funds.length === 0) {
+        const tenants = chartdata.children[status].values[year]
+        if (tenants) {
+          values[status] = tenants
         } else {
-          values[country] = getZeroLessonData()
+          values[status] = getZeroData()
         }
       } else {
-        for (let campIndex = 0; campIndex < camps.length; campIndex++) {
-          const camp = camps[campIndex]
-          if (schools.length === 0) {
-            const lessons = chartdata.children[country].children[camp].values[year]           
-            if (lessons) {
-              values[camp] = lessons
+        for (let fundIndex = 0; fundIndex < funds.length; fundIndex++) {
+          const fund = funds[fundIndex]
+          if (demographics.length === 0) {
+            const tenants = chartdata.children[status].children[fund].values[year]           
+            if (tenants) {
+              values[fund] = tenants
             } else {
-              values[camp] = getZeroLessonData()
+              values[fund] = getZeroData()
             }
           } else {
-            for (let schoolIndex = 0; schoolIndex < schools.length; schoolIndex++) {
-              const school = schools[schoolIndex]
-              const lessons = chartdata.children[country].children[camp].children[school].values[year]
-              if (lessons) {
-                values[school] = lessons
+            for (let demoIndex = 0; demoIndex < demographics.length; demoIndex++) {
+              const demo = demographics[demoIndex]
+              const tenants = chartdata.children[status].children[fund].children[demo].values[year]
+              if (tenants) {
+                values[demo] = tenants
               } else {
-                values[school] = getZeroLessonData()
+                values[demo] = getZeroData()
               }
             }
           }
@@ -113,14 +111,14 @@ export function getLessons (countries, camps, schools, year, viewMode) {
 
   values = {
     labels: Object.keys(values),
-    lessons: Object.values(values)
+    tenants: Object.values(values)
   }
 
   return values
 }
 
-export function getLessonsByTopics (country, camp, school, year) {
-  let values = data.children[country].children[camp].children[school].children
+export function getTenantsByTopics (status, fund, demo, year) {
+  let values = data.children[status].children[fund].children[demo].children
   let allMonthlyDataByYears = Object.values(values)
 
   const allTopics = Object.keys(values)
@@ -128,12 +126,11 @@ export function getLessonsByTopics (country, camp, school, year) {
 
   allTopics.forEach((el, index) => {
     const monthlyData = allMonthlyDataByYears[index].values[year]
-    existingTopicsInYear[el] = monthlyData || getZeroLessonData()
+    existingTopicsInYear[el] = monthlyData || getZeroData()
   })
-
   return {
     labels: Object.keys(existingTopicsInYear),
-    lessons: Object.values(existingTopicsInYear),
+    tenants: Object.values(existingTopicsInYear),
     type: 'Month'
   }
 }
@@ -146,16 +143,16 @@ export function getValueByDemo (status, demo, year) {
   const demoDataInYear = {}
   allDemoCategory.forEach((el, index) => {
     const dataByFund = valuesByDemo[index].values[year]
-    demoDataInYear[el] = dataByFund || getZeroLessonData()
+    demoDataInYear[el] = dataByFund || getZeroData()
   })
-  
   return {
     labels: Object.keys(demoDataInYear),
-    lessons: Object.values(demoDataInYear),
+    tenants: Object.values(demoDataInYear),
     type: 'Fund'
   }
 }
 
+// for Tenant savings page
 export function getValueByMoney (year) {
   const data = moneyData.children
   const labelsArray = Object.keys(data)
@@ -166,7 +163,7 @@ export function getValueByMoney (year) {
   })
   const returnObj = {}
   returnObj.labels = labelsArray
-  returnObj.lessons = valuesArray
+  returnObj.tenants = valuesArray
   return returnObj
 }
 
@@ -187,156 +184,3 @@ export function setYearSelectBox (country) {
   return uniqueYear
 }
 
-// for ICT
-function getBase (data) {
-  return data.children.Tanzania.children.Nyarugusu.children
-}
-
-function skillsList (SKILL_COUNT) {
-  const skillCountArr = Array.from(Array(SKILL_COUNT).keys())
-  const column = []
-  skillCountArr.map((el) => {
-    column.push('Skill ' + (el + 1))
-  })
-  return column
-}
-
-export function getIctCountries () {
-  const countries = ICT_STUDENT_DATA
-  return Object.keys(countries.children)
-}
-
-export function getAvgPercentage (absolute) {
-  const MAX_ICT = 21
-  const percentage = absolute / MAX_ICT * 100
-  return percentage
-}
-
-export function getIctSchoolList () {
-  const list = Object.keys(getBase(ICT_STUDENT_DATA))
-  return list
-}
-
-export function getStudentIctSchoolAvg (school, type, year) {
-  let percentage = ''
-  if (year === 'Base') {
-    const base = getBase(ICT_STUDENT_DATA)[school].values[type].base_avg
-    percentage = getAvgPercentage(base).toFixed(0)
-  } else if (year === 'End') {
-    const end = getBase(ICT_STUDENT_DATA)[school].values[type].end_avg
-    percentage = getAvgPercentage(end).toFixed(0)
-  }
-  return percentage
-}
-
-export function getStudentAvgAcrossSchools (type, year) {
-  let percentage = ''
-  if (year === 'Base') {
-    const base = ICT_STUDENT_DATA.values[type].base_avg
-    percentage = getAvgPercentage(base).toFixed(0)
-  } else if (year === 'End') {
-    const end = ICT_STUDENT_DATA.values[type].end_avg
-    percentage = getAvgPercentage(end).toFixed(0)
-  }
-  return percentage
-}
-
-export function getTeacherIctSchoolAvg (school, type, year) {
-  let percentage = ''
-  if (year === 'Base') {
-    const base = getBase(ICT_TEACHER_DATA)[school].values[type].base_avg
-    percentage = getAvgPercentage(base).toFixed(0)
-  } else if (year === 'End') {
-    const end = getBase(ICT_TEACHER_DATA)[school].values[type].end_avg
-    percentage = getAvgPercentage(end).toFixed(0)
-  }
-  return percentage
-}
-
-export function getTeacherAvgAcrossSchools (type, year) {
-  let percentage = ''
-  if (year === 'Base') {
-    const base = ICT_TEACHER_DATA.values[type].base_avg
-    percentage = getAvgPercentage(base).toFixed(0)
-  } else if (year === 'End') {
-    const end = ICT_TEACHER_DATA.values[type].end_avg
-    percentage = getAvgPercentage(end).toFixed(0)
-  }
-  return percentage
-}
-
-export function getStudentSchoolSkillData (school, gender) {
-  let Base = []
-  let End = []
-  let baseDenominator = ''
-  let endDenominator = ''
-  let baseSkillsPct = ''
-  let endSkillsPct = ''
-  const SKILL_COUNT = 21
-
-  switch (gender) {
-    case 'Female':
-      Base = skillsList(SKILL_COUNT).map(el => getBase(ICT_STUDENT_DATA)[school].values[el].base.Female_raw)
-      End = skillsList(SKILL_COUNT).map(el => getBase(ICT_STUDENT_DATA)[school].values[el].end.Female_raw)
-      baseDenominator = getBase(ICT_STUDENT_DATA)[school].values[gender].base_count
-      endDenominator = getBase(ICT_STUDENT_DATA)[school].values[gender].end_count
-      baseSkillsPct = skillsList(SKILL_COUNT).map(el => getBase(ICT_STUDENT_DATA)[school].values[el].base.Female_pct)
-      endSkillsPct = skillsList(SKILL_COUNT).map(el => getBase(ICT_STUDENT_DATA)[school].values[el].end.Female_pct)
-      break
-    case 'Male':
-      Base = skillsList(SKILL_COUNT).map(el => getBase(ICT_STUDENT_DATA)[school].values[el].base.Male_raw)
-      End = skillsList(SKILL_COUNT).map(el => getBase(ICT_STUDENT_DATA)[school].values[el].end.Male_raw)
-      baseDenominator = getBase(ICT_STUDENT_DATA)[school].values[gender].base_count
-      endDenominator = getBase(ICT_STUDENT_DATA)[school].values[gender].end_count
-      baseSkillsPct = skillsList(SKILL_COUNT).map(el => getBase(ICT_STUDENT_DATA)[school].values[el].base.Male_pct)
-      endSkillsPct = skillsList(SKILL_COUNT).map(el => getBase(ICT_STUDENT_DATA)[school].values[el].end.Male_pct)
-      break
-    case 'Total':
-      Base = skillsList(SKILL_COUNT).map(el => getBase(ICT_STUDENT_DATA)[school].values[el].base.Total_raw)
-      End = skillsList(SKILL_COUNT).map(el => getBase(ICT_STUDENT_DATA)[school].values[el].end.Total_raw)
-      baseDenominator = '-'
-      endDenominator = '-'
-      baseSkillsPct = skillsList(SKILL_COUNT).map(el => getBase(ICT_STUDENT_DATA)[school].values[el].base.Total_raw)
-      endSkillsPct = skillsList(SKILL_COUNT).map(el => getBase(ICT_STUDENT_DATA)[school].values[el].end.Total_raw)
-      break
-  }
-  return { Base, End, baseDenominator, endDenominator, baseSkillsPct, endSkillsPct }
-}
-
-export function getTeacherSchoolSkillData (school, gender) {
-  let Base = []
-  let End = []
-  let baseDenominator = ''
-  let endDenominator = ''
-  let baseSkillsPct = ''
-  let endSkillsPct = ''
-  const SKILL_COUNT = 21
-
-  switch (gender) {
-    case 'Female':
-      Base = skillsList(SKILL_COUNT).map(el => getBase(ICT_TEACHER_DATA)[school].values[el].base.Female_raw)
-      End = skillsList(SKILL_COUNT).map(el => getBase(ICT_TEACHER_DATA)[school].values[el].end.Female_raw)
-      baseDenominator = getBase(ICT_TEACHER_DATA)[school].values[gender].base_count
-      endDenominator = getBase(ICT_TEACHER_DATA)[school].values[gender].end_count
-      baseSkillsPct = skillsList(SKILL_COUNT).map(el => getBase(ICT_TEACHER_DATA)[school].values[el].base.Female_pct)
-      endSkillsPct = skillsList(SKILL_COUNT).map(el => getBase(ICT_TEACHER_DATA)[school].values[el].end.Female_pct)
-      break
-    case 'Male':
-      Base = skillsList(SKILL_COUNT).map(el => getBase(ICT_TEACHER_DATA)[school].values[el].base.Male_raw)
-      End = skillsList(SKILL_COUNT).map(el => getBase(ICT_TEACHER_DATA)[school].values[el].end.Male_raw)
-      baseDenominator = getBase(ICT_TEACHER_DATA)[school].values[gender].base_count
-      endDenominator = getBase(ICT_TEACHER_DATA)[school].values[gender].end_count
-      baseSkillsPct = skillsList(SKILL_COUNT).map(el => getBase(ICT_TEACHER_DATA)[school].values[el].base.Male_pct)
-      endSkillsPct = skillsList(SKILL_COUNT).map(el => getBase(ICT_TEACHER_DATA)[school].values[el].end.Male_pct)
-      break
-    case 'Total':
-      Base = skillsList(SKILL_COUNT).map(el => getBase(ICT_TEACHER_DATA)[school].values[el].base.Total_raw)
-      End = skillsList(SKILL_COUNT).map(el => getBase(ICT_TEACHER_DATA)[school].values[el].end.Total_raw)
-      baseDenominator = '-'
-      endDenominator = '-'
-      baseSkillsPct = skillsList(SKILL_COUNT).map(el => getBase(ICT_TEACHER_DATA)[school].values[el].base.Total_raw)
-      endSkillsPct = skillsList(SKILL_COUNT).map(el => getBase(ICT_TEACHER_DATA)[school].values[el].end.Total_raw)
-      break
-  }
-  return { Base, End, baseDenominator, endDenominator, baseSkillsPct, endSkillsPct }
-}

@@ -16,7 +16,7 @@ export default {
   },
   mounted () {
     let min = 0
-    let max = this.doughnutChartData.lesson
+    let max = this.doughnutChartData.tenant
     setInterval(() => {
       if (min <= max) {
         min += 0.3
@@ -26,7 +26,7 @@ export default {
   },
   data () {
     return {
-      canvasId: this.doughnutChartData.topic.cssId + '-' + this.doughnutChartData.lesson
+      canvasId: this.doughnutChartData.topic.cssId + '-' + this.doughnutChartData.tenant
     }
   },
   methods: {
@@ -39,7 +39,7 @@ export default {
       ctx.clearRect(0, 0, canvas.width, canvas.height)
       ctx.font = '12px Helvetica'
       ctx.fillStyle = '#686868'
-      ctx.fillText(`${this.doughnutChartData.lesson}%`, 12, 26, 60)
+      ctx.fillText(`${this.doughnutChartData.tenant}%`, 12, 26, 60)
       // background
       ctx.beginPath()
       ctx.lineWidth = 4

@@ -1,5 +1,4 @@
-import { getStudentIctSchoolAvg, getTeacherIctSchoolAvg, getIctSchoolList } from './data-provider'
-import { getGroupBarChartColorSheme, getLineChartColorScheme } from './colour-scheme'
+import { getLineChartColorScheme } from './colour-scheme'
 
 export function getRandomInt (min, max) {
   min = Math.ceil(min);
@@ -7,17 +6,17 @@ export function getRandomInt (min, max) {
   return Math.floor(Math.random() * (max - min)) + min
 }
 
-// For INS Page
-export function calcSum (lessons) {
-  const sum = lessons.reduce(
+// For Employment page
+export function calcSum (tenants) {
+  const sum = tenants.reduce(
     (prev, curr) => prev + curr
   )
   return sum
 }
 
-export function compareDataByYear (prevYearLessons, currYearLessons) {
-  const prevSum = calcSum(prevYearLessons)
-  const currSum = calcSum(currYearLessons)
+export function compareDataByYear (prevYearTenants, currYearTenants) {
+  const prevSum = calcSum(prevYearTenants)
+  const currSum = calcSum(currYearTenants)
   const growthRate = ((currSum / prevSum) - 1) * 100
   if (Number.isNaN(growthRate)) {
     return '-'
@@ -30,12 +29,12 @@ export function compareDataByYear (prevYearLessons, currYearLessons) {
   }
 }
 
-export function getLineChartData (lessons, colorScheme) {
-  const totalLessons = lessons.lessons.flatMap(el => Object.values(el))
-  const sum = calcSum(totalLessons)
+export function getLineChartData (tenants, colorScheme) {
+  const totalTenants = tenants.tenants.flatMap(el => Object.values(el))
+  const sum = calcSum(totalTenants)
 
-  const labels = lessons.labels
-  const dataset = lessons.lessons
+  const labels = tenants.labels
+  const dataset = tenants.tenants
   const lineChartData = []
   let chartDataObj = {}
 
@@ -43,7 +42,7 @@ export function getLineChartData (lessons, colorScheme) {
     chartDataObj = {
       labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
       datasets: [{
-        label: 'No lessons data for this year',
+        label: 'No tenants data for this year',
         backgroundColor: 'transparent',
         borderColor: '#D8D8D8',
         data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -79,42 +78,41 @@ export function getLineChartData (lessons, colorScheme) {
   return chartDataObj
 }
 
-export function getTableData (tabletype, lessons, prevYear) {
-  const countries = lessons.labels
+export function getTableData (tabletype, currentYear, prevYear) {
+  const tableLabels = currentYear.labels
   const tableDataArray = []
-
-  for (let countryIndex = 0; countryIndex < countries.length; countryIndex++) {
-    const lessonsData = lessons.lessons[countryIndex]
-    const prevYearLessonsData = prevYear.lessons[countryIndex]
-    const total = calcSum(Object.values(lessonsData))
+  
+  for (let labelIndex = 0; labelIndex < tableLabels.length; labelIndex++) {
+    const tenantsData = currentYear.tenants[labelIndex]
+    const prevYearTenantsData = prevYear.tenants[labelIndex]
+    const total = calcSum(Object.values(tenantsData))
     let growthRate = ''
 
-    if (prevYearLessonsData) {
-      growthRate = compareDataByYear(Object.values(prevYearLessonsData), Object.values(lessonsData))
+    if (prevYearTenantsData) {
+      growthRate = compareDataByYear(Object.values(prevYearTenantsData), Object.values(tenantsData))
     } else {
       growthRate = '+100%'
     }
 
     const tableDataSet = {
       type: tabletype,
-      name: countries[countryIndex],
-      totalLessons: total,
-      cssId: countries[countryIndex].toLowerCase().replaceAll(' ', '-'),
-      vForId: countries[countryIndex],
-      propId: countries[countryIndex].replace(/\s+/g, ''),
+      name: tableLabels[labelIndex],
+      totalTenants: total,
+      cssId: tableLabels[labelIndex].toLowerCase().replaceAll(' ', '-'),
+      vForId: tableLabels[labelIndex],
+      propId: tableLabels[labelIndex].replace(/\s+/g, ''),
       monthlyData: {
-        lessons: Object.values(lessonsData),
-        months: Object.keys(lessonsData)
+        tenants: Object.values(tenantsData),
+        months: Object.keys(tenantsData)
       },
-      colorIndex: countryIndex
+      colorIndex: labelIndex
     }
-
-    tableDataSet.monthlyData.lessons.push(total)
-    tableDataSet.monthlyData.lessons.push(growthRate)
-    tableDataSet.monthlyData.months.push('Total Lessons')
+    tableDataSet.monthlyData.tenants.push(total)
+    tableDataSet.monthlyData.tenants.push(growthRate)
+    tableDataSet.monthlyData.months.push('Total Tenants')
     tableDataSet.monthlyData.months.push('Difference in 12 Months')
     if (tabletype === 'Topics') {
-      tableDataSet.monthlyData.lessons.push(getRandomInt(0, 100))
+      tableDataSet.monthlyData.tenants.push(getRandomInt(0, 100))
       tableDataSet.monthlyData.months.push('% of total')    
     }
     tableDataArray.push(tableDataSet)
@@ -126,7 +124,7 @@ export function getBarChartData (dataByCountry) {
   const allDataDict = {}
   dataByCountry.forEach((el, index) => {
     let key = el.name
-    let value = el.monthlyData.lessons.slice(0, 12)
+    let value = el.monthlyData.tenants.slice(0, 12)
     allDataDict[key] = {
       labels: el.monthlyData.months.slice(0, 12),
       datasets: [{
@@ -139,15 +137,15 @@ export function getBarChartData (dataByCountry) {
   return allDataDict
 }
 
-export function getStackedBarChartData (lessons, colorScheme) {
-  const totalLessons = lessons.lessons.flatMap(el => Object.values(el))
-  const sum = calcSum(totalLessons)
+export function getStackedBarChartData (tenants, colorScheme) {
+  const totalTenants = tenants.tenants.flatMap(el => Object.values(el))
+  const sum = calcSum(totalTenants)
   const barChartData = []
-  for (let i = 0; i < lessons.labels.length; i++) {
+  for (let i = 0; i < tenants.labels.length; i++) {
     const barChartDataSet = {
-      label: lessons.labels[i],
+      label: tenants.labels[i],
       backgroundColor: colorScheme(i),
-      data: Object.values(lessons.lessons[i]),
+      data: Object.values(tenants.tenants[i]),
       barThickness: 15
     }
     barChartData.push(barChartDataSet)
@@ -158,121 +156,21 @@ export function getStackedBarChartData (lessons, colorScheme) {
     chartDataObj = {
       labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
       datasets: [{
-        label: 'No lessons data for this year',
+        label: 'No tenants data for this year',
         backgroundColor: 'transparent',
         data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
       }]
     }
-  } else if (lessons.lessons.length > 0) {
+  } else if (tenants.tenants.length > 0) {
     chartDataObj = {
-      labels: Object.keys(lessons.lessons[0]),
+      labels: Object.keys(tenants.tenants[0]),
       datasets: barChartData
     }
   }
   return chartDataObj
 }
 
-// For ICT page
-export function getStudentIctRate (school, type, year) {
-  const avgSchoolIctSkill = getStudentIctSchoolAvg(`${school}`, `${type}`, `${year}`)
-  return avgSchoolIctSkill
-}
-
-export function getTeacherIctRate (school, type, year) {
-  const avgSchoolIctSkill = getTeacherIctSchoolAvg(`${school}`, `${type}`, `${year}`)
-  return avgSchoolIctSkill
-}
-
-export function calcDifference (base, end) {
-  const difference = end.map((end, index) => {
-    if (end - base[index] < 0) {
-      const res = end - base[index]
-      return res + '%'
-    } else if (end - base[index] > 0) {
-      const plus = '+'
-      return plus.concat('', end - base[index]) + '%'
-    } else {
-      return 0 + '%'
-    }
-  })
-  return difference
-}
-
-export function getIctTableData (getRateDataFunc, getAcrossAvgDataFunc) {
-  const labelArr = getIctSchoolList()
-  const totalBaseYearData = {}
-  const totalEndYearData = {}
-  const maleBaseYearData = {}
-  const maleEndYearData = {}
-  const femaleBaseYearData = {}
-  const femaleEndYearData = {}
-  const tableProp = {}
-
-  labelArr.forEach(el => {
-    totalBaseYearData[el] = getRateDataFunc(`${el}`, 'Total', 'Base')
-    totalEndYearData[el] = getRateDataFunc(`${el}`, 'Total', 'End')
-    maleBaseYearData[el] = getRateDataFunc(`${el}`, 'Male', 'Base')
-    maleEndYearData[el] = getRateDataFunc(`${el}`, 'Male', 'End')
-    femaleBaseYearData[el] = getRateDataFunc(`${el}`, 'Female', 'Base')
-    femaleEndYearData[el] = getRateDataFunc(`${el}`, 'Female', 'End')
-  })
-
-  tableProp.columns = Object.keys(totalBaseYearData)
-  tableProp.total = {
-    beforeIns: Object.values(totalBaseYearData),
-    afterIns: Object.values(totalEndYearData)
-  }
-  tableProp.male = {
-    beforeIns: Object.values(maleBaseYearData),
-    afterIns: Object.values(maleEndYearData)
-  }
-  tableProp.female = {
-    beforeIns: Object.values(femaleBaseYearData),
-    afterIns: Object.values(femaleEndYearData)
-  }
-  tableProp.total.beforeIns.push(getAcrossAvgDataFunc('Total', 'Base'))
-  tableProp.total.afterIns.push(getAcrossAvgDataFunc('Total', 'End'))
-  tableProp.total.difference = calcDifference(tableProp.total.beforeIns, tableProp.total.afterIns)
-  tableProp.male.beforeIns.push(getAcrossAvgDataFunc('Male', 'Base'))
-  tableProp.male.afterIns.push(getAcrossAvgDataFunc('Male', 'End'))
-  tableProp.male.difference = calcDifference(tableProp.male.beforeIns, tableProp.male.afterIns)
-  tableProp.female.beforeIns.push(getAcrossAvgDataFunc('Female', 'Base'))
-  tableProp.female.afterIns.push(getAcrossAvgDataFunc('Female', 'End'))
-  tableProp.female.difference = calcDifference(tableProp.female.beforeIns, tableProp.female.afterIns)
-  return tableProp
-}
-
-export function getGroupBarChartData (label, getInfoFunc, type) {
-
-  const labelArr = label
-  
-  const baseYearData = {}
-  const endYearData = {}
-
-  labelArr.forEach(el => {
-    baseYearData[el] = getInfoFunc(`${el}`, type, 'Base')
-  })
-  labelArr.forEach(el => {
-    endYearData[el] = getInfoFunc(`${el}`, type, 'End')
-  })
-
-  const dataset = {
-    labels: labelArr,
-    datasets: [{ // label: 'baseYear',
-      backgroundColor: getGroupBarChartColorSheme().opacity,
-      barThickness: 15,
-      data: Object.values(baseYearData)
-    }, {// label: 'endYear',
-      backgroundColor: getGroupBarChartColorSheme().normal,
-      barThickness: 15,
-      data: Object.values(endYearData)
-    }]
-  }
-
-  return dataset
-}
-
-// For INS table
+// For Employment page table
 export function getMonthlyColumn () {
   const MONTH = [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ]
   return MONTH

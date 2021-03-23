@@ -5,7 +5,7 @@
         <tr style="width:100%">
           <th style="width:7%; border-right:1px solid #D8D8D8;" scope="col">{{tableName}}<img src="../../src/assets/Sorting.svg" v-on:click="sortTableDatabyName" class="sort-button"/></th>
           <th v-bind:style="columnWidth()" scope="col" v-for="month in monthlyColumn" :key="month">{{month}}</th>
-          <th style="width:10%; border-left:1px solid #D8D8D8;" scope="col">Total tenants<img src="../../src/assets/Sorting.svg" v-on:click="sortTableDatabyLessons" class="sort-button"/></th>
+          <th style="width:10%; border-left:1px solid #D8D8D8;" scope="col">Total tenants<img src="../../src/assets/Sorting.svg" v-on:click="sortTableDatabyTenants" class="sort-button"/></th>
           <th style="width:7.25%" scope="col">Difference in 12 Months <img src="../../src/assets/Sorting.svg" v-on:click="sortTableDatabyDifference" class="sort-button"/></th>
           <th style="width:7.25%" scope="col">% of total <img src="../../src/assets/Sorting.svg" class="sort-button"/></th>
         </tr>
@@ -15,9 +15,9 @@
           <td v-bind:class="topic.cssId" id="country-name" style="border-right:1px solid #D8D8D8;">
             {{topic.name}}
           </td>
-          <th scope="row" class="monthly-data" v-for="(lesson, index) in topic.monthlyData.lessons"  v-bind:key="index"  v-bind:style="borderStyle(index)">
-            <div style="display: inline;"><demo-doughnut-chart class="chart" :doughnutChartData="{lesson, topic}" v-if="index === topic.monthlyData.lessons.length - 1"></demo-doughnut-chart></div>
-            {{lesson}}
+          <th scope="row" class="monthly-data" v-for="(tenant, index) in topic.monthlyData.tenants"  v-bind:key="index"  v-bind:style="borderStyle(index)">
+            <div style="display: inline;"><demo-doughnut-chart class="chart" :doughnutChartData="{tenant, topic}" v-if="index === topic.monthlyData.tenants.length - 1"></demo-doughnut-chart></div>
+            {{tenant}}
           </th>
         </tr>
       </tbody>
@@ -40,13 +40,14 @@ export default {
   data () {
     return {
       sortedByName: false,
-      sortedByLessons: false,
+      sortedByTenants: false,
       sortedByDifference: false,
       tableName: 'Topic',
-      monthlyColumn: (this.TopicTableData[0].monthlyData.lessons.length === 15) ? getMonthlyColumn() : getFundColumn()
+      monthlyColumn: (this.TopicTableData[0].monthlyData.tenants.length === 15) ? getMonthlyColumn() : getFundColumn()
     }
   },
   mounted () {
+    this.TopicTableData
   },
   methods: {
     sortTableDatabyName () {
@@ -60,26 +61,26 @@ export default {
         this.sortedByName = false
       }
     },
-    sortTableDatabyLessons () {
-      if (this.sortedByLessons === false) {
+    sortTableDatabyTenants () {
+      if (this.sortedByTenants === false) {
         const unsorted = this.TopicTableData
-        unsorted.sort((a, b) => (a.totalLessons > b.totalLessons) ? 1 : -1)
-        this.sortedByLessons = true
-      } else if (this.sortedByLessons === true) {
+        unsorted.sort((a, b) => (a.totalTenants > b.totalTenants) ? 1 : -1)
+        this.sortedByTenants = true
+      } else if (this.sortedByTenants === true) {
         const sorted = this.TopicTableData
-        sorted.sort((a, b) => (a.totalLessons < b.totalLessons) ? 1 : -1)
-        this.sortedByLessons = false
+        sorted.sort((a, b) => (a.totalTenants < b.totalTenants) ? 1 : -1)
+        this.sortedByTenants = false
       }
     },
     sortTableDatabyDifference () {
       if (this.sortedByDifference === false) {
         const unsorted = this.TopicTableData
         unsorted.sort((a, b) => (a.difference > b.difference) ? 1 : -1)
-        this.sortedByLessons = true
+        this.sortedByTenants = true
       } else if (this.sortedByDifference === true) {
         const sorted = this.tableData
         sorted.sort((a, b) => (a.difference < b.difference) ? 1 : -1)
-        this.sortedByLessons = false
+        this.sortedByTenants = false
       }
     },
     borderStyle (index) {
@@ -92,7 +93,7 @@ export default {
       }
     },
     columnWidth () {
-      const width = (this.TopicTableData[0].monthlyData.lessons.length === 15) ? 'width:3.77%;' : 'width:7.7%;'
+      const width = (this.TopicTableData[0].monthlyData.tenants.length === 15) ? 'width:3.77%;' : 'width:7.7%;'
       return width
     }
   },

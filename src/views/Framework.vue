@@ -21,7 +21,7 @@
       <row :gutter="12" >
         <column :lg="1.5"><h3 class="framework-select-country">Select type</h3></column>
         <column :lg="2.5" class="framework-select-box">
-          <v-select :options="moneyTypes" v-model="selectedStatus" placeholder="Show all" :searchable="false">
+          <v-select :options="moneyTypes" placeholder="Show all" :searchable="false">
           </v-select>
         </column>
       </row>
@@ -55,32 +55,20 @@
 <script>
 import AimDoughnutChart from '../components/Chart/AimDoughnutChart.vue'
 import TimeDoughnutChart from '../components/Chart/TimeDoughnutChart.vue'
-// import SeeFrameworkBtn from '../components/SeeFrameworkBtn.vue'
 import FrameworkDoughnutChart from '../components/Chart/FrameworkDoughnutChart'
-import { getValueByMoney, setYearSelectBox, getLessons } from '../data/data-provider.js'
-import { getAllPurpleColor, getLineChartColorScheme} from '../data/colour-scheme.js'
-import { getLineChartData, getTableData, getBarChartData } from '../data/data-handler'
+import { setYearSelectBox } from '../data/data-provider.js'
 
 export default {
   components: {
     AimDoughnutChart,
     TimeDoughnutChart,
-    // SeeFrameworkBtn,
     FrameworkDoughnutChart
   },
   data () {
     return {
-      selectedStatus: null,
-      selectedFund: null,
-      selectedDemo: null,
       selectedYear: 2020,
-      chartData: {},
-      fundSelectboxDisabled: true,
-      demoSelectboxDisabled: true,
-      barChartData: [],
-      stackedBarChartData: {},
       doughnutChartData1: {
-        box: 'box1',
+        cssId: 'box1',
         title: 'Aim',
         subtitle1: '£50K',
         subtitle2: '/year',
@@ -88,8 +76,7 @@ export default {
         subtitle3: 'by Resonance',
         percentage: '20',
         insideText: 'complete',
-        color: '#8954BA',
-        canvasId:'achieved'
+        color: '#8954BA'
       },
       doughnutChartData2: {
         box: 'box2',
@@ -145,113 +132,18 @@ export default {
         'Money saved by tenants',
         'Money spent by tenants'
       ],
-      funds: [],
-      demographics: [],
-      status: '- all, across funds',
-      fund: '',
-      demo: '',
-      checkedItems: [],
       totalTenants: '10,000',
-      growthRate: '+38%',
-      fundPlaceholder: 'Show all',
+      growthRate: '+38%'
     }
   },
   mounted () {
     this.showNavBar()
-    this.yearOptions = setYearSelectBox() // Set initial Year select box options        
-    this.updateData()
+    this.yearOptions = setYearSelectBox() // Set initial Year select box options
   },
   methods: {
     showNavBar () {
       const navbar = document.getElementById('nav')
       navbar.style.display = 'inline'
-    },
-    updateData () {
-      let lessons = {}
-      let tableLessons = {}
-      let prevTableLessons = {}
-
-      tableLessons = getValueByMoney(this.selectedYear) // for table & summary area
-      prevTableLessons = getValueByMoney(this.selectedYear - 1)
-      if (this.checkedItems.length === 0) {
-        lessons = getLessons([], [], [], this.selectedYear, 'All') // for line graph
-        this.chartData = getLineChartData(lessons, getAllPurpleColor)
-      } else {
-        lessons = tableLessons
-        this.chartData = this.filterChartData(getLineChartData(lessons, getLineChartColorScheme), this.checkedItems)
-      }
-      this.barChartData = getBarChartData(getTableData('Money', tableLessons, prevTableLessons))
-      this.tableData = getTableData('Money', tableLessons, prevTableLessons)
-      this.summaryBoxData = this.filterTopics(getTableData('Money', tableLessons, prevTableLessons))
-      this.updateColors(getLineChartColorScheme)
-    },
-    filterTopics (tableData) {
-      const filtered = tableData.filter(el => el.totalLessons !== 0)
-      return filtered
-    },
-    uncheckAllCheckboxes () {
-      for (let i = 0; i < this.checkedItems.length; i++) {
-        const checkedItem = this.checkedItems[i]
-        const cssId = checkedItem.toLowerCase().replaceAll(' ', '-')
-        const dom = document.getElementsByClassName(`${cssId}`)
-        dom[0].checked = false
-      }
-      this.checkedItems = []
-    },
-    filterChartData (chartData, filter) {
-      if (filter.length !== 0) {
-        const filtered = chartData.datasets.filter(el => filter.indexOf(el.label) !== -1)
-        chartData.datasets = filtered
-      }
-      return chartData
-    },
-    filterBarChartData (chartData) {
-      if (this.checkedItems.length === 0) {
-        return chartData
-      } else {
-        const checked = this.checkedItems
-        const colorIndex = []
-        checked.forEach(el => {
-          colorIndex.push(chartData.labels.indexOf(el))
-        })
-        this.colorIndex = colorIndex
-      
-        const dataIndex = [...Array(chartData.labels.length).keys()].filter(el => colorIndex.includes(el) === false)
-        dataIndex.forEach(el => {
-          chartData.datasets[0].data.splice(el, 1, '-')
-          chartData.labels.splice(el, 1, '-')
-        })
-        return chartData
-      }
-    },
-    updateColors (colorScheme) {
-      for (let i = 0; i < this.summaryBoxData.length; i++) {
-        const cssId = this.summaryBoxData[i].cssId
-        const dom = document.getElementsByClassName(`${cssId}`)
-        if (dom.length !== 0 && dom[0].checked === true) {
-          const checkedColor = colorScheme(this.summaryBoxData[i].colorIndex)
-          dom[1].style.color = checkedColor // label
-          dom[2].style.border = `1px solid ${checkedColor}` // connected div to checkbox
-          dom[3].style.color = checkedColor // V
-          dom[4].style.color = checkedColor // Topic text
-          dom[8].style.color = checkedColor // Table name
-        } else if (dom.length !== 0 && !dom[0].checked) {
-          dom[1].style.color = '#D8D8D8'
-          dom[2].style.border = '1px solid #D8D8D8'
-          dom[3].style.color = '#ffffff'
-          dom[4].style.color = '#D8D8D8'
-          dom[8].style.color = '#212529'
-        }
-      }
-    }
-  },
-  watch: {
-    checkedItems () {
-      this.updateData()
-    },
-    selectedYear () {
-      this.uncheckAllCheckboxes()
-      this.updateData()
     }
   }
 }

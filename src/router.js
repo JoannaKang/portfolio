@@ -1,8 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-// import { store } from './store/store'
-
 Vue.use(Router)
 
 const router = new Router({
@@ -20,48 +18,23 @@ const router = new Router({
     {
       path: '/employment',
       name: 'employment',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/Employment.vue')
     },
     {
       path: '/tenants',
       name: 'tenants',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/TenantsSavings.vue')
     },
     {
       path: '/framework',
       name: 'framework',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/Framework.vue')
-    },
-    {
-      path: '/attendance',
-      name: 'attendance',
-      component: () => import('./views/Attendance.vue')
-    },
-    {
-      path: '/ict',
-      name: 'ict',
-      // component: Ict
-      component: () => import('./views/Ict.vue')
     },
     {
       path: '/upload',
       name: 'upload',
       component: () => import('./views/UploadPage.vue')
     },
-    // {
-    //   path: '/framework',
-    //   name: 'framework',
-    //   component: () => import('./views/Framework.vue')      
-    // },
     {
       path: '/createproject',
       name: 'createproject',
