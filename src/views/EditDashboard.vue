@@ -8,7 +8,7 @@
               <img src="../../src/assets/BackArrow.svg" alt="back-arrow"/> Back
             </router-link>
           </div>
-          <h1 class="title">INS Lessons - Edit</h1>
+          <h1 class="title">Positive progress - Employment status</h1>
         </column>
         <column :lg="5" class="progress-summary">
           <span class="tap-to-edit-1" v-if="saveAimBtnShow === false">Tap to edit</span>
@@ -24,34 +24,34 @@
     </section>
     <section class="edit-dashboard-select-area">
       <row :gutter="12" >
-        <column :lg="1.5"><h3 class="edit-dashboard-selectbox-title-1">Select Country</h3></column>
+        <column :lg="1.5"><h3 class="edit-dashboard-selectbox-title-1">Select Status</h3></column>
         <column :lg="2.5" class="edit-dashboard-select-box">
           <selectbox-edit-dashboard
-            :cssId="countryCssId"
-            :selectedOption="selectedCountry"
-            :selectboxOption="countries"
+            :cssId="statusCssId"
+            :selectedOption="selectedStatus"
+            :selectboxOption="employmentStatus"
             @remove-option="removeSelectboxOption"
             @add-option="addSelectboxOption"
             @get-selectbox-text="getTextInput"
             @save-selectbox-option="saveSelectboxInput"/>
         </column>
-        <column :lg="1.5"><h3 class="ins-select-camp">Select Camp</h3></column>
+        <column :lg="1.5"><h3 class="edit-dashboard-selectbox-title-2">Select Fund</h3></column>
         <column :lg="2.5" class="edit-dashboard-select-box">
           <selectbox-edit-dashboard
-            :cssId="campCssId"
-            :selectedOption="selectedCamp"
-            :selectboxOption="camps"
+            :cssId="fundCssId"
+            :selectedOption="selectedFund"
+            :selectboxOption="funds"
             @remove-option="removeSelectboxOption"
             @add-option="addSelectboxOption"
             @get-selectbox-text="getTextInput"
             @save-selectbox-option="saveSelectboxInput"/>
         </column>
-        <column :lg="1.5"><h3 class="ins-select-school">Select School</h3></column>
+        <column :lg="1.5"><h3 class="edit-dashboard-selectbox-title-3">Select Demographic</h3></column>
         <column :lg="2.5" class="edit-dashboard-select-box">
           <selectbox-edit-dashboard
-            :cssId="schoolCssId"
-            :selectedOption="selectedSchool"
-            :selectboxOption="schools"
+            :cssId="demoCssId"
+            :selectedOption="selectedDemo"
+            :selectboxOption="demograpics"
             @remove-option="removeSelectboxOption"
             @add-option="addSelectboxOption"
             @get-selectbox-text="getTextInput"
@@ -61,63 +61,52 @@
     </section>
     <section :gutter="12" class="chart-title-area">
       <row class="chart-title">
-        <column :lg="8" :xs="6"><h2 class="ins-sub-title">Number of lessons using INS {{country}} {{camp}} {{school}}</h2></column>
+        <column :lg="8" :xs="6"><h2 class="chart-sub-title">Employment status - all, across funds</h2></column>
         <column class="chart-summary" :lg="4" :xs="6">
-          <div class="total-lessons"> <span><h1>{{ totalLessons }}</h1> <h2>lessons</h2></span> <h3 style="font-family:'Source Sans Pro';">using INS</h3></div>
-          <div class="growth-rate"> <h1>{{growthRate}}</h1> <h3 style="font-family:'Source Sans Pro';">in {{selectedYear}}</h3></div>
+          <div class="total-tenants"> <span><h1>{{ totalTenants }}</h1> <h2>tenants</h2></span> <h3 style="font-family:'Source Sans Pro';">employment status - all</h3></div>
+          <div class="growth-rate"> <h1>{{growthRate}}</h1> <h3 style="font-family:'Source Sans Pro';">last 12 months</h3></div>
         </column>
       </row>
     </section>
     <section id="chart-area">
       <row :gutter="12" class="chart-main">
         <column :lg="8.16" class="line-chart-area">
-          <h3> No of lessons in {{selectedYear}}</h3>
-          <line-chart :chart-data="chartData" :options="options" v-if="linechartShow === true"></line-chart>
-          <stacked-bar-chart id="stacked-bar-chart" :chart-data="stackedBarChartData" :options="stackedBarchartOption" v-if="stackedChartShow === true"></stacked-bar-chart>
+          <h3> No of tenants</h3>
+          <line-chart :chart-data="chartData" :options="options"></line-chart>
           <column :lg="4" :xs="12" class="year-select-box" ><v-select :options="yearOptions" v-model="selectedYear" class="select-year" placeholder="Show all" :searchable="false"></v-select></column>
         </column>
         <column :lg="3.84" class="summary-area">
-          <div class="country-wrapper" v-for="country in summaryBoxData" v-bind:key="country.vForId" :value="country.vForId">
+          <div class="status-wrapper" v-for="status in summaryBoxData" v-bind:key="status.vForId" :value="status.vForId">
             <div class="text-container">
-              <input type="checkbox" v-bind:class="country.cssId" v-bind:id="country.cssId" v-bind:key="country.vForId" :value="country.vForId" v-model="checkedItems" style="display:none">
-                <label v-bind:class="country.cssId" v-bind:for="country.cssId">
-                  <div v-bind:class="country.cssId" v-bind:for="country.cssId" style="justify-content:center; align-item:center;">
-                    <span v-bind:class="country.cssId" v-bind:for="country.cssId" style="color:#ffffff; margin:2px 2px 2px 5px; width:10px; height:10px;">V</span>
+              <input type="checkbox" v-bind:class="status.cssId" v-bind:id="status.cssId" v-bind:key="status.vForId" :value="status.vForId" v-model="checkedItems" style="display:none">
+                <label v-bind:class="status.cssId" v-bind:for="status.cssId">
+                  <div v-bind:class="status.cssId" v-bind:for="status.cssId" style="justify-content:center; align-item:center;">
+                    <span v-bind:class="status.cssId" v-bind:for="status.cssId" style="color:#ffffff; margin:2px 2px 2px 5px; width:10px; height:10px;">V</span>
                   </div>
                 </label>
-                <!-- Lessons summary start-->
-                <div class="summary-text" v-bind:class="country.cssId" v-bind:for="country.cssId" v-if="linechartShow === true">
-                  <div v-bind:class="country.cssId" v-bind:for="country.cssId" style="border:none; color:'#D8D8D8' !important; display:flex; width:27.7rem; justify-content:space-between; align-items:flex-end;">
+                <!-- employment status summary start-->
+                <div class="summary-text" v-bind:class="status.cssId" v-bind:for="status.cssId">
+                  <div v-bind:class="status.cssId" v-bind:for="status.cssId" style="border:none; color:'#D8D8D8' !important; display:flex; width:27.7rem; justify-content:space-between; align-items:flex-end;">
                     <div>
-                      <h1 style="display: inline; color:'#D8D8D8'; font-family: Helvetica; font-size:3rem; font-weight:500;" v-bind:class="country.cssId" v-bind:for="country.cssId">
-                        {{ country.totalLessons }}
+                      <h1 style="display: inline; color:'#D8D8D8'; font-family: Helvetica; font-size:3rem; font-weight:500;" v-bind:class="status.cssId" v-bind:for="status.cssId">
+                        {{ status.totalTenants }}
                       </h1>
-                      <h2 style="display: inline; color:'#D8D8D8'; font-family:'Source Sans Pro'; font-size:2.2rem;" v-bind:class="country.cssId" v-bind:for="country.cssId">lessons </h2>
+                      <h2 style="display: inline; color:'#D8D8D8'; font-family:'Source Sans Pro'; font-size:2.2rem;" v-bind:class="status.cssId" v-bind:for="status.cssId">employed </h2>
                     </div>
-                    <div class="summary-bar-chart-container" v-if="linechartShow === true" style="align-self:flex-end;">
-                      <bar-chart id="bar-chart" class="barChart" :chart-data="barChartData[country.name]" :options="barchartOption"></bar-chart>
+                    <div class="summary-bar-chart-container" style="align-self:flex-end;">
+                      <bar-chart id="bar-chart" class="barChart" :chart-data="barChartData[status.name]" :options="barchartOption"></bar-chart>
                     </div>
                   </div>
-                  <div v-bind:class="country.cssId" v-bind:for="country.cssId" style="text-align:left; border:none; color:'#D8D8D8';">
-                    <h2 style="font-family:'Source Sans Pro'; font-size:1.4rem; font-weight:300;">in {{country.vForId}}</h2>
+                  <div v-bind:class="status.cssId" v-bind:for="status.cssId" style="text-align:left; border:none; color:'#D8D8D8';">
+                    <h2 style="font-family:'Source Sans Pro'; font-size:1.4rem; font-weight:300;">in {{status.vForId}}</h2>
                   </div>
                 </div>
-                <!-- Lessons summary end-->
-                <!-- Topic summary -->
-                <div class="summary-text" v-bind:class="country.cssId" v-bind:for="country.cssId" v-if="stackedChartShow === true">
-                  <div v-bind:class="country.cssId" v-bind:for="country.cssId" style="border:none; color:'#D8D8D8' !important; padding: 0;">
-                      <h2 v-bind:class="country.cssId" v-bind:for="country.cssId">
-                        {{ country.vForId }}
-                      </h2>
-                  </div>
-                </div>
-                <!-- Topic summary end -->
+                <!-- employment status summary end-->
             </div>
           </div>
         </column>
       </row>
-      <Table :tableData="tableData" v-if="linechartShow === true"></Table>
-      <table-for-topic :TopicTableData="TopicTableData" v-if="stackedChartShow === true"></table-for-topic>
+      <Table :tableData="tableData"></Table>
     </section>
   </main>
 </template>
@@ -125,13 +114,11 @@
 <script>
 import LineChart from '../components/Chart/LineChart.js'
 import BarChart from '../components/Chart/BarChart.js'
-import StackedBarChart from '../components/Chart/StackedBarChart.js'
 import AimDoughnutChart from '../components/Chart/AimDoughnutChart.vue'
 import TimeDoughnutChart from '../components/Chart/TimeDoughnutChart.vue'
 import Table from '../components/Table'
-import TableForTopic from '../components/TableforTopic'
 import SelectboxEditDashboard from '../components/SelectboxEditDashboard'
-import { setYearSelectBox, getCountries, getLessons } from '../data/data-provider.js'
+import { getStatusNames, getFundNames, getDemoCategories, setYearSelectBox, getTenantsNumber } from '../data/data-provider.js'
 import { getAllPurpleColor, getLineChartColorScheme } from '../data/colour-scheme.js'
 import { calcSum, compareDataByYear, getLineChartData, getTableData, getBarChartData } from '../data/data-handler'
 
@@ -140,8 +127,6 @@ export default {
     LineChart,
     BarChart,
     Table,
-    TableForTopic,
-    StackedBarChart,
     AimDoughnutChart,
     TimeDoughnutChart,
     SelectboxEditDashboard
@@ -149,52 +134,46 @@ export default {
   data () {
     return {
       viewMode: 'All',
-      selectedCountry: null,
-      countryCssId: 'country-selectbox',
-      selectedCamp: null,
-      campCssId: 'camp-selectbox',
-      selectedSchool: null,
-      schoolCssId: 'school-selectbox',
+      selectedStatus: null,
+      statusCssId: 'status-selectbox',
+      selectedFund: null,
+      fundCssId: 'fund-selectbox',
+      selectedDemo: null,
+      demoCssId: 'demo-selectbox',
       selectedYear: 2019,
       chartData: {},
       saveAimBtnShow: false,
       saveTimeBtnShow: false,
-      linechartShow: true,
-      stackedChartShow: false,
-      campSelectboxDisabled: true,
-      schoolSelectboxDisabled: true,
       barChartData: [],
-      stackedBarChartData: {},
       doughnutChartData1: {
-        box: 'box1',
+        cssId: 'aim-chart',
         title: 'Aim',
-        subtitle1: '800',
-        subtitle2: 'using INS',
-        percentage: '87',
+        subtitle1: '1200',
+        subtitle2: 'employed',
+        subtitle2Position: [29, 36.2, 60],
+        subtitle3: 'full time',
+        percentage: '80',
         insideText: 'complete',
         color: '#8954BA'
       },
       doughnutChartData2: {
         box: 'box2',
         title: 'Time',
-        subtitle1: '3 years',
+        subtitle1: '2 years',
         subtitle2: '',
         percentage: '1',
         insideText: 'more year',
-        color: '#0091FF'
+        color: '#0091FF',
+        totalYear: 3
       },
       tableData: [],
-      TopicTableData: [],
       summaryBoxData: [],
       yearOptions: [],
-      countries: ['Kenya', 'Tanzania', 'South Soudan', 'DR Congo'],
-      camps: ['camp1', 'camp2', 'camp3', 'camp4'],
-      schools: ['school1', 'school2', 'school3', 'school4'],
-      country: '',
-      camp: '',
-      school: '',
+      employmentStatus: getStatusNames(),
+      funds: getFundNames('Full time - 35+ hours/week'),
+      demograpics: getDemoCategories('Full time - 35+ hours/week', "RLPF1 - St Mungo’s"),
       checkedItems: [],
-      totalLessons: '',
+      totalTenants: '',
       growthRate: '',
       options: {
         responsive: true,
@@ -233,7 +212,7 @@ export default {
               return data.datasets[0].label + ' | ' + months[tooltipItem[0].index]
             },
             label: function (tooltipItem) {
-              return tooltipItem.value + ' lessons'
+              return tooltipItem.value + ' tenants'
             }
           }
         }
@@ -261,75 +240,11 @@ export default {
             }
           }
         }
-      },
-      stackedBarchartOption: {
-        responsive: true,
-        maintainAspectRatio: false,
-        scales: {
-          xAxes: [{
-            stacked: true,
-            gridLines: {
-              color: '#ffffff'
-            },
-            ticks: {
-              callback: function (value, index) {
-                const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-                value = months[index]
-                return value
-              }
-            }
-          }],
-          yAxes: [{
-            stacked: true,
-            suggestedMin: true,
-            ticks: {
-              beginAtZero: true
-            }
-          }]
-        },
-        legend: {
-          labels: {
-            boxWidth: 10
-          }
-        },
-        tooltips: {
-          callbacks: {
-            title: function (tooltipItem) {
-              const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']          
-              return months[tooltipItem[0].index]
-            }
-          }
-        }        
-      },
-      doughnutChartOption: {
-        animation: {
-          duration: 0
-        },
-        scales: {
-          xAxes: [{
-            display: false
-          }],
-          yAxes: [{
-            display: false
-          }]
-        },
-        legend: {
-          display: false
-        },
-        tooltips: {
-          callbacks: {
-            title: function (tooltipItem) {
-              const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']          
-              return months[tooltipItem[0].index]
-            }
-          }
-        }
-      },      
+      }     
     }
   },
   mounted () {
     this.showNavBar()
-    this.countries = getCountries() // Set initial Country select box options
     this.yearOptions = setYearSelectBox() // Set initial Year select box options
     this.updateData()
 
@@ -342,45 +257,30 @@ export default {
       navbar.style.display = 'inline'
     },
     updateData () {
-      this.updateConditionalRendering()
-      let lessons = {}
-      let prevYearLessons = {}
-      // let totalCurrLessons = []
-      // let totalPrevLessons = []
-      let tableLessons = {}
-      let prevTableLessons = {}
+      let currentYearTenants = {}
+      let prevYearTenants = {}
+      let tenantsDataForTable = {}
+      let prevYearTenantsDataForTable = {}
 
-      tableLessons = getLessons(getCountries(), [], [], this.selectedYear)
-      prevTableLessons = getLessons(getCountries(), [], [], this.selectedYear - 1)
+      tenantsDataForTable = getTenantsNumber(getStatusNames(), [], [], this.selectedYear)
+      prevYearTenantsDataForTable = getTenantsNumber(getStatusNames(), [], [], this.selectedYear - 1)
       if (this.checkedItems.length === 0) {
-        lessons = getLessons([], [], [], this.selectedYear)
-        prevYearLessons = getLessons([], [], [], this.selectedYear - 1)
-        this.totalLessons = calcSum(Object.values(lessons.lessons[0]))
-        this.growthRate = compareDataByYear(Object.values(prevYearLessons.lessons[0]), Object.values(lessons.lessons[0]))
-        this.chartData = getLineChartData(lessons, getAllPurpleColor)
+        currentYearTenants = getTenantsNumber([], [], [], this.selectedYear)
+        prevYearTenants = getTenantsNumber([], [], [], this.selectedYear - 1)
+        this.totalTenants = calcSum(Object.values(currentYearTenants.tenants[0]))
+        this.growthRate = compareDataByYear(Object.values(prevYearTenants.tenants[0]), Object.values(currentYearTenants.tenants[0]))
+        this.chartData = getLineChartData(currentYearTenants, getAllPurpleColor)
       } else {
-        lessons = tableLessons
-        this.chartData = this.filterChartData(getLineChartData(lessons, getLineChartColorScheme), this.checkedItems)
+        currentYearTenants = tenantsDataForTable
+        this.chartData = this.filterChartData(getLineChartData(currentYearTenants, getLineChartColorScheme), this.checkedItems)
       }
-      this.barChartData = getBarChartData(getTableData('Country', tableLessons, prevTableLessons))
-      this.tableData = getTableData('Country', tableLessons, prevTableLessons)
-      this.summaryBoxData = this.filterTopics(getTableData('Country', tableLessons, prevTableLessons))
+      this.barChartData = getBarChartData(getTableData('Status', tenantsDataForTable, prevYearTenantsDataForTable))
+      this.tableData = getTableData('Status', tenantsDataForTable, prevYearTenantsDataForTable)
+      this.summaryBoxData = this.filterTopics(getTableData('Status', tenantsDataForTable, prevYearTenantsDataForTable))
       this.updateColors(this.viewMode, getLineChartColorScheme)
     },
-    updateConditionalRendering () {
-      this.linechartShow = true
-      this.stackedChartShow = false
-      this.camplSelectboxDisabled = true
-      this.schoolSelectboxDisabled = true
-      this.selectedCountry = null
-      this.selectedCamp = null
-      this.selectedSchool = null
-      this.country = '- across countries'
-      this.camp = ''
-      this.school = ''
-    },
     filterTopics (tableData) {
-      const filtered = tableData.filter(el => el.totalLessons !== 0)
+      const filtered = tableData.filter(el => el.totalTenants !== 0)
       return filtered
     },
     uncheckAllCheckboxes () {
@@ -421,56 +321,56 @@ export default {
     },
     saveSelectboxInput (cssId) {
       switch (cssId) {
-        case 'country-selectbox':
-          alert(`${this.countries} saved!`)
+        case 'status-selectbox':
+          alert(`${this.employmentStatus} saved!`)
           break
-        case 'camp-selectbox':
-          alert(`${this.camps} saved!`)
+        case 'fund-selectbox':
+          alert(`${this.funds} saved!`)
           break
-        case 'school-selectbox':
-          alert(`${this.schools} saved!`)
+        case 'demo-selectbox':
+          alert(`${this.demograpics} saved!`)
           break
       }
     },
     addSelectboxOption (addedItem) {
       const selectboxType = addedItem.cssId
       switch (selectboxType) {
-        case 'country-selectbox':
-          this.countries.push(addedItem.item)
+        case 'status-selectbox':
+          this.employmentStatus.push(addedItem.item)
           break
-        case 'camp-selectbox':
-          this.camps.push(addedItem.item)
+        case 'fund-selectbox':
+          this.funds.push(addedItem.item)
           break
-        case 'school-selectbox':
-          this.schools.push(addedItem.item)
+        case 'demo-selectbox':
+          this.demograpics.push(addedItem.item)
           break
       }
     },
     removeSelectboxOption (removedItem) {
       const selectboxType = removedItem.cssId
       switch (selectboxType) {
-        case 'country-selectbox':
-          this.countries.splice(removedItem.index, 1)
+        case 'status-selectbox':
+          this.employmentStatus.splice(removedItem.index, 1)
           break
-        case 'camp-selectbox':
-          this.camps.splice(removedItem.index, 1)
+        case 'fund-selectbox':
+          this.funds.splice(removedItem.index, 1)
           break
-        case 'school-selectbox':
-          this.schools.splice(removedItem.index, 1)
+        case 'demo-selectbox':
+          this.demograpics.splice(removedItem.index, 1)
           break
       }
     },
     getTextInput (addedItem) {
       const selectboxType = addedItem.cssId
       switch (selectboxType) {
-        case 'country-selectbox':
-          this.countries.splice(addedItem.index, 1, addedItem.selectedOption)
+        case 'status-selectbox':
+          this.employmentStatus.splice(addedItem.index, 1, addedItem.selectedOption)
           break
-        case 'camp-selectbox':
-          this.camps.splice(addedItem.index, 1, addedItem.selectedOption)
+        case 'fund-selectbox':
+          this.funds.splice(addedItem.index, 1, addedItem.selectedOption)
           break
-        case 'school-selectbox':
-          this.schools.splice(addedItem.index, 1, addedItem.selectedOption)
+        case 'demo-selectbox':
+          this.demograpics.splice(addedItem.index, 1, addedItem.selectedOption)
           break
       }
     },
@@ -565,9 +465,9 @@ main#edit-dashboard {
 
 .doughnut-inputbox-1 {
   position: relative;
-  top: 2.25rem;
-  left: 2.2rem;
-  width: 2.4rem;
+  top: 2.3rem;
+  left: 2.95rem;
+  width: 3rem;
   height: 1.8rem;
   background-color: rgba(245, 247, 252, 0);
   color: #686868;
@@ -689,12 +589,12 @@ main#edit-dashboard {
   text-align: left;
 }
 
-#edit-dashboard .ins-select-camp {
+#edit-dashboard .edit-dashboard-selectbox-title-2 {
   text-align:right;
   margin: 0 1rem 0 0
 }
 
-#edit-dashboard .ins-select-school {
+#edit-dashboard .edit-dashboard-selectbox-title-3 {
   text-align:right;
   margin:0 1rem 0 0;
 }
@@ -706,7 +606,7 @@ main#edit-dashboard {
   margin-top: 3rem;
 }
 
-#edit-dashboard .ins-sub-title {
+#edit-dashboard .chart-sub-title {
   font-size: 2.88rem;
   font-family: 'Source Sans Pro';
   font-weight: 300 !important;
@@ -726,36 +626,36 @@ main#edit-dashboard {
   font-weight: 100;
 }
 
-#edit-dashboard .total-lessons {
+#edit-dashboard .total-tenants {
   display: flex;
   flex-direction: column;
   padding-left: 7rem;
   padding-right: 2rem;
 }
 
-#edit-dashboard .total-lessons span {
+#edit-dashboard .total-tenants span {
   align-self: start;
 }
 
-#edit-dashboard .total-lessons h1,
-#edit-dashboard .total-lessons h2,
-#edit-dashboard .total-lessons h3 {
+#edit-dashboard .total-tenants h1,
+#edit-dashboard .total-tenants h2,
+#edit-dashboard .total-tenants h3 {
   display: inline;
   color: var(--color-purple);
 }
 
-#edit-dashboard .total-lessons h1 {
+#edit-dashboard .total-tenants h1 {
   margin-right: 1rem;
   font-size:3rem;
   font-weight: 500;
 }
 
-#edit-dashboard .total-lessons h2 {
+#edit-dashboard .total-tenants h2 {
   font-size: 2.2rem;
   font-weight: 300;
 }
 
-#edit-dashboard .total-lessons h3 {
+#edit-dashboard .total-tenants h3 {
   text-align: left;
   font-size: 1.4rem;
   font-weight: 100;
@@ -906,7 +806,7 @@ main#edit-dashboard {
   height: 43.8rem !important;
 }
 
-#edit-dashboard .country-wrapper {
+#edit-dashboard .status-wrapper {
   display: flex;
   align-items: center;
   height: 8rem;
@@ -954,7 +854,7 @@ main#edit-dashboard {
   vertical-align: middle;
 }
 
-#edit-dashboard #country-name {
+#edit-dashboard #status-name {
   font-weight: 500;
 }
 

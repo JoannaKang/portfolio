@@ -33,13 +33,6 @@ export default {
       selectboxPlaceholder: 'Select option'
     }
   },
-  mounted () {
-    // if (this.selectedOption === null) {
-    //   this.selectboxPlaceholder = 'Select option'
-    // } else {
-    //   this.selectboxPlaceholder = this.selectedOption
-    // }
-  },
   methods: {
     toggleDropdown (cssSelectorId) {
       const menu = document.getElementById(`${cssSelectorId}`)
@@ -78,7 +71,6 @@ export default {
 .editproject-dropbox {
   position: relative;
   z-index: 1;
-  /* background-color: yellowgreen; */
 }
 
 .editproject-dropbox-form ul,

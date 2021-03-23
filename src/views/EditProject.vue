@@ -84,8 +84,8 @@
             <router-link to="/editdashboard">
             <div @mouseover="mouseHover(1)" @mouseout="mouseOut(1)">
               <div class="framework-link-title">
-                <h1>INS Lessons</h1>
-                <h1 style="color:#8954BA;">{{insGrowthRate}}</h1>
+                <h1>Tenants in employment</h1>
+                <h1 style="color:#8954BA;">{{growthRate1}}</h1>
               </div>
               <h3>Showing data till {{lastUpdate}}</h3>
               <img src="../../src/assets/dummy1.svg"/>
@@ -101,7 +101,8 @@
             <router-link to="/editdashboard">
             <div @mouseover="mouseHover(2)" @mouseout="mouseOut(2)">
               <div class="framework-link-title">
-                <h1>Students attendance</h1>
+                <h1>Avg tenants stay</h1>
+                <h1 style="color:#8954BA;">{{growthRate2}}</h1>
               </div>
               <h3>Showing data till {{lastUpdate}}</h3>
               <h1 style="color:#8954BA;"></h1>
@@ -118,8 +119,8 @@
             <router-link to="/editdashboard">
             <div @mouseover="mouseHover(3)" @mouseout="mouseOut(3)">
               <div class="framework-link-title">
-                <h1>ICT skills acquired</h1>
-                <h1 style="color:#8954BA;">{{ictGrowthRate}}</h1>
+                <h1>Tenants' savings</h1>
+                <h1 style="color:#8954BA;">{{growthRate3}}</h1>
               </div>            
               <h3>Showing data till {{lastUpdate}}</h3>
               <img src="../../src/assets/dummy3.svg"/>
@@ -150,8 +151,6 @@
 </template>
 
 <script>
-import { getLessons, getStudentAvgAcrossSchools } from '../data/data-provider.js'
-import { compareDataByYear, calcDifference } from '../data/data-handler'
 import { store } from '../store/store'
 import UploadModule from '../components/UploadModule.vue'
 import ObjectInputDiv from '../components/ObjectiveInputDiv.vue'
@@ -182,8 +181,9 @@ export default {
       objectivePlaceholder: ['eg How many lessons use INS', 'eg How many students have ICT skills', 'How many students have ICT skills'],
       dashboardName: 'INS Lessons',
       lastUpdate: '31/12/2019',
-      insGrowthRate: '',
-      ictGrowthRate: '',
+      growthRate1: '+25%',
+      growthRate2: '+35%',
+      growthRate3: '+30%',
       editHoverboxShow1: false,
       editHoverboxShow2: false,
       editHoverboxShow3: false,
@@ -210,7 +210,6 @@ export default {
   },
   async mounted () {
     this.showNavBar()
-    this.getInsGrowthRate()
 
     const firebaseDB = this.$database
     let context = this
@@ -221,7 +220,8 @@ export default {
           context.loggedInUserId = user.uid
           const database = firebaseDB.ref(`${user.uid}`)
           database.on('value', (snapshot) => {
-            let projectSelectOptions = snapshot.val().projectInfo ? [...Object.keys(snapshot.val().projectInfo), 'Create new company'] : ['Create new company']
+            console.log(snapshot.val())
+            let projectSelectOptions = snapshot.val() ? [...Object.keys(snapshot.val().projectInfo), 'Create new company'] : ['Create new company']
             context.companyNames = projectSelectOptions
             context.changeState(context.stateSelectCompany)
           })
@@ -333,8 +333,6 @@ export default {
       if (this.selectedCompany && this.selectedProject) {
         const database = this.$database.ref(`${this.loggedInUserId}`)
         await database.on('value', (snapshot) => {
-          // this.alertAssert(this.selectedCompany, 'getObjectiveListFromDB: this.selectedCompany was falsy')
-          // this.alertAssert(this.selectedProject, 'getObjectiveListFromDB: this.selectedProject was falsy') 
           const projectInfo = snapshot.val().projectInfo
           const objectList = projectInfo[this.selectedCompany].projects[this.selectedProject].projectObjectives
           this.objectives = objectList ? objectList : this.emptyObjectiveList
@@ -524,12 +522,6 @@ export default {
           this.editHoverboxShow3 = false
           break
       }
-    },
-    getInsGrowthRate () {
-      const prevYear = getLessons([], [], [], '2018')
-      const currYear = getLessons([], [], [], '2019')
-      this.insGrowthRate = compareDataByYear(Object.values(prevYear.lessons[0]), Object.values(currYear.lessons[0]))
-      this.ictGrowthRate = calcDifference([getStudentAvgAcrossSchools('Total', 'Base')], [getStudentAvgAcrossSchools('Total', 'End')])[0]
     },
     alertAssert (condition, message) {
       if (!condition) {

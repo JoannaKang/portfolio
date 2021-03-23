@@ -80,6 +80,21 @@ export default {
     }
   },
   watch: {
+    doughnutChartData: {
+      handler: function (val) {
+        this.drawCircle(
+          val.cssId,
+          val.title,
+          val.subtitle1,
+          val.subtitle2,
+          val.subtitle2Position,
+          val.subtitle3,
+          val.percentage,
+          val.insideText,
+          val.color)
+      },
+      deep: true
+    }    
   }
 }
 </script>

@@ -344,7 +344,6 @@ export default {
         this.chartData = this.filterChartData(getLineChartData(tenants, getLineChartColorScheme), this.checkedItems)
       }
       this.barChartData = getBarChartData(getTableData('Money', tableData, prevtableData))
-      console.log(getTableData('Money', tableData, prevtableData))
       this.tableData = getTableData('Money', tableData, prevtableData)
       this.summaryBoxData = this.filterTopics(getTableData('Money', tableData, prevtableData))
       this.updateColors(getLineChartColorScheme)
