@@ -220,7 +220,7 @@ export default {
           context.loggedInUserId = user.uid
           const database = firebaseDB.ref(`${user.uid}`)
           database.on('value', (snapshot) => {
-            let projectSelectOptions = snapshot.val() ? [...Object.keys(snapshot.val().projectInfo), 'Create new company'] : ['Create new company']
+            let projectSelectOptions = snapshot.val().projectInfo ? [...Object.keys(snapshot.val().projectInfo), 'Create new company'] : ['Create new company']
             context.companyNames = projectSelectOptions
             context.changeState(context.stateSelectCompany)
           })
