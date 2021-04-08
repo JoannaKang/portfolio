@@ -52,7 +52,7 @@ export default {
       fullname: null,
       password: null,
       loading: false,
-      login: false,
+      login: true,
       findPasswordId: '',
       matchOption: '(@resonance.com)'
     }
