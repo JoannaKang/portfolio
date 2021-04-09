@@ -69,8 +69,8 @@ export default {
       this.loading = true
       this.$firebase.auth().signInWithPopup(this.$google) // Sign-up with Firebase Auth
         .then((result) => {
-          const currentUserEmail = result.user.email
-          if (currentUserEmail.match(this.matchOption) !== null) { // check mail domain id is matched as Resonance email domain          
+          // const currentUserEmail = result.user.email
+          // if (currentUserEmail.match(this.matchOption) !== null) { // check mail domain id is matched as Resonance email domain          
             const loginUserInfo = {
               userName: result.user.displayName,
               userId: result.user.uid,
@@ -91,13 +91,13 @@ export default {
                 alert(`Hello ${store.state.loginUserFullName}, You have successfully registered and logged in!`)
               })
             router.push('/createproject')
-          } else {
-             // Delete account if user isn't belonged to Resonance
-            let user = this.$firebase.auth().currentUser
-            user.delete().then(() => {
-              alert('Only Resonance user can access this system')
-            })
-          }
+          // } else {
+          //    // Delete account if user isn't belonged to Resonance
+          //   let user = this.$firebase.auth().currentUser
+          //   user.delete().then(() => {
+          //     alert('Only Resonance user can access this system')
+          //   })
+          // }
         })
         .catch((error) => {
           alert(error.message)
@@ -106,7 +106,7 @@ export default {
       this.loading = false
     },
     submitSignUp () {
-      if (this.email.match(this.matchOption) !== null) { // check mail domain id is matched as Resonance email domain  
+      // if (this.email.match(this.matchOption) !== null) { // check mail domain id is matched as Resonance email domain  
       this.$firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
         .then((result) => {
           const loginUserInfo = {
@@ -133,12 +133,12 @@ export default {
         .catch((error) => {
           alert(error.message)
         })
-      } else {
-        alert('Only Resonance user can access this system')
-      }
+      // } else {
+      //   alert('Only Resonance user can access this system')
+      // }
     },
     submitLogin () {
-      if (this.email.match(this.matchOption) !== null) { // check mail domain id is matched as Resonance email domain  
+      // if (this.email.match(this.matchOption) !== null) { // check mail domain id is matched as Resonance email domain  
       this.$firebase.auth().signInWithEmailAndPassword(this.email, this.password)
         .then((user) => {
           this.$database.ref(`${user.user.uid}`).once('value')
@@ -157,15 +157,15 @@ export default {
         .catch((error) => {
           alert(error.message)
         })
-      } else {
-        alert('Only Resonance user can access this system')
-      }
+      // } else {
+      //   alert('Only Resonance user can access this system')
+      // }
     },
     googleLogin () {
       this.$firebase.auth().signInWithPopup(this.$google)
         .then((user) => {
-          const currentUserEmail = user.user.email
-          if (currentUserEmail.match(this.matchOption) !== null) { // check mail domain id is mached as Resonance email domain              
+          // const currentUserEmail = user.user.email
+          // if (currentUserEmail.match(this.matchOption) !== null) { // check mail domain id is mached as Resonance email domain              
           this.$database.ref(`${user.user.uid}`).once('value')
             .then((snapshot) => {
               const username = snapshot.val().loginUserInfo.userName
@@ -182,9 +182,9 @@ export default {
               console.log(error)
               alert("Can't find user information. Please sign up first")
             })
-          } else {
-            alert('Only Resonance user can access this system')
-          }
+          // } else {
+          //   alert('Only Resonance user can access this system')
+          // }
         })
         .catch((error) => {
           alert(error.message)
