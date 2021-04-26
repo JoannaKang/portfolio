@@ -60,15 +60,15 @@ const router = new Router({
   ]
 })
 
-router.beforeEach((to, from, next) => {
-  if (store.state.loggedIn === false && to.name !== 'login') {
-    alert('Please login before access this page')
-    next('/login')
-  } else if (store.state.loggedIn === true && to.name === 'login') {
-    alert('You alread logged in')
-    next('/home')
-  }
-  next()
-})
+// router.beforeEach((to, from, next) => {
+//   if (store.state.loggedIn === false && to.name !== 'login') {
+//     alert('Please login before access this page')
+//     next('/login')
+//   } else if (store.state.loggedIn === true && to.name === 'login') {
+//     alert('You alread logged in')
+//     next('/home')
+//   }
+//   next()
+// })
 
 export default router
